@@ -54,13 +54,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThridParty\CameraIntrinsics.cs" />
-    <Compile Include="Assets\ThridParty\CollectionMap.cs" />
-    <Compile Include="Assets\ThridParty\EventPump.cs" />
-    <Compile Include="Assets\ThridParty\ExceptionHelper.cs" />
-    <Compile Include="Assets\ThridParty\INativeWrapper.cs" />
-    <Compile Include="Assets\ThridParty\KinectBuffer.cs" />
-    <Compile Include="Assets\ThridParty\KinectSpecialCases.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\EventPump.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\ExceptionHelper.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\INativeWrapper.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\KinectBuffer.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\KinectSpecialCases.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\NativeObjectCache.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\NativeWrapper.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\SmartGCHandle.cs" />
+    <Compile Include="Assets\ThridParty\KinectScript\ThreadSafeDictionary.cs" />
     <Compile Include="Assets\ThridParty\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\ThridParty\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\ThridParty\KinectView\Scripts\ColorSourceManager.cs" />
@@ -71,10 +75,6 @@
     <Compile Include="Assets\ThridParty\KinectView\Scripts\InfraredSourceManager.cs" />
     <Compile Include="Assets\ThridParty\KinectView\Scripts\InfraredSourceView.cs" />
     <Compile Include="Assets\ThridParty\KinectView\Scripts\MultiSourceManager.cs" />
-    <Compile Include="Assets\ThridParty\NativeObjectCache.cs" />
-    <Compile Include="Assets\ThridParty\NativeWrapper.cs" />
-    <Compile Include="Assets\ThridParty\SmartGCHandle.cs" />
-    <Compile Include="Assets\ThridParty\ThreadSafeDictionary.cs" />
     <Compile Include="Assets\ThridParty\Windows\Data\PropertyChangedEventArgs.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Activity.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Appearance.cs" />
