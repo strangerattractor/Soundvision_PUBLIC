@@ -1,6 +1,3 @@
-# Cylvision
-Unity Adaptation of Cylvision
-
 # The development environment
 All developers have to use the following version of software
 - Unity 2018.4.3f1 (LTS)
