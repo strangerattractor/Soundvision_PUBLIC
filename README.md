@@ -9,7 +9,9 @@ All developers have to use the following version of software
 
 # How to properly clone the repo
 After you clone the repo. please execute
+
 ``` git submodule update --init --recursive ```
 
+This will recursive clone all submodules from the github.
 
 
