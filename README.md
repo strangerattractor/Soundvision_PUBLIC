@@ -10,6 +10,7 @@ All developers have to use the following version of software
 
 # Build Pool
 Access my [NAS](http://quickconnect.to)  
+QuickConnectID: gyudon
 Name: cylvester  
 Pass: dortmund  
 
