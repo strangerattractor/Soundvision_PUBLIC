@@ -3,14 +3,14 @@ using System.IO.MemoryMappedFiles;
 
 namespace PdConnection
 {
-    public class PdBuffer : IDisposable
+    public class PdArray : IDisposable
     {
         public float[] Data { get; }
 
         private readonly MemoryMappedFile memoryMappedFile_;
         private readonly MemoryMappedViewAccessor viewAccessor_;
         
-        public PdBuffer(string name, int size)
+        public PdArray(string name, int size)
         {
             memoryMappedFile_ = MemoryMappedFile.OpenExisting(name);
             if (memoryMappedFile_ == null)
@@ -27,9 +27,8 @@ namespace PdConnection
         
         public void Dispose()
         {
-            viewAccessor_?.Dispose();
-            memoryMappedFile_?.Dispose();
+            memoryMappedFile_.Dispose();
+            viewAccessor_.Dispose();
         }
     }
-
 }

@@ -3,6 +3,9 @@
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_rider_editor_plugin</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_rider_editor_plugin</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,8 +57,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PdConnection\PdBuffer.cs" />
-    <Compile Include="Assets\Scripts\PdConnection\PdBufferTest.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
+    <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />
+    <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
+    <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
+    <Compile Include="Assets\Scripts\VideoInput\PointCloud.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizer.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\EventPump.cs" />
