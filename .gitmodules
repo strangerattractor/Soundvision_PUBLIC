@@ -1,0 +1,3 @@
+[submodule "pdshmem"]
+	path = pdshmem
+	url = https://github.com/chikashimiyama/pdshmem.git
