@@ -9,9 +9,9 @@ All developers have to use the following version of software
 - Visual Studio 2017 + ReSharper
 
 # Build Pool
-Access my [NAS](http://quickconnect.to)
-Name: cylvester
-Pass: dortmund
+Access my [NAS](http://quickconnect.to)  
+Name: cylvester  
+Pass: dortmund  
 
 # How to properly clone the repo
 After you clone the repo. please execute
