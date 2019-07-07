@@ -24,9 +24,14 @@
             <e p="KinectSensor.cs" t="Include" />
           </e>
           <e p="Visualizer" t="Include">
+            <e p="IRPanelBehaviour.cs" t="Include" />
+            <e p="MeshController.cs" t="Include" />
             <e p="PointCloudBehaviour.cs" t="Include" />
             <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
+        </e>
+        <e p="Shader" t="Include">
+          <e p="Vertex Modifier.shader" t="Include" />
         </e>
         <e p="ThridParty" t="Include">
           <e p="Editor" t="Include">

@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\MeshController.cs" />
     <Compile Include="Assets\Scripts\Visualizer\PointCloudBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
@@ -159,6 +161,7 @@
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingConfidence.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
+    <None Include="Assets\Shader\Vertex Modifier.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
