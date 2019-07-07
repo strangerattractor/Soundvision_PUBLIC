@@ -2,7 +2,7 @@
 
 namespace Visualizer
 {
-    public class WaveformVisualizer : MonoBehaviour
+    public class WaveformVisualizerBehaviour : MonoBehaviour
     {
         #pragma warning disable 649
         [SerializeField] private string pdArrayName;

@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,7 +39,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -60,10 +60,10 @@
     <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
     <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />
     <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
-    <Compile Include="Assets\Scripts\VideoInput\KinectManager.cs" />
+    <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
-    <Compile Include="Assets\Scripts\Visualizer\PointCloud.cs" />
-    <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizer.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\PointCloudBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\EventPump.cs" />

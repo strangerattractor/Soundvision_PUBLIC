@@ -26,7 +26,7 @@ public class InfraredSourceManager : MonoBehaviour
             _Reader = _Sensor.InfraredFrameSource.OpenReader();
             var frameDesc = _Sensor.InfraredFrameSource.FrameDescription;
             _Data = new ushort[frameDesc.LengthInPixels];
-            _RawData = new byte[frameDesc.LengthInPixels * 4];
+            _RawData = new byte[frameDesc.LengthInPixels];
             _Texture = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.BGRA32, false);
             
             if (!_Sensor.IsOpen)

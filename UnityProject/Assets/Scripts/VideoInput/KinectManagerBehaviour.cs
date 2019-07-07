@@ -1,15 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace VideoInput
 {
-    public class KinectManager : MonoBehaviour
+    public class KinectManagerBehaviour : MonoBehaviour
     {
         public IKinectSensor KinectSensor { get; private set; }
-    
-        private void Start()
+
+        private void Awake()
         {
             var componentFactory = new ComponentFactory();
             KinectSensor = componentFactory.CreateKinectSensor();
+            
         }
 
         private void Update()

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using UnityEngine;
 using Windows.Kinect;
 
@@ -19,6 +20,7 @@ namespace VideoInput
         private readonly InfraredFrameReader reader_;
         private readonly ushort [] irData_;
 
+
         public InfraredCamera()
         {
             sensor_ = Windows.Kinect.KinectSensor.GetDefault();
@@ -31,8 +33,7 @@ namespace VideoInput
             
             var frameDesc = sensor_.InfraredFrameSource.FrameDescription;
             irData_ = new ushort[frameDesc.LengthInPixels];
-            
-            Data = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R8, false);
+            Data = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R16, false);
             
             if (!sensor_.IsOpen)
                 sensor_.Open();
@@ -45,12 +46,16 @@ namespace VideoInput
             
             var frame = reader_.AcquireLatestFrame();
             if (frame == null) return;
-
-            frame.CopyFrameDataToArray(irData_);
-            var rawTextureData = Data.GetRawTextureData();
-            for (var i = 0; i < irData_.Length; i++)
-                rawTextureData[i] = (byte)(irData_[i] >> 8);
             
+            frame.CopyFrameDataToArray(irData_);
+
+            unsafe 
+            {
+                fixed(ushort* irDataPtr = irData_)
+                {
+                    Data.LoadRawTextureData((IntPtr) irDataPtr, sizeof(ushort) * irData_.Length);
+                }
+            }
             Data.Apply();
             frame.Dispose();
         }

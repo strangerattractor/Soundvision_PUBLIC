@@ -20,12 +20,12 @@
               </e>
             </e>
             <e p="InfraredCamera.cs" t="Include" />
-            <e p="KinectManager.cs" t="Include" />
+            <e p="KinectManagerBehaviour.cs" t="Include" />
             <e p="KinectSensor.cs" t="Include" />
           </e>
           <e p="Visualizer" t="Include">
-            <e p="PointCloud.cs" t="Include" />
-            <e p="WaveformVisualizer.cs" t="Include" />
+            <e p="PointCloudBehaviour.cs" t="Include" />
+            <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
         </e>
         <e p="ThridParty" t="Include">

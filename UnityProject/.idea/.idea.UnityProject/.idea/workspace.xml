@@ -6,13 +6,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/PointCloud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/PointCloud.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +25,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <marker date="1562492852745" expanded="true" signature="40:890" ph="{...}" />
+                <marker date="1562492852745" expanded="true" signature="103:888" ph="{...}" />
+                <marker date="1562492852745" expanded="true" signature="489:584" ph="{...}" />
+                <marker date="1562492852745" expanded="true" signature="607:882" ph="{...}" />
+                <marker date="1562492852745" expanded="true" signature="706:872" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2538">
+              <folding>
+                <marker date="1562417084888" expanded="true" signature="6:112" ph="..." />
+                <marker date="1562417084888" expanded="true" signature="138:5271" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="314:5269" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="550:674" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="699:747" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="1328:1773" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="1390:1442" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="1546:1641" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="2117:2534" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="2143:2524" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="2213:2331" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="3138:3902" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="3164:3539" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="3234:3352" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="3555:3892" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="3625:3743" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="4230:4486" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="4292:4398" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="4831:5263" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="4857:5253" ph="{...}" />
+                <marker date="1562417084888" expanded="true" signature="4927:5045" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
-              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+            <state relative-caret-position="649">
+              <caret line="124" column="82" selection-start-line="124" selection-start-column="72" selection-end-line="124" selection-end-column="82" />
               <folding>
                 <marker date="1562417085024" expanded="false" signature="6:79" ph="..." />
                 <marker date="1562417085024" expanded="true" signature="104:6218" ph="{...}" />
@@ -59,28 +108,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="50">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
-                <marker date="1562484942687" expanded="true" signature="6:57" ph="..." />
-                <marker date="1562484942687" expanded="true" signature="79:1665" ph="{...}" />
-                <marker date="1562484942687" expanded="true" signature="118:186" ph="{...}" />
-                <marker date="1562484942687" expanded="true" signature="241:1663" ph="{...}" />
-                <marker date="1562484942687" expanded="true" signature="479:1102" ph="{...}" />
-                <marker date="1562484942687" expanded="true" signature="586:683" ph="{...}" />
-                <marker date="1562484942687" expanded="true" signature="1140:1657" ph="{...}" />
+                <marker date="1562417084920" expanded="false" signature="6:44" ph="..." />
+                <marker date="1562417084920" expanded="true" signature="90:198" ph="{...}" />
+                <marker date="1562417084920" expanded="true" signature="146:196" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
+            <state relative-caret-position="525">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1562498649756" expanded="true" signature="6:71" ph="..." />
+                <marker date="1562498649756" expanded="true" signature="93:1788" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="132:200" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="255:1786" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="494:1165" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="601:698" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="1203:1780" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="1502:1715" ph="{...}" />
+                <marker date="1562498649756" expanded="true" signature="1567:1701" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,120 +144,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/33/4486f8ea/NativeArray`1.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="175">
               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/04/13252895/TextureFormat.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="184" selection-start-line="184" selection-end-line="184" />
+            <state relative-caret-position="283">
+              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-125">
+              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
               <folding>
-                <marker date="1562483620537" expanded="true" signature="6:109" ph="..." />
-                <marker date="1562483620537" expanded="true" signature="185:6146" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="533:2221" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2247:3777" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2292:2332" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2451:2491" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2579:2619" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2714:2946" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2754:2810" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="2858:2936" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3113:3300" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3172:3290" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3335:3771" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3375:3429" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3473:3761" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3545:3663" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="3832:4527" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="4007:4491" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="4608:5633" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="4718:5627" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="4884:4969" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="5247:5536" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="5553:5617" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="5708:5963" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="5737:5957" ph="{...}" />
-                <marker date="1562483620537" expanded="true" signature="6035:6144" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="6:66" ph="..." />
+                <marker date="1562496737428" expanded="true" signature="119:2237" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="263:364" ph="/* I'm not sure this makes sense for the Kinect APIs ... */" />
+                <marker date="1562496737428" expanded="true" signature="439:476" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="498:1068" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="579:1062" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="992:1052" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="1089:1887" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="1125:1881" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="1220:1871" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="1374:1671" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="1921:2235" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="1957:2036" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="2075:2229" ph="{...}" />
+                <marker date="1562496737428" expanded="true" signature="2117:2178" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="200">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <marker date="1562484916438" expanded="true" signature="20:473" ph="{...}" />
-                <marker date="1562484916438" expanded="true" signature="56:140" ph="{...}" />
-                <marker date="1562484916438" expanded="true" signature="191:471" ph="{...}" />
-                <marker date="1562484916438" expanded="true" signature="313:378" ph="{...}" />
-                <marker date="1562484916438" expanded="true" signature="408:465" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-              <folding>
-                <marker date="1562485029303" expanded="true" signature="6:41" ph="..." />
-                <marker date="1562485029303" expanded="true" signature="79:785" ph="{...}" />
-                <marker date="1562485029303" expanded="true" signature="138:783" ph="{...}" />
-                <marker date="1562485029303" expanded="true" signature="242:331" ph="{...}" />
-                <marker date="1562485029303" expanded="true" signature="384:552" ph="{...}" />
-                <marker date="1562485029303" expanded="true" signature="597:777" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <marker date="1562484961494" expanded="true" signature="40:432" ph="{...}" />
-                <marker date="1562484961494" expanded="true" signature="89:430" ph="{...}" />
-                <marker date="1562484961494" expanded="true" signature="193:338" ph="{...}" />
-                <marker date="1562484961494" expanded="true" signature="369:424" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding>
-                <marker date="1562447239743" expanded="true" signature="20:73" ph="{...}" />
-                <marker date="1562447239743" expanded="true" signature="50:71" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding>
-                <marker date="1562484530855" expanded="true" signature="20:317" ph="{...}" />
-                <marker date="1562484530855" expanded="true" signature="56:315" ph="{...}" />
-                <marker date="1562484530855" expanded="true" signature="112:193" ph="{...}" />
-                <marker date="1562484530855" expanded="true" signature="248:309" ph="{...}" />
+                <marker date="1562492665638" expanded="true" signature="6:36" ph="..." />
+                <marker date="1562492665638" expanded="true" signature="58:558" ph="{...}" />
+                <marker date="1562492665638" expanded="true" signature="106:556" ph="{...}" />
+                <marker date="1562492665638" expanded="true" signature="315:498" ph="{...}" />
+                <marker date="1562492665638" expanded="true" signature="521:541" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -213,27 +216,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5F8D912-CD82-4E63-93D1-35A9356AD96C/72/23a38ddc/MemoryMappedFile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/70/816727c9/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/04/13252895/TextureFormat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/2a/9fa3f41e/IOException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Editor/KinectCopyPluginDataHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/33/4486f8ea/NativeArray`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C24F0C1-857D-4078-B6D4-53F88E061A29/44/b50a5a54/UnmanagedMemoryAccessor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5F8D912-CD82-4E63-93D1-35A9356AD96C/72/23a38ddc/MemoryMappedFile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/2a/9fa3f41e/IOException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Editor/KinectCopyPluginDataHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -256,14 +262,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnitTest/ComponentFactoryTestCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/UnitTest/ComponentFactoryTestCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/ComponentFactoryTestCase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" />
         <option value="$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/KinectManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" />
       </list>
     </option>
   </component>
@@ -281,58 +292,6 @@
       <pane id="UnityExplorer">
         <subPane>
           <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="PdConnection" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="VideoInput" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="VideoInput" type="1045f7f1:UnityExplorerNode" />
-              <item name="Editor" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="VideoInput" type="1045f7f1:UnityExplorerNode" />
-              <item name="Editor" type="1045f7f1:UnityExplorerNode" />
-              <item name="UnitTest" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Visualizer" type="1045f7f1:UnityExplorerNode" />
-            </path>
             <path>
               <item name="" type="e068e287:UnityExplorerRootNode" />
               <item name="Packages" type="4e2708dd:PackagesRoot" />
@@ -358,7 +317,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -380,10 +339,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="25932">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="25932" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -401,12 +360,20 @@
       <updated>1562417892841</updated>
       <workItem from="1562417897686" duration="5014000" />
       <workItem from="1562427566179" duration="10564000" />
-      <workItem from="1562481324968" duration="3704000" />
+      <workItem from="1562481324968" duration="11109000" />
     </task>
+    <task id="LOCAL-00001" summary="add Kinect Manager">
+      <created>1562485186899</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562485186899</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19282000" />
+    <option name="totallyTimeSpent" value="26687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,14 +388,14 @@
     <frame x="-7" y="0" width="2164" height="1567" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948823" visible="true" weight="0.21910647" />
-      <window_info id="Structure" order="1" sideWeight="0.50051177" side_tool="true" visible="true" weight="0.21910647" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8331627" visible="true" weight="0.21910647" />
+      <window_info id="Structure" order="1" sideWeight="0.16683726" side_tool="true" visible="true" weight="0.21910647" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -440,7 +407,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" visible="true" weight="0.32898352" />
+      <window_info active="true" anchor="bottom" id="Build" order="15" visible="true" weight="0.32898352" />
       <window_info anchor="bottom" id="Performance Profiler" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -465,6 +432,10 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add Kinect Manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Kinect Manager" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -595,63 +566,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1562417084888" expanded="false" signature="6:112" ph="..." />
-            <marker date="1562417084888" expanded="true" signature="138:5271" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="314:5269" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="550:674" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="699:747" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="1328:1773" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="1390:1442" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="1546:1641" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="2117:2534" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="2143:2524" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="2213:2331" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="3138:3902" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="3164:3539" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="3234:3352" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="3555:3892" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="3625:3743" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="4230:4486" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="4292:4398" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="4831:5263" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="4857:5253" ph="{...}" />
-            <marker date="1562417084888" expanded="true" signature="4927:5045" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5F8D912-CD82-4E63-93D1-35A9356AD96C/72/23a38ddc/MemoryMappedFile.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="40" selection-start-line="40" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <marker date="1562417084922" expanded="true" signature="6:66" ph="..." />
-            <marker date="1562417084922" expanded="true" signature="119:2241" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="263:364" ph="/* I'm not sure this makes sense for the Kinect APIs ... */" />
-            <marker date="1562417084922" expanded="true" signature="439:476" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="498:1072" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="579:1066" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="996:1056" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="1093:1891" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="1129:1885" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="1224:1875" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="1378:1675" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="1925:2239" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="1961:2040" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="2079:2233" ph="{...}" />
-            <marker date="1562417084922" expanded="true" signature="2121:2182" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,33 +584,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/UnitTest/ComponentFactoryTestCase.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnitTest/ComponentFactoryTestCase.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/UnitTest/ComponentFactoryTestCase.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <marker date="1562447443600" expanded="true" signature="40:881" ph="{...}" />
-            <marker date="1562447443600" expanded="true" signature="94:879" ph="{...}" />
-            <marker date="1562447443600" expanded="true" signature="480:575" ph="{...}" />
-            <marker date="1562447443600" expanded="true" signature="598:873" ph="{...}" />
-            <marker date="1562447443600" expanded="true" signature="697:863" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <marker date="1562451181954" expanded="true" signature="60:632" ph="{...}" />
-            <marker date="1562451181954" expanded="true" signature="105:630" ph="{...}" />
-            <marker date="1562451181954" expanded="true" signature="167:359" ph="{...}" />
-            <marker date="1562451181954" expanded="true" signature="426:624" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -761,50 +652,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/33/4486f8ea/NativeArray`1.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/KinectManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="100">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/DebugPanel.mat">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+        <state relative-caret-position="400">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <marker date="1562417085024" expanded="false" signature="6:79" ph="..." />
-            <marker date="1562417085024" expanded="true" signature="104:6218" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="111:156" ph="/* Windows.Kinect.InfraredFrame ... */" />
-            <marker date="1562417085024" expanded="true" signature="251:6215" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="487:608" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="634:682" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="1291:1765" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="1353:1405" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="1541:1633" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="2159:2858" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="2185:2848" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="2255:2374" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="2604:2673" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="3231:3939" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="3257:3929" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="3327:3446" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="3679:3748" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="4270:4628" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="4296:4618" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="4366:4485" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="5050:5645" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="5112:5219" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="5948:6150" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="6010:6062" ph="{...}" />
-            <marker date="1562417085024" expanded="true" signature="6189:6209" ph="{...}" />
+            <marker date="1562492780913" expanded="true" signature="6:32" ph="..." />
+            <marker date="1562492780913" expanded="true" signature="54:464" ph="{...}" />
+            <marker date="1562492780913" expanded="true" signature="112:462" ph="{...}" />
+            <marker date="1562492780913" expanded="true" signature="212:370" ph="{...}" />
+            <marker date="1562492780913" expanded="true" signature="401:456" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -844,34 +711,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloud.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="625">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
-            <marker date="1562447239743" expanded="true" signature="20:73" ph="{...}" />
-            <marker date="1562447239743" expanded="true" signature="50:71" ph="{...}" />
+            <marker date="1562485111891" expanded="true" signature="6:41" ph="..." />
+            <marker date="1562485111891" expanded="true" signature="79:784" ph="{...}" />
+            <marker date="1562485111891" expanded="true" signature="137:782" ph="{...}" />
+            <marker date="1562485111891" expanded="true" signature="241:330" ph="{...}" />
+            <marker date="1562485111891" expanded="true" signature="383:551" ph="{...}" />
+            <marker date="1562485111891" expanded="true" signature="596:776" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/KinectManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="550">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <marker date="1562484916438" expanded="true" signature="20:473" ph="{...}" />
-            <marker date="1562484916438" expanded="true" signature="56:140" ph="{...}" />
-            <marker date="1562484916438" expanded="true" signature="191:471" ph="{...}" />
-            <marker date="1562484916438" expanded="true" signature="313:378" ph="{...}" />
-            <marker date="1562484916438" expanded="true" signature="408:465" ph="{...}" />
+            <marker date="1562485156302" expanded="true" signature="20:472" ph="{...}" />
+            <marker date="1562485156302" expanded="true" signature="56:139" ph="{...}" />
+            <marker date="1562485156302" expanded="true" signature="190:470" ph="{...}" />
+            <marker date="1562485156302" expanded="true" signature="312:377" ph="{...}" />
+            <marker date="1562485156302" expanded="true" signature="407:464" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1562485083030" expanded="true" signature="60:631" ph="{...}" />
+            <marker date="1562485083030" expanded="true" signature="104:629" ph="{...}" />
+            <marker date="1562485083030" expanded="true" signature="166:358" ph="{...}" />
+            <marker date="1562485083030" expanded="true" signature="425:623" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -889,46 +766,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2538">
+          <folding>
+            <marker date="1562417084888" expanded="true" signature="6:112" ph="..." />
+            <marker date="1562417084888" expanded="true" signature="138:5271" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="314:5269" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="550:674" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="699:747" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="1328:1773" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="1390:1442" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="1546:1641" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="2117:2534" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="2143:2524" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="2213:2331" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="3138:3902" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="3164:3539" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="3234:3352" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="3555:3892" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="3625:3743" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="4230:4486" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="4292:4398" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="4831:5263" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="4857:5253" ph="{...}" />
+            <marker date="1562417084888" expanded="true" signature="4927:5045" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1562492852745" expanded="true" signature="40:890" ph="{...}" />
+            <marker date="1562492852745" expanded="true" signature="103:888" ph="{...}" />
+            <marker date="1562492852745" expanded="true" signature="489:584" ph="{...}" />
+            <marker date="1562492852745" expanded="true" signature="607:882" ph="{...}" />
+            <marker date="1562492852745" expanded="true" signature="706:872" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1562492665638" expanded="true" signature="6:36" ph="..." />
+            <marker date="1562492665638" expanded="true" signature="58:558" ph="{...}" />
+            <marker date="1562492665638" expanded="true" signature="106:556" ph="{...}" />
+            <marker date="1562492665638" expanded="true" signature="315:498" ph="{...}" />
+            <marker date="1562492665638" expanded="true" signature="521:541" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/70/816727c9/IntPtr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/04/13252895/TextureFormat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <marker date="1562417084920" expanded="false" signature="6:44" ph="..." />
+            <marker date="1562417084920" expanded="true" signature="90:198" ph="{...}" />
+            <marker date="1562417084920" expanded="true" signature="146:196" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/33/4486f8ea/NativeArray`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="124" column="82" selection-start-line="124" selection-start-column="72" selection-end-line="124" selection-end-column="82" />
+          <folding>
+            <marker date="1562417085024" expanded="false" signature="6:79" ph="..." />
+            <marker date="1562417085024" expanded="true" signature="104:6218" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="111:156" ph="/* Windows.Kinect.InfraredFrame ... */" />
+            <marker date="1562417085024" expanded="true" signature="251:6215" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="487:608" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="634:682" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="1291:1765" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="1353:1405" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="1541:1633" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="2159:2858" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="2185:2848" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="2255:2374" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="2604:2673" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="3231:3939" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="3257:3929" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="3327:3446" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="3679:3748" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="4270:4628" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="4296:4618" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="4366:4485" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="5050:5645" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="5112:5219" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="5948:6150" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="6010:6062" ph="{...}" />
+            <marker date="1562417085024" expanded="true" signature="6189:6209" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
-            <marker date="1562484942687" expanded="true" signature="6:57" ph="..." />
-            <marker date="1562484942687" expanded="true" signature="79:1665" ph="{...}" />
-            <marker date="1562484942687" expanded="true" signature="118:186" ph="{...}" />
-            <marker date="1562484942687" expanded="true" signature="241:1663" ph="{...}" />
-            <marker date="1562484942687" expanded="true" signature="479:1102" ph="{...}" />
-            <marker date="1562484942687" expanded="true" signature="586:683" ph="{...}" />
-            <marker date="1562484942687" expanded="true" signature="1140:1657" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="6:66" ph="..." />
+            <marker date="1562496737428" expanded="true" signature="119:2237" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="263:364" ph="/* I'm not sure this makes sense for the Kinect APIs ... */" />
+            <marker date="1562496737428" expanded="true" signature="439:476" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="498:1068" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="579:1062" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="992:1052" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="1089:1887" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="1125:1881" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="1220:1871" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="1374:1671" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="1921:2235" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="1957:2036" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="2075:2229" ph="{...}" />
+            <marker date="1562496737428" expanded="true" signature="2117:2178" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="525">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <marker date="1562484961494" expanded="true" signature="40:432" ph="{...}" />
-            <marker date="1562484961494" expanded="true" signature="89:430" ph="{...}" />
-            <marker date="1562484961494" expanded="true" signature="193:338" ph="{...}" />
-            <marker date="1562484961494" expanded="true" signature="369:424" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-          <folding>
-            <marker date="1562485029303" expanded="true" signature="6:41" ph="..." />
-            <marker date="1562485029303" expanded="true" signature="79:785" ph="{...}" />
-            <marker date="1562485029303" expanded="true" signature="138:783" ph="{...}" />
-            <marker date="1562485029303" expanded="true" signature="242:331" ph="{...}" />
-            <marker date="1562485029303" expanded="true" signature="384:552" ph="{...}" />
-            <marker date="1562485029303" expanded="true" signature="597:777" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="6:71" ph="..." />
+            <marker date="1562498649756" expanded="true" signature="93:1788" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="132:200" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="255:1786" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="494:1165" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="601:698" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="1203:1780" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="1502:1715" ph="{...}" />
+            <marker date="1562498649756" expanded="true" signature="1567:1701" ph="{...}" />
           </folding>
         </state>
       </provider>
