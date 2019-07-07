@@ -1,12 +1,6 @@
 namespace VideoInput
 {
-    public interface IComponentFactory
-    {
-        IKinectSensor CreateKinectSensor();
-        IInfraredCamera CreateInfraredCamera();
-    }
-    
-    public class ComponentFactory : IComponentFactory
+    public class ComponentFactory
     {
         public IKinectSensor CreateKinectSensor()
         {

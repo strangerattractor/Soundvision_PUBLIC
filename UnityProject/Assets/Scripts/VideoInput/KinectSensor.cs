@@ -3,6 +3,7 @@ namespace VideoInput
    public interface IKinectSensor
     {
         IInfraredCamera InfraredCamera { get; }
+        void Update();
     }
     
     public class KinectSensor : IKinectSensor
@@ -14,5 +15,9 @@ namespace VideoInput
             InfraredCamera = infraredCamera;
         }
 
+        public void Update()
+        {
+            InfraredCamera.Update();
+        }
     }
 }

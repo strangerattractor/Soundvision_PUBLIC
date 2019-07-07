@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Kinect = Windows.Kinect;
 
+#pragma warning disable 618
+
+
 public class BodySourceView : MonoBehaviour 
 {
     public Material BoneMaterial;
@@ -177,3 +180,5 @@ public class BodySourceView : MonoBehaviour
         return new Vector3(joint.Position.X * 10, joint.Position.Y * 10, joint.Position.Z * 10);
     }
 }
+
+#pragma warning restore 618

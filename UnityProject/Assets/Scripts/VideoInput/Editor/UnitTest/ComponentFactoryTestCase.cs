@@ -2,7 +2,7 @@
 
 namespace VideoInput.Editor.UnitTest
 {
-    public class UnitTest_ComponentFactory
+    public class UnitTestComponentFactory
     {
         [Test]
         public void CreateKinectSensor()

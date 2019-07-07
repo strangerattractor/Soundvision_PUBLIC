@@ -60,8 +60,9 @@
     <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
     <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />
     <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
+    <Compile Include="Assets\Scripts\VideoInput\KinectManager.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
-    <Compile Include="Assets\Scripts\VideoInput\PointCloud.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\PointCloud.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizer.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />

@@ -4,7 +4,7 @@ using NSubstitute;
 namespace VideoInput.Editor.UnitTest
 {
     [TestFixture]
-    public class UnitTest_KinectSensor
+    public class UnitTestKinectSensor
     {
         private IInfraredCamera infraredCameraMock_;
 
@@ -19,6 +19,15 @@ namespace VideoInput.Editor.UnitTest
         {
             var kinectSensor = new KinectSensor(infraredCameraMock_);
             Assert.AreSame(infraredCameraMock_, kinectSensor.InfraredCamera);
+        }
+
+        [Test]
+        public void Update()
+        {
+            var kinectSensor = new KinectSensor(infraredCameraMock_);
+            kinectSensor.Update();
+
+            infraredCameraMock_.Received(1).Update();
         }
     }
 }
