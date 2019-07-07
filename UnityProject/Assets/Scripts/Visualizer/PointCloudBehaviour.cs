@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 using VideoInput;
 
 namespace Visualizer
@@ -6,28 +7,37 @@ namespace Visualizer
     public class PointCloudBehaviour : MonoBehaviour
     {
         #pragma warning disable 649
+
+        [Header("Modifier Parameters")] 
+        [SerializeField] private float zScale;
+        
+        [Header("Connections")]
         [SerializeField] private KinectManagerBehaviour kinectManagerBehaviour;
         [SerializeField] private MeshFilter meshFilter;
         #pragma warning restore 649
+        
+        private Material material_;
+        private static readonly int Scale = Shader.PropertyToID("_Scale");
 
- 
         private void Start()
         {
             var texture = kinectManagerBehaviour.KinectSensor.InfraredCamera.Data;
             var numPixels = texture.height * texture.width;
 
-            meshFilter.mesh = new Mesh
-            {
-                vertices = MakeVertices(texture),
-                uv = MakeTexCoord(texture)
+            meshFilter.mesh = new Mesh {
+                vertices = MakeVertices(texture), 
+                uv = MakeTexCoord(texture),
+                indexFormat = IndexFormat.UInt32
             };
             meshFilter.mesh.SetIndices(MakeIndecies(numPixels), MeshTopology.Points, 0, false);
-            gameObject.GetComponent<Renderer>().material.mainTexture = kinectManagerBehaviour.KinectSensor.InfraredCamera.Data;
+
+            material_ = GetComponent<Renderer>().material;
+            material_.mainTexture = kinectManagerBehaviour.KinectSensor.InfraredCamera.Data;
         }
 
         private void Update()
         {
-            
+            material_.SetFloat(Scale, zScale);
         }
 
         private Vector3[] MakeVertices(Texture2D texture)
@@ -40,9 +50,7 @@ namespace Visualizer
                 for (var j = 0; j < texture.width; ++j)
                 {
                     var wPhase = (float) j / texture.width;
-                    vertices[offset + j].x = wPhase * 10f - 5f;
-                    vertices[offset + j].y = hPhase * 10f - 5f;
-                    vertices[offset + j].z = 0f;
+                    vertices[offset + j] = new Vector3(wPhase * 10f - 5f, (hPhase * 10f - 5f) * -1f, 0f);
                 }
             }
             return vertices;

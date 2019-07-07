@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace VideoInput
 {
@@ -11,7 +10,6 @@ namespace VideoInput
         {
             var componentFactory = new ComponentFactory();
             KinectSensor = componentFactory.CreateKinectSensor();
-            
         }
 
         private void Update()

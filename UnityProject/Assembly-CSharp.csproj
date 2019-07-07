@@ -63,7 +63,6 @@
     <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
     <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Visualizer\MeshController.cs" />
     <Compile Include="Assets\Scripts\Visualizer\PointCloudBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />

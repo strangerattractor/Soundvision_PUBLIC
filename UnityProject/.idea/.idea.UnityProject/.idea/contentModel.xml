@@ -25,7 +25,6 @@
           </e>
           <e p="Visualizer" t="Include">
             <e p="IRPanelBehaviour.cs" t="Include" />
-            <e p="MeshController.cs" t="Include" />
             <e p="PointCloudBehaviour.cs" t="Include" />
             <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
