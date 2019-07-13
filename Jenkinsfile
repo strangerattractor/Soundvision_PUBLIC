@@ -1,6 +1,7 @@
 pipeline {
    agent any
    environment {
+     APP_NAME = "SoundVision"
      RUBY = "C:\\Ruby25-x64\\bin\\u3d"
      MXBUILD = "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe\""
    }
@@ -9,10 +10,10 @@ pipeline {
          steps{
 
             echo 'Generate Build Number File'
-            writeFile file: 'doublespace/Assets/Resources/buildNumber.txt', text: "${BUILD_NUMBER}"
+            writeFile file: 'UnityProject/Assets/Resources/buildNumber.txt', text: "${BUILD_NUMBER}"
 
             echo 'Building Unity Project'
-            bat "${RUBY} run -u 2018.4.3f1 -r -- -batchmode -nographics -quit -projectPath '${workspace}\\doublespace' -executeMethod AppBuilder.Build"
+            bat "${RUBY} run -u 2018.4.3f1 -r -- -batchmode -nographics -quit -projectPath '${workspace}\\UnityProject' -executeMethod AppBuilder.Build"
             echo 'Stash unity build'
             stash includes: 'bin/**/*', name: 'unity build'
          }
@@ -28,9 +29,9 @@ pipeline {
             echo 'Build Installer'
             unstash 'unity build'
 
-            bat "${MXBUILD} .\\setup\\setup.sln /property:Configuration=Release" 
-            
-            stash includes: 'doublespace.msi', name: 'installer build'
+            bat "${MXBUILD} .\\setup\\setup.sln /property:Configuration=Release"
+
+            stash includes: '${SoundVision}.msi', name: 'installer build'
          }
       }
       stage('Publish')
@@ -39,7 +40,7 @@ pipeline {
             echo 'publish Build'
             unstash 'installer build'
 
-            cifsPublisher(publishers: [[configName: 'Interstellar Share', transfers: [[cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'Build${BUILD_NUMBER}', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'doublespace.msi']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]])
+            cifsPublisher(publishers: [[configName: 'Interstellar Share', transfers: [[cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'Build${BUILD_NUMBER}', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '${SoundVision}.msi']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]])
          }
       }
    }

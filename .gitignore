@@ -2,3 +2,6 @@
 UnityProject/Temp
 UnityProject/obj
 UnityProject/.idea
+bin
+setup/setup/obj
+UnityProject/.idea
