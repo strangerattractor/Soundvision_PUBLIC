@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*"
+           Name="SoundVision"
+           Language="1033"
+           Version="1.0.0.0"
+           Manufacturer="Chikashi Miyama"
+           UpgradeCode="253FC699-68BD-4C7D-AEF3-FA1BE87DE05E">
+
+    <Package InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine"
+             Manufacturer="Chikashi Miyama"
+             Description="Cylvester Project" />
+
+    <MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
+
+    <Feature Id="Standard" Title="Standard Installation" Level="1" Description="Install normally">
+      <ComponentGroupRef Id="UnityComponentGroup" />
+      <ComponentRef Id="AppShortcut" />
+    </Feature>
+    <UIRef Id="WixUI_Minimal" />
+    <WixVariable Id="WixUILicenseRtf"
+                 Value="copyright.rtf"/>
+  </Product>
+
+  <Fragment>
+    <Feature Id="DoubleSpace" Title="Standard" Level="1">
+      <ComponentGroupRef Id="UnityComponentGroup"/>
+    </Feature>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="Cylvester" Name="Cylvester" />
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ShortcutDir" Name="SoundVision" />
+      </Directory>
+    </Directory>
+
+    <DirectoryRef Id="ShortcutDir">
+      <Component Id="AppShortcut"
+                 Guid="F3E490B4-FF4B-47A3-B759-A36B931772AA">
+
+        <Shortcut Id="StartMenuShortcut"
+                  Name="SoundVision"
+                  Target="[Cylvester]SoundVision.exe"/>
+        <RemoveFolder Id="RemoveShortcutDir" On="uninstall"/>
+        <RegistryValue Root="HKCU"
+                       Key="Software\Cylvester\SoundVision"
+                       Name="Installed"
+                       Type="integer"
+                       Value="1"
+                       KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>
