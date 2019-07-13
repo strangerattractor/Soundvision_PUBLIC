@@ -40,7 +40,7 @@ pipeline {
             echo 'publish Build'
             unstash 'installer build'
 
-            cifsPublisher(publishers: [[configName: 'Interstellar Share', transfers: [[cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'Build${BUILD_NUMBER}', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '${APP_NAME}.msi']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]])
+            cifsPublisher(publishers: [[configName: 'Cylvester Share', transfers: [[cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'Build${BUILD_NUMBER}', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'SoundVision.msi']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]])
          }
       }
    }
