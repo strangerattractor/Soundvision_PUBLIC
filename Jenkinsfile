@@ -15,7 +15,7 @@ pipeline {
             echo 'Building Pd Project'
             cmakeBuild buildDir: 'build', cleanBuild: true, generator: 'Visual Studio 15 2017 Win64', installation: 'Standard', sourceDir: 'pdshmem', steps: [[args: '--config Release', withCmake: true]]
             fileOperations([folderCreateOperation('pd'), fileCopyOperation(excludes: '', flattenFiles: true, includes: 'pdshmem/bin/**/*', targetLocation: 'pd')])
-            
+
             echo 'Building Unity Project'
             bat "${RUBY} run -u 2018.4.3f1 -r -- -batchmode -nographics -quit -projectPath '${workspace}\\UnityProject' -executeMethod AppBuilder.Build"
 
@@ -47,7 +47,7 @@ pipeline {
             unstash 'installer build'
             unstash 'pd build'
 
-            cifsPublisher(publishers: [[configName: 'Cylvester Share', transfers: [[cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'Build${BUILD_NUMBER}', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'SoundVision.msi']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]])
+            cifsPublisher(publishers: [[configName: 'Cylvester Share', transfers: [[cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'Build${BUILD_NUMBER}', remoteDirectorySDF: false, removePrefix: '', sourceFiles: ['SoundVision.msi', 'pd/**/*']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]])
          }
       }
    }
