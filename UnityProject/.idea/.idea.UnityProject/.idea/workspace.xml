@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/MappingControl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/MappingControl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/Mapping.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/Mapping.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/MyPiece.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/MyPiece.playable" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/RmsAnalyzer.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <marker date="1566047198938" expanded="true" signature="6:37" ph="..." />
                 <marker date="1566047198938" expanded="true" signature="80:753" ph="{...}" />
@@ -61,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/BallMapping.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="750">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <marker date="1566053310815" expanded="true" signature="61:855" ph="{...}" />
                 <marker date="1566053310815" expanded="true" signature="108:853" ph="{...}" />
@@ -256,8 +253,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1108" />
-    <option name="y" value="117" />
+    <option name="x" value="2036" />
+    <option name="y" value="878" />
     <option name="width" value="1757" />
     <option name="height" value="1617" />
   </component>
@@ -372,7 +369,7 @@
       <workItem from="1562417897686" duration="5014000" />
       <workItem from="1562427566179" duration="10564000" />
       <workItem from="1562481324968" duration="27157000" />
-      <workItem from="1566046428045" duration="4132000" />
+      <workItem from="1566046428045" duration="4731000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>
@@ -392,7 +389,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46867000" />
+    <option name="totallyTimeSpent" value="47466000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -404,16 +401,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="817" y="426" width="1757" height="1617" extended-state="0" />
+    <frame x="2036" y="878" width="1757" height="1617" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83093923" visible="true" weight="0.27460223" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83093923" visible="true" weight="0.27460223" />
       <window_info id="Structure" order="1" sideWeight="0.16906077" side_tool="true" visible="true" weight="0.27460223" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39907038" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39907038" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1001,7 +998,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/RmsAnalyzer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
             <marker date="1566047198938" expanded="true" signature="6:37" ph="..." />
             <marker date="1566047198938" expanded="true" signature="80:753" ph="{...}" />
@@ -1023,7 +1020,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/BallMapping.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <marker date="1566053310815" expanded="true" signature="61:855" ph="{...}" />
             <marker date="1566053310815" expanded="true" signature="108:853" ph="{...}" />
