@@ -7,9 +7,28 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="AppBuilder.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="buildNumber.txt" t="Include" />
+        </e>
+        <e p="Scenes" t="Include">
+          <e p="Examples" t="Include">
+            <e p="Example1" t="Include">
+              <e p="script" t="Include">
+                <e p="BallMapping.cs" t="Include" />
+                <e p="RMSAnalyzer.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="PdConnection" t="Include">
             <e p="PdArray.cs" t="Include" />
+          </e>
+          <e p="Versioning" t="Include">
+            <e p="VersionToggleBehaviour.cs" t="Include" />
           </e>
           <e p="VideoInput" t="Include">
             <e p="ComponentFactory.cs" t="Include" />
