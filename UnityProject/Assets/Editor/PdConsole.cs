@@ -1,5 +1,4 @@
 ﻿using UnityEditor;
-using UnityEngine;
 
 namespace cylvester
 {
@@ -17,19 +16,34 @@ namespace cylvester
         }
 
         private void OnEnable()
-        {
-            object[] foundObjects  = FindObjectsOfType(typeof(PdBackend));
-            
-            
+        { 
+            var foundObjects = FindObjectsOfType(typeof(PdBackend));
+            if (foundObjects.Length != 1)
+                return;
+
+            pdBackend_ = (IPdBackend) foundObjects[0];
             dspToggle_ = new EditorToggle();
-           togglePresenter_ = new TogglePresenter(dspToggle_, pdBackend_);
+            
+            togglePresenter_ = new TogglePresenter(dspToggle_, pdBackend_);
         }
 
-        void OnGUI ()
+        private void OnGUI ()
         {
-            foundObjects.
+            if(!ValidatePdBackend(pdBackend_))
+                return;
+            
             dspToggle_.State = EditorGUILayout.Toggle("Pure Data Process", dspToggle_.State);
 
+        }
+
+        private bool ValidatePdBackend(IPdBackend pdBackend)
+        {
+            var exist = pdBackend_ != null;
+            if (!exist)
+            {
+                EditorGUILayout.LabelField("No Pd backend found in the scene");
+            }
+            return exist;
         }
     }
 

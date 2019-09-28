@@ -20,8 +20,7 @@ namespace cylvester
 
             onToggleChanged_ = () =>
             {
-                var state = editorToggle_.State;
-                // apply state to pd backend;
+                pdBackend.State = editorToggle_.State;
             };
 
             editorToggle_.ToggleStateChanged += onToggleChanged_;
