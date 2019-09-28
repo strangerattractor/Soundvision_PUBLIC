@@ -2,12 +2,11 @@
 using UnityEditor;
 using Random = UnityEngine.Random;
 
-
 namespace cylvester
 {
 
-    [CustomEditor(typeof(PdBackend))]
-    class PdBackendEditor : Editor
+    [CustomEditor(typeof(PdBind))]
+    class PdBindEditor : UnityEditor.Editor
     {
 
         private int selectedSpectrum_;

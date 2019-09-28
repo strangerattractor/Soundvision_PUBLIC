@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainPatch: test.pd
   inchannels: 2
+  pdProcess: 0
 --- !u!4 &987772534
 Transform:
   m_ObjectHideFlags: 0

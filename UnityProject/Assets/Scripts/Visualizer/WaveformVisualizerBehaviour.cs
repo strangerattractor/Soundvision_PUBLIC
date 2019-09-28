@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Visualizer
+namespace cylvester
 {
     public class WaveformVisualizerBehaviour : MonoBehaviour
     {
@@ -11,11 +11,11 @@ namespace Visualizer
         [SerializeField, Range(0f, 10f)] private float scale = 1f;
         #pragma warning restore 649
 
-        private PdConnection.PdArray pdArray_;
+        private PdArray pdArray_;
         
         void Start()
         {
-            pdArray_ = new PdConnection.PdArray(pdArrayName, pdArraySize);
+            pdArray_ = new PdArray(pdArrayName, pdArraySize);
         }
 
         void Update()

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO.MemoryMappedFiles;
 
-namespace PdConnection
+namespace cylvester
 {
     public class PdArray : IDisposable
     {
