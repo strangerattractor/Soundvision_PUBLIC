@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\AppBuilder.cs" />
     <Compile Include="Assets\Editor\EditorToggle.cs" />
+    <Compile Include="Assets\Editor\LevelMeter.cs" />
     <Compile Include="Assets\Editor\PdBindEditor.cs" />
     <Compile Include="Assets\Editor\PdConsole.cs" />
     <Compile Include="Assets\Editor\TogglePresenter.cs" />
