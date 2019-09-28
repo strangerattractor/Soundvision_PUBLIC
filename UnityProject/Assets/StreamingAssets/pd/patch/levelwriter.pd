@@ -1,0 +1,10 @@
+#N canvas 1177 364 450 300 10;
+#X obj 57 200 env~ 2048 1024;
+#X obj 56 93 inlet~;
+#X obj 162 153 loadbang;
+#X obj 167 201 f \$1;
+#X obj 57 239 tabwrite levelmeters;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 1;
