@@ -9,6 +9,12 @@
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
           <e p="AppBuilder.cs" t="Include" />
+          <e p="PdBackendEditor.cs" t="Include" />
+          <e p="PreviewExampleInspector.cs" t="Include" />
+        </e>
+        <e p="PdBackend" t="Include">
+          <e p="PdBackend.cs" t="Include" />
+          <e p="PreviewExample.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
           <e p="buildNumber.txt" t="Include" />

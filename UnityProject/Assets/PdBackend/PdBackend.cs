@@ -8,7 +8,7 @@ namespace cylvester
         [SerializeField] string mainPatch;
         [SerializeField] int inchannels = 2;
 
-        Process pdProcess_;
+        private Process pdProcess_;
 
         void Start()
         {
@@ -20,6 +20,8 @@ namespace cylvester
             var path = Application.streamingAssetsPath + "/pd/patch/" + mainPatch;
             pdProcess_.StartInfo.Arguments = "-nogui -rt -inchannels " + inchannels + " " + path;
             pdProcess_.Start();
+
+
         }
 
         private void OnDestroy()
