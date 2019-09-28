@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -19,10 +20,7 @@ namespace cylvester
         {
         }
 
-        public static PdProcess Instance
-        {
-            get { return instance_ ?? (instance_ = new PdProcess()); }
-        }
+        public static PdProcess Instance => instance_ ?? (instance_ = new PdProcess());
 
         public void Start(string mainPatch, int numInputChannels)
         {
@@ -31,12 +29,16 @@ namespace cylvester
     
             pdProcess_ = new Process();
             pdProcess_.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            pdProcess_.StartInfo.UseShellExecute = true;
+            pdProcess_.StartInfo.UseShellExecute = false;
             pdProcess_.StartInfo.FileName = Application.streamingAssetsPath + "/pd/win/pd.com";
 
             var path = Application.streamingAssetsPath + "/pd/patch/" + mainPatch;
             pdProcess_.StartInfo.Arguments = "-nogui -rt -inchannels " + numInputChannels + " " + path;
-            pdProcess_.Start();
+
+            if (!pdProcess_.Start())
+            {
+                throw new Exception("Pd process failed to start");
+            }
             Debug.Log("Pd Process started");
 
         }
@@ -47,5 +49,6 @@ namespace cylvester
             pdProcess_ = null;
             Debug.Log("Pd Process stopped");
         }
+
     }
 }

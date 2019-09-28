@@ -5,14 +5,20 @@ namespace cylvester
 {
     public class LevelMeter
     {
-        private string label_;
-        private float dB_;
-        private Texture2D meterImageTexture_;
+        private const int TextureWidth = 1;
+        private const int TextureHeight = 100;
+
+        private readonly Texture2D meterImageTexture_;
+        private readonly int index_;
+        private readonly string label_;
+        private readonly IPdArray pdArray_;
         
-        public LevelMeter(int index)
+        public LevelMeter(int index, IPdArray pdArray)
         {
-            label_ = (index + 1).ToString();
-            meterImageTexture_ = new Texture2D(1, 32);
+            index_ = index;
+            label_ = (index_ + 1).ToString();
+            pdArray_ = pdArray;
+            meterImageTexture_ = new Texture2D(TextureWidth, TextureHeight);
         }
         
         public void Render()
@@ -33,9 +39,10 @@ namespace cylvester
         
         private void UpdateTexture()
         {
-            for (var i = 0; i < 32; ++i)
+            var level = pdArray_.Data[index_];
+            for (var i = 0; i < 100; ++i)
             {
-                meterImageTexture_.SetPixel(0, i, i < 10 ? Color.green : Color.black);
+                meterImageTexture_.SetPixel(0, i, i < level ? Color.green : Color.black);
             }
             meterImageTexture_.Apply();
         }

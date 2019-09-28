@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Threading;
 using UnityEngine;
 
 namespace cylvester
 {
     public interface IPdBackend
     {
-        bool State { set; }
+        bool State { set; get; }
+        event Action StateChanged;
     }
     
     [ExecuteInEditMode]
@@ -19,6 +21,7 @@ namespace cylvester
         private void OnEnable()
         {
             PdProcess.Instance.Start(mainPatch, inchannels);
+            Thread.Sleep(500);
         }
 
         private void OnDisable()
@@ -28,7 +31,15 @@ namespace cylvester
 
         public bool State
         {
-            set => enabled = value;
+            set
+            {
+                enabled = value;
+                if(StateChanged != null)
+                    StateChanged.Invoke();
+            }
+            get => enabled;
         }
+
+        public event Action StateChanged;
     }
 }

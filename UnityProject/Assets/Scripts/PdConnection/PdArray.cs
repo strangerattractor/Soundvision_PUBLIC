@@ -3,7 +3,13 @@ using System.IO.MemoryMappedFiles;
 
 namespace cylvester
 {
-    public class PdArray : IDisposable
+    public interface IPdArray
+    {
+        float[] Data { get; }
+        void Update();
+    }
+
+    public class PdArray : IDisposable, IPdArray
     {
         public float[] Data { get; }
 
