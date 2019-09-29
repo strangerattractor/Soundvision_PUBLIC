@@ -4,24 +4,24 @@ namespace cylvester
 {
     public interface IPdSpectrumBind
     {
-        IPdArray PdArray { get; }
+        IPdArray GetPdArray(int index);
+        int Channel { get; set; }
+        ref Rect Selection { get; }
         int Energy { get; set; }
     }
     
-    [ExecuteInEditMode]
     public class PdSpectrumBind : MonoBehaviour, IPdSpectrumBind
     {
-        public int channel;
-        public Rect rectangularSelection;
-        private PdArray pdArray_;
-
-        private void Awake()
+        [SerializeField] private PdBackend pdBackend;
+        private Rect selection_;
+        
+        public IPdArray GetPdArray(int index)
         {
-            pdArray_ = new PdArray("fft_" + channel, 512);
+            return pdBackend.FFTArrayContainer[index];
         }
-        
-        public IPdArray PdArray => pdArray_;
-        
+
+        public int Channel { get; set; }
+        public ref Rect Selection => ref selection_;
         public int Energy { get; set; }
     }
 }

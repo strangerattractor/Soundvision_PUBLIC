@@ -1,5 +1,5 @@
-#N canvas 1334 361 827 452 10;
-#X obj 187 61 loadbang;
+#N canvas 1494 726 827 452 10;
+#X obj 351 23 loadbang;
 #X obj 80 273 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array loop 211681 float 2;
@@ -11,7 +11,7 @@
 #X obj 31 228 tabplay~ loop;
 #X obj 30 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 1194 597 730 390 analyzers_______________________________
+#N canvas 215 619 730 390 analyzers_______________________________
 0;
 #X obj 95 44 inlet~;
 #X obj 119 69 inlet~;
@@ -211,12 +211,10 @@
 #X coords 0 1 1023 0 300 100 1 0 0;
 #X restore 39 32 graph;
 #X restore 657 56 pd window;
-#X msg 478 110 \; pd dsp \$1;
-#X msg 274 17 test;
-#X obj 479 83 netreceive -u -b 54637;
 #N canvas 927 320 450 300 udpmessage 0;
 #X text 60 33 0 ... dsp;
 #X restore 660 100 pd udpmessage;
+#X msg 478 110 \; pd dsp 1;
 #X connect 0 0 4 0;
 #X connect 0 0 7 0;
 #X connect 0 0 16 0;
@@ -245,4 +243,3 @@
 #X connect 9 0 10 0;
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
-#X connect 17 0 15 0;

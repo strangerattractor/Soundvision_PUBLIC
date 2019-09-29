@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 namespace cylvester
@@ -7,7 +6,6 @@ namespace cylvester
     [CustomEditor(typeof(PdBackend))]
     public class PdBackendEditor : Editor
     {
-        
         private IPdBackend pdBackend_;
         private ILevelMeter[] levelMeters_;
         private readonly string[] channels = {
@@ -18,9 +16,8 @@ namespace cylvester
         {
             pdBackend_ = (IPdBackend) target;
             levelMeters_ = new ILevelMeter[16];
-            
             for (var i = 0; i < 16; ++i)
-                levelMeters_[i] = new LevelMeter(i, pdBackend_.LevelMeterArray);
+                levelMeters_[i] = new LevelMeter(i);
         }
 
         public override void OnInspectorGUI ()
@@ -34,23 +31,18 @@ namespace cylvester
             GUILayout.EndHorizontal();
 
             pdBackend_.NumInputChannels = EditorGUILayout.Popup("Number of input channels", pdBackend_.NumInputChannels, channels);
-            pdBackend_.State = GUILayout.Toggle(pdBackend_.State, "DSP Processing");
 
-            if (!pdBackend_.State)
-                return;
-            
-            pdBackend_.UpdateShmem();
+            if (Application.isPlaying)
+            {
 
-            GUILayout.Space(5);
-            GUILayout.BeginHorizontal();
-            foreach (var levelMeter in levelMeters_)
-                levelMeter.Render();
-            GUILayout.EndHorizontal();
-            
-            Repaint();
+                GUILayout.Space(5);
+                GUILayout.BeginHorizontal();
+                foreach (var levelMeter in levelMeters_)
+                    levelMeter.Render(pdBackend_.LevelMeterArray);
+                GUILayout.EndHorizontal();
 
+                Repaint();
+            }
         }
-
     }
-
 }

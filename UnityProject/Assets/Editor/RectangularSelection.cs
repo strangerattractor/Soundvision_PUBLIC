@@ -15,7 +15,6 @@ namespace cylvester
         private Rect selectedArea_;
         private readonly int textureWidth_;
         private readonly int textureHeight_;
-
         
         public RectangularSelection(int textureWidth, int textureHeight)
         {

@@ -36,6 +36,7 @@
             <e p="Parameter.cs" t="Include" />
           </e>
           <e p="PdConnection" t="Include">
+            <e p="FFTArrayContainer.cs" t="Include" />
             <e p="PdArray.cs" t="Include" />
             <e p="PdBackend.cs" t="Include" />
             <e p="PdProcess.cs" t="Include" />

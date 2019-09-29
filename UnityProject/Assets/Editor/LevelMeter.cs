@@ -5,7 +5,7 @@ namespace cylvester
 {
     interface ILevelMeter
     {
-        void Render();
+        void Render(IPdArray pdArray);
     }
     
     public class LevelMeter : ILevelMeter
@@ -16,19 +16,17 @@ namespace cylvester
         private readonly Texture2D meterImageTexture_;
         private readonly int index_;
         private readonly string label_;
-        private readonly IPdArray pdArray_;
         
-        public LevelMeter(int index, IPdArray pdArray)
+        public LevelMeter(int index)
         {
             index_ = index;
             label_ = (index_ + 1).ToString();
-            pdArray_ = pdArray;
             meterImageTexture_ = new Texture2D(TextureWidth, TextureHeight);
         }
         
-        public void Render()
+        public void Render(IPdArray pdArray)
         {
-            UpdateTexture();
+            UpdateTexture(pdArray);
             var rect = EditorGUILayout.BeginVertical();
             var style = new GUIStyle(GUI.skin.label)
             {
@@ -42,9 +40,9 @@ namespace cylvester
             EditorGUILayout.EndVertical();
         }
         
-        private void UpdateTexture()
+        private void UpdateTexture(IPdArray pdArray)
         {
-            var level = pdArray_.Data[index_];
+            var level = pdArray.Data[index_];
             for (var i = 0; i < 100; ++i)
             {
                 meterImageTexture_.SetPixel(0, i, i < level ? Color.green : Color.black);
