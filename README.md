@@ -2,7 +2,7 @@
 All developers have to use the following version of software
 - Unity 2018.4.3f1 (LTS)
 - Microsoft Visual Studio Commmunity 2017. version 15.9.13
-- Pure Data 0.49.1 (Install via installer)
+- Pure Data 0.49.1  64 bit(Install via installer)
 
 # Recommended IDE
 - rider by jetbrains if available
