@@ -13,7 +13,7 @@ namespace cylvester
     [ExecuteInEditMode]
     public class PdBackend : MonoBehaviour, IPdBackend
     {
-        [SerializeField] string mainPatch;
+        [SerializeField] string mainPatch = "";
         [SerializeField] int inchannels = 2;
 
         private Action onToggled_;

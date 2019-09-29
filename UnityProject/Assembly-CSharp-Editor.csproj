@@ -60,8 +60,10 @@
     <Compile Include="Assets\Editor\AppBuilder.cs" />
     <Compile Include="Assets\Editor\EditorToggle.cs" />
     <Compile Include="Assets\Editor\LevelMeter.cs" />
-    <Compile Include="Assets\Editor\PdBindEditor.cs" />
     <Compile Include="Assets\Editor\PdConsole.cs" />
+    <Compile Include="Assets\Editor\PdSpectrumBindEditor.cs" />
+    <Compile Include="Assets\Editor\RectangularSelection.cs" />
+    <Compile Include="Assets\Editor\SpectrumGenerator.cs" />
     <Compile Include="Assets\Editor\TogglePresenter.cs" />
     <Compile Include="Assets\Editor\UnitTest\UnitTest_ParameterResponder.cs" />
     <Compile Include="Assets\Scripts\VideoInput\Editor\UnitTest\ComponentFactoryTestCase.cs" />

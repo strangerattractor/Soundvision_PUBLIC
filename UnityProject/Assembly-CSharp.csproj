@@ -62,8 +62,8 @@
     <Compile Include="Assets\Scripts\DataModel\Parameter.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdBackend.cs" />
-    <Compile Include="Assets\Scripts\PdConnection\PdBind.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdProcess.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\PdSpectrumBind.cs" />
     <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
     <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />
     <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />

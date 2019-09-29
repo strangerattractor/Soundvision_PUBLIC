@@ -4,7 +4,10 @@
 #X obj 162 153 loadbang;
 #X obj 167 201 f \$1;
 #X obj 57 239 tabwrite levelmeters;
+#X obj 85 135 spectrum \$1;
+#X obj 229 240 table fft_\$1 512;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
+#X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 1;
