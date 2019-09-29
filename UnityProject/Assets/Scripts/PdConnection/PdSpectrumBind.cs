@@ -12,11 +12,7 @@ namespace cylvester
     public class PdSpectrumBind : MonoBehaviour, IPdSpectrumBind
     {
         public int channel;
-        public int startBin;
-        public int endBin;
-        public float topClip;
-        public float bottomClip;
-        
+        public Rect rectangularSelection;
         private PdArray pdArray_;
 
         private void Awake()

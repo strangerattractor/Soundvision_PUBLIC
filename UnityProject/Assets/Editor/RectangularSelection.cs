@@ -4,10 +4,8 @@ namespace cylvester
 {
     interface IRectangularSelection
     {
-        ref Rect Selection { get; }
-
         void Start(Vector2 mousePosition);
-        void Update(Vector2 mousePosition, ref Rect paintSpace);
+        void Update(Vector2 mousePosition, ref Rect paintSpace, ref Rect selectionRect);
     }
     
     public class RectangularSelection : IRectangularSelection
@@ -15,11 +13,9 @@ namespace cylvester
         private readonly Rect paintSpace_;
 
         private Rect selectedArea_;
-        private Rect selectionRect_;
         private readonly int textureWidth_;
         private readonly int textureHeight_;
 
-        public ref Rect Selection => ref selectionRect_;
         
         public RectangularSelection(int textureWidth, int textureHeight)
         {
@@ -33,7 +29,7 @@ namespace cylvester
             selectedArea_.y = mousePosition.y;
         }
 
-        public void Update(Vector2 mousePosition, ref Rect paintSpace)
+        public void Update(Vector2 mousePosition, ref Rect paintSpace, ref Rect selectionRect)
         {
             selectedArea_.width = mousePosition.x - selectedArea_.x;
             selectedArea_.height = mousePosition.y - selectedArea_.y;
@@ -42,10 +38,10 @@ namespace cylvester
             var width = selectedArea_.width / paintSpace.width;
             var height = selectedArea_.height / paintSpace.height;
 
-            selectionRect_.x = xPos * textureWidth_;
-            selectionRect_.y = yPos * textureHeight_;
-            selectionRect_.width = width * textureWidth_;
-            selectionRect_.height = height * textureHeight_;
+            selectionRect.x = xPos * textureWidth_;
+            selectionRect.y = yPos * textureHeight_;
+            selectionRect.width = width * textureWidth_;
+            selectionRect.height = height * textureHeight_;
         }
     }
 }

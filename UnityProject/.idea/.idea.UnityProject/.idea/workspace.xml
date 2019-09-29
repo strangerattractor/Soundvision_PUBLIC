@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/UdpSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/UdpSender.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="FFT">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/EditorToggle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/EditorToggle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/LevelMeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/LevelMeter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/PdConsole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/PdConsole.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/TogglePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/TogglePresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/PdBackendDemo/PdBackendDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/PdBackendDemo/PdBackendDemo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/pd/patch/analyzer.pd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/pd/patch/analyzer.pd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/pd/patch/core.pd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/pd/patch/core.pd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="852">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
               <folding>
                 <marker date="1569768821990" expanded="true" signature="6:51" ph="..." />
                 <marker date="1569768821990" expanded="true" signature="72:1626" ph="{...}" />
@@ -53,23 +36,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="350">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="40" />
               <folding>
-                <marker date="1569753690662" expanded="true" signature="39:702" ph="{...}" />
-                <marker date="1569753690662" expanded="true" signature="78:161" ph="{...}" />
-                <marker date="1569753690662" expanded="true" signature="255:700" ph="{...}" />
-                <marker date="1569753690662" expanded="true" signature="613:692" ph="{...}" />
+                <marker date="1569781005866" expanded="true" signature="39:581" ph="{...}" />
+                <marker date="1569781005866" expanded="true" signature="78:157" ph="{...}" />
+                <marker date="1569781005866" expanded="true" signature="251:579" ph="{...}" />
+                <marker date="1569781005866" expanded="true" signature="391:470" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/6f/daed0dcd/GUILayout.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="450" column="25" selection-start-line="450" selection-start-column="25" selection-end-line="450" selection-end-column="25" />
+            <state relative-caret-position="1402">
+              <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
+              <folding>
+                <marker date="1569781378445" expanded="true" signature="6:37" ph="..." />
+                <marker date="1569781378445" expanded="true" signature="58:2614" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="143:2612" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="288:397" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="588:784" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="831:2606" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="974:1571" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="1032:1557" ph="{...}" />
+                <marker date="1569781378445" expanded="true" signature="2037:2348" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Editor/LevelMeter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
+            <state relative-caret-position="775">
               <caret line="46" column="32" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="32" />
               <folding>
                 <marker date="1569764972940" expanded="true" signature="6:37" ph="..." />
@@ -95,85 +89,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="10" selection-start-line="10" selection-end-line="12" selection-end-column="10" />
-              <folding>
-                <marker date="1569753618201" expanded="true" signature="6:37" ph="..." />
-                <marker date="1569753618201" expanded="true" signature="58:2307" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="143:2305" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="288:397" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="588:801" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="848:2299" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="991:1506" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="1049:1492" ph="{...}" />
-                <marker date="1569753618201" expanded="true" signature="1972:2265" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+            <state relative-caret-position="77">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
-                <marker date="1569772815001" expanded="true" signature="6:56" ph="..." />
-                <marker date="1569772815001" expanded="true" signature="77:1952" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="111:316" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="400:1950" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="975:1351" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="1028:1341" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="1384:1649" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="1683:1818" ph="{...}" />
-                <marker date="1569772815001" expanded="true" signature="1853:1925" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="6:56" ph="..." />
+                <marker date="1569774795880" expanded="true" signature="77:1906" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="111:316" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="400:1904" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="975:1321" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="1028:1311" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="1354:1588" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="1622:1757" ph="{...}" />
+                <marker date="1569774795880" expanded="true" signature="1792:1898" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/UdpSender.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="-423">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding>
-                <marker date="1569772624117" expanded="true" signature="34:794" ph="{...}" />
-                <marker date="1569772624117" expanded="true" signature="75:124" ph="{...}" />
-                <marker date="1569772624117" expanded="true" signature="166:792" ph="{...}" />
-                <marker date="1569772624117" expanded="true" signature="377:534" ph="{...}" />
-                <marker date="1569772624117" expanded="true" signature="578:672" ph="{...}" />
-                <marker date="1569772624117" expanded="true" signature="703:786" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="39:1566" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="74:183" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="244:1564" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="399:472" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="548:1558" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="642:1488" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="764:1474" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="1133:1295" ph="{...}" />
+                <marker date="1569778294628" expanded="true" signature="1320:1404" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/78/edb26be6/UdpClient.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="173" column="15" selection-start-line="173" selection-start-column="15" selection-end-line="173" selection-end-column="15" />
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding>
+                <marker date="1569781343701" expanded="true" signature="39:1586" ph="{...}" />
+                <marker date="1569781343701" expanded="true" signature="77:221" ph="{...}" />
+                <marker date="1569781343701" expanded="true" signature="288:1584" ph="{...}" />
+                <marker date="1569781343701" expanded="true" signature="546:652" ph="{...}" />
+                <marker date="1569781343701" expanded="true" signature="702:816" ph="{...}" />
+                <marker date="1569781343701" expanded="true" signature="912:1578" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <marker date="1569771014244" expanded="true" signature="6:91" ph="..." />
-                <marker date="1569771014244" expanded="true" signature="112:1505" ph="{...}" />
-                <marker date="1569771014244" expanded="true" signature="139:232" ph="{...}" />
-                <marker date="1569771014244" expanded="true" signature="277:1503" ph="{...}" />
-                <marker date="1569771014244" expanded="true" signature="399:419" ph="{...}" />
-                <marker date="1569771014244" expanded="true" signature="618:1337" ph="{...}" />
-                <marker date="1569771014244" expanded="true" signature="1187:1282" ph="{...}" />
-                <marker date="1569771014244" expanded="true" signature="1369:1497" ph="{...}" />
+                <marker date="1563041309187" expanded="true" signature="43:336" ph="{...}" />
+                <marker date="1563041309187" expanded="true" signature="76:334" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -182,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="450">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
                 <marker date="1569708464693" expanded="true" signature="6:48" ph="..." />
                 <marker date="1569708464693" expanded="true" signature="69:1017" ph="{...}" />
@@ -192,6 +171,28 @@
                 <marker date="1569708464693" expanded="true" signature="441:760" ph="{...}" />
                 <marker date="1569708464693" expanded="true" signature="790:872" ph="{...}" />
                 <marker date="1569708464693" expanded="true" signature="911:1009" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-23">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <marker date="1569774863782" expanded="true" signature="6:115" ph="..." />
+                <marker date="1569774863782" expanded="true" signature="136:2112" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="163:286" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="331:2110" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="453:473" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="672:1532" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="719:856" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="1351:1446" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="1564:1777" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="1806:2104" ph="{...}" />
+                <marker date="1569774863782" expanded="true" signature="1832:2094" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -250,6 +251,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/d0/02dc1ccd/Process.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -301,23 +303,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/PdBindEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBind.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/PdConsole.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/TogglePresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/LevelMeter.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/UdpSender.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="817" />
-    <option name="y" value="415" />
+    <option name="x" value="576" />
+    <option name="y" value="138" />
     <option name="width" value="2706" />
     <option name="height" value="1553" />
   </component>
@@ -426,7 +428,7 @@
       <workItem from="1569660657308" duration="3276000" />
       <workItem from="1569665495901" duration="24150000" />
       <workItem from="1569746625810" duration="9833000" />
-      <workItem from="1569765404529" duration="6939000" />
+      <workItem from="1569765404529" duration="14954000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>
@@ -477,11 +479,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569751217305</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pd backend levelmeters">
+      <created>1569773067496</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569773067496</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FFT Selection">
+      <created>1569779237531</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569779237531</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92263000" />
+    <option name="totallyTimeSpent" value="100278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,7 +509,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="817" y="415" width="2706" height="1553" extended-state="0" />
+    <frame x="576" y="138" width="2706" height="1553" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8258824" visible="true" weight="0.1840514" />
@@ -548,7 +564,9 @@
     <MESSAGE value="update analyzer pd patch" />
     <MESSAGE value="add realtime updated levelmeters in Unity Editor" />
     <MESSAGE value="refactor spectrum viewer" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor spectrum viewer" />
+    <MESSAGE value="Pd backend levelmeters" />
+    <MESSAGE value="FFT Selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="FFT Selection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -557,19 +575,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs</url>
-          <line>27</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" initialLine="27">
-            <startOffsets>
-              <option value="636" />
-            </startOffsets>
-            <endOffsets>
-              <option value="682" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -580,19 +585,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <marker date="1562484530855" expanded="true" signature="20:317" ph="{...}" />
-            <marker date="1562484530855" expanded="true" signature="56:315" ph="{...}" />
-            <marker date="1562484530855" expanded="true" signature="112:193" ph="{...}" />
-            <marker date="1562484530855" expanded="true" signature="248:309" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2538">
@@ -721,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/46/64a0ea05/Event.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/RmsAnalyzer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -852,17 +837,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Editor/PreviewExampleInspector.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <marker date="1563041309187" expanded="true" signature="43:336" ph="{...}" />
-            <marker date="1563041309187" expanded="true" signature="76:334" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/54/eb43801f/IComparable`1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -974,73 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
-          <folding>
-            <marker date="1569753957851" expanded="true" signature="39:1375" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="74:184" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="245:1373" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="438:541" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="618:1367" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="681:1327" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="797:1313" ph="{...}" />
-            <marker date="1569753957851" expanded="true" signature="1045:1125" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding>
-            <marker date="1569751170801" expanded="true" signature="39:1696" ph="{...}" />
-            <marker date="1569751170801" expanded="true" signature="77:213" ph="{...}" />
-            <marker date="1569751170801" expanded="true" signature="280:1694" ph="{...}" />
-            <marker date="1569751170801" expanded="true" signature="653:797" ph="{...}" />
-            <marker date="1569751170801" expanded="true" signature="847:961" ph="{...}" />
-            <marker date="1569751170801" expanded="true" signature="1012:1688" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/6f/daed0dcd/GUILayout.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="450" column="25" selection-start-line="450" selection-start-column="25" selection-end-line="450" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="10" selection-start-line="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <marker date="1569753618201" expanded="true" signature="6:37" ph="..." />
-            <marker date="1569753618201" expanded="true" signature="58:2307" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="143:2305" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="288:397" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="588:801" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="848:2299" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="991:1506" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="1049:1492" ph="{...}" />
-            <marker date="1569753618201" expanded="true" signature="1972:2265" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <marker date="1569753690662" expanded="true" signature="39:702" ph="{...}" />
-            <marker date="1569753690662" expanded="true" signature="78:161" ph="{...}" />
-            <marker date="1569753690662" expanded="true" signature="255:700" ph="{...}" />
-            <marker date="1569753690662" expanded="true" signature="613:692" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,22 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <marker date="1569708464693" expanded="true" signature="6:48" ph="..." />
-            <marker date="1569708464693" expanded="true" signature="69:1017" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="101:166" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="216:1015" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="441:760" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="790:872" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="911:1009" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/extOSC/Scripts/OSCMessage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1081,9 +976,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/78/edb26be6/UdpClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="173" column="15" selection-start-line="173" selection-start-column="15" selection-end-line="173" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/UdpSender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <marker date="1569772624117" expanded="true" signature="34:794" ph="{...}" />
+            <marker date="1569772624117" expanded="true" signature="75:124" ph="{...}" />
+            <marker date="1569772624117" expanded="true" signature="166:792" ph="{...}" />
+            <marker date="1569772624117" expanded="true" signature="377:534" ph="{...}" />
+            <marker date="1569772624117" expanded="true" signature="578:672" ph="{...}" />
+            <marker date="1569772624117" expanded="true" signature="703:786" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/d0/02dc1ccd/Process.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="335" column="16" selection-start-line="335" selection-start-column="16" selection-end-line="335" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/46/64a0ea05/Event.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <marker date="1569778294628" expanded="true" signature="39:1566" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="74:183" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="244:1564" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="399:472" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="548:1558" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="642:1488" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="764:1474" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="1133:1295" ph="{...}" />
+            <marker date="1569778294628" expanded="true" signature="1320:1404" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1563041309187" expanded="true" signature="43:336" ph="{...}" />
+            <marker date="1563041309187" expanded="true" signature="76:334" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Editor/LevelMeter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
+        <state relative-caret-position="775">
           <caret line="46" column="32" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="32" />
           <folding>
             <marker date="1569764972940" expanded="true" signature="6:37" ph="..." />
@@ -1101,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="852">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
           <folding>
             <marker date="1569768821990" expanded="true" signature="6:51" ph="..." />
             <marker date="1569768821990" expanded="true" signature="72:1626" ph="{...}" />
@@ -1114,59 +1074,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/78/edb26be6/UdpClient.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="173" column="15" selection-start-line="173" selection-start-column="15" selection-end-line="173" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="450">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
-            <marker date="1569771014244" expanded="true" signature="6:91" ph="..." />
-            <marker date="1569771014244" expanded="true" signature="112:1505" ph="{...}" />
-            <marker date="1569771014244" expanded="true" signature="139:232" ph="{...}" />
-            <marker date="1569771014244" expanded="true" signature="277:1503" ph="{...}" />
-            <marker date="1569771014244" expanded="true" signature="399:419" ph="{...}" />
-            <marker date="1569771014244" expanded="true" signature="618:1337" ph="{...}" />
-            <marker date="1569771014244" expanded="true" signature="1187:1282" ph="{...}" />
-            <marker date="1569771014244" expanded="true" signature="1369:1497" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/UdpSender.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <marker date="1569772624117" expanded="true" signature="34:794" ph="{...}" />
-            <marker date="1569772624117" expanded="true" signature="75:124" ph="{...}" />
-            <marker date="1569772624117" expanded="true" signature="166:792" ph="{...}" />
-            <marker date="1569772624117" expanded="true" signature="377:534" ph="{...}" />
-            <marker date="1569772624117" expanded="true" signature="578:672" ph="{...}" />
-            <marker date="1569772624117" expanded="true" signature="703:786" ph="{...}" />
+            <marker date="1569708464693" expanded="true" signature="6:48" ph="..." />
+            <marker date="1569708464693" expanded="true" signature="69:1017" ph="{...}" />
+            <marker date="1569708464693" expanded="true" signature="101:166" ph="{...}" />
+            <marker date="1569708464693" expanded="true" signature="216:1015" ph="{...}" />
+            <marker date="1569708464693" expanded="true" signature="441:760" ph="{...}" />
+            <marker date="1569708464693" expanded="true" signature="790:872" ph="{...}" />
+            <marker date="1569708464693" expanded="true" signature="911:1009" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+        <state relative-caret-position="77">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
-            <marker date="1569772815001" expanded="true" signature="6:56" ph="..." />
-            <marker date="1569772815001" expanded="true" signature="77:1952" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="111:316" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="400:1950" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="975:1351" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="1028:1341" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="1384:1649" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="1683:1818" ph="{...}" />
-            <marker date="1569772815001" expanded="true" signature="1853:1925" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="6:56" ph="..." />
+            <marker date="1569774795880" expanded="true" signature="77:1906" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="111:316" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="400:1904" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="975:1321" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="1028:1311" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="1354:1588" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="1622:1757" ph="{...}" />
+            <marker date="1569774795880" expanded="true" signature="1792:1898" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <marker date="1569774863782" expanded="true" signature="6:115" ph="..." />
+            <marker date="1569774863782" expanded="true" signature="136:2112" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="163:286" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="331:2110" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="453:473" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="672:1532" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="719:856" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="1351:1446" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="1564:1777" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="1806:2104" ph="{...}" />
+            <marker date="1569774863782" expanded="true" signature="1832:2094" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <marker date="1569781005866" expanded="true" signature="39:581" ph="{...}" />
+            <marker date="1569781005866" expanded="true" signature="78:157" ph="{...}" />
+            <marker date="1569781005866" expanded="true" signature="251:579" ph="{...}" />
+            <marker date="1569781005866" expanded="true" signature="391:470" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <marker date="1569781343701" expanded="true" signature="39:1586" ph="{...}" />
+            <marker date="1569781343701" expanded="true" signature="77:221" ph="{...}" />
+            <marker date="1569781343701" expanded="true" signature="288:1584" ph="{...}" />
+            <marker date="1569781343701" expanded="true" signature="546:652" ph="{...}" />
+            <marker date="1569781343701" expanded="true" signature="702:816" ph="{...}" />
+            <marker date="1569781343701" expanded="true" signature="912:1578" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1402">
+          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
+          <folding>
+            <marker date="1569781378445" expanded="true" signature="6:37" ph="..." />
+            <marker date="1569781378445" expanded="true" signature="58:2614" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="143:2612" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="288:397" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="588:784" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="831:2606" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="974:1571" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="1032:1557" ph="{...}" />
+            <marker date="1569781378445" expanded="true" signature="2037:2348" ph="{...}" />
           </folding>
         </state>
       </provider>

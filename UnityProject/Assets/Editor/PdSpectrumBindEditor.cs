@@ -36,7 +36,8 @@ namespace cylvester
                     }
                     case EventType.MouseDrag:
                     {
-                        rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
+                        rectangularSelection_.Update(Event.current.mousePosition, 
+                            ref paintSpace_, ref behaviour.rectangularSelection);
                         break;
                     }
                 }
@@ -53,7 +54,7 @@ namespace cylvester
             {
                 paintSpace_ = paintSpace;
                 behaviour.PdArray.Update();
-                behaviour.Energy = spectrumGenerator_.Update(behaviour.PdArray.Data, ref rectangularSelection_.Selection);
+                behaviour.Energy = spectrumGenerator_.Update(behaviour.PdArray.Data, ref behaviour.rectangularSelection);
                 GUI.DrawTexture(paintSpace_, spectrumGenerator_.Spectrum);
             }
             
