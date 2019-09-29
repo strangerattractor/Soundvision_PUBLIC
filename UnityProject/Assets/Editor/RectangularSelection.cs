@@ -7,7 +7,7 @@ namespace cylvester
         ref Rect Selection { get; }
 
         void Start(Vector2 mousePosition);
-        void Update(Vector2 mousePosition);
+        void Update(Vector2 mousePosition, ref Rect paintSpace);
     }
     
     public class RectangularSelection : IRectangularSelection
@@ -21,9 +21,8 @@ namespace cylvester
 
         public ref Rect Selection => ref selectionRect_;
         
-        public RectangularSelection(ref Rect paintSpace, int textureWidth, int textureHeight)
+        public RectangularSelection(int textureWidth, int textureHeight)
         {
-            paintSpace_ = paintSpace;
             textureWidth_ = textureWidth;
             textureHeight_ = textureHeight;
         }
@@ -34,14 +33,14 @@ namespace cylvester
             selectedArea_.y = mousePosition.y;
         }
 
-        public void Update(Vector2 mousePosition)
+        public void Update(Vector2 mousePosition, ref Rect paintSpace)
         {
             selectedArea_.width = mousePosition.x - selectedArea_.x;
             selectedArea_.height = mousePosition.y - selectedArea_.y;
-            var xPos = (selectedArea_.x - paintSpace_.x) / paintSpace_.width;
-            var yPos = (selectedArea_.y - paintSpace_.y) / paintSpace_.height;
-            var width = selectedArea_.width / paintSpace_.width;
-            var height = selectedArea_.height / paintSpace_.height;
+            var xPos = (selectedArea_.x - paintSpace.x) / paintSpace.width;
+            var yPos = (selectedArea_.y - paintSpace.y) / paintSpace.height;
+            var width = selectedArea_.width / paintSpace.width;
+            var height = selectedArea_.height / paintSpace.height;
 
             selectionRect_.x = xPos * textureWidth_;
             selectionRect_.y = yPos * textureHeight_;

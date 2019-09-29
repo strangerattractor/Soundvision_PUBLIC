@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Threading;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -9,6 +10,7 @@ namespace cylvester
     {
         void Start(string mainPatch, int numInputChannels);
         void Stop();
+        bool Running { get; }
     }
     
     public class PdProcess : IPdProcess
@@ -25,9 +27,14 @@ namespace cylvester
 
         public void Start(string mainPatch, int numInputChannels)
         {
+
             if (pdProcess_ != null)
-                return;
-    
+            {
+                pdProcess_.Refresh();
+                if (!pdProcess_.HasExited)
+                    return;
+            }
+
             pdProcess_ = new Process();
             pdProcess_.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             pdProcess_.StartInfo.UseShellExecute = false;
@@ -40,14 +47,33 @@ namespace cylvester
             {
                 throw new Exception("Pd process failed to start");
             }
+            Thread.Sleep(500);
             Debug.Log("Pd Process started");
         }
     
         public void Stop()
         {
-            pdProcess_?.Kill();
+            if (pdProcess_ == null)
+                return;
+            
+            pdProcess_.Kill();
             pdProcess_ = null;
             Debug.Log("Pd Process stopped");
+            
+        }
+
+        public bool Running
+        {
+            get
+            {
+                pdProcess_.Refresh();
+                if (pdProcess_ == null)
+                    return false;
+                if (pdProcess_.HasExited)
+                    return false;
+                
+                return true;
+            }
         }
     }
 }

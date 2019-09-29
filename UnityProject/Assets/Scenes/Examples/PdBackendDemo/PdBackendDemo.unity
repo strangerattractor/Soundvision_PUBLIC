@@ -280,7 +280,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987772534}
-  - component: {fileID: 987772533}
   m_Layer: 0
   m_Name: PdBackend
   m_TagString: Untagged
@@ -288,20 +287,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &987772533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987772532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba69cee3466a304d9d570268f717413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainPatch: analyzer.pd
-  inchannels: 2
 --- !u!4 &987772534
 Transform:
   m_ObjectHideFlags: 0

@@ -50,7 +50,6 @@ namespace cylvester
         private void OnEnable()
         {
             PdProcess.Instance.Start(mainPatch, inchannels);
-            Thread.Sleep(500);
             
             levelMeterArray_ = new PdArray("levelmeters", NumMaxInputChannels);
             udpSender_ = new UdpSender("127.0.0.1", 54637);
@@ -65,11 +64,8 @@ namespace cylvester
 
         public void UpdateShmem()
         {
-            levelMeterArray_.Update();
-            
+            if(PdProcess.Instance.Running)
+                levelMeterArray_.Update();
         }
-        
-        
-
     }
 }

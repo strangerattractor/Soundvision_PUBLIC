@@ -5,42 +5,47 @@ namespace cylvester
     interface ISpectrumGenerator
     {
         Texture2D Spectrum { get; }
-        void Update(float[] fftData, ref Rect selectionRect);
+        int Update(float[] fftData, ref Rect selectionRect);
     }
     
     public class SpectrumGenerator : ISpectrumGenerator
     {
         private Texture2D texture_;
-        private readonly int height_;
         public Texture2D Spectrum => texture_;
         
         public  SpectrumGenerator(int width, int height)
         {
             texture_ = new Texture2D(width, height);
-            height_ = height;
         }
         
-        public void Update(float[] fftData, ref Rect selectionRect)
+        public int Update(float[] fftData, ref Rect selectionRect)
         {
+            var numPixels = 0;
             for (var x = 0; x < texture_.width; x++)
             {
-                var magnitude = fftData[x];
+                var magnitude = fftData[x] * 20f;
                 for (var y = 0; y < texture_.height; y++)
                 {
+                    var mY = texture_.height - selectionRect.y;
 
-                    var alpha = 0.4f;
+                    var fillPixel = magnitude > y;
+                    var color =  fillPixel ? Color.green : Color.black;
                     if ((selectionRect.x < x && x < (selectionRect.x + selectionRect.width)) &&
-                        (selectionRect.y < y && y < (selectionRect.y + selectionRect.height)))
+                        (mY - selectionRect.height < y && y < mY))
                     {
-                        alpha = 1f;
+                        color.a = 1f;
+                        if (fillPixel)
+                            numPixels++;
                     }
-
-                    var color = y > magnitude ? Color.white : Color.gray;
-                    color.a = alpha;
-                    texture_.SetPixel(x, height_, color);
+                    else
+                    {
+                        color.a = 0.2f;
+                    }
+                    texture_.SetPixel(x, y, color);
                 }
             }
             texture_.Apply();
+            return numPixels;
         }
     }
 }

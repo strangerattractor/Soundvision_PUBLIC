@@ -18,7 +18,7 @@ namespace cylvester
         public void OnEnable()
         {
             spectrumGenerator_ = new SpectrumGenerator(TextureWidth, TextureHeight);
-            rectangularSelection_ = new RectangularSelection(ref paintSpace_, TextureWidth, TextureHeight);
+            rectangularSelection_ = new RectangularSelection(TextureWidth, TextureHeight);
         }
 
         public override void OnInspectorGUI()
@@ -36,7 +36,7 @@ namespace cylvester
                     }
                     case EventType.MouseDrag:
                     {
-                        rectangularSelection_.Update(Event.current.mousePosition);
+                        rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
                         break;
                     }
                 }
@@ -53,9 +53,14 @@ namespace cylvester
             {
                 paintSpace_ = paintSpace;
                 behaviour.PdArray.Update();
-                spectrumGenerator_.Update(behaviour.PdArray.Data, ref rectangularSelection_.Selection);
+                behaviour.Energy = spectrumGenerator_.Update(behaviour.PdArray.Data, ref rectangularSelection_.Selection);
                 GUI.DrawTexture(paintSpace_, spectrumGenerator_.Spectrum);
             }
+            
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Extracted Energy", EditorStyles.boldLabel);
+            GUILayout.Label(behaviour.Energy.ToString());
+            GUILayout.EndHorizontal();
 
             Repaint();
         }
