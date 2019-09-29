@@ -16,9 +16,10 @@ namespace cylvester
         private static PdProcess instance_ = null;
         private Process pdProcess_;
 
-        private PdProcess() // cannot be instantiate normally
+        private PdProcess()
         {
-        }
+        } // cannot be instantiate normally
+        
 
         public static PdProcess Instance => instance_ ?? (instance_ = new PdProcess());
 
@@ -40,7 +41,6 @@ namespace cylvester
                 throw new Exception("Pd process failed to start");
             }
             Debug.Log("Pd Process started");
-
         }
     
         public void Stop()
@@ -49,6 +49,5 @@ namespace cylvester
             pdProcess_ = null;
             Debug.Log("Pd Process stopped");
         }
-
     }
 }

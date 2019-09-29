@@ -3,7 +3,12 @@ using UnityEditor;
 
 namespace cylvester
 {
-    public class LevelMeter
+    interface ILevelMeter
+    {
+        void Render();
+    }
+    
+    public class LevelMeter : ILevelMeter
     {
         private const int TextureWidth = 1;
         private const int TextureHeight = 100;

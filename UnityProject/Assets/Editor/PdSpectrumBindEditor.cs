@@ -11,7 +11,6 @@ namespace cylvester
         private readonly string[] channels = {
             "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"
         };
-        private int selectedSpectrum_;
         private ISpectrumGenerator spectrumGenerator_;
         private IRectangularSelection rectangularSelection_;
         private Rect paintSpace_;
@@ -26,7 +25,6 @@ namespace cylvester
         {
             var behaviour = (PdSpectrumBind)target;
             
-
             if (Event.current.isMouse && Event.current.button == 0)
             {
                 switch (Event.current.type)
@@ -46,7 +44,7 @@ namespace cylvester
 
             GUILayout.Label("PureData Inputs", EditorStyles.boldLabel);
 
-            selectedSpectrum_ = EditorGUILayout.Popup("Input Channel", selectedSpectrum_, channels);
+            behaviour.channel = EditorGUILayout.Popup("Input Channel", behaviour.channel, channels);
             GUILayout.Space(5);
             GUILayout.Label("Spectrum Extractor", EditorStyles.boldLabel);
             
@@ -54,7 +52,8 @@ namespace cylvester
             if (Event.current.type == EventType.Repaint)
             {
                 paintSpace_ = paintSpace;
-                spectrumGenerator_.Update(ref rectangularSelection_.Selection);
+                behaviour.PdArray.Update();
+                spectrumGenerator_.Update(behaviour.PdArray.Data, ref rectangularSelection_.Selection);
                 GUI.DrawTexture(paintSpace_, spectrumGenerator_.Spectrum);
             }
 

@@ -9,12 +9,14 @@
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
           <e p="AppBuilder.cs" t="Include" />
+          <e p="LevelMeter.cs" t="Include" />
           <e p="PdBackendEditor.cs" t="Include" />
-          <e p="PreviewExampleInspector.cs" t="Include" />
-        </e>
-        <e p="PdBackend" t="Include">
-          <e p="PdBackend.cs" t="Include" />
-          <e p="PreviewExample.cs" t="Include" />
+          <e p="PdSpectrumBindEditor.cs" t="Include" />
+          <e p="RectangularSelection.cs" t="Include" />
+          <e p="SpectrumGenerator.cs" t="Include" />
+          <e p="UnitTest" t="Include">
+            <e p="UnitTest_ParameterResponder.cs" t="Include" />
+          </e>
         </e>
         <e p="Resources" t="Include">
           <e p="buildNumber.txt" t="Include" />
@@ -30,8 +32,15 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DataModel" t="Include">
+            <e p="Parameter.cs" t="Include" />
+          </e>
           <e p="PdConnection" t="Include">
             <e p="PdArray.cs" t="Include" />
+            <e p="PdBackend.cs" t="Include" />
+            <e p="PdProcess.cs" t="Include" />
+            <e p="PdSpectrumBind.cs" t="Include" />
+            <e p="UdpSender.cs" t="Include" />
           </e>
           <e p="Versioning" t="Include">
             <e p="VersionToggleBehaviour.cs" t="Include" />

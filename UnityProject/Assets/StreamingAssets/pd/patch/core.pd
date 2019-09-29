@@ -6,8 +6,11 @@
 #X obj 57 239 tabwrite levelmeters;
 #X obj 85 135 spectrum \$1;
 #X obj 229 240 table fft_\$1 512;
+#X obj 228 190 r shmemupdate;
+#X obj 228 216 shmem fft_\$1 512;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 1;
+#X connect 7 0 8 0;
