@@ -202,13 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ab37d032df403e881d6a7a78141815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  channel: 0
-  rectangularSelection:
-    serializedVersion: 2
-    x: 40.02606
-    y: 49
-    width: 44.19544
-    height: 138
+  pdBackend: {fileID: 987772533}
 --- !u!1 &267275365
 GameObject:
   m_ObjectHideFlags: 0
