@@ -37,11 +37,13 @@ namespace cylvester
             var width = selectedArea_.width / paintSpace.width;
             var height = selectedArea_.height / paintSpace.height;
 
-            var selectionRect = new Rect();
-            selectionRect.x = xPos * textureWidth_;
-            selectionRect.y = yPos * textureHeight_;
-            selectionRect.width = width * textureWidth_;
-            selectionRect.height = height * textureHeight_;
+            var selectionRect = new Rect
+            {
+                x = xPos * textureWidth_,
+                y = yPos * textureHeight_,
+                width = width * textureWidth_,
+                height = height * textureHeight_
+            };
 
             return selectionRect;
         }
