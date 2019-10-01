@@ -43,9 +43,7 @@ namespace cylvester
             GUILayout.Label("Main Patch");
             pdBackend_.mainPatch = GUILayout.TextField(pdBackend_.mainPatch, 30);
             GUILayout.EndHorizontal();
-
-            pdBackend_.inchannels = EditorGUILayout.Popup("Number of input channels", pdBackend_.inchannels, channels_);
-
+            
             if (Application.isPlaying)
             {
                 RenderSamplePlayback();

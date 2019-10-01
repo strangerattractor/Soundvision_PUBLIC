@@ -202,7 +202,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ab37d032df403e881d6a7a78141815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdBackend: {fileID: 987772533}
+  pdBackend: {fileID: 0}
+  selection:
+    serializedVersion: 2
+    x: 297.75885
+    y: 55
+    width: 101.67376
+    height: 102
 --- !u!1 &267275365
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainPatch: analyzer.pd
-  inchannels: 2
+  samplePlayback: 0
 --- !u!4 &987772534
 Transform:
   m_ObjectHideFlags: 0

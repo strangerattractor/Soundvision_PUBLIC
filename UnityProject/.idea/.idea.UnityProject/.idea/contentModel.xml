@@ -15,7 +15,8 @@
           <e p="RectangularSelection.cs" t="Include" />
           <e p="SpectrumGenerator.cs" t="Include" />
           <e p="UnitTest" t="Include">
-            <e p="UnitTest_ParameterResponder.cs" t="Include" />
+            <e p="UnitTest_ChangeObserver.cs" t="Include" />
+            <e p="UnitTest_SpectrumGenerator.cs" t="Include" />
           </e>
         </e>
         <e p="Resources" t="Include">
@@ -32,16 +33,17 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="DataModel" t="Include">
-            <e p="Parameter.cs" t="Include" />
-          </e>
           <e p="PdConnection" t="Include">
             <e p="FFTArrayContainer.cs" t="Include" />
             <e p="PdArray.cs" t="Include" />
             <e p="PdBackend.cs" t="Include" />
+            <e p="PdConstant.cs" t="Include" />
             <e p="PdProcess.cs" t="Include" />
+            <e p="PdSocket.cs" t="Include" />
             <e p="PdSpectrumBind.cs" t="Include" />
-            <e p="UdpSender.cs" t="Include" />
+          </e>
+          <e p="TemplateLibrary" t="Include">
+            <e p="ChangeObserver.cs" t="Include" />
           </e>
           <e p="Versioning" t="Include">
             <e p="VersionToggleBehaviour.cs" t="Include" />

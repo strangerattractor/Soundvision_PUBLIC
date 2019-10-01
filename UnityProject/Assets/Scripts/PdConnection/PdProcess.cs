@@ -6,14 +6,7 @@ using Debug = UnityEngine.Debug;
 
 namespace cylvester
 {
-    interface IPdProcess
-    {
-        void Start(string mainPatch, int numInputChannels);
-        void Stop();
-        bool Running { get; }
-    }
-    
-    public class PdProcess : IPdProcess
+    public class PdProcess
     {
         private static PdProcess instance_ = null;
         private Process pdProcess_;
@@ -22,10 +15,9 @@ namespace cylvester
         {
         } // cannot be instantiate normally
         
-
         public static PdProcess Instance => instance_ ?? (instance_ = new PdProcess());
 
-        public void Start(string mainPatch, int numInputChannels)
+        public void Start(string mainPatch)
         {
 
             if (pdProcess_ != null)
@@ -41,7 +33,7 @@ namespace cylvester
             pdProcess_.StartInfo.FileName = Application.streamingAssetsPath + "/pd/win/pd.com";
 
             var path = Application.streamingAssetsPath + "/pd/patch/" + mainPatch;
-            pdProcess_.StartInfo.Arguments = "-nogui -rt -inchannels " + numInputChannels + " " + path;
+            pdProcess_.StartInfo.Arguments = "-nogui -rt " + path;
 
             if (!pdProcess_.Start())
             {
@@ -59,7 +51,6 @@ namespace cylvester
             pdProcess_.Kill();
             pdProcess_ = null;
             Debug.Log("Pd Process stopped");
-            
         }
 
         public bool Running

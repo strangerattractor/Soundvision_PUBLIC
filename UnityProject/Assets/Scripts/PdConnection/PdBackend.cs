@@ -6,10 +6,9 @@ namespace cylvester
     public class PdBackend : MonoBehaviour
     {
         public string mainPatch = "analyzer.pd";
-        public int inchannels = 2;
         public int samplePlayback = 0;
         public PdArray levelMeterArray;
-        public FftArrayContainer fftArrayContainer;
+        public IFftArrayContainer fftArrayContainer;
 
         private IChangeObserver<int> samplePlaybackObserver_;
         private Action onSamplePlaybackChanged_;
@@ -18,7 +17,7 @@ namespace cylvester
         
         private void Start()
         {
-            PdProcess.Instance.Start(mainPatch, inchannels);
+            PdProcess.Instance.Start(mainPatch);
             levelMeterArray = new PdArray("levelmeters", PdConstant.NumMaxInputChannels);
             fftArrayContainer = new FftArrayContainer();
             pdSocket_ = new PdSocket(PdConstant.ip, PdConstant.port);
@@ -27,7 +26,7 @@ namespace cylvester
 
             onSamplePlaybackChanged_ = () =>
             {
-                var bytes = new byte[]{(byte)PdMessage.SampleSound, (byte)samplePlayback};
+                var bytes = new[]{(byte)PdMessage.SampleSound, (byte)samplePlayback};
                 pdSocket_.Send(bytes);
             };
             
@@ -48,7 +47,6 @@ namespace cylvester
                 levelMeterArray.Update();
 
             fftArrayContainer.Update();
-            
             samplePlaybackObserver_.Value = samplePlayback;
         }
     }

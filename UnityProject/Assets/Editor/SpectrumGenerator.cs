@@ -10,20 +10,19 @@ namespace cylvester
     
     public class SpectrumGenerator : ISpectrumGenerator
     {
-        private Texture2D texture_;
-        public Texture2D Spectrum => texture_;
-        
+        public Texture2D Spectrum { get; }
+
         public  SpectrumGenerator(int width, int height)
         {
-            texture_ = new Texture2D(width, height);
+            Spectrum = new Texture2D(width, height);
         }
         
         public int Update(IPdArray pdArray, Rect selectionRect)
         {
             var numPixels = 0;
-            for (var x = 0; x < texture_.width; x++)
+            for (var x = 0; x < Spectrum.width; x++)
             {
-                for (var y = 0; y < texture_.height; y++)
+                for (var y = 0; y < Spectrum.height; y++)
                 {
                     var color = Color.black;
                     var validPixel = false;
@@ -35,23 +34,28 @@ namespace cylvester
                         color = validPixel ? Color.green : Color.black;
                     }
 
-                    var mY = texture_.height - selectionRect.y;
-                    if ((selectionRect.x < x && x < (selectionRect.x + selectionRect.width)) &&
-                        (mY - selectionRect.height < y && y < mY))
+                    if (IsInSelection(x, y, ref selectionRect))
                     {
                         color.a = 1f;
                         if (validPixel)
                             numPixels++;
                     }
                     else
-                    {
                         color.a = 0.2f;
-                    }
-                    texture_.SetPixel(x, y, color);
+                    
+                    Spectrum.SetPixel(x, y, color);
                 }
             }
-            texture_.Apply();
+            Spectrum.Apply();
             return numPixels;
+        }
+
+        private bool IsInSelection(int x, int y, ref Rect selectionRect)
+        {
+            var inRectHorizontally = selectionRect.x < x && x < selectionRect.x + (selectionRect.width-1);
+            var mY = Spectrum.height - selectionRect.y;
+            var inRectVertically = mY - (selectionRect.height-1) < y && y < mY;
+            return inRectHorizontally && inRectVertically;
         }
     }
 }

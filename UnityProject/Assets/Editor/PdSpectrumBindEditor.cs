@@ -18,8 +18,7 @@ namespace cylvester
 
         private SerializedProperty selectionProperty_;
         private SerializedProperty pdBackendProperty_;
-        
-        
+
         public void OnEnable()
         {
             spectrumGenerator_ = new SpectrumGenerator(TextureWidth, TextureHeight);
@@ -27,7 +26,6 @@ namespace cylvester
 
             pdBackendProperty_ = serializedObject.FindProperty("pdBackend");
             selectionProperty_ = serializedObject.FindProperty("selection");
-
         }
 
         public override void OnInspectorGUI()
@@ -40,13 +38,11 @@ namespace cylvester
 
             RenderSpectrumExtractor(behaviour);
             serializedObject.ApplyModifiedProperties();
-
         }
 
         private void RenderSpectrumExtractor(IPdSpectrumBind behaviour)
         {
-            UpdateSelection(behaviour);
-            
+            RenderSelection();
             GUILayout.Space(5);
             GUILayout.Label("Spectrum Extractor", EditorStyles.boldLabel);
             
@@ -63,32 +59,36 @@ namespace cylvester
                 GUI.DrawTexture(paintSpace_, spectrumGenerator_.Spectrum);
             }
             
-            GUILayout.BeginHorizontal();
-            GUILayout.Label("Extracted Energy", EditorStyles.boldLabel);
-            GUILayout.Label(behaviour.Energy.ToString());
-            GUILayout.EndHorizontal();
-
             Repaint();
+            RenderExtractedEnergy(behaviour.Energy);
+
         }
 
-        private void UpdateSelection(IPdSpectrumBind behaviour) 
+        private void RenderSelection()
         {
-            if (Event.current.isMouse && Event.current.button == 0)
+            if (!Event.current.isMouse || Event.current.button != 0) return;
+            switch (Event.current.type)
             {
-                switch (Event.current.type)
+                case EventType.MouseDown:
                 {
-                    case EventType.MouseDown:
-                    {
-                        rectangularSelection_.Start(Event.current.mousePosition);
-                        break;
-                    }
-                    case EventType.MouseDrag:
-                    {
-                        selectionProperty_.rectValue = rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
-                        break;
-                    }
+                    rectangularSelection_.Start(Event.current.mousePosition);
+                    break;
+                }
+                case EventType.MouseDrag:
+                {
+                    selectionProperty_.rectValue = rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
+                    break;
                 }
             }
         }
+
+        private void RenderExtractedEnergy(int energy)
+        {
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Extracted Energy", EditorStyles.boldLabel);
+            GUILayout.Label(energy.ToString());
+            GUILayout.EndHorizontal();
+        }
+        
     }
 }
