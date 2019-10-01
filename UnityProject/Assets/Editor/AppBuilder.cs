@@ -4,7 +4,7 @@ public class AppBuilder
 {
     public static void Build()
     {
-        string[] scenes = { "Assets/Scenes/MainScene.unity" };
+        string[] scenes = { "Assets/Scenes/PdBackendDemo.unity" };
 
         var args = System.Environment.GetCommandLineArgs();
         BuildPipeline.BuildPlayer(scenes, "../bin/soundvision.exe" , BuildTarget.StandaloneWindows64, BuildOptions.None);
