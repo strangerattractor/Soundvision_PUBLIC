@@ -63,7 +63,7 @@
     <Compile Include="Assets\Editor\PdSpectrumBindEditor.cs" />
     <Compile Include="Assets\Editor\RectangularSelection.cs" />
     <Compile Include="Assets\Editor\SpectrumGenerator.cs" />
-    <Compile Include="Assets\Editor\UnitTest\UnitTest_ParameterResponder.cs" />
+    <Compile Include="Assets\Editor\UnitTest\UnitTest_ChangeObserver.cs" />
     <Compile Include="Assets\Scripts\VideoInput\Editor\UnitTest\ComponentFactoryTestCase.cs" />
     <Compile Include="Assets\Scripts\VideoInput\Editor\UnitTest\KinectSensorTestCase.cs" />
     <Compile Include="Assets\ThridParty\Editor\KinectCopyPluginDataHelper.cs" />
