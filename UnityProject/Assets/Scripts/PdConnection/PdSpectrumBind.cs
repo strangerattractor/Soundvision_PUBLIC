@@ -6,14 +6,13 @@ namespace cylvester
     {
         IPdArray GetPdArray(int index);
         int Channel { get; set; }
-        ref Rect Selection { get; }
         int Energy { get; set; }
     }
     
     public class PdSpectrumBind : MonoBehaviour, IPdSpectrumBind
     {
         [SerializeField] private PdBackend pdBackend;
-        private Rect selection_;
+        [SerializeField] private Rect selection;
         
         public IPdArray GetPdArray(int index)
         {
@@ -21,7 +20,6 @@ namespace cylvester
         }
 
         public int Channel { get; set; }
-        public ref Rect Selection => ref selection_;
         public int Energy { get; set; }
     }
 }

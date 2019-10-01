@@ -5,7 +5,7 @@ namespace cylvester
     interface ISpectrumGenerator
     {
         Texture2D Spectrum { get; }
-        int Update(float[] fftData, ref Rect selectionRect);
+        int Update(IPdArray pdArray, Rect selectionRect);
     }
     
     public class SpectrumGenerator : ISpectrumGenerator
@@ -18,23 +18,29 @@ namespace cylvester
             texture_ = new Texture2D(width, height);
         }
         
-        public int Update(float[] fftData, ref Rect selectionRect)
+        public int Update(IPdArray pdArray, Rect selectionRect)
         {
             var numPixels = 0;
             for (var x = 0; x < texture_.width; x++)
             {
-                var magnitude = fftData[x] * 20f;
                 for (var y = 0; y < texture_.height; y++)
                 {
-                    var mY = texture_.height - selectionRect.y;
+                    var color = Color.black;
+                    var validPixel = false;
+                    
+                    if (pdArray != null)
+                    {
+                        var magnitude = pdArray.Data[x] * 20f;
+                        validPixel = magnitude > y;
+                        color = validPixel ? Color.green : Color.black;
+                    }
 
-                    var fillPixel = magnitude > y;
-                    var color =  fillPixel ? Color.green : Color.black;
+                    var mY = texture_.height - selectionRect.y;
                     if ((selectionRect.x < x && x < (selectionRect.x + selectionRect.width)) &&
                         (mY - selectionRect.height < y && y < mY))
                     {
                         color.a = 1f;
-                        if (fillPixel)
+                        if (validPixel)
                             numPixels++;
                     }
                     else

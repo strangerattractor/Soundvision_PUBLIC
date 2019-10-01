@@ -15,9 +15,10 @@ namespace cylvester
         private ISpectrumGenerator spectrumGenerator_;
         private IRectangularSelection rectangularSelection_;
         private Rect paintSpace_;
-        
-        private SerializedProperty pdBackendProperty_;
 
+        private SerializedProperty selectionProperty_;
+        private SerializedProperty pdBackendProperty_;
+        
         
         public void OnEnable()
         {
@@ -25,21 +26,21 @@ namespace cylvester
             rectangularSelection_ = new RectangularSelection(TextureWidth, TextureHeight);
 
             pdBackendProperty_ = serializedObject.FindProperty("pdBackend");
-            
+            selectionProperty_ = serializedObject.FindProperty("selection");
+
         }
 
         public override void OnInspectorGUI()
         {
-
             var behaviour = (IPdSpectrumBind)target;
             EditorGUILayout.PropertyField(pdBackendProperty_);
-            serializedObject.ApplyModifiedProperties();
 
             GUILayout.Label("PureData Inputs", EditorStyles.boldLabel);
             behaviour.Channel = EditorGUILayout.Popup("Input Channel", behaviour.Channel, channels);
 
-            if (Application.isPlaying && pdBackendProperty_ != null)
-                RenderSpectrumExtractor(behaviour);
+            RenderSpectrumExtractor(behaviour);
+            serializedObject.ApplyModifiedProperties();
+
         }
 
         private void RenderSpectrumExtractor(IPdSpectrumBind behaviour)
@@ -53,9 +54,12 @@ namespace cylvester
             if (Event.current.type == EventType.Repaint)
             {
                 paintSpace_ = paintSpace;
-                var spectrumArray = behaviour.GetPdArray(behaviour.Channel);
-                
-                behaviour.Energy = spectrumGenerator_.Update(spectrumArray.Data, ref behaviour.Selection);
+
+                IPdArray spectrumArray = null;
+                if(Application.isPlaying)    
+                    spectrumArray = behaviour.GetPdArray(behaviour.Channel);
+
+                behaviour.Energy = spectrumGenerator_.Update(spectrumArray, selectionProperty_.rectValue);
                 GUI.DrawTexture(paintSpace_, spectrumGenerator_.Spectrum);
             }
             
@@ -80,8 +84,7 @@ namespace cylvester
                     }
                     case EventType.MouseDrag:
                     {
-                        rectangularSelection_.Update(Event.current.mousePosition, 
-                            ref paintSpace_, ref behaviour.Selection);
+                        selectionProperty_.rectValue = rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
                         break;
                     }
                 }
