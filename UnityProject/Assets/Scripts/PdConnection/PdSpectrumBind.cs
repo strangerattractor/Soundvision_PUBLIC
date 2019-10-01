@@ -17,7 +17,7 @@ namespace cylvester
         
         public IPdArray GetPdArray(int index)
         {
-            return pdBackend.FFTArrayContainer[index];
+            return pdBackend.fftArrayContainer[index];
         }
 
         public int Channel { get; set; }

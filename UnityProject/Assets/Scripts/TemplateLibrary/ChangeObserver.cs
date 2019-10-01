@@ -2,25 +2,22 @@ using System;
 
 namespace cylvester
 {
-    interface IParameter<T> where T : IComparable<T> 
+    interface IChangeObserver<T> where T : IComparable<T> 
     {
-        T Value { set; get; }
-        
+        T Value { set; }
         event Action ValueChanged;
     }
     
-    public class Parameter<T> : IParameter<T> where T : IComparable<T>
+    public class ChangeObserver<T> : IChangeObserver<T> where T : IComparable<T>
     {
-        public Parameter(T initial)
+        private T value_;
+        public ChangeObserver(T initial)
         {
             Value = initial;
         }
         
-        private T value_;
-        
         public T Value
         {
-            get => value_;
             set
             {
                 if (value.CompareTo(value_) == 0) 
@@ -32,6 +29,5 @@ namespace cylvester
         }
         
         public event Action ValueChanged = () => { };
-
     }
 }
