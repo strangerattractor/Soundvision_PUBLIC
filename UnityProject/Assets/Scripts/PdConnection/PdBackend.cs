@@ -3,52 +3,53 @@ using UnityEngine;
 
 namespace cylvester
 {
-    public interface IPdBackend
-    {
-        string MainPatch { get; set; }
-        int NumInputChannels { get; set;}
-        
-        IPdArray LevelMeterArray { get; }
-        IFftArrayContainer FFTArrayContainer { get; }
-    }
-    
-    public class PdBackend : MonoBehaviour, IPdBackend
+    public class PdBackend : MonoBehaviour
     {
         public string mainPatch = "analyzer.pd";
         public int inchannels = 2;
-        
-        private Action onToggled_;
-        private PdArray levelMeterArray_;
-        private FftArrayContainer fftArrayContainer_;
-        
-        private const int NumMaxInputChannels = 16;
-        
-        public IPdArray LevelMeterArray => levelMeterArray_;
-        public IFftArrayContainer FFTArrayContainer => fftArrayContainer_;
+        public int samplePlayback = 0;
+        public PdArray levelMeterArray;
+        public FftArrayContainer fftArrayContainer;
 
-        public string MainPatch { get => mainPatch; set => mainPatch = value; }
-        public int NumInputChannels { get => inchannels -1; set => inchannels = value + 1; }
-
-
+        private IChangeObserver<int> samplePlaybackObserver_;
+        private Action onSamplePlaybackChanged_;
+        private IPdSocket pdSocket_;
+        
+        
         private void Start()
         {
             PdProcess.Instance.Start(mainPatch, inchannels);
-            levelMeterArray_ = new PdArray("levelmeters", NumMaxInputChannels);
-            fftArrayContainer_ = new FftArrayContainer();
+            levelMeterArray = new PdArray("levelmeters", PdConstant.NumMaxInputChannels);
+            fftArrayContainer = new FftArrayContainer();
+            pdSocket_ = new PdSocket(PdConstant.ip, PdConstant.port);
+            
+            samplePlaybackObserver_ = new ChangeObserver<int>(samplePlayback);
+
+            onSamplePlaybackChanged_ = () =>
+            {
+                var bytes = new byte[]{(byte)PdMessage.SampleSound, (byte)samplePlayback};
+                pdSocket_.Send(bytes);
+            };
+            
+            samplePlaybackObserver_.ValueChanged += onSamplePlaybackChanged_;
         }
 
         private void OnDestroy()
         {
             PdProcess.Instance.Stop();
-            levelMeterArray_?.Dispose();
+            levelMeterArray?.Dispose();
+            pdSocket_?.Dispose();
+            samplePlaybackObserver_.ValueChanged -= onSamplePlaybackChanged_;
         }
 
         public void Update()
         {
             if(PdProcess.Instance.Running)
-                levelMeterArray_.Update();
+                levelMeterArray.Update();
 
-            fftArrayContainer_.Update();
+            fftArrayContainer.Update();
+            
+            samplePlaybackObserver_.Value = samplePlayback;
         }
     }
 }
