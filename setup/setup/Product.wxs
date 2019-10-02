@@ -26,7 +26,7 @@
   </Product>
 
   <Fragment>
-    <Feature Id="DoubleSpace" Title="Standard" Level="1">
+    <Feature Id="Cylvester" Title="Standard" Level="1">
       <ComponentGroupRef Id="UnityComponentGroup"/>
     </Feature>
 

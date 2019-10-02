@@ -98,8 +98,14 @@
       <Component Id="cmp83D77F35901DD9A2CD218C59102CF669" Directory="dirE33BC13E914FD97429002FB9B563FE82" Guid="*">
         <File Id="fil1CDE31F3F15E6AFA617CC7C8CD1C999D" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\level0.resS" />
       </Component>
+      <Component Id="cmpC75607460F1DD75FCEB073090642A8FD" Directory="dirE33BC13E914FD97429002FB9B563FE82" Guid="*">
+        <File Id="fil10F20268A9148991DE5E4EFE5B64F369" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\resources.assets" />
+      </Component>
       <Component Id="cmp9C1995BD47B44C4B410585C2CC6BD7FD" Directory="dirE33BC13E914FD97429002FB9B563FE82" Guid="*">
         <File Id="fil82A63F131C860E38BB0C583CF376AFD3" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\sharedassets0.assets" />
+      </Component>
+      <Component Id="cmp24150CF7377A0DD16C594F6C9C9ABDAC" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filD8B137E0D7AF488101B48C7E01857A10" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\Accessibility.dll" />
       </Component>
       <Component Id="cmp568EEE325946071AA0AB794EAAD48720" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filA8E41B7BB497FB902B1D02543FCD4007" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\Assembly-CSharp.dll" />
@@ -131,6 +137,9 @@
       <Component Id="cmp121F661F1A71AB94400CABDF4621804A" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil4205202837425B78292E885CF1E35801" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.ComponentModel.Composition.dll" />
       </Component>
+      <Component Id="cmpECBD81409CC3849B3F4EBC5AB14DAE36" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filAD116381537B343A0C9B4405A730837C" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.ComponentModel.DataAnnotations.dll" />
+      </Component>
       <Component Id="cmp1B630F04C4987D5989C43AF369CD5450" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil83FDE91AA85800E4E24B31999409E9FC" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.ComponentModel.dll" />
       </Component>
@@ -139,6 +148,9 @@
       </Component>
       <Component Id="cmpBD035290E6FCDA2FCC5233DFD4EC3102" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filB10F14D3F900386032F7B8AF13B6B6AF" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Configuration.dll" />
+      </Component>
+      <Component Id="cmpBE9813B28E5938CC528870E9E8591B27" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filAC4DB2C08D8E1B4CD157D4DC7FCBE4E0" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Configuration.Install.dll" />
       </Component>
       <Component Id="cmpF792C65CD171592786680A61C2DD5915" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil7C340C447CF12ACAF665732BB7AAA0E8" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Console.dll" />
@@ -176,6 +188,12 @@
       <Component Id="cmp016EE8874D754091FF87F2361D3054FD" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil1A732DE44182F6DB328F8FDF80E6C6DA" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Globalization.Extensions.dll" />
       </Component>
+      <Component Id="cmpFF63F8DAF7F54244B2027A2D54462C54" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil71A6168DD1146665049587E0F60E0961" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.IdentityModel.dll" />
+      </Component>
+      <Component Id="cmpAC7D4A9779AC62CEFE9F40AB51321438" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filE62B507BC73FD9DE20D600DE5F8BCEA1" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.IdentityModel.Selectors.dll" />
+      </Component>
       <Component Id="cmp479E0584326102ECD469CDEBBF83261A" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil3A208C2C9BF5D9D0E51318DF0F23BFA2" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.IO.Compression.dll" />
       </Component>
@@ -196,6 +214,9 @@
       </Component>
       <Component Id="cmp00ADC26BF9AAEB2DF6FEF35D02A9B886" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filB27C9445E2027F506B42AD6ACE7F2707" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Linq.Expressions.dll" />
+      </Component>
+      <Component Id="cmp050481B3789A9B9FC3126EF02D90C16D" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filFF0FE90B691250B24F8B1311BB161EA3" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Messaging.dll" />
       </Component>
       <Component Id="cmpDE42E499CF17CD1776EAC8C55DF8C7B7" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filB161508B65D89822D66A5012C4ECBD99" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Net.Http.dll" />
@@ -230,6 +251,9 @@
       <Component Id="cmp4C2F7BDE5E998D29D7B2376B5434C9A9" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filF04FF914948AF64E4C456E2072313091" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Runtime.dll" />
       </Component>
+      <Component Id="cmpF0A6ACEEF3FB98ED15F5A3BE8E57DD2C" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filA7FC73D7DFE9BE6B14E7A94037838E58" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Runtime.DurableInstancing.dll" />
+      </Component>
       <Component Id="cmp10A1F29836AF0AA773793AE46969C10F" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filB0514105B5EBFB6DA0AEDFE3D850C6A3" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Runtime.Extensions.dll" />
       </Component>
@@ -241,6 +265,12 @@
       </Component>
       <Component Id="cmp3037C1DC5E154C7C3F98676E1DBBDADB" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filE1F0980631C50F7A89A51C9573F84923" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Runtime.Serialization.Xml.dll" />
+      </Component>
+      <Component Id="cmpA46CC7277A399909DB114706B0979E8B" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil465C244FB247610182E400B172CCA245" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.ServiceModel.Discovery.dll" />
+      </Component>
+      <Component Id="cmpFB8387A8C2BE9569EDCC39768ED4BE04" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil9DCB0F1E40119126EE3A8371679957D9" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.ServiceModel.dll" />
       </Component>
       <Component Id="cmp7FA6F82ADCA6EDC05E6BA26771049C64" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil3ECAE95134678D2AFE9BA09942C79A49" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.ServiceModel.Internals.dll" />
@@ -259,6 +289,21 @@
       </Component>
       <Component Id="cmpFDFC2F80C3308E0B720193C18EC24E11" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="filA60F02F63A866B83FBC42020F3C9C016" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Transactions.dll" />
+      </Component>
+      <Component Id="cmp194CF1E4EA7124F6008642309193C4AB" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="filC73B7D0B60045393F3392157D9E3A1E3" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Web.ApplicationServices.dll" />
+      </Component>
+      <Component Id="cmp9556DD16D8935AADA920BC487598291A" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil904C13A9207E5F6200FA48DA56D93DE9" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Web.dll" />
+      </Component>
+      <Component Id="cmpFDA159C8D7BEF84C1F07ABA8CF841A93" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil1E62F3EDDDCB92CB843A3EA4F867196C" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Web.Services.dll" />
+      </Component>
+      <Component Id="cmp0D3DED5FC7364344FBC98B97EF04E87A" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil7433B58A4315EF47B27A59F5069A6915" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Windows.Forms.dll" />
+      </Component>
+      <Component Id="cmpF854212DBA15963DA9F966A8DB2253F8" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
+        <File Id="fil7AB5734F1D9DE596531DE07093035249" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Xaml.dll" />
       </Component>
       <Component Id="cmp3B398F45FBEE612CBAA616666CA703C8" Directory="dir75BD4EB5480839D33B06C6A29AFDD366" Guid="*">
         <File Id="fil963F129EED1F5BA85514BFCCE613B966" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Managed\System.Xml.dll" />
@@ -482,11 +527,70 @@
       <Component Id="cmp8D04238D4C68C99C2C3E2EE0106ABEC4" Directory="dir7FC4014243C142C7F50585F82A498721" Guid="*">
         <File Id="fil8304E85CB9985CF7FBCD97FF2BA1F56E" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\Resources\unity_builtin_extra" />
       </Component>
+      <Component Id="cmp3517940D78A652A02364151F4B8E6DA5" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="filC892CD81484E54AE0A4D1D31C991FB32" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\analyzer.pd" />
+      </Component>
+      <Component Id="cmpBD1DA498AD7464CBDF6058646DCB964A" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="fil49EBA8510DD06C54C8F48749CCAC4E14" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\core.pd" />
+      </Component>
+      <Component Id="cmp394766E5C8DD6E3580EE8EDDB068CBE7" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="filDDD211CB0347F60F999177A9CCDDD45D" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\count.pd" />
+      </Component>
+      <Component Id="cmp7E82E29DBE8A2CAE8B251469D7BDDDDA" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="filFA42476B4DBAC32E94852897E7002DED" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\drumLoop.wav" />
+      </Component>
+      <Component Id="cmpE3AA898D68F78A5C9F48E5E5324319CF" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="filA7B29226D92E03836E90E0E1AAC3A07F" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\shmem.dll" />
+      </Component>
+      <Component Id="cmpE70A942C6A5289BD11167ACE4F0BA529" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="filCC85D238F62F688A61CD795573CCF598" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\shmem.exp" />
+      </Component>
+      <Component Id="cmp56DFEB281BE96B4873615FE1F176F904" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="filEB1520BE06B929F59E0898FFC13AC87B" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\shmem.lib" />
+      </Component>
+      <Component Id="cmp01EDF298F18B557044AF35ADBC33A12A" Directory="dirA1637744C6E38FE06CF2DEBF0E3C1176" Guid="*">
+        <File Id="fil67392477B01C0487512824A98ED4BF1E" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\patch\spectrum.pd" />
+      </Component>
+      <Component Id="cmp4A85689512DEDE95683E3EC858B1D57A" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="fil5E5CD645BFC087B5C1D58DDB06AD71F4" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\libwinpthread-1.dll" />
+      </Component>
+      <Component Id="cmp02FF08CAB10B1797EF7779FB2F88D15B" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="fil8F002491ED474BAC657C541F907E1C32" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\msvcr90.dll" />
+      </Component>
+      <Component Id="cmp5BEFCCF2E16CE9D4FDB61F9750198111" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="fil9E9E9BD36E2111B6CF9E74E140164827" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\msvcrt.dll" />
+      </Component>
+      <Component Id="cmp357776BC2CE8395B7A093B86EA0DEE29" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="fil93127DDC7B620C88541F8C0CFA967FF4" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pd.com" />
+      </Component>
+      <Component Id="cmpA4D7996D1A2A634CB778733351EA347C" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="filEEC9CD1A7B41EFAB651DA0730D206788" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pd.def" />
+      </Component>
+      <Component Id="cmpDB54576544D5364CD38EB0B65CBF03FA" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="fil745AFE70B5B5DFC47B96890E802DDD40" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pd.dll" />
+      </Component>
+      <Component Id="cmp4B9D338E6D6BDC20DC8B4EFC31744F4C" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="fil46017180F59383328816A55A5103080B" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pd.exe" />
+      </Component>
+      <Component Id="cmp515F49D13F31A996F60E76D1BFF3C889" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="filA9C4132157E2D6A3F97E5F73B334547B" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pd.lib" />
+      </Component>
+      <Component Id="cmpD8C78D3CA2C49C20315BD7051AE31BF6" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="filF822444E6CAAE269E1A3B8D9D7AEFE4C" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pthreadVC.dll" />
+      </Component>
+      <Component Id="cmpC2E27E9271CC5853BAAB51C1A8EEB41E" Directory="dirCFBC354DD9386965685D912524005ACF" Guid="*">
+        <File Id="filB08E59DBC93F88D0C2AFDA2E7C5DC2CF" KeyPath="yes" Source="$(var.UnityBuildDir)\SoundVision_Data\StreamingAssets\pd\win\pthreadVC.lib" />
+      </Component>
     </ComponentGroup>
   </Fragment>
   <Fragment>
     <DirectoryRef Id="dir7074A2BAF12B381DF4205578FFE8EBE3">
       <Directory Id="dir447B45677D2EB01F21A77390D35CEB6F" Name="2.0" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirC24BA38F92505C9BC53A4FC227CC70D7">
+      <Directory Id="dir49DB2BE4D99D50B8F5E0D137DD8E744C" Name="pd" />
     </DirectoryRef>
   </Fragment>
   <Fragment>
@@ -530,6 +634,11 @@
     </DirectoryRef>
   </Fragment>
   <Fragment>
+    <DirectoryRef Id="dir49DB2BE4D99D50B8F5E0D137DD8E744C">
+      <Directory Id="dirA1637744C6E38FE06CF2DEBF0E3C1176" Name="patch" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
     <DirectoryRef Id="dirEB6451E1F6DECDBE41321BD9ECA04E8E">
       <Directory Id="dirA54D56B00ACDFF3B17BBCE01494FB492" Name="etc" />
     </DirectoryRef>
@@ -537,6 +646,16 @@
   <Fragment>
     <DirectoryRef Id="dirEB6451E1F6DECDBE41321BD9ECA04E8E">
       <Directory Id="dirAFD6DF7023A87ADCE4D8EDA434DF1029" Name="EmbedRuntime" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirE33BC13E914FD97429002FB9B563FE82">
+      <Directory Id="dirC24BA38F92505C9BC53A4FC227CC70D7" Name="StreamingAssets" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir49DB2BE4D99D50B8F5E0D137DD8E744C">
+      <Directory Id="dirCFBC354DD9386965685D912524005ACF" Name="win" />
     </DirectoryRef>
   </Fragment>
   <Fragment>

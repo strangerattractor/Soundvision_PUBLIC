@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -31,9 +32,8 @@ namespace cylvester
             pdProcess_.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             pdProcess_.StartInfo.UseShellExecute = false;
             pdProcess_.StartInfo.FileName = Application.streamingAssetsPath + "/pd/win/pd.com";
-
             var path = Application.streamingAssetsPath + "/pd/patch/" + mainPatch;
-            pdProcess_.StartInfo.Arguments = "-nogui -rt " + path;
+            pdProcess_.StartInfo.Arguments = "-nogui -rt \"" + path + "\"";
 
             if (!pdProcess_.Start())
             {
