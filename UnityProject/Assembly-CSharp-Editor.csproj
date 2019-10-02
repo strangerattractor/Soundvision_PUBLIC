@@ -65,7 +65,8 @@
     <Compile Include="Assets\Editor\SpectrumGeneratorEditMode.cs" />
     <Compile Include="Assets\Editor\UnitTest\UnitTest_ChangeObserver.cs" />
     <Compile Include="Assets\Editor\UnitTest\UnitTest_RectangularSelection.cs" />
-    <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGenerator.cs" />
+    <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGeneratorEditMode.cs" />
+    <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGeneratorPlayMode.cs" />
     <Compile Include="Assets\Scripts\VideoInput\Editor\UnitTest\ComponentFactoryTestCase.cs" />
     <Compile Include="Assets\Scripts\VideoInput\Editor\UnitTest\KinectSensorTestCase.cs" />
     <Compile Include="Assets\ThridParty\Editor\KinectCopyPluginDataHelper.cs" />

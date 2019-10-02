@@ -45,7 +45,6 @@ namespace cylvester
             GUILayout.Label("Spectrum Extractor", EditorStyles.boldLabel);
             paintSpace_ = GUILayoutUtility.GetRect(behaviour.TextureWidth, behaviour.TextureWidth,
                 behaviour.TextureHeight, behaviour.TextureHeight);
-
             
             UpdateSelection();
 
