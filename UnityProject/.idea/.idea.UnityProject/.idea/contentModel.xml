@@ -13,9 +13,10 @@
           <e p="PdBackendEditor.cs" t="Include" />
           <e p="PdSpectrumBindEditor.cs" t="Include" />
           <e p="RectangularSelection.cs" t="Include" />
-          <e p="SpectrumGenerator.cs" t="Include" />
+          <e p="SpectrumGeneratorEditMode.cs" t="Include" />
           <e p="UnitTest" t="Include">
             <e p="UnitTest_ChangeObserver.cs" t="Include" />
+            <e p="UnitTest_RectangularSelection.cs" t="Include" />
             <e p="UnitTest_SpectrumGenerator.cs" t="Include" />
           </e>
         </e>
@@ -30,17 +31,24 @@
                 <e p="RMSAnalyzer.cs" t="Include" />
               </e>
             </e>
+            <e p="PdBackendDemo" t="Include">
+              <e p="script" t="Include">
+                <e p="BoomBall.cs" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="PdConnection" t="Include">
             <e p="FFTArrayContainer.cs" t="Include" />
+            <e p="ISpectrumGenerator.cs" t="Include" />
             <e p="PdArray.cs" t="Include" />
             <e p="PdBackend.cs" t="Include" />
             <e p="PdConstant.cs" t="Include" />
             <e p="PdProcess.cs" t="Include" />
             <e p="PdSocket.cs" t="Include" />
             <e p="PdSpectrumBind.cs" t="Include" />
+            <e p="SpectrumGeneratorPlayMode.cs" t="Include" />
           </e>
           <e p="TemplateLibrary" t="Include">
             <e p="ChangeObserver.cs" t="Include" />

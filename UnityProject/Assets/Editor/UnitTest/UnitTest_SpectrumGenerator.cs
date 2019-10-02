@@ -26,7 +26,7 @@ namespace cylvester
             standardColor_ = new Color(0f, 0f, 0f, 0.2f);
             selectedColor_ = new Color(0f, 0f, 0f, 1f);
         }
-
+/*
         [Test]
         public void Construction()
         {
@@ -107,5 +107,7 @@ namespace cylvester
                 }
             }
         }
+            */
+
     }
 }

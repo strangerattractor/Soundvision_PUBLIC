@@ -59,13 +59,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\Examples\Example1\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Example1\script\RmsAnalyzer.cs" />
+    <Compile Include="Assets\Scenes\Examples\PdBackendDemo\script\BoomBall.cs" />
     <Compile Include="Assets\Scripts\PdConnection\FFTArrayContainer.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdBackend.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdConstant.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdProcess.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdSocket.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdSpectrumBind.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\SpectrumGeneratorPlayMode.cs" />
     <Compile Include="Assets\Scripts\TemplateLibrary\ChangeObserver.cs" />
     <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
     <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />
