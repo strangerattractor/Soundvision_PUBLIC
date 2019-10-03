@@ -178,7 +178,6 @@
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingConfidence.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
-    <None Include="Assets\Shader\FFT.shader" />
     <None Include="Assets\Shader\Vertex Modifier.shader" />
     <None Include="Assets\Resources\buildNumber.txt" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">

@@ -49,8 +49,8 @@ namespace cylvester
                 vertices[index] = new Vector3(currentPos, 0, 0);
                 vertices[index+1] = new Vector3(currentPos + width , 0, 0);
                 
-                vertices[index+numVerticesPerLine] = new Vector3(currentPos, 1, 0);
-                vertices[index+1+numVerticesPerLine] = new Vector3(currentPos + width, 1, 0);
+                vertices[index+numVerticesPerLine] = new Vector3(currentPos, 0, 0);
+                vertices[index+1+numVerticesPerLine] = new Vector3(currentPos + width, 0, 0);
 
                 currentPos += step;
             }
