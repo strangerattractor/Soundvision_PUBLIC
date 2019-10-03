@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
     <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
+    <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
     <Compile Include="Assets\Scripts\PdConnection\FFTArrayContainer.cs" />
@@ -179,6 +180,7 @@
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
     <None Include="Assets\Shader\Vertex Modifier.shader" />
+    <None Include="Assets\ThridParty\Assets\JapaneseHouse\ReadMe.txt" />
     <None Include="Assets\Resources\buildNumber.txt" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
