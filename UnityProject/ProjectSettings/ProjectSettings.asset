@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Chikashi Miyama
+  companyName: Cylvester
   productName: SoundVision
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -47,7 +47,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 0
+  m_ActiveColorSpace: 1
   m_MTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
@@ -257,7 +257,14 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 51866e0f77a17e5449fb444215f5c04b, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
@@ -528,15 +535,15 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
-    1: EXTOSC
-    7: EXTOSC
-    13: EXTOSC
-    19: EXTOSC
-    21: EXTOSC
-    25: EXTOSC
-    26: EXTOSC
-    27: EXTOSC
-    28: EXTOSC
+    1: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    7: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    13: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    19: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    21: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    25: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    26: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    27: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
+    28: EXTOSC;UNITY_POST_PROCESSING_STACK_V2
   platformArchitecture: {}
   scriptingBackend:
     Standalone: 0
