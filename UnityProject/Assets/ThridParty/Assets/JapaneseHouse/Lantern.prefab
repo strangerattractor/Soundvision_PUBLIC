@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 490430}
   - component: {fileID: 3390430}
   - component: {fileID: 2390430}
-  - component: {fileID: 6546528}
-  - component: {fileID: 6546526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 381e33c75cf2052408935af982ac46ed, type: 2}
+  - {fileID: 2100000, guid: f044463ea66a19c47aef13261142b54e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,29 +77,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6546528
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190430}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.13457376, y: 0.95593965, z: 0.10087377}
-  m_Center: {x: -0.007265359, y: 0.4741879, z: -0.0065073073}
---- !u!65 &6546526
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190430}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6560731, y: 0.671468, z: 0.42000008}
-  m_Center: {x: -0.00054073334, y: 1.2965742, z: 0.00062561035}

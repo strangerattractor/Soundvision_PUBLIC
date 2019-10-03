@@ -123,10 +123,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ladder
       objectReference: {fileID: 0}
-    - target: {fileID: 125338, guid: 565d43c41856e444fa9c8bdb6e9b10ed, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 425338, guid: 565d43c41856e444fa9c8bdb6e9b10ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.52
@@ -629,10 +625,10 @@ MonoBehaviour:
   pdBackend: {fileID: 1777759558}
   selection:
     serializedVersion: 2
-    x: 8.078896
-    y: 41
-    width: 43.424065
-    height: 209
+    x: 15.147929
+    y: 98
+    width: 126.23274
+    height: 440
   energyChanged:
     m_PersistentCalls:
       m_Calls:
@@ -673,10 +669,6 @@ PrefabInstance:
     - target: {fileID: 190430, guid: 21aef60e0ae2fdb4680ae2e49a81e7c6, type: 3}
       propertyPath: m_Name
       value: Lantern
-      objectReference: {fileID: 0}
-    - target: {fileID: 190430, guid: 21aef60e0ae2fdb4680ae2e49a81e7c6, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490430, guid: 21aef60e0ae2fdb4680ae2e49a81e7c6, type: 3}
       propertyPath: m_LocalPosition.x
