@@ -77,8 +77,11 @@
     <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\CombMesh.cs" />
     <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\PointCloudBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
+    <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
@@ -175,6 +178,7 @@
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingConfidence.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
+    <None Include="Assets\Shader\FFT.shader" />
     <None Include="Assets\Shader\Vertex Modifier.shader" />
     <None Include="Assets\Resources\buildNumber.txt" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
