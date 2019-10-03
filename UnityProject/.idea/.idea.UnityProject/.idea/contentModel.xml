@@ -17,7 +17,8 @@
           <e p="UnitTest" t="Include">
             <e p="UnitTest_ChangeObserver.cs" t="Include" />
             <e p="UnitTest_RectangularSelection.cs" t="Include" />
-            <e p="UnitTest_SpectrumGenerator.cs" t="Include" />
+            <e p="UnitTest_SpectrumGeneratorEditMode.cs" t="Include" />
+            <e p="UnitTest_SpectrumGeneratorPlayMode.cs" t="Include" />
           </e>
         </e>
         <e p="Resources" t="Include">
@@ -25,15 +26,21 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="Examples" t="Include">
-            <e p="Example1" t="Include">
+            <e p="Composition" t="Include">
               <e p="script" t="Include">
                 <e p="BallMapping.cs" t="Include" />
                 <e p="RMSAnalyzer.cs" t="Include" />
               </e>
             </e>
-            <e p="PdBackendDemo" t="Include">
+            <e p="PdBackend" t="Include">
               <e p="script" t="Include">
                 <e p="BoomBall.cs" t="Include" />
+              </e>
+            </e>
+            <e p="VisualEffectGraph" t="Include">
+              <e p="script" t="Include">
+                <e p="FlareBind.cs" t="Include" />
+                <e p="SmokeBind.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -69,8 +76,11 @@
             <e p="KinectSensor.cs" t="Include" />
           </e>
           <e p="Visualizer" t="Include">
+            <e p="CombMesh.cs" t="Include" />
             <e p="IRPanelBehaviour.cs" t="Include" />
             <e p="PointCloudBehaviour.cs" t="Include" />
+            <e p="SpectrumVisualizer.cs" t="Include" />
+            <e p="WaterfallVisualizer.cs" t="Include" />
             <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
         </e>
