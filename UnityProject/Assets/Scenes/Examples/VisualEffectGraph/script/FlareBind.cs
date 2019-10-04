@@ -8,6 +8,6 @@ public class FlareBind : MonoBehaviour
     
     public void OnEnergyChanged(float energy)
     {
-        flareEffect.SetFloat(Spread, energy * 0.01f );
+        flareEffect.SetFloat(Spread, energy * 0.1f + 0.1f);
     }
 }
