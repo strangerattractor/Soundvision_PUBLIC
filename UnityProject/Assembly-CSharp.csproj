@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
     <Compile Include="Assets\Scripts\PdConnection\FFTArrayContainer.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\FFTArraySelector.cs" />
     <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdBackend.cs" />

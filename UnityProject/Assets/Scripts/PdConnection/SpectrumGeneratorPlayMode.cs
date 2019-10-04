@@ -4,18 +4,18 @@ namespace cylvester
 {
     public class SpectrumGeneratorPlayMode : SpectrumGenerator, ISpectrumGenerator
     {
-        private IPdArray pdArray_;
+        private ISpectrumArraySelector arraySelector_;
         
-        public SpectrumGeneratorPlayMode(int textureWidth, int textureHeight, IPdArray pdArray)
+        public SpectrumGeneratorPlayMode(int textureWidth, int textureHeight, ISpectrumArraySelector arraySelector)
             :base(textureWidth, textureHeight)
         {
-            pdArray_ = pdArray;
+            arraySelector_ = arraySelector;
         }
 
         public int Update( Rect selectionRect)
         {
             var numPixels = 0;
-            var data = pdArray_.Data;
+            var data = arraySelector_.SelectedArray;
             OnAllPixels((x, y) =>
             {
                 var magnitude = data[x] * 20f;

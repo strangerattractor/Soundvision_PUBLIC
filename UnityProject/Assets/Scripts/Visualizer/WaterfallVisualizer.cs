@@ -30,7 +30,7 @@ namespace cylvester
         
         public void Update()
         {
-            spectrumArray_ = pdBackend.fftArrayContainer[channel-1];
+            spectrumArray_ = pdBackend.spectrumArrayContainer[channel-1];
             visualizers_[head_].Spectrum = spectrumArray_.Data;
             head_++;
             head_ %= historySize;

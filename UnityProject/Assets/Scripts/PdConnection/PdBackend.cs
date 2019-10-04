@@ -8,7 +8,7 @@ namespace cylvester
         public string mainPatch = "analyzer.pd";
         public int samplePlayback;
         public PdArray levelMeterArray;
-        public IFftArrayContainer fftArrayContainer;
+        public ISpectrumArrayContainer spectrumArrayContainer;
 
         private IChangeObserver<int> samplePlaybackObserver_;
         private Action onSamplePlaybackChanged_;
@@ -18,7 +18,7 @@ namespace cylvester
         {
             PdProcess.Instance.Start(mainPatch);
             levelMeterArray = new PdArray("levelmeters", PdConstant.NumMaxInputChannels);
-            fftArrayContainer = new FftArrayContainer();
+            spectrumArrayContainer = new SpectrumArrayContainer();
             pdSocket_ = new PdSocket(PdConstant.ip, PdConstant.port);
             
             samplePlaybackObserver_ = new ChangeObserver<int>(samplePlayback);
@@ -45,7 +45,7 @@ namespace cylvester
             if(PdProcess.Instance.Running)
                 levelMeterArray.Update();
 
-            fftArrayContainer.Update();
+            spectrumArrayContainer.Update();
             samplePlaybackObserver_.Value = samplePlayback;
         }
     }

@@ -1,16 +1,16 @@
 namespace cylvester
 {
-    public interface IFftArrayContainer
+    public interface ISpectrumArrayContainer
     {
         IPdArray this[int index] { get; }
         void Update();
     }
     
-    public class FftArrayContainer : IFftArrayContainer
+    public class SpectrumArrayContainer : ISpectrumArrayContainer
     {
         private readonly IPdArray[] arrays_;
 
-        public FftArrayContainer()
+        public SpectrumArrayContainer()
         {
             arrays_ = new IPdArray[16];
             for(var i  = 0; i < 16; ++i)

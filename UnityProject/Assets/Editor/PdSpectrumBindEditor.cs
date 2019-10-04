@@ -16,27 +16,29 @@ namespace cylvester
         private SerializedProperty selectionProperty_;
         private SerializedProperty pdBackendProperty_;
         private SerializedProperty energyChangedProperty_;
+        private SerializedProperty channelProperty_;
         private Rect paintSpace_;
         private ISpectrumGenerator spectrumGeneratorEditMode_;
 
         public void OnEnable()
         {
-            var behaviour = (IPdSpectrumBind) target;
+            var behaviour = (PdSpectrumBind) target;
 
             pdBackendProperty_ = serializedObject.FindProperty("pdBackend");
             selectionProperty_ = serializedObject.FindProperty("selection");
             energyChangedProperty_ = serializedObject.FindProperty("energyChanged");
+            channelProperty_ = serializedObject.FindProperty("channel");
             rectangularSelection_ = new RectangularSelection(behaviour.TextureWidth, behaviour.TextureHeight);
             spectrumGeneratorEditMode_ = new SpectrumGeneratorEditMode(behaviour.TextureWidth, behaviour.TextureHeight);
         }
 
         public override void OnInspectorGUI()
         {
-            var behaviour = (IPdSpectrumBind) target;
+            var behaviour = (PdSpectrumBind) target;
             EditorGUILayout.PropertyField(pdBackendProperty_);
 
             GUILayout.Label("PureData Inputs", EditorStyles.boldLabel);
-            behaviour.Channel = EditorGUILayout.Popup("Input Channel", behaviour.Channel, channels_);
+            channelProperty_.intValue = EditorGUILayout.Popup("Input Channel", channelProperty_.intValue, channels_);
 
             GUILayout.Label("Callback", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(energyChangedProperty_);
