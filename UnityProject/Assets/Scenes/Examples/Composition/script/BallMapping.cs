@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-namespace Scenes.Examples.Example1.script
+namespace cylvester
 {
     public class BallMapping : MonoBehaviour
     {
-        [SerializeField] private GameObject ball;
+        [SerializeField] private GameObject ball = null;
         [SerializeField] private float mapToSize = 10f;
-        [SerializeField] private RmsAnalyzer analyzer;
+        [SerializeField] private RmsAnalyzer analyzer = null;
         
         void Update()
         {

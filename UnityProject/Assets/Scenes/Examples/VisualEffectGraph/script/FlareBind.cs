@@ -3,7 +3,7 @@ using UnityEngine.Experimental.VFX;
 
 public class FlareBind : MonoBehaviour
 {
-    [SerializeField] private VisualEffect flareEffect;
+    [SerializeField] private VisualEffect flareEffect = null;
     private static readonly string Spread = "spread";
     
     public void OnEnergyChanged(float energy)

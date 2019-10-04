@@ -3,7 +3,7 @@ using UnityEngine.Experimental.VFX;
 
 public class SmokeBind : MonoBehaviour
 {
-    [SerializeField] private VisualEffect smokeEffect;
+    [SerializeField] private VisualEffect smokeEffect = null;
     private static readonly string SmokeAnimSpeed = "smokeAnimSpeed";
     
     public void OnEnergyChanged(float energy)

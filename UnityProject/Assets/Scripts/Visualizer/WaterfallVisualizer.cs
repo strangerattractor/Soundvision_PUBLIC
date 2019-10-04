@@ -6,8 +6,8 @@ namespace cylvester
     {
         private const int historySize = 32;
 
-        [SerializeField] private PdBackend pdBackend;
-        [SerializeField] private GameObject spectrumPrefab;
+        [SerializeField] private PdBackend pdBackend = null;
+        [SerializeField] private GameObject spectrumPrefab = null;
         [SerializeField, Range(1, 16)] private int channel = 1;
 
         private IPdArray spectrumArray_;

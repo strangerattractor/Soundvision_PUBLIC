@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-namespace Scenes.Examples.Example1.script
+namespace cylvester
 {
     public class RmsAnalyzer : MonoBehaviour
     {

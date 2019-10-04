@@ -5,23 +5,20 @@ namespace Visualizer
 {
     class IRPanelBehaviour : MonoBehaviour
     {
-        #pragma warning disable 649
-        [SerializeField] private KinectManagerBehaviour kinectManagerBehaviour;
-        [SerializeField] private GameObject panel;
-        #pragma warning restore 649
+        [SerializeField] private KinectManagerBehaviour kinectManagerBehaviour = null;
+        [SerializeField] private GameObject panel = null;
 
         private Renderer renderer_;
-        private Texture2D texture2D_;
+        private static readonly int BaseColorMap = Shader.PropertyToID("_BaseColorMap");
 
         void Start()
         {
             renderer_ = panel.GetComponent<Renderer>();
-            texture2D_ = new Texture2D(512, 512);
         }
 
         void Update()
         {
-            renderer_.material.SetTexture("_BaseColorMap", kinectManagerBehaviour.KinectSensor.InfraredCamera.Data);
+            renderer_.material.SetTexture(BaseColorMap, kinectManagerBehaviour.KinectSensor.InfraredCamera.Data);
         }
     }
 }

@@ -9,9 +9,9 @@ namespace cylvester
 
     public class PdSpectrumBind : MonoBehaviour
     {
-        [SerializeField] private PdBackend pdBackend;
-        [SerializeField] private Rect selection;
-        [SerializeField] private UnityFloatEvent energyChanged;
+        [SerializeField] private PdBackend pdBackend = null;
+        [SerializeField] private Rect selection = Rect.zero;
+        [SerializeField] private UnityFloatEvent energyChanged = null;
         [SerializeField] private int channel = 0;
 
         private ISpectrumGenerator spectrumGenerator_;

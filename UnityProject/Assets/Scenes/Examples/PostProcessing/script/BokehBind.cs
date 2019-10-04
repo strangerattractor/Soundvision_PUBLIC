@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 public class BokehBind : MonoBehaviour
 {
     private Bloom bloom_;
-    [SerializeField] Volume volume;
+    [SerializeField] Volume volume = null;
     
     private void Start()
     {
