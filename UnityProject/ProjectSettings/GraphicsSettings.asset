@@ -41,7 +41,7 @@ GraphicsSettings:
   m_PreloadedShaders: []
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000,
     type: 0}
-  m_CustomRenderPipeline: {fileID: 11400000, guid: 3c65b94782934444b8f929d1cadc103f,
+  m_CustomRenderPipeline: {fileID: 11400000, guid: d6c75deb470c41940b09b63fbb608630,
     type: 2}
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
@@ -63,3 +63,4 @@ GraphicsSettings:
   m_AlbedoSwatchInfos: []
   m_LightsUseLinearIntensity: 1
   m_LightsUseColorTemperature: 1
+  m_LogWhenShaderIsCompiled: 0
