@@ -11,11 +11,17 @@ namespace Visualizer
         #pragma warning restore 649
 
         private Renderer renderer_;
-        
+        private Texture2D texture2D_;
+
         void Start()
         {
             renderer_ = panel.GetComponent<Renderer>();
-            renderer_.material.mainTexture = kinectManagerBehaviour.KinectSensor.InfraredCamera.Data;
+            texture2D_ = new Texture2D(512, 512);
+        }
+
+        void Update()
+        {
+            renderer_.material.SetTexture("_BaseColorMap", kinectManagerBehaviour.KinectSensor.InfraredCamera.Data);
         }
     }
 }
