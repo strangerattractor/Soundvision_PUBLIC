@@ -24,7 +24,7 @@ namespace cylvester
 
         private void Start()
         {
-            arraySelector_ = new SpectrumArraySelector(pdBackend.spectrumArrayContainer);
+            arraySelector_ = new SpectrumArraySelector(pdBackend.SpectrumArrayContainer);
             spectrumGenerator_ = new SpectrumGeneratorPlayMode(TextureWidth, TextureHeight, arraySelector_);
         }
         

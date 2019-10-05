@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\PdConnection\PdSocket.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdSpectrumBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumGeneratorPlayMode.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\WaveformTexture.cs" />
      <Compile Include="Assets\Scripts\TemplateLibrary\ChangeObserver.cs" />
      <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
      <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />

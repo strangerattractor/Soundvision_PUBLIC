@@ -18,7 +18,7 @@ namespace cylvester
         {
             set
             {
-                socket_.Send (new[]{(byte)PdMessage.dsp, (byte)(value?1:0)});
+                socket_.Send (new[]{(byte)PdMessage.Dsp, (byte)(value?1:0)});
             }
         }
     }

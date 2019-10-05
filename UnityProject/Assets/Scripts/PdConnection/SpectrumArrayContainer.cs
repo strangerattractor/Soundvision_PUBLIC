@@ -3,25 +3,35 @@ namespace cylvester
     public interface ISpectrumArrayContainer
     {
         IPdArray this[int index] { get; }
+    }
+
+    public interface IUpdater
+    {
         void Update();
     }
     
-    public class SpectrumArrayContainer : ISpectrumArrayContainer
+    public class SpectrumArrayContainer : ISpectrumArrayContainer, IUpdater
     {
         private readonly IPdArray[] arrays_;
+        private readonly IUpdater[] updaters_;
 
         public SpectrumArrayContainer()
         {
-            arrays_ = new IPdArray[16];
-            for(var i  = 0; i < 16; ++i)
-                arrays_[i] = new PdArray("fft_" + i, 512);
+            arrays_ = new IPdArray[PdConstant.NumMaxInputChannels];
+            updaters_ = new IUpdater[PdConstant.NumMaxInputChannels];
+            
+            for (var i = 0; i < PdConstant.NumMaxInputChannels; ++i)
+            {
+                arrays_[i] = new PdArray("fft_" + i, PdConstant.FftSize);
+                updaters_[i] = (IUpdater) arrays_[i];
+            }
         }
 
         public void Update()
         {
-            foreach (var array in arrays_)
+            foreach (var updater in updaters_)
             {
-                array.Update();
+                updater.Update();
             }
         }
         

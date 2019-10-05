@@ -6,10 +6,9 @@ namespace cylvester
     public interface IPdArray
     {
         float[] Data { get; }
-        void Update();
     }
 
-    public class PdArray : IDisposable, IPdArray
+    public class PdArray : IDisposable, IPdArray, IUpdater
     {
         public float[] Data { get; }
 

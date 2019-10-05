@@ -3,19 +3,28 @@ using UnityEngine;
 
 namespace cylvester
 {
-    public class PdBackend : MonoBehaviour
+
+    public interface IPdBackend
+    {
+        ISpectrumArrayContainer SpectrumArrayContainer{ get; }
+    }
+    
+    public class PdBackend : MonoBehaviour, IPdBackend
     {
         public int samplePlayback;
-        public ISpectrumArrayContainer spectrumArrayContainer;
+        private IUpdater spectrumArrayUpdater_;
 
         private IChangeObserver<int> samplePlaybackObserver_;
         private Action onSamplePlaybackChanged_;
         private IPdSocket pdSocket_;
         private IDspController dspController_;
 
+        public ISpectrumArrayContainer SpectrumArrayContainer { get; private set; }
+
         private void Awake()
         {
-            spectrumArrayContainer = new SpectrumArrayContainer();
+            SpectrumArrayContainer = new SpectrumArrayContainer();
+            spectrumArrayUpdater_ = (IUpdater) SpectrumArrayContainer;
             pdSocket_ = new PdSocket(PdConstant.ip, PdConstant.port);
             dspController_ = new DspController(pdSocket_);
 
@@ -40,10 +49,10 @@ namespace cylvester
 
         public void Update()
         {
-            spectrumArrayContainer.Update();
+            spectrumArrayUpdater_.Update();
             samplePlaybackObserver_.Value = samplePlayback;
         }
-        
-  
+
+
     }
 }
