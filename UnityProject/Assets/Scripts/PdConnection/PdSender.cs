@@ -4,16 +4,16 @@ using System.Net.Sockets;
 
 namespace cylvester
 {
-    public interface IPdSocket : IDisposable
+    public interface IPdSender : IDisposable
     {
         void Send(byte[] bytes);
     }
     
-    public class PdSocket : IPdSocket
+    public class PdSender : IPdSender
     {
         private Socket socket_;
 
-        public PdSocket(string ip, int port)
+        public PdSender(string ip, int port)
         { 
             socket_ = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             socket_.Connect(IPAddress.Parse(ip), port);

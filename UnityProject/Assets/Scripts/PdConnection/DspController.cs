@@ -7,18 +7,18 @@ namespace cylvester
     
     public class DspController : IDspController
     {
-        private IPdSocket socket_;
+        private IPdSender sender_;
 
-        public DspController(IPdSocket socket)
+        public DspController(IPdSender sender)
         {
-            socket_ = socket;
+            sender_ = sender;
         }
         
         public bool State
         {
             set
             {
-                socket_.Send (new[]{(byte)PdMessage.Dsp, (byte)(value?1:0)});
+                sender_.Send (new[]{(byte)PdMessage.Dsp, (byte)(value?1:0)});
             }
         }
     }

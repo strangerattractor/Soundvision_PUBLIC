@@ -59,10 +59,13 @@
      <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
      <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
+     <Compile Include="Assets\Scenes\Examples\PositionBind.cs" />
      <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\MidiParser.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\PdReceiver.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumArrayContainer.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumArraySelector.cs" />
      <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
@@ -70,7 +73,7 @@
      <Compile Include="Assets\Scripts\PdConnection\PdBackend.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdConstant.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdProcess.cs" />
-     <Compile Include="Assets\Scripts\PdConnection\PdSocket.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\PdSender.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdSpectrumBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumGeneratorPlayMode.cs" />
      <Compile Include="Assets\Scripts\PdConnection\WaveformTexture.cs" />

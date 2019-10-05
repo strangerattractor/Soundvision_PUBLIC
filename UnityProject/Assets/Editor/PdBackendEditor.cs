@@ -7,6 +7,7 @@ namespace cylvester
     public class PdBackendEditor : Editor
     {
         private PdBackend pdBackend_;
+        private SerializedProperty onControlMessageReceivedProperty_;
 
         private readonly string[] samples_ =
         {
@@ -29,13 +30,19 @@ namespace cylvester
 
         public override void OnInspectorGUI ()
         {
+            
+            serializedObject.Update();
             pdBackend_ = (PdBackend) target;
-
+            onControlMessageReceivedProperty_ = serializedObject.FindProperty("onControlMessageReceived");
+            EditorGUILayout.PropertyField(onControlMessageReceivedProperty_);
+            
             if (Application.isPlaying)
             {
                 RenderSamplePlayback();
                 Repaint();
             }
+
+            serializedObject.ApplyModifiedProperties();
         }
 
         private void RenderSamplePlayback()
