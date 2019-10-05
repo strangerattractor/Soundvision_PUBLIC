@@ -2,7 +2,8 @@ namespace cylvester
 {
     enum PdMessage
     {
-        SampleSound = 0
+        dsp = 0,
+        SampleSound = 1
     }
     
     public class PdConstant

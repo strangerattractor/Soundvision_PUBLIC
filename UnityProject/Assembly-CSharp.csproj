@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumArrayContainer.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumArraySelector.cs" />
      <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />

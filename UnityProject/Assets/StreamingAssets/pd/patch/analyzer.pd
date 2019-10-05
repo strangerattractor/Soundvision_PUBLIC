@@ -1,4 +1,4 @@
-#N canvas 1494 726 560 380 10;
+#N canvas 473 11 560 380 10;
 #X obj 217 251 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 48 304 dac~, f 6;
 #N canvas 215 619 730 390 analyzers_______________________________
@@ -203,11 +203,14 @@
 #X restore 420 50 pd window;
 #N canvas 2182 728 450 338 commands_from_unity 0;
 #X obj 44 31 inlet;
-#X obj 44 84 route 0;
-#X obj 44 177 s sample_playback;
-#X text 128 43 0 ... sample playback;
-#X connect 0 0 1 0;
-#X connect 1 0 2 0;
+#X obj 69 132 s sample_playback;
+#X text 128 55 1 ... sample playback;
+#X text 127 38 0 ... dsp start/stop;
+#X obj 44 84 route 0 1;
+#X msg 44 190 \; pd dsp \$1;
+#X connect 0 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 1 1 0;
 #X restore 230 79 pd commands_from_unity;
 #N canvas 667 603 877 437 sample_playback 0;
 #X obj 86 166 readsf~;
@@ -240,8 +243,6 @@
 #A set Back_Back.wav \; Brutal_Synth.wav \; Dialog.wav \; Drums.wav
 \; Fox_Melo.wav \; Kick.wav \; Pads+Strings.wav \; Rose_Sax.wav \;
 Roses_Front.wav;
-#X obj 418 90 loadbang;
-#X msg 418 117 \; pd dsp 1;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 2 2 2;
@@ -265,4 +266,3 @@ Roses_Front.wav;
 #X connect 10 0 1 1;
 #X connect 10 0 2 0;
 #X connect 11 0 9 0;
-#X connect 13 0 14 0;
