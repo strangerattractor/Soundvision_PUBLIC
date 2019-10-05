@@ -4,7 +4,7 @@ namespace cylvester
 {
     public class WaveformTexture : MonoBehaviour
     {
-        [SerializeField] PdBackend PdBackend;
+        [SerializeField] PdBackend PdBackend = null;
         [SerializeField, Range(1, 16)] private int channel = 1;
 
          
@@ -17,7 +17,6 @@ namespace cylvester
 
         private void Update()
         {
-            var spectrum = PdBackend.SpectrumArrayContainer[channel];
             
             
             texture2D_.Apply();
