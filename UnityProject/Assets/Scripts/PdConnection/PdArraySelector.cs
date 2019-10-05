@@ -1,17 +1,17 @@
 namespace cylvester
 {
-    public interface ISpectrumArraySelector
+    public interface IPdArraySelector
     {
         int Selection { set; }
         float[] SelectedArray { get; }
     }
     
-    public class SpectrumArraySelector : ISpectrumArraySelector
+    public class PdArraySelector : IPdArraySelector
     {
         private int selection_;
-        private readonly ISpectrumArrayContainer arrayContainer_;
+        private readonly IPdArrayContainer arrayContainer_;
 
-        public SpectrumArraySelector(ISpectrumArrayContainer arrayContainer)
+        public PdArraySelector(IPdArrayContainer arrayContainer)
         {
             arrayContainer_ = arrayContainer;
         }

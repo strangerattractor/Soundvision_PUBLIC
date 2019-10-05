@@ -1,26 +1,27 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace cylvester
 {
-    public interface ISpectrogram
+    public interface IWaveform
     {
         Texture2D Texture { get; }
     }
     
-    public class Spectrogram : MonoBehaviour, ISpectrogram
+    public class Waveform : MonoBehaviour, ISpectrogram
     {
         [SerializeField] private PdBackend pdBackend;
         [SerializeField, Range(1, 16)] private int channel = 1;
         
-        private IPdArraySelector spectrumArraySelector_;
+        private IPdArraySelector waveformArraySelector_;
         private Texture2D texture_;
-        private int index_;
+        private int[] cache_;
         
         void Start()
         {
-            spectrumArraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
+            cache_ = new int[PdConstant.BlockSize];
+            waveformArraySelector_ = new PdArraySelector(pdBackend.WaveformArrayContainer);
             texture_ = new Texture2D(PdConstant.BlockSize, PdConstant.BlockSize, TextureFormat.R8, false);
             
             var pixels = texture_.GetPixels();
@@ -32,21 +33,19 @@ namespace cylvester
 
         void Update()
         {
-            spectrumArraySelector_.Selection = channel - 1;
-            var array = spectrumArraySelector_.SelectedArray;
+            waveformArraySelector_.Selection = channel - 1;
+            var array = waveformArraySelector_.SelectedArray;
             for (var i = 0; i < PdConstant.BlockSize; i++)
             {
-                texture_.SetPixel(i, index_, new Color(array[i], 0f, 0f));
+                var y = (int)(256f * Mathf.Clamp(array[i], -1f, 1f)) + 256;
+                texture_.SetPixel(i , cache_[i], Color.black);
+                texture_.SetPixel(i , y, Color.white);
+                cache_[i] = y;
             }
 
             texture_.Apply();
-            
-            index_++;
-            index_ %= PdConstant.BlockSize;
         }
 
         public Texture2D Texture => texture_;
     }
-
-
 }

@@ -4,9 +4,9 @@ namespace cylvester
 {
     public class SpectrumGeneratorPlayMode : SpectrumGenerator, ISpectrumGenerator
     {
-        private ISpectrumArraySelector arraySelector_;
+        private IPdArraySelector arraySelector_;
         
-        public SpectrumGeneratorPlayMode(int textureWidth, int textureHeight, ISpectrumArraySelector arraySelector)
+        public SpectrumGeneratorPlayMode(int textureWidth, int textureHeight, IPdArraySelector arraySelector)
             :base(textureWidth, textureHeight)
         {
             arraySelector_ = arraySelector;

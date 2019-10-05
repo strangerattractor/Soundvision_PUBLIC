@@ -12,6 +12,6 @@ namespace cylvester
         public static readonly string ip = "127.0.0.1";
         public static readonly int sendPort = 54345;
         public static readonly int receivedPort = 56765;
-        public static readonly int FftSize = 512;
+        public static readonly int BlockSize = 512;
     }
 }

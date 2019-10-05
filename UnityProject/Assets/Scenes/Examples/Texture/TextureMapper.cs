@@ -6,18 +6,26 @@ namespace cylvester
 {
     public class TextureMapper : MonoBehaviour
     {
+        [SerializeField] private Waveform waveform;
         [SerializeField] private Spectrogram spectrogram;
-        private Renderer renderer_;
+
+        [SerializeField] private GameObject waveformPanel;
+        [SerializeField] private GameObject spectrogramPanel;
+        
+        private Renderer waveFormRenderer_;
+        private Renderer spectroGramRenderer_;
         private static readonly int baseColorMap_ = Shader.PropertyToID("_BaseColorMap");
         
         void Start()
         {
-            renderer_ = GetComponent<Renderer>();
+            waveFormRenderer_ = waveformPanel.GetComponent<Renderer>();
+            spectroGramRenderer_ = spectrogramPanel.GetComponent<Renderer>();
         }
 
         void Update()
         {
-            renderer_.material.SetTexture(baseColorMap_, spectrogram.Texture);
+            waveFormRenderer_.material.SetTexture(baseColorMap_, waveform.Texture);
+            spectroGramRenderer_.material.SetTexture(baseColorMap_, spectrogram.Texture);
         }
     }
 }

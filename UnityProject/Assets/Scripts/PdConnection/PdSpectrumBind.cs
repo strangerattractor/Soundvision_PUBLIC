@@ -15,7 +15,7 @@ namespace cylvester
         [SerializeField] private int channel = 0;
 
         private ISpectrumGenerator spectrumGenerator_;
-        private ISpectrumArraySelector arraySelector_;
+        private IPdArraySelector arraySelector_;
 
         public int TextureWidth { get; } = 512;
         public int TextureHeight { get; } = 256;
@@ -24,7 +24,7 @@ namespace cylvester
 
         private void Start()
         {
-            arraySelector_ = new SpectrumArraySelector(pdBackend.SpectrumArrayContainer);
+            arraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
             spectrumGenerator_ = new SpectrumGeneratorPlayMode(TextureWidth, TextureHeight, arraySelector_);
         }
         

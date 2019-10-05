@@ -1,13 +1,12 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Events;
-
 namespace cylvester
 {
 
     public interface IPdBackend
     {
-        ISpectrumArrayContainer SpectrumArrayContainer{ get; }
+        IPdArrayContainer SpectrumArrayContainer{ get; }
+        IPdArrayContainer WaveformArrayContainer{ get; }
     }
     
     public class PdBackend : MonoBehaviour, IPdBackend
@@ -15,7 +14,6 @@ namespace cylvester
         [SerializeField] UnityControlEvent onControlMessageReceived = null;
         
         public int samplePlayback;
-        private IUpdater spectrumArrayUpdater_;
 
         private IChangeObserver<int> samplePlaybackObserver_;
         
@@ -23,15 +21,22 @@ namespace cylvester
         private IPdReceiver pdReceiver_;
         private IMidiParser midiParser_;
         private IDspController dspController_;
-        public ISpectrumArrayContainer SpectrumArrayContainer { get; private set; }
-
+        
+        public IPdArrayContainer SpectrumArrayContainer { get; private set; }
+        private IUpdater spectrumArrayUpdater_;
+        public IPdArrayContainer WaveformArrayContainer { get; private set; }
+        private IUpdater waveformArrayUpdater_;
+        
         private Action onSamplePlaybackChanged_;
         private Action<ControlMessage> onControlMessageReceived_;
 
         private void Awake()
         {
-            SpectrumArrayContainer = new SpectrumArrayContainer();
+            SpectrumArrayContainer = new PdArrayContainer("fft_");
+            WaveformArrayContainer = new PdArrayContainer("wave_");
+            
             spectrumArrayUpdater_ = (IUpdater) SpectrumArrayContainer;
+            waveformArrayUpdater_ = (IUpdater) WaveformArrayContainer;
 
             pdSender_ = new PdSender(PdConstant.ip, PdConstant.sendPort);
             pdReceiver_ = new PdReceiver(PdConstant.receivedPort);
@@ -69,6 +74,7 @@ namespace cylvester
         {
             pdReceiver_.Update();
             spectrumArrayUpdater_.Update();
+            waveformArrayUpdater_.Update();
             samplePlaybackObserver_.Value = samplePlayback;
         }
     }
