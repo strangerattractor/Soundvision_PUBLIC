@@ -14,7 +14,7 @@ namespace cylvester
     
     public class PdBackend : MonoBehaviour, IPdBackend
     {
-        [SerializeField] UnityControlEvent onControlMessageReceived = null;
+        [SerializeField] UnityControlEvent controlMessageReceived = null;
         
         public int samplePlayback;
 
@@ -54,7 +54,8 @@ namespace cylvester
             onSamplePlaybackChanged_ = () => { pdSender_.Send(new[]{(byte)PdMessage.SampleSound, (byte)samplePlayback}); };
 
             onControlMessageReceived_ = (message) => {
-                onControlMessageReceived.Invoke(message); };
+                controlMessageReceived.Invoke(message); 
+            };
             
             samplePlaybackObserver_.ValueChanged += onSamplePlaybackChanged_;
             midiParser_.ControlMessageReceived += onControlMessageReceived_;

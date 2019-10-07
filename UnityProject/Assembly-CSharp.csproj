@@ -86,7 +86,6 @@
     <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\PointCloudBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
-    <Compile Include="Assets\Scripts\Visualizer\Threshold.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />

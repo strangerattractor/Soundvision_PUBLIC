@@ -11,6 +11,7 @@ namespace cylvester
 
         public void OnValueReceived(float value)
         {
+			Debug.Log(value);
             if (value > threshold && !over_)
             {
                 over_ = true;

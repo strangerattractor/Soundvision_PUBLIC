@@ -4,14 +4,13 @@ using UnityEngine.Events;
 namespace cylvester
 {
     [System.Serializable]
-    class UnityFloatEvent : UnityEvent<float> { }
+    class EnergyChangeEvent : UnityEvent<float> { }
     
-
     public class PdSpectrumBind : MonoBehaviour
     {
         [SerializeField] private PdBackend pdBackend = null;
         [SerializeField] private Rect selection = Rect.zero;
-        [SerializeField] private UnityFloatEvent energyChanged = null;
+        [SerializeField] private EnergyChangeEvent energyChanged = null;
         [SerializeField] private int channel = 0;
 
         private ISpectrumGenerator spectrumGenerator_;

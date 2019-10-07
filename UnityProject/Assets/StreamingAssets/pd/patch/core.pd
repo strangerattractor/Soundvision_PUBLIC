@@ -10,7 +10,7 @@
 #X obj 270 143 tabwrite level;
 #X obj 375 81 loadbang;
 #X obj 375 110 f \$1, f 6;
-#X obj 270 111 env~ 1024 2048;
+#X obj 270 111 env~ 1024 512;
 #X connect 0 0 1 0;
 #X connect 0 0 7 0;
 #X connect 0 0 11 0;
