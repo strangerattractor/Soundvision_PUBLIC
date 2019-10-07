@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+
 namespace cylvester
 {
 
     public interface IPdBackend
     {
+        IPdArray LevelArray { get; }
         IPdArrayContainer SpectrumArrayContainer{ get; }
         IPdArrayContainer WaveformArrayContainer{ get; }
     }
@@ -22,10 +25,11 @@ namespace cylvester
         private IMidiParser midiParser_;
         private IDspController dspController_;
         
+        public IPdArray LevelArray { get; private set; }
         public IPdArrayContainer SpectrumArrayContainer { get; private set; }
-        private IUpdater spectrumArrayUpdater_;
         public IPdArrayContainer WaveformArrayContainer { get; private set; }
-        private IUpdater waveformArrayUpdater_;
+        
+        private List<IUpdater> updaters_;
         
         private Action onSamplePlaybackChanged_;
         private Action<ControlMessage> onControlMessageReceived_;
@@ -34,9 +38,10 @@ namespace cylvester
         {
             SpectrumArrayContainer = new PdArrayContainer("fft_");
             WaveformArrayContainer = new PdArrayContainer("wave_");
-            
-            spectrumArrayUpdater_ = (IUpdater) SpectrumArrayContainer;
-            waveformArrayUpdater_ = (IUpdater) WaveformArrayContainer;
+            LevelArray = new PdArray("level", PdConstant.NumMaxInputChannels);
+
+            updaters_ = new List<IUpdater>
+            {(IUpdater) LevelArray, (IUpdater) SpectrumArrayContainer, (IUpdater) WaveformArrayContainer};
 
             pdSender_ = new PdSender(PdConstant.ip, PdConstant.sendPort);
             pdReceiver_ = new PdReceiver(PdConstant.receivedPort);
@@ -46,15 +51,10 @@ namespace cylvester
 
             samplePlaybackObserver_ = new ChangeObserver<int>(samplePlayback);
 
-            onSamplePlaybackChanged_ = () =>
-            {
-                pdSender_.Send(new[]{(byte)PdMessage.SampleSound, (byte)samplePlayback});
-            };
+            onSamplePlaybackChanged_ = () => { pdSender_.Send(new[]{(byte)PdMessage.SampleSound, (byte)samplePlayback}); };
 
-            onControlMessageReceived_ = (message) =>
-            {
-                onControlMessageReceived.Invoke(message);
-            };
+            onControlMessageReceived_ = (message) => {
+                onControlMessageReceived.Invoke(message); };
             
             samplePlaybackObserver_.ValueChanged += onSamplePlaybackChanged_;
             midiParser_.ControlMessageReceived += onControlMessageReceived_;
@@ -73,8 +73,9 @@ namespace cylvester
         public void Update()
         {
             pdReceiver_.Update();
-            spectrumArrayUpdater_.Update();
-            waveformArrayUpdater_.Update();
+            foreach (var updater in updaters_)
+                updater.Update();
+            
             samplePlaybackObserver_.Value = samplePlayback;
         }
     }
