@@ -9,7 +9,7 @@ namespace Visualizer
         [SerializeField] private GameObject panel = null;
 
         private Renderer renderer_;
-        private static readonly int BaseColorMap = Shader.PropertyToID("_BaseColorMap");
+        private static readonly int KinectTexture = Shader.PropertyToID("_kinectTexture");
 
         void Start()
         {
@@ -18,7 +18,7 @@ namespace Visualizer
 
         void Update()
         {
-            renderer_.material.SetTexture(BaseColorMap, kinectManagerBehaviour.KinectSensor.InfraredCamera.Data);
+            renderer_.material.SetTexture(KinectTexture, kinectManagerBehaviour.KinectSensor.InfraredCamera.Data);
         }
     }
 }

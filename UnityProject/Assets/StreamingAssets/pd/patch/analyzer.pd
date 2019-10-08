@@ -252,7 +252,7 @@ Roses_Front.wav;
 #X text 422 89 sample CC;
 #X msg 424 161 send 176 \$1 \$2;
 #X text 423 183 176... control channel 1;
-#N canvas 695 332 450 300 level 0;
+#N canvas 695 332 450 300 level 1;
 #X obj 90 182 table level 16;
 #X obj 89 152 shmem level 16;
 #X obj 89 127 r shmemupdate;
