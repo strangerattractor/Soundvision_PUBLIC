@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/Waterfall/waterfall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Waterfall/waterfall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/Max Kinect Effect.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/Max Kinect Effect.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/Shader Graphs_Max Kinect Effect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/Shader Graphs_Max Kinect Effect.mat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,137 +28,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding>
-                <marker date="1570120530684" expanded="true" signature="39:908" ph="{...}" />
-                <marker date="1570120530684" expanded="true" signature="87:133" ph="{...}" />
-                <marker date="1570120530684" expanded="true" signature="299:906" ph="{...}" />
-                <marker date="1570120530684" expanded="true" signature="412:698" ph="{...}" />
-                <marker date="1570120530684" expanded="true" signature="579:687" ph="{...}" />
-                <marker date="1570120530684" expanded="true" signature="731:900" ph="{...}" />
-                <marker date="1570120530684" expanded="true" signature="757:890" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <marker date="1570122232700" expanded="true" signature="39:1439" ph="{...}" />
-                <marker date="1570122232700" expanded="true" signature="94:1437" ph="{...}" />
-                <marker date="1570122232700" expanded="true" signature="523:961" ph="{...}" />
-                <marker date="1570122232700" expanded="true" signature="703:951" ph="{...}" />
-                <marker date="1570122232700" expanded="true" signature="999:1431" ph="{...}" />
-                <marker date="1570122232700" expanded="true" signature="1260:1421" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/b5/c41de7d5/Transform.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/01/e32ba70b/Object.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="253" column="20" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding>
-                <marker date="1569708464693" expanded="true" signature="6:48" ph="..." />
-                <marker date="1569708464693" expanded="true" signature="69:1017" ph="{...}" />
-                <marker date="1569708464693" expanded="true" signature="101:166" ph="{...}" />
-                <marker date="1569708464693" expanded="true" signature="216:1015" ph="{...}" />
-                <marker date="1569708464693" expanded="true" signature="441:760" ph="{...}" />
-                <marker date="1569708464693" expanded="true" signature="790:872" ph="{...}" />
-                <marker date="1569708464693" expanded="true" signature="911:1009" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <marker date="1570033419289" expanded="false" signature="6:32" ph="..." />
-                <marker date="1570033419289" expanded="true" signature="53:1618" ph="{...}" />
-                <marker date="1570033419289" expanded="true" signature="98:1616" ph="{...}" />
-                <marker date="1570033419289" expanded="true" signature="460:1129" ph="{...}" />
-                <marker date="1570033419289" expanded="true" signature="887:1027" ph="{...}" />
-                <marker date="1570033419289" expanded="true" signature="1163:1374" ph="{...}" />
-                <marker date="1570033419289" expanded="true" signature="1404:1610" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/FFTArrayContainer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding>
-                <marker date="1569786703569" expanded="true" signature="19:675" ph="{...}" />
-                <marker date="1569786703569" expanded="true" signature="61:138" ph="{...}" />
-                <marker date="1569786703569" expanded="true" signature="199:673" ph="{...}" />
-                <marker date="1569786703569" expanded="true" signature="286:446" ph="{...}" />
-                <marker date="1569786703569" expanded="true" signature="476:599" ph="{...}" />
-                <marker date="1569786703569" expanded="true" signature="529:589" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <marker date="1570122535301" expanded="true" signature="39:2492" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="72:190" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="233:2490" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="456:603" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="649:897" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="757:887" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="950:1799" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="1323:1759" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="1839:2482" ph="{...}" />
-                <marker date="1570122535301" expanded="true" signature="2084:2443" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>serialize</find>
@@ -170,92 +38,56 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/d8/1898dda5/Rect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/6f/daed0dcd/GUILayout.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/862B9365-843C-4BF1-BA93-210C124BB523/7a/e34a2211/AddressFamily.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/5e/f4afe38e/GUIStyle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/25/56035e3b/Color.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/d3/21de5e70/SerializedProperty.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSocket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C24F0C1-857D-4078-B6D4-53F88E061A29/44/b50a5a54/UnmanagedMemoryAccessor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/78/edb26be6/UdpClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/FFTArrayContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/LevelMeter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/46/64a0ea05/Event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/54/eb43801f/IComparable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/81/c9ecafca/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5F8D912-CD82-4E63-93D1-35A9356AD96C/72/23a38ddc/MemoryMappedFile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/SmokeBind.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/b5/c41de7d5/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemplateLibrary/ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/VisualEffectGraph.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/2a/9fa3f41e/IOException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Editor/KinectCopyPluginDataHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E591B1DA-0E04-462B-AFD3-89F6587BF9EF/7f/cc3b76ab/FormatterServicesMethods.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/FlareBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/IRPanelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Specttrum.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/Vertex Modifier.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratorPlayMode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/91/3f4e86f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/ac/8ae67e56/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E358363-73B7-4B12-BDE8-BA7FA4D53641/2e/ea44d59d/Process.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E591B1DA-0E04-462B-AFD3-89F6587BF9EF/52/86cf9d8d/DelegateMethods.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdConstant.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/e2/6c2fedd3/InvalidOperationException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/ee/4432b3eb/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/15/a82d9270/Editor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/d5/985de6f8/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/01/e32ba70b/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/70/816727c9/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/04/13252895/TextureFormat.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGeneratorEditMode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/33/4486f8ea/NativeArray`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/1f/278e3286/GUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Waterfall/waterfall.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/SpectrumGeneratorPlayMode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0467F5C0-E463-4B2C-ACC5-F718CB71F056/d0/02dc1ccd/Process.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/e7/0e9b5344/Texture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/LevelMeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdConstant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemplateLibrary/ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGeneratorEditMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratorEditMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/BodySourceView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratorPlayMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/VisualEffectGraph.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/SmokeBind.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Editor/KinectCopyPluginDataHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/FlareBind.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/IRPanelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Waterfall/waterfall.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/RMSAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/RmsAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/BallControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/MappingControl.cs" />
@@ -306,112 +138,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/createplane.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1428" />
-    <option name="y" value="548" />
-    <option name="width" value="3044" />
-    <option name="height" value="1000" />
-  </component>
+  <component name="ProjectId" id="1SEWslM7Wg0A1WvXVVJFD8nJeUz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="UnityExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
-              <item name="Examples" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
-              <item name="Examples" type="1045f7f1:UnityExplorerNode" />
-              <item name="VisualEffectGraph" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
-              <item name="Examples" type="1045f7f1:UnityExplorerNode" />
-              <item name="VisualEffectGraph" type="1045f7f1:UnityExplorerNode" />
-              <item name="script" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="PdConnection" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Visualizer" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Packages" type="4e2708dd:PackagesRoot" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="UnityProject" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="5427d58d:AssemblyExplorerRootNode" />
-              <item name="NSubstitute (1.4.3.0, msil, .Net Framework v3.5)" type="5e97225f:AssemblyExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="5427d58d:AssemblyExplorerRootNode" />
-              <item name="NSubstitute (1.4.3.0, msil, .Net Framework v3.5)" type="5e97225f:AssemblyExplorerNode" />
-              <item name="Castle.DynamicProxy.Tokens" type="5e97225f:AssemblyExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -423,7 +155,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -457,6 +189,9 @@
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
     </list>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="" />
@@ -472,6 +207,8 @@
       <workItem from="1569665495901" duration="24150000" />
       <workItem from="1569746625810" duration="9833000" />
       <workItem from="1569765404529" duration="20277000" />
+      <workItem from="1571129451105" duration="685000" />
+      <workItem from="1571130307569" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>
@@ -560,52 +297,6 @@
     <option name="localTasksCounter" value="13" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138079000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1428" y="262" width="3044" height="1286" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5821462" visible="true" weight="0.16689008" />
-      <window_info id="Structure" order="1" sideWeight="0.41785374" side_tool="true" visible="true" weight="0.16689008" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38978723" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" order="10" weight="0.33449477" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.4308797" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" visible="true" weight="0.103829786" />
-      <window_info anchor="bottom" id="Performance Profiler" order="16" />
-      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32967034" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.3297587" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" weight="0.3298479" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -621,6 +312,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Kinect Manager" />
     <MESSAGE value="point cloud in progress" />
@@ -651,559 +355,5 @@
         <watch expression="array[180000..189999]" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/e2/6c2fedd3/InvalidOperationException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TemplateLibrary/ChangeObserver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <marker date="1569935798478" expanded="true" signature="34:710" ph="{...}" />
-            <marker date="1569935798478" expanded="true" signature="95:167" ph="{...}" />
-            <marker date="1569935798478" expanded="true" signature="253:708" ph="{...}" />
-            <marker date="1569935798478" expanded="true" signature="326:375" ph="{...}" />
-            <marker date="1569935798478" expanded="true" signature="407:639" ph="{...}" />
-            <marker date="1569935798478" expanded="true" signature="433:628" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <marker date="1569687266440" expanded="true" signature="39:863" ph="{...}" />
-            <marker date="1569687266440" expanded="true" signature="102:861" ph="{...}" />
-            <marker date="1569687266440" expanded="true" signature="475:557" ph="{...}" />
-            <marker date="1569687266440" expanded="true" signature="580:855" ph="{...}" />
-            <marker date="1569687266440" expanded="true" signature="679:845" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSocket.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <marker date="1569935798062" expanded="true" signature="6:57" ph="..." />
-            <marker date="1569935798062" expanded="true" signature="78:653" ph="{...}" />
-            <marker date="1569935798062" expanded="true" signature="125:170" ph="{...}" />
-            <marker date="1569935798062" expanded="true" signature="213:651" ph="{...}" />
-            <marker date="1569935798062" expanded="true" signature="297:472" ph="{...}" />
-            <marker date="1569935798062" expanded="true" signature="512:565" ph="{...}" />
-            <marker date="1569935798062" expanded="true" signature="596:645" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding>
-            <marker date="1570005557906" expanded="false" signature="6:132" ph="..." />
-            <marker date="1570005557906" expanded="true" signature="182:1896" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="304:324" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="500:1331" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="547:684" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="1150:1245" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="1363:1563" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="1592:1890" ph="{...}" />
-            <marker date="1570005557906" expanded="true" signature="1618:1880" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdConstant.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <marker date="1569956185958" expanded="true" signature="19:289" ph="{...}" />
-            <marker date="1569956185958" expanded="true" signature="40:76" ph="{...}" />
-            <marker date="1569956185958" expanded="true" signature="109:287" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <marker date="1569956462284" expanded="true" signature="6:37" ph="..." />
-            <marker date="1569956462284" expanded="true" signature="58:1995" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="140:1993" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="275:384" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="440:696" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="735:942" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="990:1477" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="1335:1467" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="1522:1697" ph="{...}" />
-            <marker date="1569956462284" expanded="true" signature="1739:1987" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/LevelMeter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding>
-            <marker date="1569783079568" expanded="true" signature="6:37" ph="..." />
-            <marker date="1569783079568" expanded="true" signature="58:1514" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="86:137" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="184:1512" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="460:631" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="685:1177" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="853:954" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="1239:1505" ph="{...}" />
-            <marker date="1569783079568" expanded="true" signature="1337:1455" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/d8/1898dda5/Rect.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="207" column="17" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_ChangeObserver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="30" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <marker date="1569935798057" expanded="true" signature="43:771" ph="{...}" />
-            <marker date="1569935798057" expanded="true" signature="86:769" ph="{...}" />
-            <marker date="1569935798057" expanded="true" signature="137:398" ph="{...}" />
-            <marker date="1569935798057" expanded="true" signature="457:762" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E591B1DA-0E04-462B-AFD3-89F6587BF9EF/52/86cf9d8d/DelegateMethods.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E591B1DA-0E04-462B-AFD3-89F6587BF9EF/7f/cc3b76ab/FormatterServicesMethods.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1569968766472" expanded="true" signature="43:363" ph="{...}" />
-            <marker date="1569968766472" expanded="true" signature="76:361" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <marker date="1569963852286" expanded="true" signature="6:41" ph="..." />
-            <marker date="1569963852286" expanded="true" signature="62:667" ph="{...}" />
-            <marker date="1569963852286" expanded="true" signature="129:665" ph="{...}" />
-            <marker date="1569963852286" expanded="true" signature="179:659" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/ee/4432b3eb/SerializedObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="112" column="23" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/BoomBall.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/PdBackendDemo/script/BoomBall.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/26/658ea519/Texture2D.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78C1F696-6868-4B82-A3AE-82CA8C8FF5EF/81/c9ecafca/EditorGUILayout.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1055">
-          <caret line="4778" column="23" selection-start-line="4778" selection-start-column="23" selection-end-line="4778" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <marker date="1569963852280" expanded="true" signature="77:197" ph="{...}" />
-            <marker date="1569963852280" expanded="true" signature="264:1599" ph="{...}" />
-            <marker date="1569963852280" expanded="true" signature="521:627" ph="{...}" />
-            <marker date="1569963852280" expanded="true" signature="677:791" ph="{...}" />
-            <marker date="1569963852280" expanded="true" signature="863:1593" ph="{...}" />
-            <marker date="1569963852280" expanded="true" signature="1351:1547" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <marker date="1570033419287" expanded="true" signature="6:32" ph="..." />
-            <marker date="1570033419287" expanded="true" signature="53:1074" ph="{...}" />
-            <marker date="1570033419287" expanded="true" signature="95:183" ph="{...}" />
-            <marker date="1570033419287" expanded="true" signature="232:1072" ph="{...}" />
-            <marker date="1570033419287" expanded="true" signature="355:442" ph="{...}" />
-            <marker date="1570033419287" expanded="true" signature="511:668" ph="{...}" />
-            <marker date="1570033419287" expanded="true" signature="744:1066" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/SpectrumGeneratorPlayMode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <marker date="1570033419291" expanded="true" signature="39:1135" ph="{...}" />
-            <marker date="1570033419291" expanded="true" signature="124:1133" ph="{...}" />
-            <marker date="1570033419291" expanded="true" signature="317:369" ph="{...}" />
-            <marker date="1570033419291" expanded="true" signature="417:1127" ph="{...}" />
-            <marker date="1570033419291" expanded="true" signature="543:1055" ph="{...}" />
-            <marker date="1570033419291" expanded="true" signature="768:911" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGeneratorEditMode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding>
-            <marker date="1570033419277" expanded="true" signature="6:37" ph="..." />
-            <marker date="1570033419277" expanded="true" signature="58:3597" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="143:3595" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="204:313" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="675:1221" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="1268:2666" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="2079:2521" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="2172:2278" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="2299:2507" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="2707:3312" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="2834:3302" ph="{...}" />
-            <marker date="1570033419277" expanded="true" signature="3368:3589" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratorEditMode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <marker date="1570033419279" expanded="false" signature="6:60" ph="..." />
-            <marker date="1570033419279" expanded="true" signature="81:2408" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="153:2406" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="427:843" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="894:1129" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="1192:1632" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="1692:2400" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="2018:2390" ph="{...}" />
-            <marker date="1570033419279" expanded="true" signature="2078:2376" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/SmokeBind.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <marker date="1570095839824" expanded="true" signature="6:54" ph="..." />
-            <marker date="1570095839824" expanded="true" signature="94:352" ph="{...}" />
-            <marker date="1570095839824" expanded="true" signature="272:350" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/Visualizer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MathUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/FlareBind.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <marker date="1570095839823" expanded="true" signature="6:54" ph="..." />
-            <marker date="1570095839823" expanded="true" signature="94:325" ph="{...}" />
-            <marker date="1570095839823" expanded="true" signature="256:323" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shader/FFTRipple.compute">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/VisualEffectGraph.unity">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/MathUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/IRPanelBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <marker date="1562502233344" expanded="false" signature="6:36" ph="..." />
-            <marker date="1562502233344" expanded="true" signature="58:565" ph="{...}" />
-            <marker date="1562502233344" expanded="true" signature="103:563" ph="{...}" />
-            <marker date="1562502233344" expanded="true" signature="379:557" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <marker date="1562524171247" expanded="true" signature="6:65" ph="..." />
-            <marker date="1562524171247" expanded="true" signature="87:2842" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="142:2840" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="636:1249" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="830:989" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="1280:1347" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="1406:1971" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="1541:1932" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="1716:1918" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="2038:2607" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="2174:2567" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="2349:2553" ph="{...}" />
-            <marker date="1562524171247" expanded="true" signature="2666:2834" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Math/MathUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/ac/8ae67e56/Mesh.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="76" column="75" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="27" column="55" selection-start-line="27" selection-end-line="28" />
-          <folding>
-            <marker date="1570033419290" expanded="false" signature="6:44" ph="..." />
-            <marker date="1570033419290" expanded="true" signature="65:1395" ph="{...}" />
-            <marker date="1570033419290" expanded="true" signature="185:364" ph="{...}" />
-            <marker date="1570033419290" expanded="true" signature="434:1393" ph="{...}" />
-            <marker date="1570033419290" expanded="true" signature="693:891" ph="{...}" />
-            <marker date="1570033419290" expanded="true" signature="1175:1387" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shader/FFT.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/IVisualizer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/FFTRippleBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/FFTGeometry.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/FFTArrayContainer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <marker date="1569786703569" expanded="true" signature="19:675" ph="{...}" />
-            <marker date="1569786703569" expanded="true" signature="61:138" ph="{...}" />
-            <marker date="1569786703569" expanded="true" signature="199:673" ph="{...}" />
-            <marker date="1569786703569" expanded="true" signature="286:446" ph="{...}" />
-            <marker date="1569786703569" expanded="true" signature="476:599" ph="{...}" />
-            <marker date="1569786703569" expanded="true" signature="529:589" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/RingArrayBuffer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/01/e32ba70b/Object.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="253" column="20" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <marker date="1569708464693" expanded="true" signature="6:48" ph="..." />
-            <marker date="1569708464693" expanded="true" signature="69:1017" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="101:166" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="216:1015" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="441:760" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="790:872" ph="{...}" />
-            <marker date="1569708464693" expanded="true" signature="911:1009" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <marker date="1570033419289" expanded="false" signature="6:32" ph="..." />
-            <marker date="1570033419289" expanded="true" signature="53:1618" ph="{...}" />
-            <marker date="1570033419289" expanded="true" signature="98:1616" ph="{...}" />
-            <marker date="1570033419289" expanded="true" signature="460:1129" ph="{...}" />
-            <marker date="1570033419289" expanded="true" signature="887:1027" ph="{...}" />
-            <marker date="1570033419289" expanded="true" signature="1163:1374" ph="{...}" />
-            <marker date="1570033419289" expanded="true" signature="1404:1610" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/b5/c41de7d5/Transform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <marker date="1570122232700" expanded="true" signature="39:1439" ph="{...}" />
-            <marker date="1570122232700" expanded="true" signature="94:1437" ph="{...}" />
-            <marker date="1570122232700" expanded="true" signature="523:961" ph="{...}" />
-            <marker date="1570122232700" expanded="true" signature="703:951" ph="{...}" />
-            <marker date="1570122232700" expanded="true" signature="999:1431" ph="{...}" />
-            <marker date="1570122232700" expanded="true" signature="1260:1421" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <marker date="1570120530684" expanded="true" signature="39:908" ph="{...}" />
-            <marker date="1570120530684" expanded="true" signature="87:133" ph="{...}" />
-            <marker date="1570120530684" expanded="true" signature="299:906" ph="{...}" />
-            <marker date="1570120530684" expanded="true" signature="412:698" ph="{...}" />
-            <marker date="1570120530684" expanded="true" signature="579:687" ph="{...}" />
-            <marker date="1570120530684" expanded="true" signature="731:900" ph="{...}" />
-            <marker date="1570120530684" expanded="true" signature="757:890" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <marker date="1570122535301" expanded="true" signature="39:2492" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="72:190" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="233:2490" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="456:603" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="649:897" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="757:887" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="950:1799" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="1323:1759" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="1839:2482" ph="{...}" />
-            <marker date="1570122535301" expanded="true" signature="2084:2443" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

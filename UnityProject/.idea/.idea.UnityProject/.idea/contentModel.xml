@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\chikashi\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\chikashi\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_UnityProject.1346624737.00" t="ExcludeRecursive" />
-    <e p="C:\Users\chikashi\Development\Soundvision\UnityProject" t="IncludeRecursive">
+    <e p="C:\Users\Cylvester\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Cylvester\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_UnityProject.442702191.00" t="ExcludeRecursive" />
+    <e p="D:\SoundVision_Repo\Soundvision\UnityProject" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -37,6 +37,11 @@
                 <e p="BoomBall.cs" t="Include" />
               </e>
             </e>
+            <e p="PostProcessing" t="Include">
+              <e p="script" t="Include">
+                <e p="BokehBind.cs" t="Include" />
+              </e>
+            </e>
             <e p="VisualEffectGraph" t="Include">
               <e p="script" t="Include">
                 <e p="FlareBind.cs" t="Include" />
@@ -47,13 +52,17 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="PdConnection" t="Include">
-            <e p="FFTArrayContainer.cs" t="Include" />
+            <e p="DspController.cs" t="Include" />
             <e p="ISpectrumGenerator.cs" t="Include" />
+            <e p="MidiParser.cs" t="Include" />
             <e p="PdArray.cs" t="Include" />
+            <e p="PdArrayContainer.cs" t="Include" />
+            <e p="PdArraySelector.cs" t="Include" />
             <e p="PdBackend.cs" t="Include" />
             <e p="PdConstant.cs" t="Include" />
             <e p="PdProcess.cs" t="Include" />
-            <e p="PdSocket.cs" t="Include" />
+            <e p="PdReceiver.cs" t="Include" />
+            <e p="PdSender.cs" t="Include" />
             <e p="PdSpectrumBind.cs" t="Include" />
             <e p="SpectrumGeneratorPlayMode.cs" t="Include" />
           </e>
@@ -88,6 +97,11 @@
           <e p="Vertex Modifier.shader" t="Include" />
         </e>
         <e p="ThridParty" t="Include">
+          <e p="Assets" t="Include">
+            <e p="JapaneseHouse" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
           <e p="Editor" t="Include">
             <e p="KinectCopyPluginDataHelper.cs" t="Include" />
           </e>
