@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 namespace cylvester
+
 {
     public interface ISpectrumGenerator
     {

@@ -32,6 +32,17 @@
                 <e p="RMSAnalyzer.cs" t="Include" />
               </e>
             </e>
+            <e p="LevelThreshold" t="Include">
+              <e p="script" t="Include">
+                <e p="ConstructionColumnBehaviour.cs" t="Include" />
+                <e p="Spawner.cs" t="Include" />
+              </e>
+            </e>
+            <e p="MIDI" t="Include">
+              <e p="script" t="Include">
+                <e p="PositionBind.cs" t="Include" />
+              </e>
+            </e>
             <e p="PdBackend" t="Include">
               <e p="script" t="Include">
                 <e p="BoomBall.cs" t="Include" />
@@ -42,6 +53,9 @@
                 <e p="BokehBind.cs" t="Include" />
               </e>
             </e>
+            <e p="Texture" t="Include">
+              <e p="TextureMapper.cs" t="Include" />
+            </e>
             <e p="VisualEffectGraph" t="Include">
               <e p="script" t="Include">
                 <e p="FlareBind.cs" t="Include" />
@@ -51,6 +65,13 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CreatePlane.cs.cs" t="Include" />
+          <e p="CustomNode" t="Include">
+            <e p="wave.cginc" t="Include" />
+          </e>
+          <e p="Math" t="Include">
+            <e p="Threshold.cs" t="Include" />
+          </e>
           <e p="PdConnection" t="Include">
             <e p="DspController.cs" t="Include" />
             <e p="ISpectrumGenerator.cs" t="Include" />
@@ -60,11 +81,14 @@
             <e p="PdArraySelector.cs" t="Include" />
             <e p="PdBackend.cs" t="Include" />
             <e p="PdConstant.cs" t="Include" />
+            <e p="PdLevelBind.cs" t="Include" />
             <e p="PdProcess.cs" t="Include" />
             <e p="PdReceiver.cs" t="Include" />
             <e p="PdSender.cs" t="Include" />
             <e p="PdSpectrumBind.cs" t="Include" />
+            <e p="Spectrogram.cs" t="Include" />
             <e p="SpectrumGeneratorPlayMode.cs" t="Include" />
+            <e p="Waveform.cs" t="Include" />
           </e>
           <e p="TemplateLibrary" t="Include">
             <e p="ChangeObserver.cs" t="Include" />
@@ -93,11 +117,11 @@
             <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
         </e>
-        <e p="Shader" t="Include">
-          <e p="Vertex Modifier.shader" t="Include" />
-        </e>
         <e p="ThridParty" t="Include">
           <e p="Assets" t="Include">
+            <e p="Construction_Site_Column" t="Include">
+              <e p="README_Import_to_2018-HDRP.txt" t="Include" />
+            </e>
             <e p="JapaneseHouse" t="Include">
               <e p="ReadMe.txt" t="Include" />
             </e>
@@ -213,6 +237,7 @@
             </e>
           </e>
         </e>
+        <e p="Tiling.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />

@@ -4,7 +4,9 @@ namespace cylvester
     {
         int Selection { set; }
         float[] SelectedArray { get; }
+        
     }
+    
     
     public class PdArraySelector : IPdArraySelector
     {
