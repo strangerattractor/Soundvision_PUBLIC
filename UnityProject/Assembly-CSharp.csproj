@@ -56,77 +56,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\AvatarDemo\Scripts\CameraPitchCorrector.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\AvatarDemo\Scripts\OffsetNodeMover.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\AvatarDemo\Scripts\UserAvatarMatcher.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\BackgroundRemovalDemo\Scripts\ColorImageJointOverlayer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\BackgroundRemovalDemo\Scripts\UserImageMover.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\BlobDetectionDemo\Scripts\Blob.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\BlobDetectionDemo\Scripts\BlobDetector.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\BlobDetectionDemo\Scripts\CollisionLogger.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\BallMover.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\BallSpawner.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\DepthImageViewer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\DepthSpriteViewer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\EggMover.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\EggSpawner.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\HandColorOverlayer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\JumpTrigger.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\SkeletonCollider.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\FittingRoomDemo\Scripts\CategorySelector.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\FittingRoomDemo\Scripts\ModelSelector.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\FittingRoomDemo\Scripts\UserBodyBlender.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\CubeGestureListener.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\CubePresentationScript.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\ModelGestureListener.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\ModelPresentationScript.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\MocapAnimatorDemo\Scripts\MocapPlayer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\MocapAnimatorDemo\Scripts\MocapRecorder.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\OverlayDemo\Scripts\JointOverlayer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\OverlayDemo\Scripts\SkeletonOverlayer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\PoseDetectionDemo\Scripts\StaticPoseDetector.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\RecorderDemo\Scripts\BodyDataPlayerController.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectDemos\RecorderDemo\Scripts\PlayerDetectorController.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\AvatarController.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\AvatarControllerClassic.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\AvatarScaler.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BackgroundColorImage.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BackgroundDepthImage.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BackgroundInfraredImage.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BackgroundRemovalByDist.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BackgroundRemovalManager.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BackgroundUserBodyImage.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\BodyDataRecorderPlayer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\CubemanController.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Filters\BoneOrientationConstraints.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Filters\MahonyAHRS.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\FollowSensorTransform.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\ForegroundToRawImage.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\ForegroundToRenderer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Interfaces\DepthSensorBase.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Interfaces\DepthSensorInterface.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Interfaces\DummyK2Interface.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Interfaces\Kinect2Interface.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Interfaces\Kinect4AzureInterface.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Interfaces\RealSenseInterface.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\KinectGestureManager.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\KinectInterop.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\KinectManager.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\KinectUserManager.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\MultiScene\LoadFirstLevel.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\MultiScene\LoadLevelWithDelay.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\MultiScene\RefreshGestureListeners.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\PhotoShooter.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\PortraitBackground.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\PoseModelHelper.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\PoseModelHelperClassic.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Samples\JointOrientationView.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Samples\JointPositionView.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\Samples\SimpleGestureListener.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\SceneMeshRenderer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\SceneMeshRendererGpu.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\UserMeshRenderer.cs" />
-     <Compile Include="Assets\AzureKinectExamples\KinectScripts\UserMeshRendererGpu.cs" />
      <Compile Include="Assets\MaxP\Shaders\Scripts\DirtyLensFlare.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
@@ -169,6 +98,77 @@
      <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
      <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
      <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\AvatarDemo\Scripts\CameraPitchCorrector.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\AvatarDemo\Scripts\OffsetNodeMover.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\AvatarDemo\Scripts\UserAvatarMatcher.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\BackgroundRemovalDemo\Scripts\ColorImageJointOverlayer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\BackgroundRemovalDemo\Scripts\UserImageMover.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\BlobDetectionDemo\Scripts\Blob.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\BlobDetectionDemo\Scripts\BlobDetector.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\BlobDetectionDemo\Scripts\CollisionLogger.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\BallMover.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\BallSpawner.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\DepthImageViewer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\DepthSpriteViewer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\EggMover.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\EggSpawner.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\HandColorOverlayer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\JumpTrigger.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\ColliderDemo\Scripts\SkeletonCollider.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\FittingRoomDemo\Scripts\CategorySelector.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\FittingRoomDemo\Scripts\ModelSelector.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\FittingRoomDemo\Scripts\UserBodyBlender.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\CubeGestureListener.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\CubePresentationScript.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\ModelGestureListener.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\GestureDemo\Scripts\ModelPresentationScript.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\MocapAnimatorDemo\Scripts\MocapPlayer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\MocapAnimatorDemo\Scripts\MocapRecorder.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\OverlayDemo\Scripts\JointOverlayer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\OverlayDemo\Scripts\SkeletonOverlayer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\PoseDetectionDemo\Scripts\StaticPoseDetector.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\RecorderDemo\Scripts\BodyDataPlayerController.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\RecorderDemo\Scripts\PlayerDetectorController.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\AvatarController.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\AvatarControllerClassic.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\AvatarScaler.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BackgroundColorImage.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BackgroundDepthImage.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BackgroundInfraredImage.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BackgroundRemovalByDist.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BackgroundRemovalManager.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BackgroundUserBodyImage.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\BodyDataRecorderPlayer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\CubemanController.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Filters\BoneOrientationConstraints.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Filters\MahonyAHRS.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\FollowSensorTransform.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\ForegroundToRawImage.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\ForegroundToRenderer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Interfaces\DepthSensorBase.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Interfaces\DepthSensorInterface.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Interfaces\DummyK2Interface.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Interfaces\Kinect2Interface.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Interfaces\Kinect4AzureInterface.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Interfaces\RealSenseInterface.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\KinectGestureManager.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\KinectInterop.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\KinectManager.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\KinectUserManager.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\MultiScene\LoadFirstLevel.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\MultiScene\LoadLevelWithDelay.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\MultiScene\RefreshGestureListeners.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\PhotoShooter.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\PortraitBackground.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\PoseModelHelper.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\PoseModelHelperClassic.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Samples\JointOrientationView.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Samples\JointPositionView.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\Samples\SimpleGestureListener.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\SceneMeshRenderer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\SceneMeshRendererGpu.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\UserMeshRenderer.cs" />
+     <Compile Include="Assets\ThridParty\AzureKinectExamples\KinectScripts\UserMeshRendererGpu.cs" />
      <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
      <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
      <Compile Include="Assets\ThridParty\KinectScript\EventPump.cs" />
@@ -265,41 +265,41 @@
      <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
      <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Tiling.cs" />
-     <None Include="Assets\AzureKinectExamples\KinectDemos\PointCloudDemo\VFX\DownloadMoreVFX.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\MedianShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\UserHistImageShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\InvertShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\GradientShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\PointCloudColorShaderK2.compute" />
-     <None Include="Assets\AzureKinectExamples\Resources\ForegroundFiltBodyShader.compute" />
-     <None Include="Assets\AzureKinectExamples\Resources\ColorDepthShaderK2.compute" />
-     <None Include="Assets\AzureKinectExamples\Resources\UserMeshShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\PointCloudDemo\VFX\DownloadMoreVFX.txt" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\MedianShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\UserHistImageShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\InvertShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\GradientShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\PointCloudColorShaderK2.compute" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\ForegroundFiltBodyShader.compute" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\ColorDepthShaderK2.compute" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\UserMeshShader.shader" />
      <None Include="Assets\ThridParty\Assets\Construction_Site_Column\README_Import_to_2018-HDRP.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\PointCloudVertexShaderCRK2.compute" />
-     <None Include="Assets\AzureKinectExamples\Resources\SceneMeshShader.shader" />
-     <None Include="Assets\AzureKinectExamples\KinectDemos\PointCloudDemo\Attribution.txt" />
-     <None Include="Assets\AzureKinectExamples\SDK\Kinect4AzureSDK\AzureKinectSDK_License.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\UserBodyImageShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\PointCloudVertexShaderCRK2.compute" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\SceneMeshShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\KinectDemos\PointCloudDemo\Attribution.txt" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\SDK\Kinect4AzureSDK\AzureKinectSDK_License.txt" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\UserBodyImageShader.shader" />
      <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\Blur.shader" />
-     <None Include="Assets\AzureKinectExamples\SDK\Kinect4AzureSDK\Resources\k4a-resources.txt" />
-     <None Include="Assets\AzureKinectExamples\_Readme\致盗版使用者-ToPiracyUsers.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\DepthTexShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\SDK\Kinect4AzureSDK\Resources\k4a-resources.txt" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\_Readme\致盗版使用者-ToPiracyUsers.txt" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\DepthTexShader.shader" />
      <None Include="Assets\ThridParty\Assets\JapaneseHouse\ReadMe.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\DepthHistImageShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\InfraredImageShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\ForegroundFiltDistShader.compute" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\DepthHistImageShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\InfraredImageShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\ForegroundFiltDistShader.compute" />
      <None Include="Assets\Resources\buildNumber.txt" />
      <None Include="Assets\Third-Party-Notices.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\ErodeShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\ErodeShader.shader" />
      <None Include="Assets\Scripts\CustomNode\wave.cginc" />
-     <None Include="Assets\AzureKinectExamples\Resources\ForegroundShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\DilateShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\ForegroundShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\DilateShader.shader" />
      <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\DirtyLensFlare.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\PointCloudVertexShaderAll.compute" />
-     <None Include="Assets\AzureKinectExamples\Resources\BackgroundRenderShader.shader" />
-     <None Include="Assets\AzureKinectExamples\SDK\RealSenseSDK2.0\RealSenseSDK_License.txt" />
-     <None Include="Assets\AzureKinectExamples\Resources\UserBlendShader.shader" />
-     <None Include="Assets\AzureKinectExamples\Resources\BlurShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\PointCloudVertexShaderAll.compute" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\BackgroundRenderShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\SDK\RealSenseSDK2.0\RealSenseSDK_License.txt" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\UserBlendShader.shader" />
+     <None Include="Assets\ThridParty\AzureKinectExamples\Resources\BlurShader.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -567,24 +567,6 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
- <Reference Include="Microsoft.Azure.Kinect.Sensor">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
- </Reference>
- <Reference Include="System.Buffers">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Buffers.dll</HintPath>
- </Reference>
- <Reference Include="System.Memory">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Memory.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
- </Reference>
- <Reference Include="Kinect2UnityWrapper">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/AzureKinectExamples/SDK/KinectSDK2.0/Plugins/Kinect2UnityWrapper.dll</HintPath>
- </Reference>
- <Reference Include="Intel.RealSense">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/AzureKinectExamples/SDK/RealSenseSDK2.0/Plugins/Intel.RealSense.dll</HintPath>
- </Reference>
  <Reference Include="Castle.Core">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/Castle.Core.dll</HintPath>
  </Reference>
@@ -602,6 +584,24 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Memory">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.Unsafe">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Azure.Kinect.Sensor">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+ </Reference>
+ <Reference Include="Intel.RealSense">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/RealSenseSDK2.0/Plugins/Intel.RealSense.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Buffers">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Buffers.dll</HintPath>
+ </Reference>
+ <Reference Include="Kinect2UnityWrapper">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/KinectSDK2.0/Plugins/Kinect2UnityWrapper.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
