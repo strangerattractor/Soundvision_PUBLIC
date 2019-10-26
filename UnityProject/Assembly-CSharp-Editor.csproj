@@ -121,6 +121,9 @@
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Rider.Editor">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
@@ -162,9 +165,6 @@
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

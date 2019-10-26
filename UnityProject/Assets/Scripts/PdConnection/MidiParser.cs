@@ -12,6 +12,14 @@ namespace cylvester
         public byte Status;
         public byte Data1;
         public byte Data2;
+
+        public override string ToString()
+        {
+            var statusStr = Status.ToString();
+            var data1Str = Data1.ToString();
+            var data2Str = Data2.ToString();
+            return statusStr + " " +data1Str + " " +data2Str;
+        }
     }
     public interface IMidiParser : IDisposable
     {
