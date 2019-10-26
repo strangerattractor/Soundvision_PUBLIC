@@ -4,19 +4,18 @@ using UnityEngine.Events;
 namespace cylvester
 {
     [Serializable]
-    public class UnityControlEvent : UnityEvent<ControlMessage>
+    public class UnityControlEvent : UnityEvent<MidiMessage>
     {}
     
-    public struct ControlMessage
+    public struct MidiMessage
     {
-        public byte Channel;
-        public byte ControlNumber;
-        public byte ControlValue;
+        public byte Status;
+        public byte Data1;
+        public byte Data2;
     }
-    
     public interface IMidiParser : IDisposable
     {
-        event Action<ControlMessage> ControlMessageReceived;
+        event Action<MidiMessage> MidiMessageReceived;
     }
     
     public class MidiParser : IMidiParser 
@@ -26,13 +25,6 @@ namespace cylvester
             StatusByte,
             DataByte1,
             DataByte2
-        }
-
-        private struct MidiMessage
-        {
-            public byte Status;
-            public byte Data1;
-            public byte Data2;
         }
 
         private MidiMessage message_;
@@ -74,17 +66,7 @@ namespace cylvester
 
         private void Invoke()
         {
-            if (176 <= message_.Status || message_.Status <= 191)
-            {
-                var controlMessage = new ControlMessage
-                {
-                    Channel = (byte) (message_.Status - 176),
-                    ControlNumber = message_.Data1,
-                    ControlValue = message_.Data2
-                };
-
-                ControlMessageReceived?.Invoke(controlMessage);
-            }
+            MidiMessageReceived?.Invoke(message_);
         }
         
         public void Dispose()
@@ -92,7 +74,7 @@ namespace cylvester
             pdReceiver_.DataReceived -= onDataReceived_;
         }
         
-        public event Action<ControlMessage> ControlMessageReceived;
+        public event Action<MidiMessage> MidiMessageReceived;
 
     }
 }

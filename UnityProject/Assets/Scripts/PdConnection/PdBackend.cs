@@ -14,7 +14,7 @@ namespace cylvester
     
     public class PdBackend : MonoBehaviour, IPdBackend
     {
-        [SerializeField] UnityControlEvent controlMessageReceived = null;
+        [SerializeField] UnityControlEvent midiMessageReceived = null;
         
         public int samplePlayback;
 
@@ -32,7 +32,7 @@ namespace cylvester
         private List<IUpdater> updaters_;
         
         private Action onSamplePlaybackChanged_;
-        private Action<ControlMessage> onControlMessageReceived_;
+        private Action<MidiMessage> onMidiMessageReceived_;
 
         private void Awake()
         {
@@ -53,12 +53,12 @@ namespace cylvester
 
             onSamplePlaybackChanged_ = () => { pdSender_.Send(new[]{(byte)PdMessage.SampleSound, (byte)samplePlayback}); };
 
-            onControlMessageReceived_ = (message) => {
-                controlMessageReceived.Invoke(message); 
+            onMidiMessageReceived_ = (message) => {
+                midiMessageReceived.Invoke(message); 
             };
             
             samplePlaybackObserver_.ValueChanged += onSamplePlaybackChanged_;
-            midiParser_.ControlMessageReceived += onControlMessageReceived_;
+            midiParser_.MidiMessageReceived += onMidiMessageReceived_;
 
             dspController_.State = true;
         }
@@ -68,7 +68,7 @@ namespace cylvester
             dspController_.State = false;
             pdSender_?.Dispose();
             samplePlaybackObserver_.ValueChanged -= onSamplePlaybackChanged_;
-            midiParser_.ControlMessageReceived -= onControlMessageReceived_;
+            midiParser_.MidiMessageReceived -= onMidiMessageReceived_;
         }
 
         public void Update()
