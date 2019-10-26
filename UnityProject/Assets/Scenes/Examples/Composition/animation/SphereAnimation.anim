@@ -23,9 +23,9 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 10.00388
-        inSlope: 0
+        inSlope: Infinity
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 7
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
@@ -282,9 +282,9 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 10.00388
-        inSlope: 0
+        inSlope: Infinity
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 7
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334

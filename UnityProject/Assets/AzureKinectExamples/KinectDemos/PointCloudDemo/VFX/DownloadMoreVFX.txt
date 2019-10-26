@@ -1,0 +1,2 @@
+If you need more visual effects (VFX assets), please download this file, then unzip and import the Unity-package into your Unity project:
+https://ratemt.com/downloads/kinect/K4A-VFX.zip

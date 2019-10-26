@@ -1,0 +1,22 @@
+#pragma kernel BakeColorTex
+
+uint2 DepthRes;
+
+StructuredBuffer<float> DepthToColorMap;
+Texture2D<float4> ColorTex;
+
+RWTexture2D<float4> PointCloudColorTex;
+
+
+[numthreads(8, 8, 1)]
+void BakeColorTex(uint3 id : SV_DispatchThreadID) 
+{
+	uint i = id.x + id.y * DepthRes.x;
+
+	int cx = DepthToColorMap[i << 1];
+	int cy = DepthToColorMap[(i << 1) + 1];
+	float4 color = ColorTex.Load(int3(cx, cy, 0));
+
+	PointCloudColorTex[id.xy] = color;
+}
+

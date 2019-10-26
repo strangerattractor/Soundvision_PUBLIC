@@ -1,0 +1,40 @@
+#pragma kernel BakeVertexTexColorResK2
+
+uint2 PointCloudRes;
+uint2 DepthRes;
+float2 SpaceScale;
+
+uint MinDepth;
+uint MaxDepth;
+
+StructuredBuffer<float> SpaceTable;
+StructuredBuffer<uint> DepthMap;
+StructuredBuffer<float> ColorToDepthMap;
+
+RWTexture2D<float4> PointCloudVertexTex;
+
+
+[numthreads(8, 8, 1)]
+void BakeVertexTexColorResK2(uint3 id : SV_DispatchThreadID)
+{
+    uint i = id.x + id.y * PointCloudRes.x;
+
+	int dx = ColorToDepthMap[i << 1];
+	int dy = ColorToDepthMap[(i << 1) + 1];
+	uint di = dx + dy * DepthRes.x;
+
+	uint depth2 = DepthMap[di >> 1];
+	uint depth = (di % 2 == 0 ? depth2 <<= 16 : depth2) >> 16;
+	depth = (depth >= MinDepth && depth <= MaxDepth) * depth;
+
+	float fDepth = (float)depth / 1000.0;
+	bool mask = depth != 0;
+
+    float3 pos = float3(
+		SpaceTable[di * 3] * fDepth * SpaceScale.x,
+        SpaceTable[di * 3 + 1] * fDepth * SpaceScale.y,
+        mask ? fDepth : 1000
+    );
+
+	PointCloudVertexTex[id.xy] = float4(pos, mask);
+}

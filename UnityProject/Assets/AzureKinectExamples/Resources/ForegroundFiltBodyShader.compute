@@ -1,0 +1,56 @@
+#pragma kernel FgFiltBody
+
+//float4x4 _Transform;
+uint _NumBodies;
+
+//float4 BodyPos[10];
+//float4 BodyDistXY[10];
+//float4 BodyDistZ[10];
+float4 _BodyPosMin[10];
+float4 _BodyPosMaxX[10];
+float4 _BodyPosMaxY[10];
+float4 _BodyPosMaxZ[10];
+float4 _BodyPosDot[10];
+
+RWTexture2D<float4> _VertexTex;
+
+
+[numthreads(8, 8, 1)]
+void FgFiltBody(uint3 id : SV_DispatchThreadID)
+{
+	float4 vertex = _VertexTex[id.xy];
+	float3 vpos = (float3)vertex;  // mul(_Transform, vertex).xyz;
+	bool mask = (vertex.a != 0) && (_NumBodies != 0); // && (vpos.y >= 0);
+
+	for (uint i = 0; mask && i < _NumBodies; i++)
+	{
+		//if (distance(vpos, BodyPos[i].xyz) <= 0.2)
+		//	mask = 0;
+
+		//float4 distXY = BodyDistXY[i];
+		//float4 distZ = BodyDistZ[i];
+		//bool isInside = vpos.x >= distXY.x && vpos.x <= distXY.y && vpos.y >= distXY.z && vpos.y <= distXY.w && vpos.z >= distZ.x && vpos.z <= distZ.y;
+		//mask = mask && isInside;
+
+		float3 pmin = (float3)_BodyPosMin[i];
+		float3 pv = vpos - pmin;
+
+		float3 px = (float3)_BodyPosMaxX[i];
+		float3 py = (float3)_BodyPosMaxY[i];
+		float3 pz = (float3)_BodyPosMaxZ[i];
+		float3 pdot = (float3)_BodyPosDot[i];
+
+		float dx = dot(pv, px);
+		bool bx = dx >= 0.0 && dx <= pdot.x;
+
+		float dy = dot(pv, py);
+		bool by = dy >= 0.0 && dy <= pdot.y;
+
+		float dz = dot(pv, pz);
+		bool bz = dz >= 0.0 && dz <= pdot.z;
+
+		mask = mask && bx && by && bz;
+	}
+
+	_VertexTex[id.xy] = float4(mask, mask, mask, mask);
+}

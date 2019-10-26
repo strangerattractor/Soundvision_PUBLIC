@@ -1,0 +1,1 @@
+Feel free to add binary or text files to this directory that need to be copied to the root folder at run time.

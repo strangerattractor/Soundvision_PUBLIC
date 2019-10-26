@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 0a2f909492838c140bf924ddf98e446d
+timeCreated: 1441487865
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: LittleKitty_mesh
+    100004: LK
+    100006: LK_floor
+    100008: LK_Footsteps
+    100010: LK_Head
+    100012: LK_HeadNub
+    100014: LK_L_Calf
+    100016: LK_L_Clavicle
+    100018: LK_L_Foot
+    100020: LK_L_Forearm
+    100022: LK_L_Hand
+    100024: LK_L_Thigh
+    100026: LK_L_Toe0
+    100028: LK_L_Toe0Nub
+    100030: LK_L_UpperArm
+    100032: LK_Neck
+    100034: LK_Pelvis
+    100036: LK_R_Calf
+    100038: LK_R_Clavicle
+    100040: LK_R_Foot
+    100042: LK_R_Forearm
+    100044: LK_R_Hand
+    100046: LK_R_Thigh
+    100048: LK_R_Toe0
+    100050: LK_R_Toe0Nub
+    100052: LK_R_UpperArm
+    100054: LK_Spine
+    400000: //RootNode
+    400002: LittleKitty_mesh
+    400004: LK
+    400006: LK_floor
+    400008: LK_Footsteps
+    400010: LK_Head
+    400012: LK_HeadNub
+    400014: LK_L_Calf
+    400016: LK_L_Clavicle
+    400018: LK_L_Foot
+    400020: LK_L_Forearm
+    400022: LK_L_Hand
+    400024: LK_L_Thigh
+    400026: LK_L_Toe0
+    400028: LK_L_Toe0Nub
+    400030: LK_L_UpperArm
+    400032: LK_Neck
+    400034: LK_Pelvis
+    400036: LK_R_Calf
+    400038: LK_R_Clavicle
+    400040: LK_R_Foot
+    400042: LK_R_Forearm
+    400044: LK_R_Hand
+    400046: LK_R_Thigh
+    400048: LK_R_Toe0
+    400050: LK_R_Toe0Nub
+    400052: LK_R_UpperArm
+    400054: LK_Spine
+    4300000: LittleKitty_mesh
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: LittleKitty_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
