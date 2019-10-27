@@ -12,8 +12,7 @@ namespace cylvester
     {
         int State { set; }
         string[] StateTitles { get; }
-        void Next();
-        void Rewind();
+        void OnMidiReceived(MidiMessage message);
     }
     
     public class StateManager : MonoBehaviour, IStateManager
@@ -43,15 +42,26 @@ namespace cylvester
                 onStateChanged.Invoke(StateTitles[sceneSelection]);
             }
         }
+
+        public void OnMidiReceived(MidiMessage message)
+        {
+            if (message.Status == 176 && message.Data1 == 127)
+            {
+                if (message.Data2 == 1)
+                    Next();
+                else if (message.Data2 == 0)
+                    Rewind();
+            }
+        }
         
-        public void Next()
+        private void Next()
         {
             if (sceneSelection >= StateTitles.Length - 1) return;
             sceneSelection++;
             onStateChanged.Invoke(StateTitles[sceneSelection]);
         }
 
-        public void Rewind()
+        private void Rewind()
         {
             if (sceneSelection == 0) return;
             sceneSelection = 0;
