@@ -10,6 +10,7 @@ namespace cylvester
         
         public void OnMidiMessageReceived(MidiMessage mes)
         {
+
             if(logAll)
                 Debug.Log("MIDI Received: " + mes);
 

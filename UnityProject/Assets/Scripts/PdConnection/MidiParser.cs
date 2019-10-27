@@ -4,7 +4,7 @@ using UnityEngine.Events;
 namespace cylvester
 {
     [Serializable]
-    public class UnityControlEvent : UnityEvent<MidiMessage>
+    public class UnityMidiEvent : UnityEvent<MidiMessage>
     {}
     
     public struct MidiMessage
@@ -24,6 +24,8 @@ namespace cylvester
     public interface IMidiParser : IDisposable
     {
         event Action<MidiMessage> MidiMessageReceived;
+        event Action MidiClockReceived;
+
     }
     
     public class MidiParser : IMidiParser 
@@ -39,6 +41,7 @@ namespace cylvester
         private Accept accept_ = Accept.StatusByte;
         private readonly IPdReceiver pdReceiver_;
         private readonly Action<byte[]> onDataReceived_;
+        private static byte MIDI_CLOCK = 248;
 
         public MidiParser(IPdReceiver pdReceiver)
         {
@@ -48,6 +51,9 @@ namespace cylvester
             {
                 foreach (var element in bytes)
                 {
+                    if (element == MIDI_CLOCK)
+                        MidiClockReceived?.Invoke();
+                        
                     if (element >= 128)
                     {
                         message_ = new MidiMessage {Status = element};
@@ -63,7 +69,7 @@ namespace cylvester
                     else if (accept_ == Accept.DataByte2 && element <= 128)
                     {
                         message_.Data2 = element;
-                        Invoke();
+                        MidiMessageReceived?.Invoke(message_);
                         accept_ = Accept.StatusByte;
                     }
                 }
@@ -72,17 +78,12 @@ namespace cylvester
             pdReceiver_.DataReceived += onDataReceived_;
         }
 
-        private void Invoke()
-        {
-            MidiMessageReceived?.Invoke(message_);
-        }
-        
         public void Dispose()
         {
             pdReceiver_.DataReceived -= onDataReceived_;
         }
         
         public event Action<MidiMessage> MidiMessageReceived;
-
+        public event Action MidiClockReceived;
     }
 }

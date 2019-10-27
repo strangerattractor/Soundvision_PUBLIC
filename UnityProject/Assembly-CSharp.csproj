@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
      <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
      <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\MidiClockCounter.cs" />
      <Compile Include="Assets\Scripts\PdConnection\MidiLogger.cs" />
      <Compile Include="Assets\Scripts\PdConnection\MidiParser.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
