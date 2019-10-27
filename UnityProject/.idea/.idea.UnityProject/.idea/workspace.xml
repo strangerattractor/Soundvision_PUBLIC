@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="implement FFT waterfall">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Plane 2512x424W10L10HC.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Plane 2512x424W10L10HC.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Plane512x424W1L1HC.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/Plane512x424W1L1HC.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CreatePlane.cs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CreatePlane.cs.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.settings-manager/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/CreatePlane.cs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/CreatePlane.cs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/Max Kinect Effect.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/KinectSceneGraph/Max Kinect Effect.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/PostProcessing/PostProcessing/Scene Settings Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/PostProcessing/PostProcessing/Scene Settings Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArraySelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArraySelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnityProject.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UnityProject.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnityProject.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/UnityProject.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdConstant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemplateLibrary/ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/PositionBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/VisualEffectGraph.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/SmokeBind.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/FlareBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/CubeSync.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Specttrum.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CreatePlane.cs.cs" root0="FORCE_HIGHLIGHTING" />
@@ -86,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratorPlayMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/MidiClockCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -96,6 +84,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArraySelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/MidiLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs.meta" root0="FORCE_HIGHLIGHTING" />
@@ -234,6 +223,7 @@
       <workItem from="1571146025733" duration="919000" />
       <workItem from="1571153225138" duration="76000" />
       <workItem from="1571216505468" duration="820000" />
+      <workItem from="1572195974043" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>
