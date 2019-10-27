@@ -361,6 +361,24 @@
  <Reference Include="System.Threading.Tasks.Extensions">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Microsoft.Azure.Kinect.Sensor">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Buffers">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Buffers.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Memory">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.Unsafe">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ </Reference>
+ <Reference Include="Kinect2UnityWrapper">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/KinectSDK2.0/Plugins/Kinect2UnityWrapper.dll</HintPath>
+ </Reference>
+ <Reference Include="Intel.RealSense">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/RealSenseSDK2.0/Plugins/Intel.RealSense.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -378,24 +396,6 @@
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.render-pipelines.high-definition@6.9.1-preview/Editor/Core/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
- </Reference>
- <Reference Include="System.Memory">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Memory.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Azure.Kinect.Sensor">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
- </Reference>
- <Reference Include="Intel.RealSense">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/RealSenseSDK2.0/Plugins/Intel.RealSense.dll</HintPath>
- </Reference>
- <Reference Include="System.Buffers">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Buffers.dll</HintPath>
- </Reference>
- <Reference Include="Kinect2UnityWrapper">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/KinectSDK2.0/Plugins/Kinect2UnityWrapper.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

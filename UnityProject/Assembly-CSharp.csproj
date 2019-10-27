@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
+     <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
      <Compile Include="Assets\Scenes\Examples\MIDI\script\PositionBind.cs" />
      <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
      <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
@@ -577,6 +578,24 @@
  <Reference Include="System.Threading.Tasks.Extensions">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Microsoft.Azure.Kinect.Sensor">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Buffers">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Buffers.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Memory">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.Unsafe">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ </Reference>
+ <Reference Include="Kinect2UnityWrapper">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/KinectSDK2.0/Plugins/Kinect2UnityWrapper.dll</HintPath>
+ </Reference>
+ <Reference Include="Intel.RealSense">
+ <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/RealSenseSDK2.0/Plugins/Intel.RealSense.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
@@ -585,24 +604,6 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="System.Memory">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Memory.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Azure.Kinect.Sensor">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
- </Reference>
- <Reference Include="Intel.RealSense">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/RealSenseSDK2.0/Plugins/Intel.RealSense.dll</HintPath>
- </Reference>
- <Reference Include="System.Buffers">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/Kinect4AzureSDK/Plugins/System.Buffers.dll</HintPath>
- </Reference>
- <Reference Include="Kinect2UnityWrapper">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/AzureKinectExamples/SDK/KinectSDK2.0/Plugins/Kinect2UnityWrapper.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
