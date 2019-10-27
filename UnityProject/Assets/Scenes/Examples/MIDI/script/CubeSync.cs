@@ -17,7 +17,6 @@ public class CubeSync : MonoBehaviour
         counter_++;
         targetX_ =  (counter_ - 12) * 0.2f;
         counter_ %= 24;
-        
     }
 
     public void Update()
@@ -25,7 +24,6 @@ public class CubeSync : MonoBehaviour
         var timeSinceLastCallback = Time.realtimeSinceStartup - lastCallBack_;
         var elapsedRatio = timeSinceLastCallback / callbackInterval_;
         var animationX = Mathf.Lerp(currentX_, targetX_, elapsedRatio);
-        Debug.Log(elapsedRatio);
         transform.position = new Vector3(animationX, 0f, 0f);
     }
 }
