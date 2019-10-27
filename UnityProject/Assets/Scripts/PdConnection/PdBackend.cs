@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,13 +13,13 @@ namespace cylvester
         IPdArray LevelArray { get; }
         IPdArrayContainer SpectrumArrayContainer{ get; }
         IPdArrayContainer WaveformArrayContainer{ get; }
+        void Message(string message);
     }
     
     public class PdBackend : MonoBehaviour, IPdBackend
     {
         [SerializeField] UnityMidiEvent midiMessageReceived = null;
         [SerializeField] UnityEvent midiClockReceived = null;
-
 
         public int samplePlayback;
 
@@ -55,7 +57,10 @@ namespace cylvester
 
             samplePlaybackObserver_ = new ChangeObserver<int>(samplePlayback);
 
-            onSamplePlaybackChanged_ = () => { pdSender_.Send(new[]{(byte)PdMessage.SampleSound, (byte)samplePlayback}); };
+            onSamplePlaybackChanged_ = () =>
+            {
+                pdSender_.Send("sample " + samplePlayback);
+            };
 
             onMidiMessageReceived_ = (message) => { midiMessageReceived.Invoke(message); };
             onMidiClockReceived_ = () => { midiClockReceived.Invoke(); };
@@ -84,5 +89,11 @@ namespace cylvester
             
             samplePlaybackObserver_.Value = samplePlayback;
         }
+
+        public void Message(string message)
+        {
+            pdSender_.Send("message " + message);
+        }
+
     }
 }

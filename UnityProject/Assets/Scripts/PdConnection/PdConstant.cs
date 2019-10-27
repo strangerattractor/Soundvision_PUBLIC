@@ -1,11 +1,5 @@
 namespace cylvester
 {
-    enum PdMessage
-    {
-        Dsp = 0,
-        SampleSound = 1
-    }
-    
     public class PdConstant
     {
         public static readonly int NumMaxInputChannels = 16;
