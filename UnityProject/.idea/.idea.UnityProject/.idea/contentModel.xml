@@ -21,6 +21,24 @@
             <e p="UnitTest_SpectrumGeneratorPlayMode.cs" t="Include" />
           </e>
         </e>
+        <e p="MaxP" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="_Source" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="Blur.shader" t="Include" />
+                  <e p="DirtyLensFlare.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="DirtyLensFlare.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DirtyLensFlareEditor.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Resources" t="Include">
           <e p="buildNumber.txt" t="Include" />
         </e>
@@ -40,6 +58,7 @@
             </e>
             <e p="MIDI" t="Include">
               <e p="script" t="Include">
+                <e p="CubeSync.cs" t="Include" />
                 <e p="PositionBind.cs" t="Include" />
               </e>
             </e>
@@ -70,11 +89,14 @@
             <e p="wave.cginc" t="Include" />
           </e>
           <e p="Math" t="Include">
+            <e p="Smoother.cs" t="Include" />
             <e p="Threshold.cs" t="Include" />
           </e>
           <e p="PdConnection" t="Include">
             <e p="DspController.cs" t="Include" />
             <e p="ISpectrumGenerator.cs" t="Include" />
+            <e p="MidiClockCounter.cs" t="Include" />
+            <e p="MidiLogger.cs" t="Include" />
             <e p="MidiParser.cs" t="Include" />
             <e p="PdArray.cs" t="Include" />
             <e p="PdArrayContainer.cs" t="Include" />
@@ -117,6 +139,7 @@
             <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
         </e>
+        <e p="Third-Party-Notices.txt" t="Include" />
         <e p="ThridParty" t="Include">
           <e p="Assets" t="Include">
             <e p="Construction_Site_Column" t="Include">
@@ -124,6 +147,175 @@
             </e>
             <e p="JapaneseHouse" t="Include">
               <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
+          <e p="AzureKinectExamples" t="Include">
+            <e p="_Readme" t="Include">
+              <e p="致盗版使用者-ToPiracyUsers.txt" t="Include" />
+            </e>
+            <e p="KinectDemos" t="Include">
+              <e p="AvatarDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CameraPitchCorrector.cs" t="Include" />
+                  <e p="OffsetNodeMover.cs" t="Include" />
+                  <e p="UserAvatarMatcher.cs" t="Include" />
+                </e>
+              </e>
+              <e p="BackgroundRemovalDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="ColorImageJointOverlayer.cs" t="Include" />
+                  <e p="UserImageMover.cs" t="Include" />
+                </e>
+              </e>
+              <e p="BlobDetectionDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Blob.cs" t="Include" />
+                  <e p="BlobDetector.cs" t="Include" />
+                  <e p="CollisionLogger.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ColliderDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="BallMover.cs" t="Include" />
+                  <e p="BallSpawner.cs" t="Include" />
+                  <e p="DepthImageViewer.cs" t="Include" />
+                  <e p="DepthSpriteViewer.cs" t="Include" />
+                  <e p="EggMover.cs" t="Include" />
+                  <e p="EggSpawner.cs" t="Include" />
+                  <e p="HandColorOverlayer.cs" t="Include" />
+                  <e p="JumpTrigger.cs" t="Include" />
+                  <e p="SkeletonCollider.cs" t="Include" />
+                </e>
+              </e>
+              <e p="FittingRoomDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CategorySelector.cs" t="Include" />
+                  <e p="ModelSelector.cs" t="Include" />
+                  <e p="UserBodyBlender.cs" t="Include" />
+                </e>
+              </e>
+              <e p="GestureDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CubeGestureListener.cs" t="Include" />
+                  <e p="CubePresentationScript.cs" t="Include" />
+                  <e p="ModelGestureListener.cs" t="Include" />
+                  <e p="ModelPresentationScript.cs" t="Include" />
+                </e>
+              </e>
+              <e p="MocapAnimatorDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="MocapPlayer.cs" t="Include" />
+                  <e p="MocapRecorder.cs" t="Include" />
+                </e>
+              </e>
+              <e p="OverlayDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="JointOverlayer.cs" t="Include" />
+                  <e p="SkeletonOverlayer.cs" t="Include" />
+                </e>
+              </e>
+              <e p="PointCloudDemo" t="Include">
+                <e p="Attribution.txt" t="Include" />
+                <e p="VFX" t="Include">
+                  <e p="DownloadMoreVFX.txt" t="Include" />
+                </e>
+              </e>
+              <e p="PoseDetectionDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="StaticPoseDetector.cs" t="Include" />
+                </e>
+              </e>
+              <e p="RecorderDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="BodyDataPlayerController.cs" t="Include" />
+                  <e p="PlayerDetectorController.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="KinectScripts" t="Include">
+              <e p="AvatarController.cs" t="Include" />
+              <e p="AvatarControllerClassic.cs" t="Include" />
+              <e p="AvatarScaler.cs" t="Include" />
+              <e p="BackgroundColorImage.cs" t="Include" />
+              <e p="BackgroundDepthImage.cs" t="Include" />
+              <e p="BackgroundInfraredImage.cs" t="Include" />
+              <e p="BackgroundRemovalByDist.cs" t="Include" />
+              <e p="BackgroundRemovalManager.cs" t="Include" />
+              <e p="BackgroundUserBodyImage.cs" t="Include" />
+              <e p="BodyDataRecorderPlayer.cs" t="Include" />
+              <e p="CubemanController.cs" t="Include" />
+              <e p="Filters" t="Include">
+                <e p="BoneOrientationConstraints.cs" t="Include" />
+                <e p="MahonyAHRS.cs" t="Include" />
+              </e>
+              <e p="FollowSensorTransform.cs" t="Include" />
+              <e p="ForegroundToRawImage.cs" t="Include" />
+              <e p="ForegroundToRenderer.cs" t="Include" />
+              <e p="Interfaces" t="Include">
+                <e p="DepthSensorBase.cs" t="Include" />
+                <e p="DepthSensorInterface.cs" t="Include" />
+                <e p="DummyK2Interface.cs" t="Include" />
+                <e p="Kinect2Interface.cs" t="Include" />
+                <e p="Kinect4AzureInterface.cs" t="Include" />
+                <e p="RealSenseInterface.cs" t="Include" />
+              </e>
+              <e p="KinectGestureManager.cs" t="Include" />
+              <e p="KinectInterop.cs" t="Include" />
+              <e p="KinectManager.cs" t="Include" />
+              <e p="KinectUserManager.cs" t="Include" />
+              <e p="MultiScene" t="Include">
+                <e p="LoadFirstLevel.cs" t="Include" />
+                <e p="LoadLevelWithDelay.cs" t="Include" />
+                <e p="RefreshGestureListeners.cs" t="Include" />
+              </e>
+              <e p="PhotoShooter.cs" t="Include" />
+              <e p="PortraitBackground.cs" t="Include" />
+              <e p="PoseModelHelper.cs" t="Include" />
+              <e p="PoseModelHelperClassic.cs" t="Include" />
+              <e p="Samples" t="Include">
+                <e p="JointOrientationView.cs" t="Include" />
+                <e p="JointPositionView.cs" t="Include" />
+                <e p="SimpleGestureListener.cs" t="Include" />
+              </e>
+              <e p="SceneMeshRenderer.cs" t="Include" />
+              <e p="SceneMeshRendererGpu.cs" t="Include" />
+              <e p="UserMeshRenderer.cs" t="Include" />
+              <e p="UserMeshRendererGpu.cs" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="BackgroundRenderShader.shader" t="Include" />
+              <e p="BlurShader.shader" t="Include" />
+              <e p="ColorDepthShaderK2.compute" t="Include" />
+              <e p="DepthHistImageShader.shader" t="Include" />
+              <e p="DepthTexShader.shader" t="Include" />
+              <e p="DilateShader.shader" t="Include" />
+              <e p="ErodeShader.shader" t="Include" />
+              <e p="ForegroundFiltBodyShader.compute" t="Include" />
+              <e p="ForegroundFiltDistShader.compute" t="Include" />
+              <e p="ForegroundShader.shader" t="Include" />
+              <e p="GradientShader.shader" t="Include" />
+              <e p="InfraredImageShader.shader" t="Include" />
+              <e p="InvertShader.shader" t="Include" />
+              <e p="MedianShader.shader" t="Include" />
+              <e p="PointCloudColorShaderK2.compute" t="Include" />
+              <e p="PointCloudVertexShaderAll.compute" t="Include" />
+              <e p="PointCloudVertexShaderCRK2.compute" t="Include" />
+              <e p="SceneMeshShader.shader" t="Include" />
+              <e p="UserBlendShader.shader" t="Include" />
+              <e p="UserBodyImageShader.shader" t="Include" />
+              <e p="UserHistImageShader.shader" t="Include" />
+              <e p="UserMeshShader.shader" t="Include" />
+            </e>
+            <e p="SDK" t="Include">
+              <e p="Kinect4AzureSDK" t="Include">
+                <e p="AzureKinectSDK_License.txt" t="Include" />
+                <e p="Resources" t="Include">
+                  <e p="k4a-resources.txt" t="Include" />
+                </e>
+              </e>
+              <e p="RealSenseSDK2.0" t="Include">
+                <e p="RealSenseSDK_License.txt" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Editor" t="Include">
