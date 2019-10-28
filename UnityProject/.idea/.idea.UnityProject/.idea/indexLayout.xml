@@ -23,7 +23,7 @@
       <Path>Library/PackageCache/com.unity.test-framework@1.0.13</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@1.4.1</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
-      <Path>Library/PackageCache/com.unity.visualeffectgraph@6.9.1-preview</Path>
+      <Path>Library/PackageCache/com.unity.visualeffectgraph@6.9.2-preview</Path>
       <Path>Library/PackageCache/com.unity.xr.legacyinputhelpers@2.0.2</Path>
       <Path>Library/PackageCache/nuget.mono-cecil@0.1.5-preview</Path>
       <Path>Packages</Path>
@@ -35,7 +35,6 @@
       <Path>AudioSamples</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
-      <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

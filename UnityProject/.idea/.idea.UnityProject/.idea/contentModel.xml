@@ -9,11 +9,13 @@
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
           <e p="AppBuilder.cs" t="Include" />
+          <e p="CreatePlane.cs.cs" t="Include" />
           <e p="LevelMeter.cs" t="Include" />
           <e p="PdBackendEditor.cs" t="Include" />
           <e p="PdSpectrumBindEditor.cs" t="Include" />
           <e p="RectangularSelection.cs" t="Include" />
           <e p="SpectrumGeneratorEditMode.cs" t="Include" />
+          <e p="StateManagerEditor.cs" t="Include" />
           <e p="UnitTest" t="Include">
             <e p="UnitTest_ChangeObserver.cs" t="Include" />
             <e p="UnitTest_RectangularSelection.cs" t="Include" />
@@ -84,7 +86,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CreatePlane.cs.cs" t="Include" />
           <e p="CustomNode" t="Include">
             <e p="wave.cginc" t="Include" />
           </e>
@@ -111,6 +112,9 @@
             <e p="Spectrogram.cs" t="Include" />
             <e p="SpectrumGeneratorPlayMode.cs" t="Include" />
             <e p="Waveform.cs" t="Include" />
+          </e>
+          <e p="StateManagement" t="Include">
+            <e p="StateManager.cs" t="Include" />
           </e>
           <e p="TemplateLibrary" t="Include">
             <e p="ChangeObserver.cs" t="Include" />
