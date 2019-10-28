@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\AppBuilder.cs" />
+     <Compile Include="Assets\Editor\CreatePlane.cs.cs" />
      <Compile Include="Assets\Editor\LevelMeter.cs" />
      <Compile Include="Assets\Editor\PdBackendEditor.cs" />
      <Compile Include="Assets\Editor\PdSpectrumBindEditor.cs" />

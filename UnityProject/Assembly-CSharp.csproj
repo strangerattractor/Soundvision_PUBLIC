@@ -68,7 +68,6 @@
      <Compile Include="Assets\Scenes\Examples\Texture\TextureMapper.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
-     <Compile Include="Assets\Scripts\CreatePlane.cs.cs" />
      <Compile Include="Assets\Scripts\Math\Smoother.cs" />
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
      <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
