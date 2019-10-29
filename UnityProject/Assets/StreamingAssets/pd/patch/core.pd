@@ -1,22 +1,96 @@
-#N canvas 1177 364 450 300 10;
+#N canvas 1177 364 831 596 10;
 #X obj 55 40 inlet~;
 #X obj 55 139 spectrum \$1;
-#X obj 229 240 table fft_\$1 512;
-#X obj 200 177 r shmemupdate;
-#X obj 228 216 shmem fft_\$1 512;
-#X obj 117 241 table wave_\$1 512;
-#X obj 119 217 shmem wave_\$1 512;
+#X obj 211 291 table fft_\$1 512;
+#X obj 182 228 r shmemupdate;
+#X obj 210 267 shmem fft_\$1 512;
+#X obj 99 292 table wave_\$1 512;
+#X obj 101 268 shmem wave_\$1 512;
 #X obj 135 125 tabwrite~ wave_\$1;
-#X obj 270 143 tabwrite level;
-#X obj 375 81 loadbang;
-#X obj 375 110 f \$1, f 6;
-#X obj 270 111 env~ 1024 512;
+#X obj 491 150 tabwrite level;
+#X obj 596 88 loadbang;
+#X obj 596 117 f \$1, f 6;
+#X obj 491 118 env~ 1024 512;
+#X obj 364 302 timbreID;
+#N canvas 507 196 745 433 onsets 0;
+#X obj 56 53 inlet~;
+#X obj 146 327 outlet;
+#X obj 3 4 cnv 10 400 10 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 3 4 cnv 10 10 400 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 178 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 171 96 r bark-settings;
+#X text 308 53 timbreID comes with its own onset detection object:
+bark~. See its helpfile for more details. In comparison with bonk~
+(the usual onset detection object in Pd) \, bark~ performs very similarly
+but has several extra conveniences. Most importantly \, there is a
+non-real-time version of the object \, enabling easy parsing of pre-recorded
+audio.;
+#X obj 146 135 bark~ 1024 256 0.5;
+#X obj 336 292 loadbang;
+#X msg 336 314 \; bark-settings minvel 15 \; bark-settings debounce
+350 \; bark-settings thresh 5 12 \; bark-settings filter_range 20 49
+\;;
+#X obj 56 385 outlet~;
+#X text 308 163 Doing the attack detection in a subpatch with the input
+signal connected in series before [bfcc~] guarantees the DSP order.
+We first analyze the signal with [bark~] here to look for attacks \,
+and if we find one \, spit out a bang to get the most recent BFCC analysis
+possible back in the parent patch.;
+#X text 558 321 These were good onset detection settings for the audio
+files used in this help file., f 22;
+#X connect 0 0 7 0;
+#X connect 0 0 10 0;
+#X connect 5 0 7 0;
+#X connect 7 0 4 0;
+#X connect 7 0 1 0;
+#X connect 8 0 9 0;
+#X restore 385 165 pd onsets;
+#X obj 386 214 bfcc~ 1024 0.5;
+#X obj 386 236 list split 25;
+#X obj 508 217 loadbang;
+#X msg 508 245 read trained.timid;
+#X obj 270 342 loadbang;
+#X obj 270 371 f \$1, f 6;
+#X obj 270 396 + 160;
+#X obj 379 355 * 64;
+#X obj 379 378 clip 0 127;
+#X obj 321 386 t b f;
+#X obj 322 545 s netsend;
+#X obj 379 417 i;
+#X obj 322 458 pack 0 0 0;
+#X obj 303 432 f;
+#X obj 322 485 list prepend send;
+#X obj 322 516 list trim;
 #X connect 0 0 1 0;
 #X connect 0 0 7 0;
 #X connect 0 0 11 0;
+#X connect 0 0 13 0;
 #X connect 3 0 4 0;
 #X connect 3 0 6 0;
 #X connect 3 0 7 0;
 #X connect 9 0 10 0;
 #X connect 10 0 8 1;
 #X connect 11 0 8 0;
+#X connect 12 0 23 0;
+#X connect 12 1 21 0;
+#X connect 13 0 14 0;
+#X connect 13 1 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 12 1;
+#X connect 16 0 17 0;
+#X connect 17 0 12 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 27 1;
+#X connect 21 0 22 0;
+#X connect 22 0 25 0;
+#X connect 23 0 27 0;
+#X connect 23 1 26 1;
+#X connect 25 0 26 2;
+#X connect 26 0 28 0;
+#X connect 27 0 26 0;
+#X connect 28 0 29 0;
+#X connect 29 0 24 0;

@@ -21,7 +21,8 @@ namespace cylvester
             "Kick",
             "Pads+Strings",
             "Rose_Sax",
-            "Roses_Front"
+            "Roses_Front",
+            "TimbreID_Test"
         };
         
         private void Awake()
