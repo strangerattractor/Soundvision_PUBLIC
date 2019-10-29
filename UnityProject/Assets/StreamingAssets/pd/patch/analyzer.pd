@@ -1,6 +1,6 @@
-#N canvas 704 539 1111 519 10;
-#X obj 135 392 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
-#X obj 65 433 dac~, f 6;
+#N canvas 437 150 1334 519 10;
+#X obj 129 475 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
+#X obj 59 516 dac~, f 6;
 #N canvas 215 619 730 390 analyzers_______________________________
 0;
 #X obj 95 44 inlet~;
@@ -51,11 +51,11 @@
 #X connect 13 0 29 0;
 #X connect 14 0 30 0;
 #X connect 15 0 31 0;
-#X restore 136 432 pd analyzers_______________________________;
-#X obj 63 24 bang~;
-#X obj 63 47 count 16;
-#X obj 63 74 sel 0;
-#X obj 63 100 s shmemupdate;
+#X restore 130 515 pd analyzers_______________________________;
+#X obj 57 107 bang~;
+#X obj 57 130 count 16;
+#X obj 57 157 sel 0;
+#X obj 57 183 s shmemupdate;
 #N canvas 763 290 408 235 window 0;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array hann 1024 float 1;
@@ -194,8 +194,8 @@
 0.000244498 0.000150442 9.39965e-005 3.75807e-005 1.87755e-005;
 #X coords 0 1 1023 0 300 100 1 0 0;
 #X restore 39 32 graph;
-#X restore 412 18 pd window;
-#N canvas 333 794 594 420 commands_from_unity 0;
+#X restore 406 101 pd window;
+#N canvas 333 794 594 420 commands_from_unity 1;
 #X obj 66 31 inlet;
 #X obj 160 326 s sample_playback;
 #X text 150 55 1 ... sample playback;
@@ -205,22 +205,34 @@
 #X obj 109 312 outlet;
 #X text 150 69 2 ... text message;
 #X obj 25 219 t f;
-#X obj 70 94 route processing sample message;
-#X obj 194 289 s state;
-#X obj 190 186 list prepend label;
-#X obj 198 257 list trim;
-#N canvas 0 50 450 300 serialize 0;
-#X restore 207 139 pd serialize;
-#X connect 0 0 9 0;
+#X obj 184 193 list prepend label;
+#X obj 184 220 list trim;
+#X obj 70 94 route processing sample state;
+#X obj 184 247 s previous;
+#X obj 304 194 list prepend label;
+#X obj 304 221 list trim;
+#X obj 427 194 list prepend label;
+#X obj 427 221 list trim;
+#X obj 184 143 route previous current next;
+#X obj 304 248 s current;
+#X obj 427 248 s next;
+#X connect 0 0 11 0;
 #X connect 5 0 6 0;
 #X connect 8 0 4 0;
-#X connect 9 0 5 0;
-#X connect 9 0 8 0;
-#X connect 9 1 1 0;
-#X connect 9 2 11 0;
-#X connect 11 0 12 0;
-#X connect 12 0 10 0;
-#X restore 248 58 pd commands_from_unity;
+#X connect 9 0 10 0;
+#X connect 10 0 12 0;
+#X connect 11 0 5 0;
+#X connect 11 0 8 0;
+#X connect 11 1 1 0;
+#X connect 11 2 17 0;
+#X connect 13 0 14 0;
+#X connect 14 0 18 0;
+#X connect 15 0 16 0;
+#X connect 16 0 19 0;
+#X connect 17 0 9 0;
+#X connect 17 1 13 0;
+#X connect 17 2 15 0;
+#X restore 242 141 pd commands_from_unity;
 #N canvas 667 603 480 371 sample_playback 0;
 #X obj 86 166 readsf~;
 #X obj 95 6 r sample_playback;
@@ -246,42 +258,46 @@
 #X connect 9 0 7 0;
 #X connect 10 0 0 0;
 #X connect 11 0 0 0;
-#X restore 65 353 pd sample_playback;
-#X obj 62 138 text define -k samplefiles;
+#X restore 59 436 pd sample_playback;
+#X obj 56 221 text define -k samplefiles;
 #A set Back_Back.wav \; Brutal_Synth.wav \; Dialog.wav \; Drums.wav
 \; Fox_Melo.wav \; Kick.wav \; Pads+Strings.wav \; Rose_Sax.wav \;
 Roses_Front.wav;
-#X obj 248 342 netsend -u -b;
-#X msg 248 142 connect localhost 56765;
-#X obj 270 112 loadbang;
-#X obj 103 197 list prepend send;
-#X obj 103 221 list trim;
-#X obj 103 173 midiin;
-#X msg 423 145 23 31;
-#X msg 470 145 80 84, f 10;
-#X text 435 119 sample CC;
-#X msg 423 180 send 176 \$1 \$2;
-#X text 422 202 176... control channel 1;
+#X obj 242 425 netsend -u -b;
+#X msg 242 225 connect localhost 56765;
+#X obj 264 195 loadbang;
+#X obj 97 280 list prepend send;
+#X obj 97 304 list trim;
+#X obj 97 256 midiin;
+#X msg 417 228 23 31;
+#X msg 464 228 80 84, f 10;
+#X text 429 202 sample CC;
+#X msg 417 263 send 176 \$1 \$2;
+#X text 416 285 176... control channel 1;
 #N canvas 695 332 450 300 level 0;
 #X obj 90 182 table level 16;
 #X obj 89 152 shmem level 16;
 #X obj 89 127 r shmemupdate;
 #X connect 2 0 1 0;
-#X restore 411 50 pd level;
-#X obj 12 173 midirealtimein;
-#X obj 248 20 netreceive -u 54345;
-#X obj 617 54 cnv 15 100 60 empty state Intro 20 12 0 45 -262144 -66577
+#X restore 405 133 pd level;
+#X obj 6 256 midirealtimein;
+#X obj 242 103 netreceive -u 54345;
+#X obj 598 90 cnv 15 500 60 empty current Outro 20 12 0 45 -204786
+-66577 0;
+#X obj 798 286 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
+-1 -1;
+#X obj 600 281 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
+-1 -1;
+#X msg 601 356 send 176 127 0;
+#X text 900 359 <--- midi is temporal;
+#X obj 704 286 bng 50 250 50 0 empty empty previous 4 25 0 10 -204786
+-1 -1;
+#X msg 704 358 send 176 127 1;
+#X msg 797 358 send 176 127 2;
+#X obj 594 46 cnv 12 500 30 empty previous Silent_Hill 20 12 0 25 -262130
+-66577 0;
+#X obj 596 152 cnv 12 500 30 empty next --- 20 12 0 25 -262130 -66577
 0;
-#X obj 798 147 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
--1 -1;
-#X obj 600 142 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
--1 -1;
-#X msg 601 217 send 176 127 0;
-#X text 900 220 <--- midi is temporal;
-#X obj 704 147 bng 50 250 50 0 empty empty previous 4 25 0 10 -204786
--1 -1;
-#X msg 704 219 send 176 127 1;
-#X msg 797 219 send 176 127 2;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 2 2 2;

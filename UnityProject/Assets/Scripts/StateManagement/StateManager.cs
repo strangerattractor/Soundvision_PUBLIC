@@ -5,13 +5,17 @@ using UnityEngine.Events;
 namespace cylvester
 {
     [Serializable]
-    public class UnityStateEvent : UnityEvent<string>
+    public class UnityStateEvent : UnityEvent<IStateManager>
     {}
     
     public interface IStateManager
     {
         int State { set; }
         string[] StateTitles { get; }
+        string CurrentState { get; }
+        string PreviousState { get; }
+        string NextState { get; }
+
         void OnMidiReceived(MidiMessage message);
     }
     
@@ -41,12 +45,18 @@ namespace cylvester
         }
         public string[] StateTitles { get; private set; }
 
+        public string CurrentState => StateTitles[sceneSelection];
+
+        public string PreviousState => sceneSelection == 0 ? "---" : StateTitles[sceneSelection-1];
+
+        public string NextState => sceneSelection == StateTitles.Length - 1 ? "---" : StateTitles[sceneSelection + 1];
+
         public int State
         {
             set
             {
                 sceneSelection = value;
-                onStateChanged.Invoke(StateTitles[sceneSelection]);
+                onStateChanged.Invoke(this);
             }
         }
 
@@ -71,7 +81,7 @@ namespace cylvester
                 default:
                     return;
             }
-            onStateChanged.Invoke(StateTitles[sceneSelection]);
+            onStateChanged.Invoke(this);
         }
     }
 
