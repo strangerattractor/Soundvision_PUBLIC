@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\PdConnection\PdBackend.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdConstant.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdLevelBind.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\PdNoiseBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdProcess.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdReceiver.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdSender.cs" />

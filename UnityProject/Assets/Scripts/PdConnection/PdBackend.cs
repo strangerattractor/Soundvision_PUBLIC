@@ -9,6 +9,7 @@ namespace cylvester
     public interface IPdBackend
     {
         IPdArray LevelArray { get; }
+        IPdArray NoiseArray { get; }
         IPdArrayContainer SpectrumArrayContainer{ get; }
         IPdArrayContainer WaveformArrayContainer{ get; }
         void SendState(IStateManager manager);
@@ -29,6 +30,7 @@ namespace cylvester
         private IDspController dspController_;
         
         public IPdArray LevelArray { get; private set; }
+        public IPdArray NoiseArray { get; private set; }
         public IPdArrayContainer SpectrumArrayContainer { get; private set; }
         public IPdArrayContainer WaveformArrayContainer { get; private set; }
         
@@ -40,12 +42,18 @@ namespace cylvester
 
         private void Awake()
         {
+            LevelArray = new PdArray("level", PdConstant.NumMaxInputChannels);
+            NoiseArray = new PdArray("noise", PdConstant.NumMaxInputChannels);
             SpectrumArrayContainer = new PdArrayContainer("fft_");
             WaveformArrayContainer = new PdArrayContainer("wave_");
-            LevelArray = new PdArray("level", PdConstant.NumMaxInputChannels);
-
+            
             updaters_ = new List<IUpdater>
-            {(IUpdater) LevelArray, (IUpdater) SpectrumArrayContainer, (IUpdater) WaveformArrayContainer};
+            {
+                (IUpdater) LevelArray, 
+                (IUpdater) NoiseArray,
+                (IUpdater) SpectrumArrayContainer, 
+                (IUpdater) WaveformArrayContainer
+            };
 
             pdSender_ = new PdSender(PdConstant.ip, PdConstant.sendPort);
             pdReceiver_ = new PdReceiver(PdConstant.receivedPort);
