@@ -380,9 +380,6 @@
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.render-pipelines.high-definition@6.9.1-preview/Editor/Core/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
- <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
@@ -745,22 +742,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{5B580621-09B4-68CB-B5F4-5B9DD210A60F}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{6AAC7E7F-1FDA-8601-A79E-5B61186431C8}</Project>
-      <Name>SteamVR_Input_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{0F3672B3-04DA-38DB-CF61-6B830DA5FEEE}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{E1C19BBC-6FA9-7627-AD1E-E7762CE460B3}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{D23E916C-DA89-38D8-6765-C7AB6FA7EEAA}</Project>
-      <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

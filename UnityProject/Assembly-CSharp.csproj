@@ -488,9 +488,6 @@
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
- <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/ThridParty/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
  </Reference>
@@ -845,24 +842,6 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{6AAC7E7F-1FDA-8601-A79E-5B61186431C8}</Project>
-      <Name>SteamVR_Input_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{0F3672B3-04DA-38DB-CF61-6B830DA5FEEE}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{E1C19BBC-6FA9-7627-AD1E-E7762CE460B3}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{D23E916C-DA89-38D8-6765-C7AB6FA7EEAA}</Project>
-      <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
