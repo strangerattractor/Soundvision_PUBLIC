@@ -1,4 +1,5 @@
-#N canvas 437 150 1334 519 10;
+#N canvas 349 623 1128 544 10;
+#X declare -lib timbreID/timbreIDLib;
 #X obj 129 475 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 59 516 dac~, f 6;
 #N canvas 215 619 730 390 analyzers_______________________________
@@ -8,17 +9,17 @@
 #X obj 148 96 inlet~;
 #X obj 172 121 inlet~;
 #X obj 198 45 inlet~;
-#X obj 217 72 inlet~;
-#X obj 246 101 inlet~;
-#X obj 270 124 inlet~;
-#X obj 285 52 inlet~;
-#X obj 309 77 inlet~;
-#X obj 338 104 inlet~;
-#X obj 362 129 inlet~;
-#X obj 383 55 inlet~;
-#X obj 425 80 inlet~;
-#X obj 454 111 inlet~;
-#X obj 478 132 inlet~;
+#X obj 224 72 inlet~;
+#X obj 253 101 inlet~;
+#X obj 277 124 inlet~;
+#X obj 299 50 inlet~;
+#X obj 324 76 inlet~;
+#X obj 353 104 inlet~;
+#X obj 378 129 inlet~;
+#X obj 402 55 inlet~;
+#X obj 427 80 inlet~;
+#X obj 456 111 inlet~;
+#X obj 480 132 inlet~;
 #X obj 96 183 core 0;
 #X obj 120 204 core 1;
 #X obj 149 226 core 2;
@@ -52,10 +53,10 @@
 #X connect 14 0 30 0;
 #X connect 15 0 31 0;
 #X restore 130 515 pd analyzers_______________________________;
-#X obj 57 107 bang~;
-#X obj 57 130 count 16;
-#X obj 57 157 sel 0;
-#X obj 57 183 s shmemupdate;
+#X obj 57 45 bang~;
+#X obj 57 68 count 16;
+#X obj 57 95 sel 0;
+#X obj 57 121 s shmemupdate;
 #N canvas 763 290 408 235 window 0;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array hann 1024 float 1;
@@ -194,8 +195,8 @@
 0.000244498 0.000150442 9.39965e-005 3.75807e-005 1.87755e-005;
 #X coords 0 1 1023 0 300 100 1 0 0;
 #X restore 39 32 graph;
-#X restore 406 101 pd window;
-#N canvas 333 794 594 420 commands_from_unity 1;
+#X restore 406 39 pd window;
+#N canvas 333 794 594 420 commands_from_unity 0;
 #X obj 66 31 inlet;
 #X obj 160 326 s sample_playback;
 #X text 150 55 1 ... sample playback;
@@ -232,7 +233,7 @@
 #X connect 17 0 9 0;
 #X connect 17 1 13 0;
 #X connect 17 2 15 0;
-#X restore 242 141 pd commands_from_unity;
+#X restore 242 79 pd commands_from_unity;
 #N canvas 667 603 480 371 sample_playback 0;
 #X obj 86 166 readsf~;
 #X obj 95 6 r sample_playback;
@@ -258,46 +259,146 @@
 #X connect 9 0 7 0;
 #X connect 10 0 0 0;
 #X connect 11 0 0 0;
-#X restore 59 436 pd sample_playback;
-#X obj 56 221 text define -k samplefiles;
+#X restore 62 440 pd sample_playback;
+#X obj 56 159 text define -k samplefiles;
 #A set Back_Back.wav \; Brutal_Synth.wav \; Dialog.wav \; Drums.wav
 \; Fox_Melo.wav \; Kick.wav \; Pads+Strings.wav \; Rose_Sax.wav \;
-Roses_Front.wav;
-#X obj 242 425 netsend -u -b;
-#X msg 242 225 connect localhost 56765;
-#X obj 264 195 loadbang;
-#X obj 97 280 list prepend send;
-#X obj 97 304 list trim;
-#X obj 97 256 midiin;
-#X msg 417 228 23 31;
-#X msg 464 228 80 84, f 10;
-#X text 429 202 sample CC;
-#X msg 417 263 send 176 \$1 \$2;
-#X text 416 285 176... control channel 1;
+Roses_Front.wav \; TimbreID_Test.wav \;;
+#X obj 242 363 netsend -u -b;
+#X msg 242 163 connect localhost 56765;
+#X obj 264 133 loadbang;
+#X obj 97 218 list prepend send;
+#X obj 97 242 list trim;
+#X obj 97 194 midiin;
+#X msg 417 166 23 31;
+#X msg 464 166 80 84, f 10;
+#X text 429 140 sample CC;
+#X msg 417 201 send 176 \$1 \$2;
+#X text 416 223 176... control channel 1;
 #N canvas 695 332 450 300 level 0;
 #X obj 90 182 table level 16;
 #X obj 89 152 shmem level 16;
 #X obj 89 127 r shmemupdate;
 #X connect 2 0 1 0;
-#X restore 405 133 pd level;
-#X obj 6 256 midirealtimein;
-#X obj 242 103 netreceive -u 54345;
+#X restore 405 71 pd level;
+#X obj 6 194 midirealtimein;
+#X obj 242 41 netreceive -u 54345;
 #X obj 598 90 cnv 15 500 60 empty current Outro 20 12 0 45 -204786
 -66577 0;
-#X obj 798 286 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
+#X obj 786 234 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
 -1 -1;
-#X obj 600 281 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
+#X obj 596 227 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
 -1 -1;
-#X msg 601 356 send 176 127 0;
-#X text 900 359 <--- midi is temporal;
-#X obj 704 286 bng 50 250 50 0 empty empty previous 4 25 0 10 -204786
+#X msg 596 303 send 176 127 0;
+#X text 896 305 <--- midi is temporal;
+#X obj 692 231 bng 50 250 50 0 empty empty previous 4 25 0 10 -204786
 -1 -1;
-#X msg 704 358 send 176 127 1;
-#X msg 797 358 send 176 127 2;
+#X msg 692 303 send 176 127 1;
+#X msg 786 304 send 176 127 2;
 #X obj 594 46 cnv 12 500 30 empty previous Silent_Hill 20 12 0 25 -262130
 -66577 0;
 #X obj 596 152 cnv 12 500 30 empty next --- 20 12 0 25 -262130 -66577
 0;
+#X obj 879 467 declare -lib timbreID/timbreIDLib;
+#N canvas 28 541 1273 735 timbreID_example 0;
+#X obj 77 657 nbx 3 28 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+28 -262144 -1 -1 0 256;
+#X floatatom 189 663 10 0 0 0 - - -;
+#X obj 77 690 print timbre;
+#X obj 93 556 timbreID, f 17;
+#X obj 103 480 tgl 15 0 empty empty train 17 7 0 12 -262144 -1 -1 0
+1;
+#X obj 182 480 spigot;
+#X obj 231 480 tgl 15 0 empty empty id 17 7 0 12 -262144 -1 -1 0 1
+;
+#N canvas 507 196 745 433 onsets 0;
+#X obj 56 53 inlet~;
+#X obj 146 327 outlet;
+#X obj 3 4 cnv 10 400 10 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 3 4 cnv 10 10 400 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 178 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 171 96 r bark-settings;
+#X text 308 53 timbreID comes with its own onset detection object:
+bark~. See its helpfile for more details. In comparison with bonk~
+(the usual onset detection object in Pd) \, bark~ performs very similarly
+but has several extra conveniences. Most importantly \, there is a
+non-real-time version of the object \, enabling easy parsing of pre-recorded
+audio.;
+#X obj 146 135 bark~ 1024 256 0.5;
+#X obj 336 292 loadbang;
+#X msg 336 314 \; bark-settings minvel 15 \; bark-settings debounce
+350 \; bark-settings thresh 5 12 \; bark-settings filter_range 20 49
+\;;
+#X obj 56 385 outlet~;
+#X text 308 163 Doing the attack detection in a subpatch with the input
+signal connected in series before [bfcc~] guarantees the DSP order.
+We first analyze the signal with [bark~] here to look for attacks \,
+and if we find one \, spit out a bang to get the most recent BFCC analysis
+possible back in the parent patch.;
+#X text 558 321 These were good onset detection settings for the audio
+files used in this help file., f 22;
+#X connect 0 0 7 0;
+#X connect 0 0 10 0;
+#X connect 5 0 7 0;
+#X connect 7 0 4 0;
+#X connect 7 0 1 0;
+#X connect 8 0 9 0;
+#X restore 59 259 pd onsets;
+#X obj 54 307 bfcc~ 1024 0.5;
+#X obj 54 480 spigot;
+#X obj 54 329 list split 25;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array closed 10584 float 2;
+#X coords 0 1 10584 -1 200 140 1;
+#X restore 405 118 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array snare 16391 float 2;
+#X coords 0 1 16391 -1 200 140 1 0 0;
+#X restore 623 117 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array kick 27342 float 2;
+#X coords 0 1 27342 -1 200 140 1 0 0;
+#X restore 843 116 graph;
+#X obj 851 369 soundfiler;
+#X msg 851 317 read -resize samples/snare.wav snare \, read -resize
+samples/kick.wav kick \, read -resize samples/closed.wav closed;
+#X obj 851 282 loadbang;
+#X obj 59 170 tabplay~ snare;
+#X obj 86 199 tabplay~ closed;
+#X obj 141 231 tabplay~ kick;
+#X obj 67 115 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 107 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 188 169 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 253 514 write trained.timid;
+#X connect 0 0 2 0;
+#X connect 3 0 0 0;
+#X connect 3 1 1 0;
+#X connect 4 0 9 1;
+#X connect 5 0 3 1;
+#X connect 6 0 5 1;
+#X connect 7 0 8 0;
+#X connect 7 1 8 0;
+#X connect 8 0 10 0;
+#X connect 9 0 3 0;
+#X connect 10 0 5 0;
+#X connect 10 0 9 0;
+#X connect 15 0 14 0;
+#X connect 16 0 15 0;
+#X connect 17 0 7 0;
+#X connect 18 0 7 0;
+#X connect 19 0 7 0;
+#X connect 20 0 17 0;
+#X connect 21 0 18 0;
+#X connect 22 0 19 0;
+#X connect 23 0 3 0;
+#X restore 879 442 pd timbreID_example;
+#X obj 321 320 r netsend;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 2 2 2;
@@ -337,3 +438,4 @@ Roses_Front.wav;
 #X connect 30 0 31 0;
 #X connect 31 0 11 0;
 #X connect 32 0 11 0;
+#X connect 37 0 11 0;
