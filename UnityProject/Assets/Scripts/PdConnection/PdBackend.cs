@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 namespace cylvester
 {
-
     public interface IPdBackend
     {
         IPdArray LevelArray { get; }
         IPdArray NoiseArray { get; }
+        IPdArray PitchArray { get; }
         IPdArrayContainer SpectrumArrayContainer{ get; }
         IPdArrayContainer WaveformArrayContainer{ get; }
         void SendState(IStateManager manager);
@@ -31,6 +31,7 @@ namespace cylvester
         
         public IPdArray LevelArray { get; private set; }
         public IPdArray NoiseArray { get; private set; }
+        public IPdArray PitchArray { get; private set; }
         public IPdArrayContainer SpectrumArrayContainer { get; private set; }
         public IPdArrayContainer WaveformArrayContainer { get; private set; }
         
@@ -44,6 +45,7 @@ namespace cylvester
         {
             LevelArray = new PdArray("level", PdConstant.NumMaxInputChannels);
             NoiseArray = new PdArray("noise", PdConstant.NumMaxInputChannels);
+            PitchArray = new PdArray("pitch", PdConstant.NumMaxInputChannels);
             SpectrumArrayContainer = new PdArrayContainer("fft_");
             WaveformArrayContainer = new PdArrayContainer("wave_");
             
@@ -51,6 +53,7 @@ namespace cylvester
             {
                 (IUpdater) LevelArray, 
                 (IUpdater) NoiseArray,
+                (IUpdater) PitchArray,
                 (IUpdater) SpectrumArrayContainer, 
                 (IUpdater) WaveformArrayContainer
             };

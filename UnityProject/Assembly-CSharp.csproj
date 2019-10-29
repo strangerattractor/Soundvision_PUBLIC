@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
      <Compile Include="Assets\Scenes\Examples\MIDI\script\PositionBind.cs" />
      <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
+     <Compile Include="Assets\Scenes\Examples\PdBackend\script\MoveBall.cs" />
      <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
      <Compile Include="Assets\Scenes\Examples\Texture\TextureMapper.cs" />
      <Compile Include="Assets\Scenes\Examples\TimbreID\script\IdToText.cs" />
@@ -82,6 +83,7 @@
      <Compile Include="Assets\Scripts\PdConnection\PdConstant.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdLevelBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdNoiseBind.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\PdPitchBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdProcess.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdReceiver.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdSender.cs" />
