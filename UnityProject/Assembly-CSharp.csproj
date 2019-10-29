@@ -65,7 +65,7 @@
      <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
      <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
      <Compile Include="Assets\Scenes\Examples\Texture\TextureMapper.cs" />
-     <Compile Include="Assets\Scenes\Examples\TimbreID\script\IdToText.cs" />
+     <Compile Include="Assets\Scenes\Examples\TimbreID\script\idtotext.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
      <Compile Include="Assets\Scripts\Math\Smoother.cs" />
