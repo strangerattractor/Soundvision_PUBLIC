@@ -1,4 +1,4 @@
-#N canvas 2214 680 1031 482 10;
+#N canvas 704 539 1111 519 10;
 #X obj 135 392 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 65 433 dac~, f 6;
 #N canvas 215 619 730 390 analyzers_______________________________
@@ -270,15 +270,18 @@ Roses_Front.wav;
 #X restore 411 50 pd level;
 #X obj 12 173 midirealtimein;
 #X obj 248 20 netreceive -u 54345;
-#X obj 617 54 cnv 15 100 60 empty state Dark_Soul 20 12 0 45 -262144
--66577 0;
-#X obj 635 112 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
+#X obj 617 54 cnv 15 100 60 empty state Intro 20 12 0 45 -262144 -66577
+0;
+#X obj 798 147 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
 -1 -1;
-#X obj 737 127 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
+#X obj 600 142 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
 -1 -1;
-#X msg 635 184 send 176 127 1;
-#X msg 738 202 send 176 127 0;
-#X text 845 204 <--- midi is temporal;
+#X msg 601 217 send 176 127 0;
+#X text 900 220 <--- midi is temporal;
+#X obj 704 147 bng 50 250 50 0 empty empty previous 4 25 0 10 -204786
+-1 -1;
+#X msg 704 219 send 176 127 1;
+#X msg 797 219 send 176 127 2;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 2 2 2;
@@ -312,7 +315,9 @@ Roses_Front.wav;
 #X connect 20 0 11 0;
 #X connect 23 0 14 0;
 #X connect 24 0 8 0;
-#X connect 26 0 28 0;
-#X connect 27 0 29 0;
+#X connect 26 0 32 0;
+#X connect 27 0 28 0;
 #X connect 28 0 11 0;
-#X connect 29 0 11 0;
+#X connect 30 0 31 0;
+#X connect 31 0 11 0;
+#X connect 32 0 11 0;

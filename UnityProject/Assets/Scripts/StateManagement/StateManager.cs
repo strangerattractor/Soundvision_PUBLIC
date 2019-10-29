@@ -17,6 +17,13 @@ namespace cylvester
     
     public class StateManager : MonoBehaviour, IStateManager
     {
+        private enum Operation
+        {
+            Rewind = 0,
+            Previous = 1,
+            Next = 2
+        }
+        
         [SerializeField] private string csvFileName = "qlist";
         [SerializeField] private UnityStateEvent onStateChanged;
         [SerializeField] private int sceneSelection;
@@ -45,26 +52,25 @@ namespace cylvester
 
         public void OnMidiReceived(MidiMessage message)
         {
-            if (message.Status == 176 && message.Data1 == 127)
+            if (message.Status != 176 || message.Data1 != 127) return;
+            
+            switch ((Operation)message.Data2)
             {
-                if (message.Data2 == 1)
-                    Next();
-                else if (message.Data2 == 0)
-                    Rewind();
+                case Operation.Rewind:
+                    if (sceneSelection == 0) return;
+                    sceneSelection = 0;
+                    break;
+                case Operation.Previous:
+                    if (sceneSelection == 0) return;
+                    sceneSelection--;                        
+                    break;
+                case Operation.Next:
+                    if (sceneSelection >= StateTitles.Length - 1) return;
+                    sceneSelection++;
+                    break;
+                default:
+                    return;
             }
-        }
-        
-        private void Next()
-        {
-            if (sceneSelection >= StateTitles.Length - 1) return;
-            sceneSelection++;
-            onStateChanged.Invoke(StateTitles[sceneSelection]);
-        }
-
-        private void Rewind()
-        {
-            if (sceneSelection == 0) return;
-            sceneSelection = 0;
             onStateChanged.Invoke(StateTitles[sceneSelection]);
         }
     }
