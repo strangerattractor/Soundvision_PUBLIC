@@ -25,9 +25,11 @@ namespace cylvester
             "TimbreID_Test"
         };
         
-        private void Awake()
+        private void OnEnable()
         {
             pdBackend_ = (PdBackend) target;
+            midiMessageReceivedProperty_ = serializedObject.FindProperty("midiMessageReceived");
+            midiSyncReceivedProperty_ = serializedObject.FindProperty("midiSyncReceived");
         }
 
         public override void OnInspectorGUI ()
@@ -35,10 +37,7 @@ namespace cylvester
             
             serializedObject.Update();
             pdBackend_ = (PdBackend) target;
-            midiMessageReceivedProperty_ = serializedObject.FindProperty("midiMessageReceived");
             EditorGUILayout.PropertyField(midiMessageReceivedProperty_);
-            
-            midiSyncReceivedProperty_ = serializedObject.FindProperty("midiSyncReceived");
             EditorGUILayout.PropertyField(midiSyncReceivedProperty_);
             
             if (Application.isPlaying)
