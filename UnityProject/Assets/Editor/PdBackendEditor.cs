@@ -8,7 +8,7 @@ namespace cylvester
     {
         private PdBackend pdBackend_;
         private SerializedProperty midiMessageReceivedProperty_;
-        private SerializedProperty midiClockReceivedProperty_;
+        private SerializedProperty midiSyncReceivedProperty_;
 
         private readonly string[] samples_ =
         {
@@ -38,8 +38,8 @@ namespace cylvester
             midiMessageReceivedProperty_ = serializedObject.FindProperty("midiMessageReceived");
             EditorGUILayout.PropertyField(midiMessageReceivedProperty_);
             
-            midiClockReceivedProperty_ = serializedObject.FindProperty("midiClockReceived");
-            EditorGUILayout.PropertyField(midiClockReceivedProperty_);
+            midiSyncReceivedProperty_ = serializedObject.FindProperty("midiSyncReceived");
+            EditorGUILayout.PropertyField(midiSyncReceivedProperty_);
             
             if (Application.isPlaying)
             {

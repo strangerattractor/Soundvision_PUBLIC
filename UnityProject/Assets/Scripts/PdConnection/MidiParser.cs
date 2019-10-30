@@ -6,6 +6,17 @@ namespace cylvester
     [Serializable]
     public class UnityMidiEvent : UnityEvent<MidiMessage>
     {}
+
+    [Serializable]
+    public class UnitySyncEvent : UnityEvent<MidiSync>
+    {}
+    
+    public enum MidiSync
+    {
+        Start = 250,
+        Stop = 252,
+        Clock = 248,
+    }
     
     public struct MidiMessage
     {
@@ -24,8 +35,7 @@ namespace cylvester
     public interface IMidiParser : IDisposable
     {
         event Action<MidiMessage> MidiMessageReceived;
-        event Action MidiClockReceived;
-
+        event Action<MidiSync> MidiSyncReceived;
     }
     
     public class MidiParser : IMidiParser 
@@ -41,7 +51,6 @@ namespace cylvester
         private Accept accept_ = Accept.StatusByte;
         private readonly IPdReceiver pdReceiver_;
         private readonly Action<byte[]> onDataReceived_;
-        private static byte MIDI_CLOCK = 248;
 
         public MidiParser(IPdReceiver pdReceiver)
         {
@@ -51,9 +60,9 @@ namespace cylvester
             {
                 foreach (var element in bytes)
                 {
-                    if (element == MIDI_CLOCK)
-                        MidiClockReceived?.Invoke();
-                        
+                    if (ProcessSyncByte(element))
+                        continue;
+
                     if (element >= 128)
                     {
                         message_ = new MidiMessage {Status = element};
@@ -82,8 +91,19 @@ namespace cylvester
         {
             pdReceiver_.DataReceived -= onDataReceived_;
         }
+
+        private bool ProcessSyncByte(byte element)
+        {
+            if (element != (byte)MidiSync.Clock && 
+                element != (byte)MidiSync.Start && 
+                element != (byte)MidiSync.Stop)
+                return false;
+
+            MidiSyncReceived?.Invoke((MidiSync)element);
+            return true;
+        }
         
         public event Action<MidiMessage> MidiMessageReceived;
-        public event Action MidiClockReceived;
+        public event Action<MidiSync> MidiSyncReceived;
     }
 }

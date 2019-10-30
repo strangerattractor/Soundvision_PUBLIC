@@ -18,7 +18,7 @@ namespace cylvester
     public class PdBackend : MonoBehaviour, IPdBackend
     {
         [SerializeField] UnityMidiEvent midiMessageReceived = null;
-        [SerializeField] UnityEvent midiClockReceived = null;
+        [SerializeField] UnitySyncEvent midiSyncReceived = null;
 
         public int samplePlayback;
 
@@ -39,7 +39,7 @@ namespace cylvester
         
         private Action onSamplePlaybackChanged_;
         private Action<MidiMessage> onMidiMessageReceived_;
-        private Action onMidiClockReceived_;
+        private Action<MidiSync> onMidiSyncReceived_;
 
         private void Awake()
         {
@@ -72,11 +72,11 @@ namespace cylvester
             };
 
             onMidiMessageReceived_ = (message) => { midiMessageReceived.Invoke(message); };
-            onMidiClockReceived_ = () => { midiClockReceived.Invoke(); };
+            onMidiSyncReceived_ = (sync) => { midiSyncReceived.Invoke(sync); };
             
             samplePlaybackObserver_.ValueChanged += onSamplePlaybackChanged_;
             midiParser_.MidiMessageReceived += onMidiMessageReceived_;
-            midiParser_.MidiClockReceived += onMidiClockReceived_;
+            midiParser_.MidiSyncReceived += onMidiSyncReceived_;
             dspController_.State = true;
         }
         
@@ -86,7 +86,7 @@ namespace cylvester
             pdSender_?.Dispose();
             samplePlaybackObserver_.ValueChanged -= onSamplePlaybackChanged_;
             midiParser_.MidiMessageReceived -= onMidiMessageReceived_;
-            midiParser_.MidiClockReceived -= onMidiClockReceived_;
+            midiParser_.MidiSyncReceived -= onMidiSyncReceived_;
 
         }
 

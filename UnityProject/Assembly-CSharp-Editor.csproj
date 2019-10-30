@@ -62,6 +62,7 @@
      <Compile Include="Assets\Editor\PdBackendEditor.cs" />
      <Compile Include="Assets\Editor\PdSpectrumBindEditor.cs" />
      <Compile Include="Assets\Editor\RectangularSelection.cs" />
+     <Compile Include="Assets\Editor\SequencerEditor.cs" />
      <Compile Include="Assets\Editor\SpectrumGeneratorEditMode.cs" />
      <Compile Include="Assets\Editor\StateManagerEditor.cs" />
      <Compile Include="Assets\Editor\UnitTest\UnitTest_ChangeObserver.cs" />

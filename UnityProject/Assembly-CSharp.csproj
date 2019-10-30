@@ -73,9 +73,9 @@
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
      <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
      <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
-     <Compile Include="Assets\Scripts\PdConnection\MidiClockCounter.cs" />
      <Compile Include="Assets\Scripts\PdConnection\MidiLogger.cs" />
      <Compile Include="Assets\Scripts\PdConnection\MidiParser.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\MidiSyncCounter.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArrayContainer.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArraySelector.cs" />
@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scripts\PdConnection\PdSender.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdSpectrumBind.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdTimbreIdBind.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\Sequencer.cs" />
      <Compile Include="Assets\Scripts\PdConnection\Spectrogram.cs" />
      <Compile Include="Assets\Scripts\PdConnection\SpectrumGeneratorPlayMode.cs" />
      <Compile Include="Assets\Scripts\PdConnection\Waveform.cs" />
