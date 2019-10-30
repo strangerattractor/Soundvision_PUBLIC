@@ -8,7 +8,7 @@ namespace cylvester
     {}
 
     [Serializable]
-    public class UnitySyncEvent : UnityEvent<MidiSync>
+    public class UnitySyncEvent : UnityEvent<MidiSync, int>
     {}
     
     public enum MidiSync
@@ -35,7 +35,7 @@ namespace cylvester
     public interface IMidiParser : IDisposable
     {
         event Action<MidiMessage> MidiMessageReceived;
-        event Action<MidiSync> MidiSyncReceived;
+        event Action<MidiSync, int> MidiSyncReceived;
     }
     
     public class MidiParser : IMidiParser 
@@ -51,7 +51,8 @@ namespace cylvester
         private Accept accept_ = Accept.StatusByte;
         private readonly IPdReceiver pdReceiver_;
         private readonly Action<byte[]> onDataReceived_;
-
+        private int count_;
+        
         public MidiParser(IPdReceiver pdReceiver)
         {
             pdReceiver_ = pdReceiver;
@@ -99,11 +100,16 @@ namespace cylvester
                 element != (byte)MidiSync.Stop)
                 return false;
 
-            MidiSyncReceived?.Invoke((MidiSync)element);
+            if (element == (byte) MidiSync.Clock)
+                count_++;
+            else
+                count_ = 0;
+
+            MidiSyncReceived?.Invoke((MidiSync)element, count_);
             return true;
         }
         
         public event Action<MidiMessage> MidiMessageReceived;
-        public event Action<MidiSync> MidiSyncReceived;
+        public event Action<MidiSync, int> MidiSyncReceived;
     }
 }

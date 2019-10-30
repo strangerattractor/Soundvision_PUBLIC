@@ -61,7 +61,9 @@
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
      <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
+     <Compile Include="Assets\Scenes\Examples\MIDI\script\MidiSyncCounter.cs" />
      <Compile Include="Assets\Scenes\Examples\MIDI\script\PositionBind.cs" />
+     <Compile Include="Assets\Scenes\Examples\MIDI\script\RandomPosition.cs" />
      <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
      <Compile Include="Assets\Scenes\Examples\PdBackend\script\MoveBall.cs" />
      <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
@@ -75,7 +77,7 @@
      <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
      <Compile Include="Assets\Scripts\PdConnection\MidiLogger.cs" />
      <Compile Include="Assets\Scripts\PdConnection\MidiParser.cs" />
-     <Compile Include="Assets\Scripts\PdConnection\MidiSyncCounter.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\MidiSyncedLoop.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArrayContainer.cs" />
      <Compile Include="Assets\Scripts\PdConnection\PdArraySelector.cs" />

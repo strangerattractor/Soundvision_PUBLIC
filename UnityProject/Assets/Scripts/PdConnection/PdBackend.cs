@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace cylvester
 {
@@ -39,7 +38,7 @@ namespace cylvester
         
         private Action onSamplePlaybackChanged_;
         private Action<MidiMessage> onMidiMessageReceived_;
-        private Action<MidiSync> onMidiSyncReceived_;
+        private Action<MidiSync, int> onMidiSyncReceived_;
 
         private void Awake()
         {
@@ -72,7 +71,7 @@ namespace cylvester
             };
 
             onMidiMessageReceived_ = (message) => { midiMessageReceived.Invoke(message); };
-            onMidiSyncReceived_ = (sync) => { midiSyncReceived.Invoke(sync); };
+            onMidiSyncReceived_ = (sync, count) => { midiSyncReceived.Invoke(sync, count); };
             
             samplePlaybackObserver_.ValueChanged += onSamplePlaybackChanged_;
             midiParser_.MidiMessageReceived += onMidiMessageReceived_;

@@ -3,23 +3,20 @@ using UnityEngine;
 
 public class CubeSync : MonoBehaviour
 {
-    private int counter_ = 0;
     private float currentX_;
     private float targetX_;
     private float lastCallBack_;
     private float callbackInterval_ = 0.05f;
 
-    public void onSyncReceived(MidiSync midiSync)
+    public void OnSyncReceived(MidiSync midiSync, int count)
     {
         if (midiSync == MidiSync.Clock)
         {
             var now = Time.realtimeSinceStartup;
             callbackInterval_ = now - lastCallBack_;
             lastCallBack_ = now;
-            currentX_ = (counter_ - 12) * 0.2f;
-            counter_++;
-            targetX_ = (counter_ - 12) * 0.2f;
-            counter_ %= 24;
+            currentX_ = (count % 24 - 12) * 0.2f;
+            targetX_ = (count % 24 - 12) * 0.2f;
         }
     }
 
