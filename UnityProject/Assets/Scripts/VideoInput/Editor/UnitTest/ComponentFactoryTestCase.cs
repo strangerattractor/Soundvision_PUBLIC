@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace VideoInput.Editor.UnitTest
+namespace cylvester.Editor.UnitTest
 {
     public class UnitTestComponentFactory
     {

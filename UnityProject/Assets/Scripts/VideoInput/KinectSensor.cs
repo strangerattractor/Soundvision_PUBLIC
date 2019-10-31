@@ -1,9 +1,9 @@
-namespace VideoInput
+namespace cylvester
 {
-   public interface IKinectSensor
+    
+   public interface IKinectSensor : IUpdater
     {
         IInfraredCamera InfraredCamera { get; }
-        void Update();
     }
     
     public class KinectSensor : IKinectSensor

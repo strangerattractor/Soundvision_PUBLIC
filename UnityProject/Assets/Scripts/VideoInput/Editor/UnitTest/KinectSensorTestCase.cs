@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using NSubstitute;
 
-namespace VideoInput.Editor.UnitTest
+namespace cylvester.Editor.UnitTest
 {
     [TestFixture]
     public class UnitTestKinectSensor

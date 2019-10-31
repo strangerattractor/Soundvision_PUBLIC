@@ -1,4 +1,4 @@
-namespace VideoInput
+namespace cylvester
 {
     public class ComponentFactory
     {
@@ -11,5 +11,6 @@ namespace VideoInput
         {
             return new InfraredCamera();
         }
+        
     }
 }

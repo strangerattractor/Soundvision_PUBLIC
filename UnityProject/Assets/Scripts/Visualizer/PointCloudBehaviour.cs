@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
-using VideoInput;
 
-namespace Visualizer
+namespace cylvester
 {
     public class PointCloudBehaviour : MonoBehaviour
     {
@@ -21,7 +20,7 @@ namespace Visualizer
 
         private void Start()
         {
-            var texture = kinectManagerBehaviour.KinectSensor.InfraredCamera.Data;
+            var texture = kinectManagerBehaviour.KinectSensor.InfraredCamera.InfraredTexture;
             var numPixels = texture.height * texture.width;
 
             meshFilter.mesh = new Mesh {
@@ -32,7 +31,7 @@ namespace Visualizer
             meshFilter.mesh.SetIndices(MakeIndecies(numPixels), MeshTopology.Points, 0, false);
 
             material_ = GetComponent<Renderer>().material;
-            material_.mainTexture = kinectManagerBehaviour.KinectSensor.InfraredCamera.Data;
+            material_.mainTexture = kinectManagerBehaviour.KinectSensor.InfraredCamera.InfraredTexture;
         }
 
         private void Update()

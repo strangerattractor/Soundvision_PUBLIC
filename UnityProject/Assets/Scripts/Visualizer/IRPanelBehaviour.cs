@@ -1,7 +1,6 @@
 using UnityEngine;
-using VideoInput;
 
-namespace Visualizer
+namespace cylvester
 {
     class IRPanelBehaviour : MonoBehaviour
     {
@@ -18,7 +17,7 @@ namespace Visualizer
 
         void Update()
         {
-            renderer_.material.SetTexture(KinectTexture, kinectManagerBehaviour.KinectSensor.InfraredCamera.Data);
+            renderer_.material.SetTexture(KinectTexture, kinectManagerBehaviour.KinectSensor.InfraredCamera.InfraredTexture);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VideoInput
+namespace cylvester
 {
     public class KinectManagerBehaviour : MonoBehaviour
     {
