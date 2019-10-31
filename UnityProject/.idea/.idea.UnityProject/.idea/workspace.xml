@@ -2,101 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="implement FFT waterfall">
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Extras.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Icon.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/BehaviourUnityEvents.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/Editor/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/Editor/Resources/Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/ExampleJSON.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/Plugins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Input/Plugins/JSON.NET.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Hints.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Hints/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Hints/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Hints/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Hints/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Hints/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Animators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/PhysicMaterials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Longbow/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Poses.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Animators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/dusty.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Grenade.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Grenade/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Interactions_Example.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Animator.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Models/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Squishy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Squishy/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Squishy/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/SnapTurn.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/SnapTurn/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Teleport/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Models/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Plugins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR/WindowsHelper.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR_Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SteamVR_Resources/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/SteamVR.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Cube.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Cube.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/OrangeBoxAnimation1.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/OrangeBoxAnimation1.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/OrangeCubeScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/OrangeCubeScript.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRP/Flare.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRP/Flare.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Boxes.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Boxes.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Max Fun.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Max Fun.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,15 +46,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/MidiParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/Mover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/SpectrumGeneratorPlayMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/OrangeCubeScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdBackend.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateManagement/StateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdConstant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemplateLibrary/ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/PositionBind.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/TimbreID/script/IdToText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/VisualEffectGraph.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/SmokeBind.cs" root0="FORCE_HIGHLIGHTING" />
@@ -146,11 +65,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/script/FlareBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/Unity Installs/2019.2.8f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/CubeSync.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/AppBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Specttrum.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/LevelMeter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/RandomPosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/PdBackendEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/SpectrumGeneratorEditMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/PdSpectrumBindEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -162,14 +83,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratorPlayMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectManagerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/MidiClockCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/InfraredCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/KinectSensor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/KinectSensorTestCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoInput/Editor/UnitTest/ComponentFactoryTestCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/SpectrumVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArraySelector.cs" root0="FORCE_HIGHLIGHTING" />
@@ -178,14 +94,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/CombMesh.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/IRPanelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/PointCloudBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Waterfall/waterfall.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Example1/script/BallMapping.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/EditorToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/PdBackend/PdBackend.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataModel/ToogleResponder.cs" />
@@ -236,6 +150,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArraySelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreatePlane.cs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/OrangeCubeScript.cs" />
       </list>
     </option>
   </component>
