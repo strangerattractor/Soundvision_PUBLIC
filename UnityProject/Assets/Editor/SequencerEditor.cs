@@ -4,7 +4,7 @@ using UnityEngine;
 namespace cylvester
 {
     [CustomEditor(typeof(MidiSequencer))]
-    public class MidiSequencerEditor : Editor
+    public class MidiSequencerEditor : UnityEditor.Editor
     {
         private SerializedProperty timeProperty_;
         private SerializedProperty sequenceProperty_;

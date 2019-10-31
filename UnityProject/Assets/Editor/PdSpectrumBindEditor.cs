@@ -4,7 +4,7 @@ using UnityEditor;
 namespace cylvester
 {
     [CustomEditor(typeof(PdSpectrumBind))]
-    class PdSpectrumBindEditor : Editor
+    class PdSpectrumBindEditor : UnityEditor.Editor
     {
         private readonly string[] channels_ =
         {

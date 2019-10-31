@@ -3,18 +3,18 @@ using System.IO;
 using UnityEngine;
 using Windows.Kinect;
 
-namespace VideoInput
+namespace cylvester
 {
     public interface IInfraredCamera
     {
-        Texture2D Data { get; }
+        Texture2D InfraredTexture { get; }
 
         void Update();
     }
     
     public class InfraredCamera : IInfraredCamera
     {
-        public Texture2D Data { get; }
+        public Texture2D InfraredTexture { get; }
         
         private Windows.Kinect.KinectSensor sensor_;
         private readonly InfraredFrameReader reader_;
@@ -33,7 +33,7 @@ namespace VideoInput
             
             var frameDesc = sensor_.InfraredFrameSource.FrameDescription;
             irData_ = new ushort[frameDesc.LengthInPixels];
-            Data = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R16, false);
+            InfraredTexture = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R16, false);
             
             if (!sensor_.IsOpen)
                 sensor_.Open();
@@ -53,10 +53,10 @@ namespace VideoInput
             {
                 fixed(ushort* irDataPtr = irData_)
                 {
-                    Data.LoadRawTextureData((IntPtr) irDataPtr, sizeof(ushort) * irData_.Length);
+                    InfraredTexture.LoadRawTextureData((IntPtr) irDataPtr, sizeof(ushort) * irData_.Length);
                 }
             }
-            Data.Apply();
+            InfraredTexture.Apply();
             frame.Dispose();
         }
     }

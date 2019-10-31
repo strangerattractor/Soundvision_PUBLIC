@@ -4,7 +4,7 @@ using UnityEngine;
 namespace cylvester
 {
     [CustomEditor(typeof(PdBackend))]
-    public class PdBackendEditor : Editor
+    public class PdBackendEditor : UnityEditor.Editor
     {
         private PdBackend pdBackend_;
         private SerializedProperty midiMessageReceivedProperty_;

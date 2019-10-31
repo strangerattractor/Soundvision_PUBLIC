@@ -5,7 +5,7 @@ namespace cylvester
 {
     
     [CustomEditor(typeof(StateManager))]
-    public class StateManagerEditor : Editor
+    public class StateManagerEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI ()
         {
