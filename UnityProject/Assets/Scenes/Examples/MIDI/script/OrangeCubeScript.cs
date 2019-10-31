@@ -2,29 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class OrangeCubeScript : MonoBehaviour
+namespace cylvester
 {
-    public bool go;
-    private Animator anim;
-
-    void Start()
+    public class OrangeCubeScript : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
-    }
+        [SerializeField] private Animator anim;
 
-    public void Go()
-{
-    go = true;
-}
-
-    private void Update()
-    {
-        if (go == true)
+        public void Go()
         {
-                gameObject.GetComponent<Animator>().SetTrigger("AnimTrigger");
+            anim.SetTrigger("AnimTrigger");
         }
     }
-    
-    
 }
