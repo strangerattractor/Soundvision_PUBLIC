@@ -58,7 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
-     <Compile Include="Assets\Scenes\Examples\KinectSkelton\script\Skelton.cs" />
+     <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\Skeleton.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
      <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
@@ -100,10 +100,7 @@
      <Compile Include="Assets\Scripts\StateManagement\StateManager.cs" />
      <Compile Include="Assets\Scripts\TemplateLibrary\ChangeObserver.cs" />
      <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
-     <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
-     <Compile Include="Assets\Scripts\VideoInput\KinectFacade.cs" />
      <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
-     <Compile Include="Assets\Scripts\VideoInput\SkeletonTracker.cs" />
      <Compile Include="Assets\Scripts\Visualizer\CombMesh.cs" />
      <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
