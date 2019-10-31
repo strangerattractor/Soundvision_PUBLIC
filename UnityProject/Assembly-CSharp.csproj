@@ -100,15 +100,12 @@
      <Compile Include="Assets\Scripts\StateManagement\StateManager.cs" />
      <Compile Include="Assets\Scripts\TemplateLibrary\ChangeObserver.cs" />
      <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
-     <Compile Include="Assets\Scripts\VideoInput\ComponentFactory.cs" />
      <Compile Include="Assets\Scripts\VideoInput\InfraredCamera.cs" />
      <Compile Include="Assets\Scripts\VideoInput\KinectFacade.cs" />
      <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
-     <Compile Include="Assets\Scripts\VideoInput\KinectSensor.cs" />
      <Compile Include="Assets\Scripts\VideoInput\SkeletonTracker.cs" />
      <Compile Include="Assets\Scripts\Visualizer\CombMesh.cs" />
      <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Visualizer\PointCloudBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
      <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
      <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />

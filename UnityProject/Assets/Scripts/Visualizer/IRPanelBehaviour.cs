@@ -4,7 +4,6 @@ namespace cylvester
 {
     class IRPanelBehaviour : MonoBehaviour
     {
-        [SerializeField] private KinectManagerBehaviour kinectManagerBehaviour = null;
         [SerializeField] private GameObject panel = null;
 
         private Renderer renderer_;
@@ -15,9 +14,9 @@ namespace cylvester
             renderer_ = panel.GetComponent<Renderer>();
         }
 
-        void Update()
+        public void OnInfraredFrameReceived(Texture2D texture)
         {
-            renderer_.material.SetTexture(KinectTexture, kinectManagerBehaviour.KinectSensor.InfraredCamera.InfraredTexture);
+            renderer_.material.SetTexture(KinectTexture, texture);
         }
     }
 }
