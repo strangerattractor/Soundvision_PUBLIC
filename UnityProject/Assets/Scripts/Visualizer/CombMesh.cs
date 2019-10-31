@@ -76,10 +76,7 @@ namespace cylvester
                 indices[index++] = offset + 1 + onset;
                 indices[index++] = 1 + onset;
             }
-
             return indices;
         }
-
-
     }
 }
