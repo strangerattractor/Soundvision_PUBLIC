@@ -55,9 +55,10 @@ namespace cylvester
                 
                 using (var infraredFrame = eventArgs.FrameReference.AcquireFrame())
                 {
-                    if (infraredFrame == null) return;
+                    if (infraredFrame == null) 
+                        return;
+                    
                     infraredFrame.CopyFrameDataToArray(irData_);
-
                     unsafe
                     {
                         fixed (ushort* irDataPtr = irData_)
@@ -86,6 +87,8 @@ namespace cylvester
 
                 using (var bodyFrame = eventArgs.FrameReference.AcquireFrame())
                 {
+                    if (bodyFrame == null)
+                        return;
                     Array.Resize(ref bodies_, bodyFrame.BodyCount);
                     bodyFrame.GetAndRefreshBodyData(bodies_);
                     skeletonDataReceived.Invoke(bodies_);
