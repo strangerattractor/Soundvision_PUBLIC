@@ -6,15 +6,13 @@ namespace cylvester
     {
         [SerializeField] private Animator anim;
         private float speed_ = 1.0f;
-        private static readonly int Moving = Animator.StringToHash("Moving");
+        private static readonly int OrangeBoxAnimation1 = Animator.StringToHash("OrangeBoxAnimation1");
         private bool trigger_;
         
         public void OnTriggerReceived()
         {
             anim.speed = speed_;
-            
-            anim.SetBool(Moving, false);
-            anim.SetBool(Moving, true);
+            anim.Play(OrangeBoxAnimation1, -1, 0f);
         }
 
         public void OnStateChanged(IStateReader currentState)
