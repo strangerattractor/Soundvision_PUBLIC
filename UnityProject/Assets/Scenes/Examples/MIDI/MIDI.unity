@@ -244,7 +244,18 @@ MonoBehaviour:
   csvFileName: qlist
   onStateChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1843145352}
+        m_MethodName: OnStateChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   sceneSelection: 0
 --- !u!4 &337815216
 Transform:
@@ -795,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f9defef7af2514590dadc0a6cddbac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loopLengthInBeat: 4
+  loopLengthInBeat: 1
   loopStarted:
     m_PersistentCalls:
       m_Calls:

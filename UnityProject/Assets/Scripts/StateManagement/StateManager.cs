@@ -4,30 +4,32 @@ using UnityEngine.Events;
 
 namespace cylvester
 {
-    [Serializable]
-    public class UnityStateEvent : UnityEvent<IStateManager>
-    {}
+
+    public interface IStateReader
+    {
+        State CurrentState { get; }
+    }
     
-    public interface IStateManager
+    public interface IStateManager : IStateReader
     {
         int SelectedState { set; }
-        
         State[] States { get; }
-        State CurrentState { get; }
         State? PreviousState { get; }
         State? NextState { get; }
-
-        void OnMidiReceived(MidiMessage message);
     }
 
     public struct State
     {
         public string Title;
         public string Note;
-        public int BPM;
+        public int Bpm;
 
-        private float Speed => BPM / 60f; // 60 BPM as speed 1f
+        public float Speed => Bpm / 60f; // 60 BPM as speed 1f
     }
+    
+    [Serializable]
+    public class UnityStateEvent : UnityEvent<IStateReader>
+    {}
     
     public class StateManager : MonoBehaviour, IStateManager
     {
@@ -57,11 +59,11 @@ namespace cylvester
 
                 try
                 {
-                    States[i].BPM = int.Parse(columns[1]);
+                    States[i].Bpm = int.Parse(columns[1]);
                 }
                 catch (FormatException)
                 {
-                    States[i].BPM = 60; // gracefully fail
+                    States[i].Bpm = 60; // gracefully fail
                 }
 
                 States[i].Note = columns[2];
