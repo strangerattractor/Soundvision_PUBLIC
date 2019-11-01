@@ -4,20 +4,32 @@ using UnityEngine.Events;
 
 namespace cylvester
 {
-    [Serializable]
-    public class UnityStateEvent : UnityEvent<IStateManager>
-    {}
-    
-    public interface IStateManager
-    {
-        int State { set; }
-        string[] StateTitles { get; }
-        string CurrentState { get; }
-        string PreviousState { get; }
-        string NextState { get; }
 
-        void OnMidiReceived(MidiMessage message);
+    public interface IStateReader
+    {
+        State CurrentState { get; }
     }
+    
+    public interface IStateManager : IStateReader
+    {
+        int SelectedState { set; }
+        State[] States { get; }
+        State? PreviousState { get; }
+        State? NextState { get; }
+    }
+
+    public struct State
+    {
+        public string Title;
+        public string Note;
+        public int Bpm;
+
+        public float Speed => Bpm / 60f; // 60 BPM as speed 1f
+    }
+    
+    [Serializable]
+    public class UnityStateEvent : UnityEvent<IStateReader>
+    {}
     
     public class StateManager : MonoBehaviour, IStateManager
     {
@@ -35,23 +47,38 @@ namespace cylvester
         void Start()
         { 
             var content = System.IO.File.ReadAllText(Application.streamingAssetsPath + "/" + csvFileName + ".csv");
-            var lines  = content.Split("\n"[0]);
-            StateTitles = new string[lines.Length - 1];
-            for (var i = 1; i < lines.Length; ++i)
+            var lines  = content.Split('\n');
+            
+            var numberOfEntries = lines.Length - 1;
+            States = new State[numberOfEntries];
+            for (var i = 0; i < numberOfEntries; ++i)
             {
-                var columns = (lines[i].Trim()).Split(","[0]);
-                StateTitles[i-1] = columns[0];
+                var columns = (lines[i+1].Trim()).Split(',');
+                
+                States[i].Title = columns[0];
+
+                try
+                {
+                    States[i].Bpm = int.Parse(columns[1]);
+                }
+                catch (FormatException)
+                {
+                    States[i].Bpm = 60; // gracefully fail
+                }
+
+                States[i].Note = columns[2];
             }
         }
-        public string[] StateTitles { get; private set; }
+        
+        public State[] States { get; private set; }
 
-        public string CurrentState => StateTitles[sceneSelection];
+        public State CurrentState => States[sceneSelection];
 
-        public string PreviousState => sceneSelection == 0 ? "---" : StateTitles[sceneSelection-1];
+        public State? PreviousState => sceneSelection == 0 ? (State?) null : States[sceneSelection-1];
 
-        public string NextState => sceneSelection == StateTitles.Length - 1 ? "---" : StateTitles[sceneSelection + 1];
+        public State? NextState => sceneSelection == States.Length - 1 ? (State?) null : States[sceneSelection + 1];
 
-        public int State
+        public int SelectedState
         {
             set
             {
@@ -75,7 +102,7 @@ namespace cylvester
                     sceneSelection--;                        
                     break;
                 case Operation.Next:
-                    if (sceneSelection >= StateTitles.Length - 1) return;
+                    if (sceneSelection >= States.Length - 1) return;
                     sceneSelection++;
                     break;
                 default:
