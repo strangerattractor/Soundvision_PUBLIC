@@ -10,13 +10,23 @@ namespace cylvester
     
     public interface IStateManager
     {
-        int State { set; }
-        string[] StateTitles { get; }
+        int SelectedState { set; }
+        
+        State[] States { get; }
         string CurrentState { get; }
         string PreviousState { get; }
         string NextState { get; }
 
         void OnMidiReceived(MidiMessage message);
+    }
+
+    public struct State
+    {
+        public string Title;
+        public string Note;
+        public int BPM;
+
+        private float Speed => BPM / 60f; // 60 BPM as speed 1f
     }
     
     public class StateManager : MonoBehaviour, IStateManager
@@ -35,23 +45,38 @@ namespace cylvester
         void Start()
         { 
             var content = System.IO.File.ReadAllText(Application.streamingAssetsPath + "/" + csvFileName + ".csv");
-            var lines  = content.Split("\n"[0]);
-            StateTitles = new string[lines.Length - 1];
-            for (var i = 1; i < lines.Length; ++i)
+            var lines  = content.Split('\n');
+            
+            var numberOfEntries = lines.Length - 1;
+            States = new State[numberOfEntries];
+            for (var i = 0; i < numberOfEntries; ++i)
             {
-                var columns = (lines[i].Trim()).Split(","[0]);
-                StateTitles[i-1] = columns[0];
+                var columns = (lines[i+1].Trim()).Split(',');
+                
+                States[i].Title = columns[0];
+
+                try
+                {
+                    States[i].BPM = int.Parse(columns[1]);
+                }
+                catch (FormatException)
+                {
+                    States[i].BPM = 60; // gracefully fail
+                }
+
+                States[i].Note = columns[2];
             }
         }
-        public string[] StateTitles { get; private set; }
+        
+        public State[] States { get; private set; }
 
-        public string CurrentState => StateTitles[sceneSelection];
+        public string CurrentState => States[sceneSelection].Title;
 
-        public string PreviousState => sceneSelection == 0 ? "---" : StateTitles[sceneSelection-1];
+        public string PreviousState => sceneSelection == 0 ? "---" : States[sceneSelection-1].Title;
 
-        public string NextState => sceneSelection == StateTitles.Length - 1 ? "---" : StateTitles[sceneSelection + 1];
+        public string NextState => sceneSelection == States.Length - 1 ? "---" : States[sceneSelection + 1].Title;
 
-        public int State
+        public int SelectedState
         {
             set
             {
@@ -75,7 +100,7 @@ namespace cylvester
                     sceneSelection--;                        
                     break;
                 case Operation.Next:
-                    if (sceneSelection >= StateTitles.Length - 1) return;
+                    if (sceneSelection >= States.Length - 1) return;
                     sceneSelection++;
                     break;
                 default:

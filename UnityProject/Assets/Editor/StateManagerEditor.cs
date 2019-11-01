@@ -3,10 +3,11 @@ using UnityEngine;
 
 namespace cylvester
 {
-    
     [CustomEditor(typeof(StateManager))]
-    public class StateManagerEditor : UnityEditor.Editor
+    public class StateManagerEditor : Editor
     {
+        private string[] titles_;
+        
         public override void OnInspectorGUI ()
         {
             var csvFileName = serializedObject.FindProperty("csvFileName");
@@ -20,15 +21,27 @@ namespace cylvester
             {
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Current State");
-                var newValue = EditorGUILayout.Popup(sceneSelection.intValue, ((IStateManager) target).StateTitles);
+                var states = ((IStateManager) target).States;
+                var newValue = EditorGUILayout.Popup(sceneSelection.intValue, GetTitles(states));
                 if (newValue != sceneSelection.intValue)
-                    ((IStateManager) target).State = newValue;
+                    ((IStateManager) target).SelectedState = newValue;
                 EditorGUILayout.EndHorizontal();
             }
 
             serializedObject.ApplyModifiedProperties();
         }
         
+        private string[] GetTitles(State[] states)
+        {
+            if (titles_ != null)
+                return titles_;
+            
+            titles_ = new string[states.Length];
+            
+            for (var i = 0; i < states.Length; ++i)
+                titles_[i] = states[i].Title;
+
+            return titles_;
+        }
     }
-    
 }
