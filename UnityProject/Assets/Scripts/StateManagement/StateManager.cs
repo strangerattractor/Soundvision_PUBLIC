@@ -13,9 +13,9 @@ namespace cylvester
         int SelectedState { set; }
         
         State[] States { get; }
-        string CurrentState { get; }
-        string PreviousState { get; }
-        string NextState { get; }
+        State CurrentState { get; }
+        State? PreviousState { get; }
+        State? NextState { get; }
 
         void OnMidiReceived(MidiMessage message);
     }
@@ -70,11 +70,11 @@ namespace cylvester
         
         public State[] States { get; private set; }
 
-        public string CurrentState => States[sceneSelection].Title;
+        public State CurrentState => States[sceneSelection];
 
-        public string PreviousState => sceneSelection == 0 ? "---" : States[sceneSelection-1].Title;
+        public State? PreviousState => sceneSelection == 0 ? (State?) null : States[sceneSelection-1];
 
-        public string NextState => sceneSelection == States.Length - 1 ? "---" : States[sceneSelection + 1].Title;
+        public State? NextState => sceneSelection == States.Length - 1 ? (State?) null : States[sceneSelection + 1];
 
         public int SelectedState
         {

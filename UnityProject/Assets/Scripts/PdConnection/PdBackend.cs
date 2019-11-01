@@ -86,7 +86,6 @@ namespace cylvester
             samplePlaybackObserver_.ValueChanged -= onSamplePlaybackChanged_;
             midiParser_.MidiMessageReceived -= onMidiMessageReceived_;
             midiParser_.MidiSyncReceived -= onMidiSyncReceived_;
-
         }
 
         public void Update()
@@ -100,9 +99,9 @@ namespace cylvester
 
         public void SendState(IStateManager stateManager)
         {
-            pdSender_.Send("state previous " + stateManager.PreviousState);
-            pdSender_.Send("state current " + stateManager.CurrentState);
-            pdSender_.Send("state next " + stateManager.NextState);
+            pdSender_.Send("state previous " + (stateManager.PreviousState.HasValue ? stateManager.PreviousState.Value.Title : "---"));
+            pdSender_.Send("state current " + stateManager.CurrentState.Title);
+            pdSender_.Send("state next " + (stateManager.NextState.HasValue ? stateManager.NextState.Value.Title : "---"));
         }
 
     }
