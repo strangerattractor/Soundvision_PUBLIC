@@ -11,7 +11,7 @@ namespace cylvester
         IPdArray PitchArray { get; }
         IPdArrayContainer SpectrumArrayContainer{ get; }
         IPdArrayContainer WaveformArrayContainer{ get; }
-        void SendState(IStateManager manager);
+        void SendState(IStateReader manager);
     }
     
     public class PdBackend : MonoBehaviour, IPdBackend
@@ -97,7 +97,7 @@ namespace cylvester
             samplePlaybackObserver_.Value = samplePlayback;
         }
 
-        public void SendState(IStateManager stateManager)
+        public void SendState(IStateReader stateManager)
         {
             pdSender_.Send("state previous " + (stateManager.PreviousState.HasValue ? stateManager.PreviousState.Value.Title : "---"));
             pdSender_.Send("state current " + stateManager.CurrentState.Title);

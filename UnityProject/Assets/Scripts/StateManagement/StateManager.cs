@@ -7,15 +7,15 @@ namespace cylvester
 
     public interface IStateReader
     {
+        State? PreviousState { get; }
         State CurrentState { get; }
+        State? NextState { get; }
     }
     
     public interface IStateManager : IStateReader
     {
         int SelectedState { set; }
         State[] States { get; }
-        State? PreviousState { get; }
-        State? NextState { get; }
     }
 
     public struct State
