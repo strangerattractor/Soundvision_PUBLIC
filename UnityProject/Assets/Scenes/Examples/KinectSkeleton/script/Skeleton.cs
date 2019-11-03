@@ -20,7 +20,7 @@ namespace cylvester
             }
         }
 
-        public void OnSkeletonFrameReceived(Body body, int id)
+        public void OnSkeletonDataReceived(Body body, int id)
         {
             var i = 0;
             foreach(var pair in body.Joints)
@@ -31,7 +31,7 @@ namespace cylvester
                 else
                 {
                     balls_[i].SetActive(true);
-                    balls_[i].transform.position = new Vector3(joint.Position.X * 10f , joint.Position.Y * 10f, 0f);
+                    balls_[i].transform.position = new Vector3(joint.Position.X * 10f , joint.Position.Y * 10f, joint.Position.Z *10f);
                 }
                 i++;
             }

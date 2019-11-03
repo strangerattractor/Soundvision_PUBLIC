@@ -58,6 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
+     <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\RightHandMarker.cs" />
      <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\Skeleton.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
@@ -74,6 +75,8 @@
      <Compile Include="Assets\Scenes\Examples\TimbreID\script\IdToText.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KinectJointBind.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KinectManagerBehaviour.cs" />
      <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
      <Compile Include="Assets\Scripts\Math\Smoother.cs" />
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
@@ -102,7 +105,6 @@
      <Compile Include="Assets\Scripts\StateManagement\StateManager.cs" />
      <Compile Include="Assets\Scripts\TemplateLibrary\ChangeObserver.cs" />
      <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
-     <Compile Include="Assets\Scripts\VideoInput\KinectManagerBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\CombMesh.cs" />
      <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
