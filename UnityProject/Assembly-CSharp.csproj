@@ -58,6 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
+     <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\RightHandFire.cs" />
      <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\RightHandMarker.cs" />
      <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\Skeleton.cs" />
      <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
