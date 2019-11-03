@@ -66,7 +66,6 @@
      <Compile Include="Assets\Editor\SpectrumGeneratorEditMode.cs" />
      <Compile Include="Assets\Editor\StateManagerEditor.cs" />
      <Compile Include="Assets\Editor\UnitTest\UnitTest_ChangeObserver.cs" />
-     <Compile Include="Assets\Editor\UnitTest\UnitTest_Holder.cs" />
      <Compile Include="Assets\Editor\UnitTest\UnitTest_RectangularSelection.cs" />
      <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGeneratorEditMode.cs" />
      <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGeneratorPlayMode.cs" />

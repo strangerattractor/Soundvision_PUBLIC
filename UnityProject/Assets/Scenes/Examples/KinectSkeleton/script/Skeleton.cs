@@ -20,26 +20,20 @@ namespace cylvester
             }
         }
 
-        public void OnSkeletonFrameReceived(Body[] bodies)
+        public void OnSkeletonFrameReceived(Body body, int id)
         {
-            foreach (var body in bodies)
+            var i = 0;
+            foreach(var pair in body.Joints)
             {
-                if(!body.IsTracked)
-                    continue;
-                
-                var i = 0;
-                foreach(var pair in body.Joints)
+                var joint = pair.Value;
+                if(joint.TrackingState == TrackingState.NotTracked)
+                    balls_[i].SetActive(false);
+                else
                 {
-                    var joint = pair.Value;
-                    if(joint.TrackingState == TrackingState.NotTracked)
-                        balls_[i].SetActive(false);
-                    else
-                    {
-                        balls_[i].SetActive(true);
-                        balls_[i].transform.position = new Vector3(joint.Position.X * 10f , joint.Position.Y * 10f, 0f);
-                    }
-                    i++;
+                    balls_[i].SetActive(true);
+                    balls_[i].transform.position = new Vector3(joint.Position.X * 10f , joint.Position.Y * 10f, 0f);
                 }
+                i++;
             }
         }
     }

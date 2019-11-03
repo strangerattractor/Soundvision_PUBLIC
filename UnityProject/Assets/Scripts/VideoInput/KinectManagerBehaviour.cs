@@ -32,7 +32,7 @@ namespace cylvester
         private EventHandler<InfraredFrameArrivedEventArgs> onInfraredFrameArrived_;
         private EventHandler<BodyFrameArrivedEventArgs> onBodyFrameArrived_;
         private EventHandler<BodyIndexFrameArrivedEventArgs> onBodyIndexFrameArrived_;
-        private Holder<ulong> trackedIds_;
+        private BodyHolder trackedBodies_;
         
         private void Start()
         {
@@ -86,7 +86,7 @@ namespace cylvester
         private void InitSkeletonTracking()
         {
             bodies_ = new Body[6];
-            trackedIds_ = new Holder<ulong>(numberOfBodiesTobeTracked);
+            trackedBodies_ = new BodyHolder(numberOfBodiesTobeTracked);
             InitBodyFrameReader();
         }
 
@@ -104,23 +104,31 @@ namespace cylvester
                         return;
                     
                     bodyFrame.GetAndRefreshBodyData(bodies_);
-                    foreach (var body in bodies_.Where(body => body.IsTracked))
+                    foreach (var body in bodies_.Where(t => t.IsTracked))
                     {
-                        if (trackedIds_.Exist(body.TrackingId))
+                        if (body.IsTracked)
                         {
-                            var idNumber = trackedIds_.IndexOf(body.TrackingId);
-                            if(idNumber.HasValue)
-                                skeletonDataReceived.Invoke(body, idNumber.Value);
-                        }
-                        else
-                        {
-                            if (trackedIds_.Add(body.TrackingId))
+                            if (trackedBodies_.Exist(body))
                             {
-                                var idNumber = trackedIds_.IndexOf(body.TrackingId);
-                                if (idNumber.HasValue) 
+                                var idNumber = trackedBodies_.IndexOf(body);
+                                if (idNumber.HasValue)
                                     skeletonDataReceived.Invoke(body, idNumber.Value);
                             }
+                            else
+                            {
+                                if (trackedBodies_.Add(body))
+                                {
+                                    var idNumber = trackedBodies_.IndexOf(body);
+                                    if (idNumber.HasValue)
+                                        skeletonDataReceived.Invoke(body, idNumber.Value);
+                                }
+                            }
                         }
+                    }
+
+                    foreach (var body in bodies_.Where(t => !t.IsTracked && trackedBodies_.Exist(t)))
+                    {
+                        trackedBodies_.Remove(body);
                     }
                 }
             };

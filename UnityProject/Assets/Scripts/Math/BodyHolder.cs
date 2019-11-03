@@ -1,43 +1,43 @@
-using System;
 using System.Collections.Generic;
+using Windows.Kinect;
 
 namespace cylvester
 {
-    public class Holder<T>  where T : IEquatable<T>
+    public class BodyHolder
     {
-        private readonly List<T> elements_;
+        private readonly List<Body> elements_;
         private readonly int capacity_;
         
-        public Holder(int capacity)
+        public BodyHolder(int capacity)
         {
             capacity_ = capacity;
-            elements_ = new List<T>();
+            elements_ = new List<Body>();
         }
 
-        public bool Add(T newElement)
+        public bool Add(Body newBody)
         {
             if (elements_.Count == capacity_)
                 return false;
 
-            if (elements_.Contains(newElement))
+            if (elements_.Contains(newBody))
                 return false;
             
-            elements_.Add(newElement);
+            elements_.Add(newBody);
             return true;
         }
 
-        public bool Exist(T element)
+        public bool Exist(Body element)
         {
             return elements_.Contains(element);
         }
         
-        public int? IndexOf(T element)
+        public int? IndexOf(Body element)
         {
             var index = elements_.FindIndex(e => e.Equals(element));
             return (index < 0) ? (int?) null : index;
         }
         
-        public void Remove(T element)
+        public void Remove(Body element)
         {
             elements_.Remove(element);
         }

@@ -74,7 +74,7 @@
      <Compile Include="Assets\Scenes\Examples\TimbreID\script\IdToText.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
-     <Compile Include="Assets\Scripts\Math\Holder.cs" />
+     <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
      <Compile Include="Assets\Scripts\Math\Smoother.cs" />
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
      <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
