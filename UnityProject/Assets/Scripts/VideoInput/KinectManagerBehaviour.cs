@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using Windows.Kinect;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,7 +8,7 @@ using UnityEngine.Events;
 namespace cylvester
 {
     [Serializable] public class UnityInfraredCameraEvent : UnityEvent<Texture2D>{ }
-    [Serializable] public class UnitySkeletonEvent : UnityEvent<Body[]>{ }
+    [Serializable] public class UnitySkeletonEvent : UnityEvent<Body, int>{ }
     
     public class KinectManagerBehaviour : MonoBehaviour
     {
@@ -16,17 +17,22 @@ namespace cylvester
 
         [SerializeField] private bool skeleton;
         [SerializeField] public UnitySkeletonEvent skeletonDataReceived;
+
+        [SerializeField, Range(1, 6)] private int numberOfBodiesTobeTracked = 2;
         
         private KinectSensor sensor_;
         private InfraredFrameReader infraredFrameReader_;
         private BodyFrameReader bodyFrameReader_;
+        private BodyIndexFrameReader bodyIndexFrameReader_;
 
         private ushort [] irData_;
         private Texture2D infraredTexture_;
         private Body[] bodies_;
         
         private EventHandler<InfraredFrameArrivedEventArgs> onInfraredFrameArrived_;
-        private EventHandler<BodyFrameArrivedEventArgs> onSkeletonFrameArrived_;
+        private EventHandler<BodyFrameArrivedEventArgs> onBodyFrameArrived_;
+        private EventHandler<BodyIndexFrameArrivedEventArgs> onBodyIndexFrameArrived_;
+        private Holder<ulong> trackedIds_;
         
         private void Start()
         {
@@ -36,9 +42,11 @@ namespace cylvester
             
             InitInfraredCamera();
             InitSkeletonTracking();
-            
+
             if (!sensor_.IsOpen)
+            {
                 sensor_.Open();
+            }
         }
 
         private void InitInfraredCamera()
@@ -77,10 +85,15 @@ namespace cylvester
 
         private void InitSkeletonTracking()
         {
-            bodies_ = new Body[1];
+            bodies_ = new Body[6];
+            trackedIds_ = new Holder<ulong>(numberOfBodiesTobeTracked);
+            InitBodyFrameReader();
+        }
 
+        private void InitBodyFrameReader()
+        {
             bodyFrameReader_ = sensor_.BodyFrameSource.OpenReader();
-            onSkeletonFrameArrived_ = (frameReader, eventArgs) =>
+            onBodyFrameArrived_ = (frameReader, eventArgs) =>
             {
                 if(!skeleton)
                     return;
@@ -89,18 +102,35 @@ namespace cylvester
                 {
                     if (bodyFrame == null)
                         return;
-                    Array.Resize(ref bodies_, bodyFrame.BodyCount);
+                    
                     bodyFrame.GetAndRefreshBodyData(bodies_);
-                    skeletonDataReceived.Invoke(bodies_);
+                    foreach (var body in bodies_.Where(body => body.IsTracked))
+                    {
+                        if (trackedIds_.Exist(body.TrackingId))
+                        {
+                            var idNumber = trackedIds_.IndexOf(body.TrackingId);
+                            if(idNumber.HasValue)
+                                skeletonDataReceived.Invoke(body, idNumber.Value);
+                        }
+                        else
+                        {
+                            if (trackedIds_.Add(body.TrackingId))
+                            {
+                                var idNumber = trackedIds_.IndexOf(body.TrackingId);
+                                if (idNumber.HasValue) 
+                                    skeletonDataReceived.Invoke(body, idNumber.Value);
+                            }
+                        }
+                    }
                 }
             };
-            bodyFrameReader_.FrameArrived += onSkeletonFrameArrived_;
+            bodyFrameReader_.FrameArrived += onBodyFrameArrived_;
         }
-
+        
         private void OnDestroy()
         {
             infraredFrameReader_.FrameArrived -= onInfraredFrameArrived_;
-            bodyFrameReader_.FrameArrived -= onSkeletonFrameArrived_;
+            bodyFrameReader_.FrameArrived -= onBodyFrameArrived_;
         }
     }
 }
