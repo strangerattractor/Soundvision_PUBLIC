@@ -56,7 +56,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\KinectPointCloud.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
      <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
      <Compile Include="Assets\Scenes\Examples\KinectSkeleton\script\RightHandFire.cs" />
@@ -77,9 +76,10 @@
      <Compile Include="Assets\Scenes\Examples\TimbreID\script\IdToText.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
      <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
-     <Compile Include="Assets\Scripts\Kinect\DifferenceTexture.cs" />
      <Compile Include="Assets\Scripts\Kinect\KinectJointBind.cs" />
      <Compile Include="Assets\Scripts\Kinect\KinectManagerBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Kinect\KinectPointCloud.cs" />
+     <Compile Include="Assets\Scripts\Kinect\MovementBaker.cs" />
      <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
      <Compile Include="Assets\Scripts\Math\Smoother.cs" />
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
@@ -109,8 +109,8 @@
      <Compile Include="Assets\Scripts\TemplateLibrary\ChangeObserver.cs" />
      <Compile Include="Assets\Scripts\Versioning\VersionToggleBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\CombMesh.cs" />
-     <Compile Include="Assets\Scripts\Visualizer\IRPanelBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\SpectrumVisualizer.cs" />
+     <Compile Include="Assets\Scripts\Visualizer\TexturePanelBehaviour.cs" />
      <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
      <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
      <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
@@ -209,6 +209,7 @@
      <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
      <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Tiling.cs" />
+     <None Include="Assets\Resources\Shader\Difference.compute" />
      <None Include="Assets\ThridParty\Assets\Construction_Site_Column\README_Import_to_2018-HDRP.txt" />
      <None Include="Assets\ThridParty\Assets\JapaneseHouse\ReadMe.txt" />
      <None Include="Assets\Resources\buildNumber.txt" />

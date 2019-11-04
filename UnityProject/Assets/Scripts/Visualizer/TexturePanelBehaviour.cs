@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace cylvester
 {
-    class IRPanelBehaviour : MonoBehaviour
+    class TexturePanelBehaviour : MonoBehaviour
     {
         [SerializeField] private GameObject panel = null;
 
@@ -14,7 +14,7 @@ namespace cylvester
             renderer_ = panel.GetComponent<Renderer>();
         }
 
-        public void OnInfraredFrameReceived(Texture2D texture)
+        public void OnTextureReceived(Texture texture)
         {
             renderer_.material.SetTexture(KinectTexture, texture);
         }
