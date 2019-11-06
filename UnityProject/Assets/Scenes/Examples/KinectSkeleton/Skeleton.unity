@@ -398,7 +398,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   computeShader: {fileID: 7200000, guid: 603dbf231b79f4245b124e6f915e3bd5, type: 3}
-  factor: 1
+  factor: 0.1
 --- !u!1 &583502370
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 839221375}
   - component: {fileID: 839221374}
   m_Layer: 0
-  m_Name: RightHandTracker
+  m_Name: LeftHandTracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyId: 0
-  jointType: 11
+  jointType: 7
   JointDataReceived:
     m_PersistentCalls:
       m_Calls:
