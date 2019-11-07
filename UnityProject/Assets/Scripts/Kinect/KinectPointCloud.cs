@@ -1,51 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.Experimental.VFX;
 
 namespace cylvester
 {
     public class KinectPointCloud : MonoBehaviour
     {
-        [SerializeField] private MeshFilter meshFilter;
+        [SerializeField] private VisualEffect visualEffect;
 
-
-
-        private void Start()
+        public void OnDepthImageReceived(Texture texture)
         {
-            var mesh = new Mesh {vertices = CreatePlane(512, 424)};
-            mesh.SetIndices(CreateIndices(512 * 424), MeshTopology.Points, 0);
-            meshFilter.mesh = mesh;
+            visualEffect.SetTexture("DepthImage", texture);
         }
 
-        private Vector3[] CreatePlane(int columns, int rows)
+        public void OnMovementImageReceived(Texture texture)
         {
-            var plane = new Vector3[columns * rows];
-
-            var count = 0;
-            for (var i = 0; i < rows; ++i)
-            {
-                var y = (float) i / (rows - 1) * 2f - 1f;
-                for (var j = 0; j < columns; ++j)
-                {
-                    var x = (float) j / (columns - 1) * 2f - 1f;
-                    plane[count] = new Vector3(x, y, 0f);
-                    count++;
-                }
-            }
-
-            return plane;
+            visualEffect.SetTexture("MovementImage", texture);
         }
 
-        private int[] CreateIndices(int num)
-        {
-            var indices = new int[num];
-            for (var i = 0; i < num; ++i)
-                indices[i] = i;
-            return indices;
-        }    
-        
-        public void OnInfraredFrameReceived( Texture2D data)
-        {
-            
-        }
     }
 
 }
