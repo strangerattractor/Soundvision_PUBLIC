@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\chikashi\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\chikashi\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_UnityProject.1346624737.00" t="ExcludeRecursive" />
-    <e p="C:\Users\chikashi\Development\Soundvision\UnityProject" t="IncludeRecursive">
+    <e p="C:\Users\Cylvester\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Cylvester\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_UnityProject.442702191.00" t="ExcludeRecursive" />
+    <e p="D:\SoundVision_Repo\Soundvision\UnityProject" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -26,6 +26,9 @@
         </e>
         <e p="Resources" t="Include">
           <e p="buildNumber.txt" t="Include" />
+          <e p="Shader" t="Include">
+            <e p="Difference.compute" t="Include" />
+          </e>
         </e>
         <e p="Scenes" t="Include">
           <e p="Examples" t="Include">
@@ -37,6 +40,8 @@
             </e>
             <e p="KinectSkeleton" t="Include">
               <e p="script" t="Include">
+                <e p="RightHandFire.cs" t="Include" />
+                <e p="RightHandMarker.cs" t="Include" />
                 <e p="Skeleton.cs" t="Include" />
               </e>
             </e>
@@ -51,6 +56,7 @@
                 <e p="CubeSync.cs" t="Include" />
                 <e p="MidiSyncCounter.cs" t="Include" />
                 <e p="Mover.cs" t="Include" />
+                <e p="OrangeCube.cs" t="Include" />
                 <e p="PositionBind.cs" t="Include" />
                 <e p="RandomPosition.cs" t="Include" />
               </e>
@@ -86,7 +92,14 @@
           <e p="CustomNode" t="Include">
             <e p="wave.cginc" t="Include" />
           </e>
+          <e p="Kinect" t="Include">
+            <e p="KinectJointBind.cs" t="Include" />
+            <e p="KinectManagerBehaviour.cs" t="Include" />
+            <e p="KinectPointCloud.cs" t="Include" />
+            <e p="MovementBaker.cs" t="Include" />
+          </e>
           <e p="Math" t="Include">
+            <e p="BodyHolder.cs" t="Include" />
             <e p="Smoother.cs" t="Include" />
             <e p="Threshold.cs" t="Include" />
           </e>
@@ -123,13 +136,10 @@
           <e p="Versioning" t="Include">
             <e p="VersionToggleBehaviour.cs" t="Include" />
           </e>
-          <e p="VideoInput" t="Include">
-            <e p="KinectManagerBehaviour.cs" t="Include" />
-          </e>
           <e p="Visualizer" t="Include">
             <e p="CombMesh.cs" t="Include" />
-            <e p="IRPanelBehaviour.cs" t="Include" />
             <e p="SpectrumVisualizer.cs" t="Include" />
+            <e p="TexturePanelBehaviour.cs" t="Include" />
             <e p="WaterfallVisualizer.cs" t="Include" />
             <e p="WaveformVisualizerBehaviour.cs" t="Include" />
           </e>
