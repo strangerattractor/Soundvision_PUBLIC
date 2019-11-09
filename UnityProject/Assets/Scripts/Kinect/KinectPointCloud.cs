@@ -7,17 +7,15 @@ namespace cylvester
     {
         [SerializeField] private VisualEffect visualEffect;
 
-        public void OnDepthImageReceived(Texture texture)
+        public void OnDepthImageReceived(Texture2D texture)
         {
             visualEffect.SetTexture("DepthImage", texture);
         }
 
-        public void OnMovementImageReceived(Texture texture)
+        public void OnMovementImageReceived(Texture2D texture)
         {
             visualEffect.SetTexture("MovementImage", texture);
         }
-
     }
-
 }
 

@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 238320196}
   - component: {fileID: 238320195}
+  - component: {fileID: 238320197}
   m_Layer: 0
   m_Name: KinectManager
   m_TagString: Untagged
@@ -164,7 +165,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 564551240}
+      - m_Target: {fileID: 238320197}
         m_MethodName: OnInfraredFrameReceived
         m_Mode: 0
         m_Arguments:
@@ -233,6 +234,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238320197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238320194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0392de87fccb6346bc6b0c1a48a8855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DifferenceTextureReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564551236}
+        m_MethodName: OnTextureReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2145444547}
+        m_MethodName: OnMovementImageReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  computeShader: {fileID: 7200000, guid: 603dbf231b79f4245b124e6f915e3bd5, type: 3}
+  factor: 0.1
 --- !u!1 &479263791
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +329,6 @@ GameObject:
   - component: {fileID: 564551239}
   - component: {fileID: 564551238}
   - component: {fileID: 564551237}
-  - component: {fileID: 564551240}
   - component: {fileID: 564551236}
   m_Layer: 0
   m_Name: MovementPanel
@@ -371,45 +410,6 @@ Transform:
   m_Father: {fileID: 238320196}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &564551240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564551235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0392de87fccb6346bc6b0c1a48a8855, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DifferenceTextureReceived:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 564551236}
-        m_MethodName: OnTextureReceived
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2145444547}
-        m_MethodName: OnMovementImageReceived
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  computeShader: {fileID: 7200000, guid: 603dbf231b79f4245b124e6f915e3bd5, type: 3}
-  factor: 0.1
 --- !u!1 &583502370
 GameObject:
   m_ObjectHideFlags: 0
