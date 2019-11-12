@@ -25,7 +25,7 @@ MonoBehaviour:
     maximumLODLevelMode: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
-      data1: 64881914049309
+      data1: 64881922437917
       data2: 4539628424389459968
     lodBias: 1
     lodBiasMode: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
     maximumLODLevelMode: 0
   m_RenderPipelineSettings:
     supportShadowMask: 1
-    supportSSR: 0
+    supportSSR: 1
     supportSSAO: 1
     supportSubsurfaceScattering: 1
     increaseSssSampleCount: 0

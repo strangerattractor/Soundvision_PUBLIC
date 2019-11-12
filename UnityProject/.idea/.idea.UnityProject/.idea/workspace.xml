@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="implement FFT waterfall">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Boxes.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Boxes.vfx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Particles.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/VisualEffectGraph/Particles.vfx" afterDir="false" />
     </list>
@@ -243,7 +244,7 @@
       <workItem from="1572298619890" duration="330000" />
       <workItem from="1572535803542" duration="2972000" />
       <workItem from="1572989100706" duration="59000" />
-      <workItem from="1573318954202" duration="512000" />
+      <workItem from="1573318954202" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>
