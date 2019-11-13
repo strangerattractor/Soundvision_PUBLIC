@@ -150,12 +150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b54a31bc1a14c1abb51fe86c56c6227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infrared: 1
-  infraredFrameReceived:
+  depth: 1
+  depthFrameReceived:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 583502371}
-        m_MethodName: OnTextureReceived
+      - m_Target: {fileID: 238320197}
+        m_MethodName: OnInfraredFrameReceived
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -165,8 +165,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 238320197}
-        m_MethodName: OnInfraredFrameReceived
+      - m_Target: {fileID: 583502371}
+        m_MethodName: OnTextureReceived
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1291,6 +1291,7 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

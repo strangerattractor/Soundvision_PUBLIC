@@ -7,13 +7,13 @@ using UnityEngine.Events;
 
 namespace cylvester
 {
-    [Serializable] public class UnityInfraredCameraEvent : UnityEvent<Texture2D>{ }
+    [Serializable] public class UnityDepthCameraEvent : UnityEvent<Texture2D>{ }
     [Serializable] public class UnitySkeletonEvent : UnityEvent<Body, int>{ }
     
     public class KinectManagerBehaviour : MonoBehaviour
     {
-        [SerializeField] private bool infrared;
-        [SerializeField] public UnityInfraredCameraEvent infraredFrameReceived;
+        [SerializeField] private bool depth;
+        [SerializeField] public UnityDepthCameraEvent depthFrameReceived;
 
         [SerializeField] private bool skeleton;
         [SerializeField] public UnitySkeletonEvent skeletonDataReceived;
@@ -21,15 +21,15 @@ namespace cylvester
         [SerializeField, Range(1, 6)] private int numberOfBodiesTobeTracked = 2;
         
         private KinectSensor sensor_;
-        private InfraredFrameReader infraredFrameReader_;
+        private DepthFrameReader depthFrameReader_;
         private BodyFrameReader bodyFrameReader_;
         private BodyIndexFrameReader bodyIndexFrameReader_;
 
-        private ushort [] irData_;
-        private Texture2D infraredTexture_;
+        private ushort [] depthData_;
+        private Texture2D depthTexture_;
         private Body[] bodies_;
         
-        private EventHandler<InfraredFrameArrivedEventArgs> onInfraredFrameArrived_;
+        private EventHandler<DepthFrameArrivedEventArgs> onDepthFrameArrived_;
         private EventHandler<BodyFrameArrivedEventArgs> onBodyFrameArrived_;
         private EventHandler<BodyIndexFrameArrivedEventArgs> onBodyIndexFrameArrived_;
         private BodyHolder trackedBodies_;
@@ -40,7 +40,7 @@ namespace cylvester
             if (sensor_ == null)
                 throw new IOException("cannot find Kinect Sensor ");
             
-            InitInfraredCamera();
+            InitDepthCamera();
             InitSkeletonTracking();
 
             if (!sensor_.IsOpen)
@@ -49,38 +49,39 @@ namespace cylvester
             }
         }
 
-        private void InitInfraredCamera()
+        private void InitDepthCamera()
         {
-            infraredFrameReader_ = sensor_.InfraredFrameSource.OpenReader();
-            var frameDesc = sensor_.InfraredFrameSource.FrameDescription;
-            irData_ = new ushort[frameDesc.LengthInPixels];
-            infraredTexture_ = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R16, false);
             
-            onInfraredFrameArrived_ = (frameReader, eventArgs) =>
+            depthFrameReader_ = sensor_.DepthFrameSource.OpenReader();
+            var frameDesc = sensor_.DepthFrameSource.FrameDescription;
+            depthData_ = new ushort[frameDesc.LengthInPixels];
+            depthTexture_ = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R16, false);
+            
+            onDepthFrameArrived_ = (frameReader, eventArgs) =>
             {
-                if(!infrared)
+                if(!depth)
                     return;
                 
-                using (var infraredFrame = eventArgs.FrameReference.AcquireFrame())
+                using (var depthFrame = eventArgs.FrameReference.AcquireFrame())
                 {
-                    if (infraredFrame == null) 
+                    if (depthFrame == null) 
                         return;
                     
-                    infraredFrame.CopyFrameDataToArray(irData_);
+                    depthFrame.CopyFrameDataToArray(depthData_);
                     unsafe
                     {
-                        fixed (ushort* irDataPtr = irData_)
+                        fixed (ushort* irDataPtr = depthData_)
                         {
-                            infraredTexture_.LoadRawTextureData((IntPtr) irDataPtr, sizeof(ushort) * irData_.Length);
+                            depthTexture_.LoadRawTextureData((IntPtr) irDataPtr, sizeof(ushort) * depthData_.Length);
                         }
                     }
 
-                    infraredTexture_.Apply();
+                    depthTexture_.Apply();
                 }
-                infraredFrameReceived.Invoke(infraredTexture_);
+                depthFrameReceived.Invoke(depthTexture_);
 
             };
-            infraredFrameReader_.FrameArrived += onInfraredFrameArrived_;
+            depthFrameReader_.FrameArrived += onDepthFrameArrived_;
         }
 
         private void InitSkeletonTracking()
@@ -137,7 +138,7 @@ namespace cylvester
         
         private void OnDestroy()
         {
-            infraredFrameReader_.FrameArrived -= onInfraredFrameArrived_;
+            depthFrameReader_.FrameArrived -= onDepthFrameArrived_;
             bodyFrameReader_.FrameArrived -= onBodyFrameArrived_;
         }
     }
