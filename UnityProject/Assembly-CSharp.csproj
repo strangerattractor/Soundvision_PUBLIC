@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
+    <Compile Include="Assets\Scenes\Examples\KinectSceneGraph\AdvancedMesh.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton ForceHands with Sound\Scripts\EmissionBind.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton ForceHands with Sound\Scripts\JointMarker.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton ForceHands with Sound\Scripts\MultipleObjectCamera.cs" />
