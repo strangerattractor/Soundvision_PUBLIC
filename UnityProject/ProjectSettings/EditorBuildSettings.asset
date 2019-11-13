@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/Qlist/Qlist.unity
-    guid: be0a328deb6c1504c98e054a6e6a7b9e
+    path: Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Force Skeleton.unity
+    guid: a2f6f36eb3d40b246b96ec9fd3ca21be
   m_configObjects: {}
