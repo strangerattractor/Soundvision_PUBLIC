@@ -618,8 +618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b54a31bc1a14c1abb51fe86c56c6227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infrared: 1
-  infraredFrameReceived:
+  depth: 1
+  depthFrameReceived:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 199707379}
