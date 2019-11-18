@@ -18,6 +18,7 @@ namespace cylvester
         private Renderer spectroGramRenderer_;
         private Renderer chikashiRenderer_;
         private static readonly int baseColorMap_ = Shader.PropertyToID("_BaseColorMap");
+        private static readonly int spectrogramIndex_ = Shader.PropertyToID("_Index");
         private static readonly int myTexture_ = Shader.PropertyToID("_MyTexture");
         
         void Start()
@@ -31,6 +32,7 @@ namespace cylvester
         {
             waveFormRenderer_.material.SetTexture(baseColorMap_, waveform.Texture);
             spectroGramRenderer_.material.SetTexture(baseColorMap_, spectrogram.Texture);
+            spectroGramRenderer_.material.SetInt(spectrogramIndex_, spectrogram.Index);
             chikashiRenderer_.material.SetTexture(myTexture_, waveform.Texture);
         }
     }

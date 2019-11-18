@@ -9,7 +9,7 @@ namespace cylvester
         Texture2D Texture { get; }
     }
     
-    public class Waveform : MonoBehaviour, ISpectrogram
+    public class Waveform : MonoBehaviour, IWaveform
     {
         [SerializeField] private PdBackend pdBackend;
         [SerializeField, Range(1, 16)] private int channel = 1;

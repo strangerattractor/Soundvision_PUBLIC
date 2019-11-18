@@ -155,7 +155,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 416cd1054fe561246b9c57b0f3b4ad15, type: 2}
+  - {fileID: 2100000, guid: bc011735a2ae26747abeb14ea34f7289, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -229,7 +229,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba69cee3466a304d9d570268f717413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onControlMessageReceived:
+  midiMessageReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  midiSyncReceived:
     m_PersistentCalls:
       m_Calls: []
   samplePlayback: 0

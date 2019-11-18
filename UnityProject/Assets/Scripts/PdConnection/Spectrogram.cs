@@ -7,6 +7,7 @@ namespace cylvester
     public interface ISpectrogram
     {
         Texture2D Texture { get; }
+        int Index { get;  }
     }
     
     public class Spectrogram : MonoBehaviour, ISpectrogram
@@ -46,6 +47,7 @@ namespace cylvester
         }
 
         public Texture2D Texture => texture_;
+        public int Index => index_;
     }
 
 
