@@ -55,8 +55,8 @@ public class CreatePlane : ScriptableWizard
 
     void OnWizardUpdate()
     {
-        widthSegments = Mathf.Clamp(widthSegments, 1, 254);
-        lengthSegments = Mathf.Clamp(lengthSegments, 1, 254);
+        widthSegments = Mathf.Clamp(widthSegments, 1, 65534);
+        lengthSegments = Mathf.Clamp(lengthSegments, 1, 65534);
     }
 
 
@@ -122,6 +122,7 @@ public class CreatePlane : ScriptableWizard
 
         string planeAssetName = plane.name + widthSegments + "x" + lengthSegments + "W" + width + "L" + length + (orientation == Orientation.Horizontal ? "H" : "V") + anchorId + ".asset";
         Mesh m = (Mesh)AssetDatabase.LoadAssetAtPath("Assets/Editor/" + planeAssetName, typeof(Mesh));
+
 
         if (m == null)
         {
