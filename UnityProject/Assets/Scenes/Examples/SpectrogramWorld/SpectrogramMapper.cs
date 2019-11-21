@@ -15,7 +15,6 @@ namespace cylvester
 
         private static readonly int baseColorMap_ = Shader.PropertyToID("_BaseColorMap");
         private static readonly int spectrogramIndex_ = Shader.PropertyToID("_Index");
-
         
         void Start()
         {

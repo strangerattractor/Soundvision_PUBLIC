@@ -55,8 +55,8 @@ public class CreatePlane : ScriptableWizard
 
     void OnWizardUpdate()
     {
-        widthSegments = Mathf.Clamp(widthSegments, 1, 65534);
-        lengthSegments = Mathf.Clamp(lengthSegments, 1, 65534);
+        widthSegments = Mathf.Clamp(widthSegments, 1, 254);
+        lengthSegments = Mathf.Clamp(lengthSegments, 1, 254);
     }
 
 

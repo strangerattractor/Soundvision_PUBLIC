@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scenes\Examples\PdBackend\script\BoomBall.cs" />
     <Compile Include="Assets\Scenes\Examples\PdBackend\script\MoveBall.cs" />
     <Compile Include="Assets\Scenes\Examples\PostProcessing\script\BokehBind.cs" />
+    <Compile Include="Assets\Scenes\Examples\SpectrogramWorld\ChangeHue.cs" />
     <Compile Include="Assets\Scenes\Examples\SpectrogramWorld\MeshGen.cs" />
     <Compile Include="Assets\Scenes\Examples\SpectrogramWorld\SpectrogramMapper.cs" />
     <Compile Include="Assets\Scenes\Examples\Texture\TextureMapper.cs" />
