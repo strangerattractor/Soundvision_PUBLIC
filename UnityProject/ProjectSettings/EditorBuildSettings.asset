@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Force Skeleton.unity
-    guid: a2f6f36eb3d40b246b96ec9fd3ca21be
+    path: Assets/Scenes/Examples/SpectrogramWorld/SpectrogramWorldDemo.unity
+    guid: 9bcfcfffba6021143a9c470b6e3dd907
   m_configObjects: {}
