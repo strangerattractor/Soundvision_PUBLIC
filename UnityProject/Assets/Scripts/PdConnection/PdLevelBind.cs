@@ -15,6 +15,7 @@ namespace cylvester
         [SerializeField] private PdBackend pdbackend;
         [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] private LevelEvent levelChanged;
+        [SerializeField] bool logLevel;
         private float level_;
         
         void Update()
@@ -25,6 +26,11 @@ namespace cylvester
             {
                 level_ = level;
                 levelChanged.Invoke(level_);
+
+                if (logLevel)
+                { 
+                Debug.Log("Level:" + level_);
+                }
             }
         }
     }

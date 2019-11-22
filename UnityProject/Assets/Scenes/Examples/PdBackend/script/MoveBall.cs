@@ -4,20 +4,24 @@ namespace cylvester
 {
     interface IMoveBall
     {
-        float Position { set; }
+        float Offset { set; }
     }
 
     public class MoveBall : MonoBehaviour, IMoveBall
     {
-        public float Position
+        float x = 1.0f;
+
+        public float Offset
         {
             set
             {
-                var x = value * 0.1f;
-                transform.localPosition = new Vector3(x, 4f, 3f);
+               x = value * 0.1f;
+               transform.localPosition = new Vector3(x, 4f, 3f);
             }
         }
     }
+
+
 
 
 }

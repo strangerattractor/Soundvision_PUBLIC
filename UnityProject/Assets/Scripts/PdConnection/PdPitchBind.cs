@@ -15,6 +15,7 @@ namespace cylvester
         [SerializeField] private PdBackend pdbackend;
         [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] private LevelEvent pitchChanged;
+        [SerializeField] bool logPitch;
         private float pitch_;
         
         void Update()
@@ -25,6 +26,10 @@ namespace cylvester
             {
                 pitch_ = pitch;
                 pitchChanged.Invoke(pitch_);
+                if (logPitch)
+                {
+                    Debug.Log("Pitch: " + pitch);
+                }
             }
         }
     }
