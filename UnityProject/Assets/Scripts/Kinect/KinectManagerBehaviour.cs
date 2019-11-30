@@ -27,6 +27,14 @@ namespace cylvester
 
         private ushort [] depthData_;
         private Texture2D depthTexture_;
+
+        //QUICK CODE FROM FRIEDRICH - SORRY FOR EVERYTHING!!!
+        //private byte[] depthData8bit_;
+        //private Texture2D depthTexture8bit_;
+        //public ushort front;
+        //public ushort back;
+        //FK CODE ENDS
+
         private Body[] bodies_;
         
         private EventHandler<DepthFrameArrivedEventArgs> onDepthFrameArrived_;
@@ -56,7 +64,12 @@ namespace cylvester
             var frameDesc = sensor_.DepthFrameSource.FrameDescription;
             depthData_ = new ushort[frameDesc.LengthInPixels];
             depthTexture_ = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.R16, false);
-            
+
+            //FRIEDRICH QUICK CODE FROM HERE
+            //depthData8bit_ = new byte[frameDesc.LengthInPixels];
+            //depthTexture8bit_ = new Texture2D(frameDesc.Width, frameDesc.Height, TextureFormat.Alpha8, false); 
+            //END FRIEDRICH
+
             onDepthFrameArrived_ = (frameReader, eventArgs) =>
             {
                 if(!depth)
@@ -75,6 +88,24 @@ namespace cylvester
                             depthTexture_.LoadRawTextureData((IntPtr) irDataPtr, sizeof(ushort) * depthData_.Length);
                         }
                     }
+
+                    //SUPER DUPER QUICK FRIEDRICH CODE
+
+                    //float distanceFrontBack = back - front;
+                    //calculation should be: 
+                    //result = incoming data - front 
+                    //result = result * 255/distanceFrontBack
+
+                    //for (int i = 0; i < depthData_.Length; i++)
+                    //{
+                    //    float value = (float)(depthData_[i] - front);
+                    //    value = value * 255.0f / distanceFrontBack;
+
+                    //    depthData8bit_[i] = Convert.ToByte(value);
+                    //}
+                    //depthTexture8bit_.Apply();
+
+                    //END SUPER QUICK FRIEDRICH CODE
 
                     depthTexture_.Apply();
                 }
