@@ -5,4 +5,5 @@
   &lt;Assembly Path="C:\Users\chikashi\Development\Soundvision\UnityProject\Assets\Plugins\NSubstitute.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Kinect/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=qlist/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Shmem/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

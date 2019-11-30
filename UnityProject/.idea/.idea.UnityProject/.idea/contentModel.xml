@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Cylvester\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Cylvester\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_UnityProject.442702191.00" t="ExcludeRecursive" />
-    <e p="D:\SoundVision_Repo\Soundvision\UnityProject" t="IncludeRecursive">
+    <e p="C:\Users\chikashi\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\chikashi\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_UnityProject.1346624737.00" t="ExcludeRecursive" />
+    <e p="C:\Users\chikashi\Development\Soundvision\UnityProject" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -38,11 +38,24 @@
                 <e p="RMSAnalyzer.cs" t="Include" />
               </e>
             </e>
+            <e p="KinectSceneGraph" t="Include">
+              <e p="AdvancedMesh.cs" t="Include" />
+            </e>
             <e p="KinectSkeleton" t="Include">
-              <e p="script" t="Include">
+              <e p="Scripts" t="Include">
                 <e p="RightHandFire.cs" t="Include" />
                 <e p="RightHandMarker.cs" t="Include" />
                 <e p="Skeleton.cs" t="Include" />
+              </e>
+            </e>
+            <e p="KinectSkeleton ForceHands with Sound" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="EmissionBind.cs" t="Include" />
+                <e p="JointMarker.cs" t="Include" />
+                <e p="MultipleObjectCamera.cs" t="Include" />
+                <e p="VFXAttractorBinder.cs" t="Include" />
+                <e p="VFXBinder.cs" t="Include" />
+                <e p="VFXEmitterBinder.cs" t="Include" />
               </e>
             </e>
             <e p="LevelThreshold" t="Include">
@@ -67,9 +80,25 @@
                 <e p="MoveBall.cs" t="Include" />
               </e>
             </e>
+            <e p="Pitch VFX" t="Include">
+              <e p="PitchPosition.cs" t="Include" />
+            </e>
             <e p="PostProcessing" t="Include">
               <e p="script" t="Include">
                 <e p="BokehBind.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Qlist" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="QlistMarker.cs" t="Include" />
+                <e p="TimelineController.cs" t="Include" />
+              </e>
+            </e>
+            <e p="SpectrogramWorld" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ChangeHue.cs" t="Include" />
+                <e p="MeshGen.cs" t="Include" />
+                <e p="SpectrogramMapper.cs" t="Include" />
               </e>
             </e>
             <e p="Texture" t="Include">
