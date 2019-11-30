@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/SpectrogramWorld/SpectrogramWorldDemo.unity
-    guid: 9bcfcfffba6021143a9c470b6e3dd907
+    path: Assets/Scenes/Examples/VisualEffectGraph/Max Fun 1.unity
+    guid: 327e45240590ab84082fa4266483ca77
+  - enabled: 1
+    path: Assets/Scenes/Examples/VisualEffectGraph/VFX Graph Plane.unity
+    guid: cdf3404fd0b1f6c4ead9fb8bb270f164
   m_configObjects: {}
