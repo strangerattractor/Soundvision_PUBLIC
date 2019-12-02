@@ -116,6 +116,80 @@ MonoBehaviour:
   cascadeShadowBorder3:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-3981158851583105287
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384c4d03a551c44448145f4093304119, type: 3}
+  m_Name: ScreenSpaceReflection
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  depthBufferThickness:
+    m_OverrideState: 1
+    m_Value: 0.01
+    min: 0
+    max: 1
+  screenFadeDistance:
+    m_OverrideState: 1
+    m_Value: 0.1
+    min: 0
+    max: 1
+  minSmoothness:
+    m_OverrideState: 1
+    m_Value: 0.9
+    min: 0
+    max: 1
+  smoothnessFadeStart:
+    m_OverrideState: 1
+    m_Value: 0.9
+    min: 0
+    max: 1
+  reflectSky:
+    m_OverrideState: 1
+    m_Value: 1
+  rayMaxIterations:
+    m_OverrideState: 1
+    m_Value: 32
+  enableRaytracing:
+    m_OverrideState: 0
+    m_Value: 0
+  rayLength:
+    m_OverrideState: 0
+    m_Value: 10
+    min: 0.001
+    max: 50
+  clampValue:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0.001
+    max: 10
+  temporalAccumulationWeight:
+    m_OverrideState: 0
+    m_Value: 0.1
+    min: 0.001
+    max: 1
+  spatialFilterRadius:
+    m_OverrideState: 0
+    m_Value: 4
+  numSamples:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 1
+    max: 32
+  enableFilter:
+    m_OverrideState: 0
+    m_Value: 0
+  filterRadius:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 1
+    max: 32
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,8 +205,9 @@ MonoBehaviour:
   components:
   - {fileID: -6543854886712313374}
   - {fileID: -5212262289134541047}
-  - {fileID: 2571966065225955267}
+  - {fileID: 2665586700123750556}
   - {fileID: -7899671507943415206}
+  - {fileID: -3981158851583105287}
 --- !u!114 &1409399634823879722
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -175,7 +250,7 @@ MonoBehaviour:
     m_Value: 1
     min: 0
     max: 20
---- !u!114 &2571966065225955267
+--- !u!114 &2665586700123750556
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,29 +263,29 @@ MonoBehaviour:
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
   active: 0
-  m_AdvancedMode: 1
+  m_AdvancedMode: 0
   focusMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   focusDistance:
     m_OverrideState: 0
     m_Value: 10
     min: 0.1
   nearFocusStart:
     m_OverrideState: 1
-    m_Value: 28.29
+    m_Value: 0
     min: 0
   nearFocusEnd:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 2
     min: 0
   farFocusStart:
     m_OverrideState: 1
-    m_Value: 7.24
+    m_Value: 15
     min: 0
   farFocusEnd:
     m_OverrideState: 1
-    m_Value: 68.9
+    m_Value: 5
     min: 0
   nearSampleCount:
     m_OverrideState: 0
@@ -236,8 +311,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   resolution:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 2
 --- !u!114 &5066986204273790376
 MonoBehaviour:
   m_ObjectHideFlags: 3
