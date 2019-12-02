@@ -17,7 +17,7 @@ namespace cylvester
             var timeline = (TimelineAsset)playableDirector.playableAsset;
             var markerTrack = timeline.markerTrack;
             var markers = markerTrack.GetMarkers();
-            qlistMarkers_ = new Boo.Lang.List<QlistMarker>();
+            qlistMarkers_ = new List<QlistMarker>();
             foreach (var marker in markers)
                 qlistMarkers_.Add((QlistMarker)marker);
         }

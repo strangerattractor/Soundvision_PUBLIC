@@ -112,7 +112,10 @@
             <e p="VisualEffectGraph" t="Include">
               <e p="script" t="Include">
                 <e p="FlareBind.cs" t="Include" />
+                <e p="PitchVFXBind.cs" t="Include" />
                 <e p="SmokeBind.cs" t="Include" />
+                <e p="SpectrumVFXBind1.cs" t="Include" />
+                <e p="SpectrumVFXBind2.cs" t="Include" />
               </e>
             </e>
           </e>
