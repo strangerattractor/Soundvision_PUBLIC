@@ -21,7 +21,7 @@ namespace cylvester
             set
             {
                 var pitchOffset = value * pitchMultiplier;
-                transform.localPosition = new Vector3(originalPosition.x, originalPosition.y + pitchOffset, originalPosition.z);
+                transform.localPosition = new Vector3(originalPosition.x, originalPosition.y, originalPosition.z + pitchOffset);
             }
         }
     }
