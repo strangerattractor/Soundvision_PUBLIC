@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0013490503, g: 0.0011814049, b: 0.0008122615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 65620553}
   - component: {fileID: 65620552}
+  - component: {fileID: 65620555}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -147,8 +148,8 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: bcf835115633ef14493f2945eef5ec1b, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 1
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -157,7 +158,11 @@ PlayableDirector:
   - key: {fileID: -2843494771311315102, guid: bcf835115633ef14493f2945eef5ec1b, type: 2}
     value: {fileID: 984273557}
   - key: {fileID: 3556270976239842146, guid: bcf835115633ef14493f2945eef5ec1b, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 155821760}
+  - key: {fileID: 6558136479817748790, guid: bcf835115633ef14493f2945eef5ec1b, type: 2}
+    value: {fileID: 253332698}
+  - key: {fileID: -1413438062129672872, guid: bcf835115633ef14493f2945eef5ec1b, type: 2}
+    value: {fileID: 1564454366}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &65620553
@@ -167,13 +172,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65620551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1930141240}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65620555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65620551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117e3226047d79a4d86bee38ca1ca894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 65620552}
+  stateManager: {fileID: 850208555}
 --- !u!1 &155821760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1105,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   midiMessageReceived:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 850208555}
+        m_MethodName: OnMidiReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   midiSyncReceived:
     m_PersistentCalls:
       m_Calls: []
@@ -1103,16 +1133,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6be1ae37d9581545a6d213046b19b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFileName: qlist
+  csvFileName: qlist_VFX_Graph_Demo
   onStateChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 850208554}
+        m_MethodName: SendState
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 65620555}
+        m_MethodName: OnStateChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2206,7 +2247,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -17.45, y: -174.8, z: -2.1}
 --- !u!1 &1669078276
 GameObject:
@@ -2378,6 +2419,7 @@ Transform:
   m_Children:
   - {fileID: 850208553}
   - {fileID: 2012278706}
+  - {fileID: 65620553}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
