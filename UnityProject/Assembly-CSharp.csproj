@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\PdConnection\MidiParser.cs" />
     <Compile Include="Assets\Scripts\PdConnection\MidiSequencer.cs" />
     <Compile Include="Assets\Scripts\PdConnection\MidiSyncedLoop.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\MidiTransitionController.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdArray.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdArrayContainer.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdArraySelector.cs" />

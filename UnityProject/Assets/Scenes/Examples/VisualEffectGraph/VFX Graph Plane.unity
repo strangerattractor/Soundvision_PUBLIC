@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0013490503, g: 0.0011814049, b: 0.0008122615, a: 1}
+  m_IndirectSpecularColor: {r: 0.0013421604, g: 0.0011744275, b: 0.0008066663, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 65620553}
   - component: {fileID: 65620552}
   - component: {fileID: 65620555}
+  - component: {fileID: 65620554}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -179,6 +180,22 @@ Transform:
   m_Father: {fileID: 1930141240}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65620554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65620551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 295c71eba0347b04aa841307f8555e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneBarLoopButton: 86
+  fourBarLoopButton: 94
+  channel: 3
+  stateManager: {fileID: 850208555}
 --- !u!114 &65620555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 65620552}
   stateManager: {fileID: 850208555}
+  transitionController: {fileID: 65620554}
+  initTransitionTime: 16
 --- !u!1 &155821760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1086,7 @@ GameObject:
   - component: {fileID: 850208554}
   - component: {fileID: 850208555}
   - component: {fileID: 850208556}
+  - component: {fileID: 850208557}
   m_Layer: 0
   m_Name: PdBackend
   m_TagString: Untagged
@@ -1117,9 +1137,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 65620554}
+        m_MethodName: OnMidiMessageReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 850208557}
+        m_MethodName: OnMidiMessageReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   midiSyncReceived:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 65620554}
+        m_MethodName: OnSyncReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   samplePlayback: 0
 --- !u!114 &850208555
 MonoBehaviour:
@@ -1174,6 +1227,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pdBackend: {fileID: 850208554}
   channel: 1
+--- !u!114 &850208557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850208552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f237c64f02a2241a30c5c0b5c087e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logAll: 0
+  logFiltered: 0
+  filterStatusByte: 128
 --- !u!1 &859452785
 GameObject:
   m_ObjectHideFlags: 0
