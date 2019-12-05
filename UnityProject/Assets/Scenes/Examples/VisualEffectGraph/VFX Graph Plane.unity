@@ -194,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oneBarLoopButton: 86
   fourBarLoopButton: 94
+  playableDirector: {fileID: 65620552}
   channel: 3
   stateManager: {fileID: 850208555}
 --- !u!114 &65620555

@@ -9,7 +9,6 @@ namespace cylvester
     {
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private StateManager stateManager;
-        [SerializeField] private MidiTransitionController transitionController;
 
         [SerializeField] private float initTransitionTime = 16f;
         
@@ -23,6 +22,10 @@ namespace cylvester
             qlistMarkers_ = new List<QlistMarker>();
             foreach (var marker in markers)
                 qlistMarkers_.Add((QlistMarker)marker);
+
+            playableDirector.Stop();
+            playableDirector.time = 0;
+            playableDirector.Play();
         }
         
         public void OnStateChanged(IStateReader stateManager)
@@ -32,18 +35,9 @@ namespace cylvester
             {
                 if (qlistMarker.id != stateName) continue;
 
-                playableDirector.Stop();
+                //playableDirector.Stop(); //This resets speed to 1, so I had to cut it. 
                 playableDirector.time = qlistMarker.time;
                 playableDirector.Play();
-
-                if (transitionController != null)
-                { 
-                    playableDirector.playableGraph.GetRootPlayable(0)
-                        .SetSpeed(transitionController.TimelinePlaybackSpeed()); //Set Playback Speed of Timeline for CYL transitions
-                }
-                else
-                playableDirector.playableGraph.GetRootPlayable(0)
-                        .SetSpeed(initTransitionTime);
                 break;
             }
         }
@@ -54,8 +48,11 @@ namespace cylvester
                 return;
 
             var nextState = stateManager.NextState.Value;
-            if(notification.id == nextState.Title)
+            if (notification.id == nextState.Title)
+            { 
                 playableDirector.Pause(); // reaches the next state (marker) in timeline
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+            }
         }
     }
 }

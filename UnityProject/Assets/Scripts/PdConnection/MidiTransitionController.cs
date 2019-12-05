@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Timeline;
+using UnityEngine.Playables;
 
 namespace cylvester
 { 
@@ -7,6 +9,7 @@ namespace cylvester
     {
         [SerializeField] private int oneBarLoopButton = 86;
         [SerializeField] private int fourBarLoopButton = 94;
+        [SerializeField] private PlayableDirector playableDirector;
 
         private int oneBarLoop = 96;
         private int fourBarLoop = 384;
@@ -18,10 +21,6 @@ namespace cylvester
 
         [SerializeField] StateManager stateManager;
 
-        public void Start()
-        {
-            
-        }
 
         public void OnSyncReceived(MidiSync midiSync, int counter)
         {
@@ -35,11 +34,13 @@ namespace cylvester
                 if (mes.Data1 == oneBarLoopButton) //Button fourBarLoop
                 {
                     RestTime(fourBarLoop - currentTick % fourBarLoop);
+                    TimelinePlaybackSpeed();
                 }
 
                 if (mes.Data1 == fourBarLoopButton) //Button oneBarLoop
                 {
                     RestTime(oneBarLoop - currentTick % oneBarLoop);
+                    TimelinePlaybackSpeed();
                 }
             }
         }
@@ -49,16 +50,11 @@ namespace cylvester
             restTimeS = restTick / 24.0f / stateManager.CurrentState.Bpm * 60;
         }
 
-        public float TimelinePlaybackSpeed ()
+        public void TimelinePlaybackSpeed ()
         {
             float timelinePlaybackSpeed;
-            /*           if (restTimeS == 0f)
-                       {
-                           restTimeS = initTransitionTime; //Initial Transition Time
-                       }
-           */
             timelinePlaybackSpeed = transitionLength / Mathf.Clamp(restTimeS, 0.001f, transitionLength);
-            return timelinePlaybackSpeed;
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed); //set playbackspeed of Timeline
         }
     }
 }
