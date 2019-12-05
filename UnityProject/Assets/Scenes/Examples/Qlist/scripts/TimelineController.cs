@@ -10,7 +10,7 @@ namespace cylvester
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private StateManager stateManager;
 
-        [SerializeField] private float initTransitionTime = 16f;
+        [SerializeField] private float initTransitionFactor = 8f;
         
         private IList<QlistMarker> qlistMarkers_;
         
@@ -51,7 +51,7 @@ namespace cylvester
             if (notification.id == nextState.Title)
             { 
                 playableDirector.Pause(); // reaches the next state (marker) in timeline
-                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(initTransitionFactor);
             }
         }
     }

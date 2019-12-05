@@ -1054,9 +1054,7 @@ MonoBehaviour:
   m_Name: Qlist Marker
   m_EditorClassIdentifier: 
   m_Time: 80
-  stateName: 'ShowAll
-
-'
+  stateName: ShowAll
 --- !u!114 &-2843494771311315102
 MonoBehaviour:
   m_ObjectHideFlags: 1

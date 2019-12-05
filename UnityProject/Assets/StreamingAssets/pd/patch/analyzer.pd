@@ -290,8 +290,8 @@ Roses_Front.wav \; TimbreID_Test.wav \;;
 #X text 416 223 176... control channel 1;
 #X obj 6 194 midirealtimein;
 #X obj 242 41 netreceive -u 54345;
-#X obj 598 90 cnv 15 500 60 empty current PositionCloud 20 12 0 45
--204786 -66577 0;
+#X obj 598 90 cnv 15 500 60 empty current PontCloud 20 12 0 45 -204786
+-66577 0;
 #X obj 786 234 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
 -1 -1;
 #X obj 596 227 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
@@ -302,10 +302,10 @@ Roses_Front.wav \; TimbreID_Test.wav \;;
 -1 -1;
 #X msg 692 303 send 176 127 1;
 #X msg 786 304 send 176 127 2;
-#X obj 594 46 cnv 12 500 30 empty previous PontCloud 20 12 0 25 -262130
+#X obj 594 46 cnv 12 500 30 empty previous needles 20 12 0 25 -262130
 -66577 0;
-#X obj 596 152 cnv 12 500 30 empty next Forces 20 12 0 25 -262130 -66577
-0;
+#X obj 596 152 cnv 12 500 30 empty next PositionCloud 20 12 0 25 -262130
+-66577 0;
 #X obj 879 467 declare -lib timbreID/timbreIDLib;
 #N canvas 28 541 1273 735 timbreID_example 0;
 #X obj 77 657 nbx 3 28 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -420,7 +420,7 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
 #X restore 405 71 pd shmem;
-#N canvas -2849 181 1014 1074 CYLVESTERmidi 1;
+#N canvas 700 143 1014 1074 CYLVESTERmidi 1;
 #X obj 192 306 bng 15 250 50 0 4bar_trig_sim empty 4_Bar_trigger_Sim
 17 7 0 10 -203904 -1 -1;
 #X obj 192 287 bng 15 250 50 0 1bar_trig_sim empty 1_Bar_trigger_Sim
@@ -803,8 +803,6 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 58 0 47 0;
 #X restore 598 377 pd CYLVESTERmidi;
 #X text 701 378 <--- this is only for reference;
-#X obj 758 193 ctlin 94 3;
-#X obj 845 191 ctlin 86 3;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 2 2 2;
@@ -845,5 +843,3 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 30 0 11 0;
 #X connect 31 0 11 0;
 #X connect 36 0 11 0;
-#X connect 40 0 25 0;
-#X connect 41 0 25 0;

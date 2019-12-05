@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0013421604, g: 0.0011744275, b: 0.0008066663, a: 1}
+  m_IndirectSpecularColor: {r: 0.0013490503, g: 0.0011814049, b: 0.0008122615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -195,6 +195,9 @@ MonoBehaviour:
   oneBarLoopButton: 86
   fourBarLoopButton: 94
   playableDirector: {fileID: 65620552}
+  lastSelectedScene: 0
+  currentSelectedScene: 0
+  nextSelectedScene: 0
   channel: 3
   stateManager: {fileID: 850208555}
 --- !u!114 &65620555
@@ -211,8 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 65620552}
   stateManager: {fileID: 850208555}
-  transitionController: {fileID: 65620554}
-  initTransitionTime: 16
+  initTransitionFactor: 8
 --- !u!1 &155821760
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSmooth: 1
-  releaseSmooth: 1
+  releaseSmooth: 3.44
   ignore0: 0
   onSmoothProcessed:
     m_PersistentCalls:
@@ -880,7 +882,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  channel: 0
+  channel: 5
 --- !u!1 &736002103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,7 +1242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f237c64f02a2241a30c5c0b5c087e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logAll: 0
+  logAll: 1
   logFiltered: 0
   filterStatusByte: 128
 --- !u!1 &859452785
@@ -1617,7 +1619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSmooth: 1
-  releaseSmooth: 1
+  releaseSmooth: 2
   ignore0: 0
   onSmoothProcessed:
     m_PersistentCalls:
@@ -1688,7 +1690,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  channel: 0
+  channel: 4
 --- !u!1 &1471219110
 GameObject:
   m_ObjectHideFlags: 0
