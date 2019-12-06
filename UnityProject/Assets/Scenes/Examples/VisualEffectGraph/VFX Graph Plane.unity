@@ -195,7 +195,6 @@ MonoBehaviour:
   oneBarLoopButton: 86
   fourBarLoopButton: 94
   playableDirector: {fileID: 65620552}
-  lastSelectedScene: 0
   currentSelectedScene: 0
   nextSelectedScene: 0
   channel: 3
@@ -1242,9 +1241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f237c64f02a2241a30c5c0b5c087e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logAll: 1
-  logFiltered: 0
-  filterStatusByte: 128
+  logAll: 0
+  logFiltered: 1
+  filterStatusByte: 178
 --- !u!1 &859452785
 GameObject:
   m_ObjectHideFlags: 0
