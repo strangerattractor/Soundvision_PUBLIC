@@ -4,18 +4,17 @@ using UnityEngine.Playables;
 
 namespace cylvester
 {
-    public enum CYLCommand
-    { 
-        OneBarLoopButton = 94,
-        FourBarLoopButton = 86,
-        NextSelectedScene = 18,
-        CurrentSelectedScene = 17,
-        InstantTrigger = 2,
-    }
-
     public class CylMidiTransitionController : MonoBehaviour
     {
-
+        private enum CylCommand
+        { 
+            OneBarLoopButton = 94,
+            FourBarLoopButton = 86,
+            NextSelectedScene = 18,
+            CurrentSelectedScene = 17,
+            InstantTrigger = 2,
+        }
+        
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] private StateManager stateManager;
@@ -25,12 +24,21 @@ namespace cylvester
         private const int FourBarTrigger = OneBarTrigger * 4;
         private const float TransitionLength = 16; 
         
-        private bool instantChangeActive_;
+        private ScheduledAction scheduledAction_;
         private int currentTick_;
         private float restTime_ = 1f;
         private int currentSelectedScene_ ;
         private int nextSelectedScene_;
 
+        private void Start()
+        {
+            scheduledAction_ = new ScheduledAction(() =>
+            {
+                stateManager.SelectedState = currentSelectedScene_;
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
+            });
+        }
+        
         public void OnSyncReceived(MidiSync midiSync, int counter)
         {
             currentTick_ = counter;
@@ -40,33 +48,26 @@ namespace cylvester
         {
             if (mes.Status - 176 != channel - 1) return;
 
-            var command = (CYLCommand)mes.Data1;
+            var command = (CylCommand)mes.Data1;
             switch (command)
             {
-                case CYLCommand.NextSelectedScene:
+                case CylCommand.NextSelectedScene:
                 {
                     nextSelectedScene_ = mes.Data2;
                     break;
                 }
-                case CYLCommand.InstantTrigger:
+                case CylCommand.InstantTrigger:
                 {
-                    instantChangeActive_ = true;
+                    scheduledAction_.Ready();
                     break;
                 }
-                case CYLCommand.CurrentSelectedScene:
+                case CylCommand.CurrentSelectedScene:
                 {
                     currentSelectedScene_ = mes.Data2;
-
-                    if (instantChangeActive_)
-                    {
-                        stateManager.SelectedState = currentSelectedScene_;
-                        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
-                        instantChangeActive_ = false;
-                    }
-
+                    scheduledAction_.Go();
                     break;
                 }
-                case CYLCommand.FourBarLoopButton:
+                case CylCommand.FourBarLoopButton:
                 {
                     if (nextSelectedScene_ > currentSelectedScene_)
                     {
@@ -83,7 +84,7 @@ namespace cylvester
 
                     break;
                 }
-                case CYLCommand.OneBarLoopButton:
+                case CylCommand.OneBarLoopButton:
                 {
                     UpdateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
                     UpdateTimelinePlaybackSpeed(1f);
