@@ -192,13 +192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295c71eba0347b04aa841307f8555e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oneBarLoopButton: 86
-  fourBarLoopButton: 94
   playableDirector: {fileID: 65620552}
-  currentSelectedScene: 0
-  nextSelectedScene: 0
   channel: 3
   stateManager: {fileID: 850208555}
+  instaTransitionSpeed: 10
 --- !u!114 &65620555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1242,7 +1239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logAll: 0
-  logFiltered: 1
+  logFiltered: 0
   filterStatusByte: 178
 --- !u!1 &859452785
 GameObject:

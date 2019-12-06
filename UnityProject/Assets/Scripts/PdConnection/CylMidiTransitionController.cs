@@ -77,9 +77,9 @@ namespace cylvester
                     case (byte) CYL_Command.FourBarLoopButton:
                         if (nextSelectedScene > currentSelectedScene)
                         { 
-                        RestTime(fourBarTrigger - currentTick % fourBarTrigger);
-                        TimelinePlaybackSpeed((int) Timeline_Command.Forwards);
-                        stateManager.SelectedState = nextSelectedScene;
+                            RestTime(fourBarTrigger - currentTick % fourBarTrigger);
+                            TimelinePlaybackSpeed((int) Timeline_Command.Forwards);
+                            stateManager.SelectedState = nextSelectedScene;
                         }
                         else
                         {

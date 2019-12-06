@@ -53,7 +53,7 @@ namespace cylvester
             Debug.Log("next State " + prevState.Title);
             Debug.Log("prev State " + prevState.Title);
 
-            if (notification.id == nextState.Title || notification.id == prevState.Title)
+            if (notification.id == nextState.Title)
             { 
                 playableDirector.Pause(); // reaches the next state (marker) in timeline
                 playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(initTransitionFactor); // Max added this instead of .Stop
