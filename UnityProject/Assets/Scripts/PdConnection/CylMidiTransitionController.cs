@@ -26,7 +26,6 @@ namespace cylvester
         
         private ScheduledAction scheduledAction_;
         private int currentTick_;
-        private float restTime_ = 1f;
         private int currentSelectedScene_ ;
         private int nextSelectedScene_;
 
@@ -69,16 +68,15 @@ namespace cylvester
                 }
                 case CylCommand.FourBarLoopButton:
                 {
+                    var restTime = UpdateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
                     if (nextSelectedScene_ > currentSelectedScene_)
                     {
-                        UpdateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
-                        UpdateTimelinePlaybackSpeed(1f);
+                        UpdateTimelinePlaybackSpeed(1f, restTime);
                         stateManager.SelectedState = nextSelectedScene_;
                     }
                     else
                     {
-                        UpdateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
-                        UpdateTimelinePlaybackSpeed(-1f);
+                        UpdateTimelinePlaybackSpeed(-1f, restTime);
                         stateManager.SelectedState = nextSelectedScene_ + 2;
                     }
 
@@ -86,8 +84,8 @@ namespace cylvester
                 }
                 case CylCommand.OneBarLoopButton:
                 {
-                    UpdateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
-                    UpdateTimelinePlaybackSpeed(1f);
+                    var restTime = UpdateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
+                    UpdateTimelinePlaybackSpeed(1f, restTime);
                     stateManager.SelectedState = nextSelectedScene_;
                     break;
                 }
@@ -97,15 +95,15 @@ namespace cylvester
             }
         }
 
-        private void UpdateRestTime(int restTicks)
+        private float UpdateRestTime(int restTicks)
         {
-            restTime_ = restTicks / 24.0f / stateManager.CurrentState.Bpm * 60f;
+            return restTicks / 24f / stateManager.CurrentState.Bpm * 60f;
         }
 
-        private void UpdateTimelinePlaybackSpeed(float speed)
+        private void UpdateTimelinePlaybackSpeed(float speed, float restTime)
         {
-            var timelinePlaybackSpeed = TransitionLength / Mathf.Clamp(restTime_, 0.001f, TransitionLength);
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed * speed); //set playbackspeed of Timeline
+            var timelinePlaybackSpeed = TransitionLength / Mathf.Clamp(restTime, 0.001f, TransitionLength);
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed * speed);
         }
     }
 }
