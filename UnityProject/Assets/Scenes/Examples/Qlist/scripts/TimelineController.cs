@@ -10,7 +10,7 @@ namespace cylvester
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private StateManager stateManager;
 
-        [SerializeField] private float initTransitionFactor = 8f;
+        [SerializeField] private float initTransitionFactor = 1f;
         
         private IList<QlistMarker> qlistMarkers_;
         
@@ -48,10 +48,15 @@ namespace cylvester
                 return;
 
             var nextState = stateManager.NextState.Value;
-            if (notification.id == nextState.Title)
+            var prevState = stateManager.PreviousState.Value; //ToDO this is the same as nextState???
+
+            Debug.Log("next State " + prevState.Title);
+            Debug.Log("prev State " + prevState.Title);
+
+            if (notification.id == nextState.Title || notification.id == prevState.Title)
             { 
                 playableDirector.Pause(); // reaches the next state (marker) in timeline
-                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(initTransitionFactor);
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(initTransitionFactor); // Max added this instead of .Stop
             }
         }
     }

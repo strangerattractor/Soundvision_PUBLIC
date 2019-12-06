@@ -5,25 +5,33 @@ using UnityEngine.Playables;
 
 namespace cylvester
 {
-
+    
     public enum CYL_Command
-    {
-        OneBarLoopButton = 86,
-        FourBarLoopButton = 94,
+    { 
+        //these are the midi CCs coming from the CYL_Axoloti box
+        OneBarLoopButton = 94,
+        FourBarLoopButton = 86,
         NextScelectedScene = 18,
         CurrentSelectedScene = 17,
-        instaTrig = 2
+        instaTrig = 2,
     }
 
-    public class MidiTransitionController : MonoBehaviour
+    public enum Timeline_Command
+    {
+        Forwards = 1,
+        Backwards = -1
+    }
+
+    public class CylMidiTransitionController : MonoBehaviour
     {
 
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] StateManager stateManager;
+        [SerializeField] float instaTransitionSpeed = 10;
 
-        private const int oneBarLoopLength = 96;
-        private const int fourBarLoopLength = 384;
+        private const int oneBarTrigger = 96;
+        private const int fourBarTrigger = 384;
 
         private bool instaChangeActive;
 
@@ -58,23 +66,32 @@ namespace cylvester
                     case (byte) CYL_Command.CurrentSelectedScene:
                     currentSelectedScene = mes.Data2; //Get current selected Scene
 
-                        if (instaChangeActive)
+                        if (instaChangeActive) //This triggers instant Switch between states
                         {
                             stateManager.SelectedState = currentSelectedScene;
-                            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(10);
+                            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
                             instaChangeActive = false;
                         }
                     break;
 
                     case (byte) CYL_Command.FourBarLoopButton:
-                        RestTime(fourBarLoopLength - currentTick % fourBarLoopLength);
-                        TimelinePlaybackSpeed();
+                        if (nextSelectedScene > currentSelectedScene)
+                        { 
+                        RestTime(fourBarTrigger - currentTick % fourBarTrigger);
+                        TimelinePlaybackSpeed((int) Timeline_Command.Forwards);
                         stateManager.SelectedState = nextSelectedScene;
-                    break;
+                        }
+                        else
+                        {
+                            RestTime(fourBarTrigger - currentTick % fourBarTrigger);
+                            TimelinePlaybackSpeed((int)Timeline_Command.Backwards);
+                            stateManager.SelectedState = nextSelectedScene + 2;
+                        }
+                        break;
 
                     case (byte) CYL_Command.OneBarLoopButton:
-                        RestTime(oneBarLoopLength - currentTick % oneBarLoopLength);
-                        TimelinePlaybackSpeed();
+                        RestTime(oneBarTrigger - currentTick % oneBarTrigger);
+                        TimelinePlaybackSpeed((int) Timeline_Command.Forwards);
                         stateManager.SelectedState = nextSelectedScene;
                     break;
             }
@@ -86,10 +103,10 @@ namespace cylvester
             restTimeS = restTick / 24.0f / stateManager.CurrentState.Bpm * 60;
         }
 
-        public void TimelinePlaybackSpeed()
+        public void TimelinePlaybackSpeed(int direction)
         {
             float timelinePlaybackSpeed = transitionLength / Mathf.Clamp(restTimeS, 0.001f, transitionLength);
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed); //set playbackspeed of Timeline
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed * direction); //set playbackspeed of Timeline
         }
     }
 }
