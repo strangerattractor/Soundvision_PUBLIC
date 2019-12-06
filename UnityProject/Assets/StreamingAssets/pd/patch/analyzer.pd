@@ -420,7 +420,7 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
 #X restore 405 71 pd shmem;
-#N canvas 700 143 1014 1074 CYLVESTERmidi 1;
+#N canvas 700 143 1014 1074 CYLVESTERmidi 0;
 #X obj 192 306 bng 15 250 50 0 4bar_trig_sim empty 4_Bar_trigger_Sim
 17 7 0 10 -203904 -1 -1;
 #X obj 192 287 bng 15 250 50 0 1bar_trig_sim empty 1_Bar_trigger_Sim

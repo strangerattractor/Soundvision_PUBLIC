@@ -4,30 +4,35 @@ using UnityEngine.Timeline;
 using UnityEngine.Playables;
 
 namespace cylvester
-{ 
+{
+
+    public enum CYL_Command
+    {
+        OneBarLoopButton = 86,
+        FourBarLoopButton = 94,
+        NextScelectedScene = 18,
+        CurrentSelectedScene = 17,
+        instaTrig = 2
+    }
+
     public class MidiTransitionController : MonoBehaviour
     {
-        [SerializeField] private int oneBarLoopButton = 86;
-        [SerializeField] private int fourBarLoopButton = 94;
-        [SerializeField] private PlayableDirector playableDirector;
 
-        private int oneBarLoop = 96;
-        private int fourBarLoop = 384;
-        private const int cmd_instaTrig = 2;
-        private const int cmd_nextSelectedScene = 18;
-        private const int cmd_currentSelectedScene = 17;
+        [SerializeField] private PlayableDirector playableDirector;
+        [SerializeField, Range(1, 16)] private int channel = 1;
+        [SerializeField] StateManager stateManager;
+
+        private const int oneBarLoopLength = 96;
+        private const int fourBarLoopLength = 384;
+
         private bool instaChangeActive;
 
         private int currentTick;
         private float transitionLength = 16; //sets the duration in Seconds, how long a transition has to be in "TimeLine" to be played back correctly when CYLVESTER is hooked up correctly
         private float restTimeS = 1f; //init transTime is 1 Second
 
-        [SerializeField] private int currentSelectedScene;
-        [SerializeField] private int nextSelectedScene;
-
-        [SerializeField, Range(1, 16)] private int channel = 1;
-
-        [SerializeField] StateManager stateManager;
+        int currentSelectedScene = 0;
+        int nextSelectedScene = 0;
 
         public void OnSyncReceived(MidiSync midiSync, int counter)
         {
@@ -37,48 +42,43 @@ namespace cylvester
         public void OnMidiMessageReceived(MidiMessage mes)
         {
 
-            if (mes.Status - 176 == channel - 1) //Which Channel
+            if (mes.Status - 176 == channel - 1) //Choose Midi-Channel
             {
 
-                if (mes.Data1 == cmd_nextSelectedScene)
+                switch (mes.Data1)
                 {
-                    nextSelectedScene = mes.Data2; //Get next Schene Update
-                }
+                    case (byte) CYL_Command.NextScelectedScene:
+                        nextSelectedScene = mes.Data2; //Get next selected Scene
+                    break;
 
-                if (mes.Data1 == cmd_instaTrig)
-                {
-                    instaChangeActive = true;
-                }
+                    case (byte) CYL_Command.instaTrig:
+                        instaChangeActive = true;
+                    break;
 
-                if (mes.Data1 == cmd_currentSelectedScene)
-                { 
+                    case (byte) CYL_Command.CurrentSelectedScene:
                     currentSelectedScene = mes.Data2; //Get current selected Scene
 
-                    if (instaChangeActive)
-                    {
-                        stateManager.SelectedState = currentSelectedScene;
-                        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(10);
-                        //                        Debug.Log("Instatrig " + currentSelectedScene);
-                        //                        Debug.Log("Last selected Scene new " + lastSelectedScene);
-                        instaChangeActive = false;
-                    }
-                }
+                        if (instaChangeActive)
+                        {
+                            stateManager.SelectedState = currentSelectedScene;
+                            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(10);
+                            instaChangeActive = false;
+                        }
+                    break;
 
-                if (mes.Data1 == oneBarLoopButton) //Button fourBarLoop
-                {
-                    RestTime(fourBarLoop - currentTick % fourBarLoop);
-                    TimelinePlaybackSpeed();
-                    stateManager.SelectedState = nextSelectedScene;
-                }
+                    case (byte) CYL_Command.FourBarLoopButton:
+                        RestTime(fourBarLoopLength - currentTick % fourBarLoopLength);
+                        TimelinePlaybackSpeed();
+                        stateManager.SelectedState = nextSelectedScene;
+                    break;
 
-                if (mes.Data1 == fourBarLoopButton) //Button oneBarLoop
-                {
-                    RestTime(oneBarLoop - currentTick % oneBarLoop);
-                    TimelinePlaybackSpeed();
-                    stateManager.SelectedState = nextSelectedScene;
-                }
-
+                    case (byte) CYL_Command.OneBarLoopButton:
+                        RestTime(oneBarLoopLength - currentTick % oneBarLoopLength);
+                        TimelinePlaybackSpeed();
+                        stateManager.SelectedState = nextSelectedScene;
+                    break;
             }
+        }
         }
 
         public void RestTime(int restTick)

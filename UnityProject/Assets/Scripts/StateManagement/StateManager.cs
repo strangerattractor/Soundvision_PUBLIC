@@ -16,6 +16,8 @@ namespace cylvester
     {
         int SelectedState { set; }
         State[] States { get; }
+
+        
     }
 
     public struct State
