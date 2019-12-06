@@ -1,25 +1,16 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.Timeline;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Playables;
 
 namespace cylvester
 {
-    
-    public enum CYL_Command
+    public enum CYLCommand
     { 
-        //these are the midi CCs coming from the CYL_Axoloti box
         OneBarLoopButton = 94,
         FourBarLoopButton = 86,
-        NextScelectedScene = 18,
+        NextSelectedScene = 18,
         CurrentSelectedScene = 17,
-        instaTrig = 2,
-    }
-
-    public enum Timeline_Command
-    {
-        Forwards = 1,
-        Backwards = -1
+        InstantTrigger = 2,
     }
 
     public class CylMidiTransitionController : MonoBehaviour
@@ -27,86 +18,93 @@ namespace cylvester
 
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField, Range(1, 16)] private int channel = 1;
-        [SerializeField] StateManager stateManager;
-        [SerializeField] float instaTransitionSpeed = 10;
+        [SerializeField] private StateManager stateManager;
+        [SerializeField] private float instaTransitionSpeed = 10;
 
-        private const int oneBarTrigger = 96;
-        private const int fourBarTrigger = 384;
-
-        private bool instaChangeActive;
-
-        private int currentTick;
-        private float transitionLength = 16; //sets the duration in Seconds, how long a transition has to be in "TimeLine" to be played back correctly when CYLVESTER is hooked up correctly
-        private float restTimeS = 1f; //init transTime is 1 Second
-
-        int currentSelectedScene = 0;
-        int nextSelectedScene = 0;
+        private const int OneBarTrigger = 96;
+        private const int FourBarTrigger = OneBarTrigger * 4;
+        private const float TransitionLength = 16; 
+        
+        private bool instantChangeActive_;
+        private int currentTick_;
+        private float restTime_ = 1f;
+        private int currentSelectedScene_ ;
+        private int nextSelectedScene_;
 
         public void OnSyncReceived(MidiSync midiSync, int counter)
         {
-            currentTick = counter;
+            currentTick_ = counter;
         }
 
         public void OnMidiMessageReceived(MidiMessage mes)
         {
+            if (mes.Status - 176 != channel - 1) return;
 
-            if (mes.Status - 176 == channel - 1) //Choose Midi-Channel
+            var command = (CYLCommand)mes.Data1;
+            switch (command)
             {
-
-                switch (mes.Data1)
+                case CYLCommand.NextSelectedScene:
                 {
-                    case (byte) CYL_Command.NextScelectedScene:
-                        nextSelectedScene = mes.Data2; //Get next selected Scene
+                    nextSelectedScene_ = mes.Data2;
                     break;
-
-                    case (byte) CYL_Command.instaTrig:
-                        instaChangeActive = true;
+                }
+                case CYLCommand.InstantTrigger:
+                {
+                    instantChangeActive_ = true;
                     break;
+                }
+                case CYLCommand.CurrentSelectedScene:
+                {
+                    currentSelectedScene_ = mes.Data2;
 
-                    case (byte) CYL_Command.CurrentSelectedScene:
-                    currentSelectedScene = mes.Data2; //Get current selected Scene
+                    if (instantChangeActive_)
+                    {
+                        stateManager.SelectedState = currentSelectedScene_;
+                        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
+                        instantChangeActive_ = false;
+                    }
 
-                        if (instaChangeActive) //This triggers instant Switch between states
-                        {
-                            stateManager.SelectedState = currentSelectedScene;
-                            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
-                            instaChangeActive = false;
-                        }
                     break;
+                }
+                case CYLCommand.FourBarLoopButton:
+                {
+                    if (nextSelectedScene_ > currentSelectedScene_)
+                    {
+                        UpdateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
+                        UpdateTimelinePlaybackSpeed(1f);
+                        stateManager.SelectedState = nextSelectedScene_;
+                    }
+                    else
+                    {
+                        UpdateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
+                        UpdateTimelinePlaybackSpeed(-1f);
+                        stateManager.SelectedState = nextSelectedScene_ + 2;
+                    }
 
-                    case (byte) CYL_Command.FourBarLoopButton:
-                        if (nextSelectedScene > currentSelectedScene)
-                        { 
-                            RestTime(fourBarTrigger - currentTick % fourBarTrigger);
-                            TimelinePlaybackSpeed((int) Timeline_Command.Forwards);
-                            stateManager.SelectedState = nextSelectedScene;
-                        }
-                        else
-                        {
-                            RestTime(fourBarTrigger - currentTick % fourBarTrigger);
-                            TimelinePlaybackSpeed((int)Timeline_Command.Backwards);
-                            stateManager.SelectedState = nextSelectedScene + 2;
-                        }
-                        break;
-
-                    case (byte) CYL_Command.OneBarLoopButton:
-                        RestTime(oneBarTrigger - currentTick % oneBarTrigger);
-                        TimelinePlaybackSpeed((int) Timeline_Command.Forwards);
-                        stateManager.SelectedState = nextSelectedScene;
                     break;
+                }
+                case CYLCommand.OneBarLoopButton:
+                {
+                    UpdateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
+                    UpdateTimelinePlaybackSpeed(1f);
+                    stateManager.SelectedState = nextSelectedScene_;
+                    break;
+                }
+                default:
+                    throw new Exception("Unexpected CYL command");
+                    
             }
         }
+
+        private void UpdateRestTime(int restTicks)
+        {
+            restTime_ = restTicks / 24.0f / stateManager.CurrentState.Bpm * 60f;
         }
 
-        public void RestTime(int restTick)
+        private void UpdateTimelinePlaybackSpeed(float speed)
         {
-            restTimeS = restTick / 24.0f / stateManager.CurrentState.Bpm * 60;
-        }
-
-        public void TimelinePlaybackSpeed(int direction)
-        {
-            float timelinePlaybackSpeed = transitionLength / Mathf.Clamp(restTimeS, 0.001f, transitionLength);
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed * direction); //set playbackspeed of Timeline
+            var timelinePlaybackSpeed = TransitionLength / Mathf.Clamp(restTime_, 0.001f, TransitionLength);
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed * speed); //set playbackspeed of Timeline
         }
     }
 }
