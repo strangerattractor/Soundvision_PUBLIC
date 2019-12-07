@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="implement FFT waterfall">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations/BlueToRed.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations/BlueToRed.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations/Transitions.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations/Transitions.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations/WhiteToBlue.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/animations/WhiteToBlue.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/material.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/material/BallColor.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/material/BallColor.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/QlistMarker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/Qlist.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/Qlist.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTest.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThridParty/Assets/Construction_Site_Column/Materials.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UnityProject.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UnityProject.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnityProject.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/UnityProject.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +30,6 @@
     <expand />
     <select />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>serialize</find>
-      <find>indices</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -68,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/RandomPosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/00/5855a925/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/KinectSpecialCases.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/CylMidiTransitionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Waterfall/waterfall.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Versioning/VersionToggleBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/StateManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,6 +80,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdLevelBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdNoiseBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/Waveform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/DspController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/ISpectrumGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdSpectrumBind.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,6 +107,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_ChangeObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_RectangularSelection.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/ScheduledAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdPitchBind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/QlistMarker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/Windows/Kinect/InfraredFrameReader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,9 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Editor/RectangularSelection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdConstant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PdProcess.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratpr.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/PdBackendDemo/script/BoomBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGenerator.cs" />
@@ -187,6 +168,9 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/QlistMarker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/ReservedAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/ScheduledAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/CylMidiTransitionController.cs" />
       </list>
     </option>
   </component>
@@ -270,6 +254,7 @@
       <workItem from="1573318954202" duration="631000" />
       <workItem from="1575064364367" duration="3340000" />
       <workItem from="1575100878147" duration="6707000" />
+      <workItem from="1575663620399" duration="4809000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>
@@ -373,6 +358,16 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
