@@ -136,6 +136,7 @@
             <e p="Threshold.cs" t="Include" />
           </e>
           <e p="PdConnection" t="Include">
+            <e p="Boundary.cs" t="Include" />
             <e p="CylMidiTransitionController.cs" t="Include" />
             <e p="DspController.cs" t="Include" />
             <e p="ISpectrumGenerator.cs" t="Include" />

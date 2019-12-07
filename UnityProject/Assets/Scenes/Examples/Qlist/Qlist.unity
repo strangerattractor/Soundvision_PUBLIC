@@ -433,6 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 1549059515}
   stateManager: {fileID: 1788337936}
+  initTransitionFactor: 10
 --- !u!320 &1549059515
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -445,7 +446,7 @@ PlayableDirector:
   m_PlayableAsset: {fileID: 11400000, guid: dd88d8a2bd5beda41a4bc9a6e2f2d080, type: 2}
   m_InitialState: 0
   m_WrapMode: 0
-  m_DirectorUpdateMode: 1
+  m_DirectorUpdateMode: 3
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -2136880647211988772, guid: dd88d8a2bd5beda41a4bc9a6e2f2d080, type: 2}

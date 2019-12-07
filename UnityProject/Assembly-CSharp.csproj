@@ -99,6 +99,7 @@
      <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
      <Compile Include="Assets\Scripts\Math\Smoother.cs" />
      <Compile Include="Assets\Scripts\Math\Threshold.cs" />
+     <Compile Include="Assets\Scripts\PdConnection\Boundary.cs" />
      <Compile Include="Assets\Scripts\PdConnection\CylMidiTransitionController.cs" />
      <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
      <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a8ca49-0b91-43c0-a787-44b1fda29c5f" name="Default Changelist" comment="implement FFT waterfall">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/Boundary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PdConnection/Boundary.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThridParty/Assets/Construction_Site_Column/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnityProject.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UnityProject.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +35,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Specttrum.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/SequencerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/Boundary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/dc/2b798580/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/MIDI/script/PositionBind.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity_2019.2.8f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline/Runtime/Events/Marker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Examples/Texture/TextureMapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectScript/EventPump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdTimbreIdBind.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +68,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaveformVisualizerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/MidiSyncedLoop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/DisableOnStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/b7/90060354/PlayableGraph.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThridParty/KinectView/Scripts/InfraredSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visualizer/WaterfallVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PdConnection/PdArraySelector.cs" root0="FORCE_HIGHLIGHTING" />
@@ -120,8 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGeneratpr.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/Examples/PdBackendDemo/script/BoomBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/UnitTest/UnitTest_SpectrumGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/SpectrumGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/SpectrumGenerator.cs" />
@@ -167,10 +167,12 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/BallColorChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/QlistMarker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/SceneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/ReservedAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/ScheduledAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/CylMidiTransitionController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/PauseBoundary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PdConnection/Boundary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Examples/Qlist/scripts/TimelineController.cs" />
       </list>
     </option>
   </component>
@@ -255,6 +257,7 @@
       <workItem from="1575064364367" duration="3340000" />
       <workItem from="1575100878147" duration="6707000" />
       <workItem from="1575663620399" duration="4809000" />
+      <workItem from="1575732887966" duration="8480000" />
     </task>
     <task id="LOCAL-00001" summary="add Kinect Manager">
       <created>1562485186899</created>

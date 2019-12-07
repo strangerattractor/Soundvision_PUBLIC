@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 namespace cylvester
 {
-    public class TimelineController : MonoBehaviour, INotificationReceiver
+    public class TimelineController : MonoBehaviour
     {
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private StateManager stateManager;
@@ -13,51 +13,64 @@ namespace cylvester
         [SerializeField] private float initTransitionFactor = 1f;
         
         private IList<QlistMarker> qlistMarkers_;
+        private Boundary boundary_;
+        private float speed_;
         
         public void Start()
         { 
             var timeline = (TimelineAsset)playableDirector.playableAsset;
-            var markerTrack = timeline.markerTrack;
-            var markers = markerTrack.GetMarkers();
+            var markers = timeline.markerTrack.GetMarkers();
             qlistMarkers_ = new List<QlistMarker>();
             foreach (var marker in markers)
                 qlistMarkers_.Add((QlistMarker)marker);
 
-            playableDirector.Stop();
             playableDirector.time = 0;
-            playableDirector.Play();
+            boundary_ = new Boundary(null, null);
+            UpdateSpeed();
         }
         
         public void OnStateChanged(IStateReader stateManager)
         {
             var stateName = stateManager.CurrentState.Title;
-            foreach (var qlistMarker in qlistMarkers_)
+            var numMarkers = qlistMarkers_.Count;
+            for (var i = 0; i < numMarkers; ++i)
             {
-                if (qlistMarker.id != stateName) continue;
-
-                //playableDirector.Stop(); //This resets speed to 1, so I had to cut it. 
-                playableDirector.time = qlistMarker.time;
+                if (qlistMarkers_[i].id != stateName) 
+                    continue;
+                
+                playableDirector.time = qlistMarkers_[i].time;
+                var previousMarkerTime = i > 0 ? (double?) qlistMarkers_[i - 1].time : null;
+                var nextMarkerTime = i < numMarkers - 1 ? (double?) qlistMarkers_[i + 1].time : null;
+                boundary_ = new Boundary(previousMarkerTime, nextMarkerTime);
                 playableDirector.Play();
                 break;
             }
         }
 
-        public void OnNotify(Playable origin, INotification notification, object context)
+        private void Update()
         {
-            if (!stateManager.NextState.HasValue)
+            if (playableDirector.state == PlayState.Paused)
                 return;
 
-            var nextState = stateManager.NextState.Value;
-            var prevState = stateManager.PreviousState.Value; //ToDO this is the same as nextState???
+            var deltaTime = Time.deltaTime;
+            var expectedTimeIncrement = speed_ * deltaTime;
+            var expectedTimeInTimeline = playableDirector.time + expectedTimeIncrement;
 
-            Debug.Log("next State " + prevState.Title);
-            Debug.Log("prev State " + prevState.Title);
-
-            if (notification.id == nextState.Title)
-            { 
-                playableDirector.Pause(); // reaches the next state (marker) in timeline
-                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(initTransitionFactor); // Max added this instead of .Stop
+            if (boundary_.IsInside(expectedTimeInTimeline))
+            {
+                playableDirector.time = expectedTimeInTimeline;
+                playableDirector.Evaluate();
             }
+            else
+            {
+                playableDirector.Pause();
+                UpdateSpeed();
+            }
+        }
+
+        private void UpdateSpeed()
+        {
+            speed_ = initTransitionFactor;
         }
     }
 }
