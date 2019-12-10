@@ -1,7 +1,7 @@
-#N canvas 397 217 1128 511 10;
+#N canvas 105 93 1690 778 10;
 #X declare -lib timbreID/timbreIDLib;
-#X obj 127 433 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
-#X obj 57 474 dac~, f 6;
+#X obj 484 442 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
+#X obj 414 483 dac~, f 6;
 #N canvas 215 619 730 390 analyzers_______________________________
 0;
 #X obj 95 44 inlet~;
@@ -52,7 +52,7 @@
 #X connect 13 0 29 0;
 #X connect 14 0 30 0;
 #X connect 15 0 31 0;
-#X restore 128 473 pd analyzers_______________________________;
+#X restore 485 482 pd analyzers_______________________________;
 #X obj 57 45 bang~;
 #X obj 57 68 count 16;
 #X obj 57 95 sel 0;
@@ -272,7 +272,7 @@
 #X connect 9 0 7 0;
 #X connect 10 0 0 0;
 #X connect 11 0 0 0;
-#X restore 60 398 pd sample_playback;
+#X restore 417 407 pd sample_playback;
 #X obj 56 159 text define -k samplefiles;
 #A set Back_Back.wav \; Brutal_Synth.wav \; Dialog.wav \; Drums.wav
 \; Fox_Melo.wav \; Kick.wav \; Pads+Strings.wav \; Rose_Sax.wav \;
@@ -290,7 +290,7 @@ Roses_Front.wav \; TimbreID_Test.wav \;;
 #X text 416 223 176... control channel 1;
 #X obj 6 194 midirealtimein;
 #X obj 242 41 netreceive -u 54345;
-#X obj 598 90 cnv 15 500 60 empty current PontCloud 20 12 0 45 -204786
+#X obj 598 90 cnv 15 500 60 empty current ShowAll 20 12 0 45 -204786
 -66577 0;
 #X obj 786 234 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
 -1 -1;
@@ -301,11 +301,11 @@ Roses_Front.wav \; TimbreID_Test.wav \;;
 #X obj 692 230 bng 50 250 50 0 empty empty previous 4 25 0 10 -204786
 -1 -1;
 #X msg 692 303 send 176 127 1;
-#X msg 786 304 send 176 127 2;
-#X obj 594 46 cnv 12 500 30 empty previous needles 20 12 0 25 -262130
+#X msg 815 -82 send 176 127 2;
+#X obj 594 46 cnv 12 500 30 empty previous Forces 20 12 0 25 -262130
 -66577 0;
-#X obj 596 152 cnv 12 500 30 empty next PositionCloud 20 12 0 25 -262130
--66577 0;
+#X obj 596 152 cnv 12 500 30 empty next --- 20 12 0 25 -262130 -66577
+0;
 #X obj 879 467 declare -lib timbreID/timbreIDLib;
 #N canvas 28 541 1273 735 timbreID_example 0;
 #X obj 77 657 nbx 3 28 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -420,14 +420,187 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
 #X restore 405 71 pd shmem;
-#N canvas 700 143 1014 1074 CYLVESTERmidi 0;
-#X obj 192 306 bng 15 250 50 0 4bar_trig_sim empty 4_Bar_trigger_Sim
+#X text 701 378 <--- this is only for reference;
+#X obj 1179 19 cnv 15 400 800 empty empty CYL_Transition_Sim 20 12
+0 14 -204800 -66577 0;
+#X obj 1368 239 bng 15 250 50 0 4bar_trig_sim empty 4_Bar_trigger_Sim
 17 7 0 10 -203904 -1 -1;
-#X obj 192 287 bng 15 250 50 0 1bar_trig_sim empty 1_Bar_trigger_Sim
+#X obj 1368 257 bng 15 250 50 0 1bar_trig_sim empty 1_Bar_trigger_Sim
 17 7 0 10 -261234 -1 -1;
-#X obj 241 81 loadbang;
-#X msg 240 109 120;
-#N canvas 0 50 1305 786 midi_ticks_left 0;
+#X obj 1399 49 loadbang;
+#X msg 1398 77 120;
+#N canvas 0 50 1305 912 midi_ticks_left 0;
+#X obj 172 469 + 1;
+#X obj 143 470 f;
+#X floatatom 143 493 5 0 0 0 - - -;
+#X msg 182 432 0;
+#X obj 173 547 bng 15 250 50 0 1b1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 204 257 sel 248 250 252;
+#X obj 194 547 bng 15 250 50 0 1b2 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 217 547 bng 15 250 50 0 1b3 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 238 547 bng 15 250 50 0 1b4 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 173 525 sel 0 24 48 72 95;
+#X obj 452 470 + 1;
+#X obj 424 470 f;
+#X floatatom 424 492 5 0 0 0 - - -;
+#X msg 453 443 0;
+#X obj 464 553 bng 15 250 50 0 4b1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 242 717 0;
+#X obj 485 553 bng 15 250 50 0 4b2 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 463 535 sel 0 96 192 288 383;
+#X floatatom 99 597 5 0 0 0 - - -;
+#X obj 99 572 -;
+#X floatatom 389 613 5 0 0 0 - - -;
+#X obj 389 589 -;
+#X text 37 467 1 bar counter;
+#X obj 157 639 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 303 656 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 132 678 f;
+#X floatatom 132 710 5 0 0 0 - - -;
+#X obj 428 684 f;
+#X floatatom 412 713 5 0 0 0 - - -;
+#X msg 99 545 96;
+#X msg 389 562 384;
+#X obj 157 639 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 248 791 f;
+#X obj 253 908 outlet;
+#X obj 389 536 t b f;
+#X obj 99 521 t b f;
+#X obj 242 741 t f f;
+#X obj 419 298 s realtime_ppq;
+#X obj 433 350 s midi_stop;
+#X obj 443 385 s midi_start;
+#X obj 464 574 s 4bar_reset;
+#X obj 173 574 s 1bar_reset;
+#X obj 94 336 r midi_start;
+#X msg 126 380 0;
+#X obj 129 352 r midi_stop;
+#X obj 157 609 r 1bar_trig;
+#X obj 298 626 r 4bar_trig;
+#X floatatom 255 880 5 0 0 0 - - -;
+#X text 487 461 4 bar Counter;
+#X text 252 237 stop;
+#X obj 424 384 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 416 351 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 216 236 start;
+#X text 194 236 ppq;
+#X text 314 776 Instant Trigger;
+#X obj 327 798 r instant_trig;
+#X obj 338 820 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 324 836 30;
+#X obj 504 554 bng 15 250 50 0 4b3 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 525 554 bng 15 250 50 0 4b4 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 195 207 inlet;
+#X connect 0 0 1 1;
+#X connect 1 0 0 0;
+#X connect 1 0 2 0;
+#X connect 2 0 9 0;
+#X connect 2 0 35 0;
+#X connect 3 0 1 1;
+#X connect 4 0 41 0;
+#X connect 5 0 1 0;
+#X connect 5 0 11 0;
+#X connect 5 0 37 0;
+#X connect 5 1 15 0;
+#X connect 5 1 3 0;
+#X connect 5 1 13 0;
+#X connect 5 1 50 0;
+#X connect 5 2 51 0;
+#X connect 9 0 4 0;
+#X connect 9 1 6 0;
+#X connect 9 2 7 0;
+#X connect 9 3 8 0;
+#X connect 9 4 3 0;
+#X connect 10 0 11 1;
+#X connect 11 0 10 0;
+#X connect 11 0 12 0;
+#X connect 12 0 17 0;
+#X connect 12 0 34 0;
+#X connect 13 0 11 1;
+#X connect 14 0 40 0;
+#X connect 15 0 36 0;
+#X connect 17 0 14 0;
+#X connect 17 1 16 0;
+#X connect 17 2 58 0;
+#X connect 17 3 59 0;
+#X connect 17 4 13 0;
+#X connect 18 0 25 1;
+#X connect 19 0 18 0;
+#X connect 20 0 27 1;
+#X connect 21 0 20 0;
+#X connect 23 0 25 0;
+#X connect 23 0 32 0;
+#X connect 24 0 27 0;
+#X connect 24 0 32 0;
+#X connect 25 0 26 0;
+#X connect 26 0 32 1;
+#X connect 27 0 28 0;
+#X connect 28 0 32 1;
+#X connect 29 0 19 0;
+#X connect 30 0 21 0;
+#X connect 32 0 47 0;
+#X connect 34 0 30 0;
+#X connect 34 1 21 1;
+#X connect 35 0 29 0;
+#X connect 35 1 19 1;
+#X connect 36 0 32 0;
+#X connect 36 1 32 1;
+#X connect 42 0 43 0;
+#X connect 43 0 1 0;
+#X connect 43 0 11 0;
+#X connect 44 0 43 0;
+#X connect 45 0 23 0;
+#X connect 46 0 24 0;
+#X connect 47 0 33 0;
+#X connect 50 0 39 0;
+#X connect 51 0 38 0;
+#X connect 55 0 57 0;
+#X connect 55 0 56 0;
+#X connect 57 0 47 0;
+#X connect 60 0 5 0;
+#X restore 1365 491 pd midi_ticks_left;
+#X floatatom 1365 533 5 0 0 0 - - -;
+#X obj 1432 374 cnv 10 100 60 empty empty Loop_Monitor 20 12 0 10 -233017
+-66577 0;
+#X obj 1475 415 bng 13 250 50 0 empty 1b1 1Bar -25 7 0 10 -261234 -258113
+-1;
+#X obj 1489 415 bng 13 250 50 0 empty 1b2 empty 17 7 0 10 -204786 -4034
+-1;
+#X obj 1503 415 bng 13 250 50 0 empty 1b3 empty 17 7 0 10 -204786 -4034
+-1;
+#X obj 1517 415 bng 13 250 50 0 empty 1b4 empty 17 7 0 10 -204786 -4034
+-1;
+#X obj 1475 398 bng 13 250 50 0 empty 4b1 4Bar -25 7 0 10 -203904 -258113
+-1;
+#X obj 1489 398 bng 13 250 50 0 empty 4b2 empty 17 7 0 10 -204800 -4034
+-1;
+#X obj 1503 398 bng 13 250 50 0 empty 4b3 empty 17 7 0 10 -204800 -4034
+-1;
+#X obj 1517 398 bng 13 250 50 0 empty 4b4 empty 17 7 0 10 -204800 -4034
+-1;
+#X obj 1350 96 cnv 15 100 60 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X floatatom 1390 135 5 0 0 1 BPM - midi_sim_tempo;
+#X text 1363 112 Clock Sim.:;
+#X obj 1369 135 tgl 15 0 clock_sim_start_stop empty empty 17 7 0 10
+-204786 -1 -1 0 1;
+#X text 1195 530 ticks left for transition;
+#X text 1204 179 Simulate the Press of a 1_Bar or 4_Bar Transition
+trigger.;
 #N canvas 0 50 1167 867 Midi_Clock_Sim 0;
 #X obj 21 155 outlet;
 #X obj 155 14 tgl 15 0 empty clock_sim_start_stop mock 17 7 0 10 -262144
@@ -480,329 +653,174 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 24 0 23 0;
 #X connect 25 0 0 0;
 #X connect 26 0 0 0;
-#X restore 146 179 pd Midi_Clock_Sim;
-#X obj 285 171 midirealtimein;
-#X obj 172 469 + 1;
-#X obj 143 470 f;
-#X floatatom 143 493 5 0 0 0 - - -;
-#X msg 182 432 0;
-#X obj 173 547 bng 15 250 50 0 1b1 empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 204 254 sel 248 250 252;
-#X obj 194 547 bng 15 250 50 0 1b2 empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 217 547 bng 15 250 50 0 1b3 empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 238 547 bng 15 250 50 0 1b4 empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 173 525 sel 0 24 48 72 95;
-#X obj 452 470 + 1;
-#X obj 424 470 f;
-#X floatatom 424 492 5 0 0 0 - - -;
-#X msg 453 443 0;
-#X obj 464 553 bng 15 250 50 0 4b1 empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 242 717 0;
-#X obj 485 553 bng 15 250 50 0 4b2 empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 464 535 sel 0 96 192 288 383;
-#X floatatom 99 597 5 0 0 0 - - -;
-#X obj 99 572 -;
-#X floatatom 389 613 5 0 0 0 - - -;
-#X obj 389 589 -;
-#X text 37 467 1 bar counter;
-#X obj 157 639 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X restore 1365 464 pd Midi_Clock_Sim;
+#N canvas -2133 -3 721 645 message 0;
+#X obj 58 49 cnv 15 800 200 empty empty Routing 20 12 0 14 -204786
+-66577 0;
+#X obj 209 172 s 4bar_trig;
+#X obj 102 168 s 1bar_trig;
+#X obj 182 226 s anybar_trig;
+#X obj 101 198 r 1bar_trig;
+#X obj 208 202 r 4bar_trig;
+#X obj 209 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 303 656 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 132 678 f;
-#X floatatom 132 710 5 0 0 0 - - -;
-#X obj 428 684 f;
-#X floatatom 412 713 5 0 0 0 - - -;
-#X msg 99 545 96;
-#X msg 389 562 384;
-#X obj 157 639 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 248 791 f;
-#X obj 253 908 outlet;
-#X obj 389 536 t b f;
-#X obj 99 521 t b f;
-#X obj 242 741 t f f;
-#X obj 419 298 s realtime_ppq;
-#X obj 433 350 s midi_stop;
-#X obj 443 385 s midi_start;
-#X obj 464 574 s 4bar_reset;
-#X obj 173 574 s 1bar_reset;
-#X obj 94 336 r midi_start;
-#X msg 126 380 0;
-#X obj 129 352 r midi_stop;
-#X obj 157 609 r 1bar_trig;
-#X obj 298 626 r 4bar_trig;
-#X floatatom 255 880 5 0 0 0 - - -;
-#X text 487 461 4 bar Counter;
-#X text 252 237 stop;
-#X obj 424 384 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 416 351 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 216 236 start;
-#X text 194 236 ppq;
-#X text 314 776 Instant Trigger;
-#X obj 327 798 r instant_trig;
-#X obj 338 820 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 324 836 30;
-#X connect 0 0 7 0;
-#X connect 1 0 7 0;
-#X connect 2 0 3 1;
-#X connect 3 0 2 0;
-#X connect 3 0 4 0;
-#X connect 4 0 11 0;
-#X connect 4 0 37 0;
-#X connect 5 0 3 1;
-#X connect 6 0 43 0;
-#X connect 7 0 3 0;
-#X connect 7 0 13 0;
-#X connect 7 0 39 0;
-#X connect 7 1 17 0;
-#X connect 7 1 5 0;
-#X connect 7 1 15 0;
-#X connect 7 1 52 0;
-#X connect 7 2 53 0;
-#X connect 11 0 6 0;
-#X connect 11 1 8 0;
-#X connect 11 2 9 0;
-#X connect 11 3 10 0;
-#X connect 11 4 5 0;
-#X connect 12 0 13 1;
-#X connect 13 0 12 0;
-#X connect 13 0 14 0;
-#X connect 14 0 19 0;
-#X connect 14 0 36 0;
-#X connect 15 0 13 1;
-#X connect 16 0 42 0;
-#X connect 17 0 38 0;
-#X connect 19 0 16 0;
-#X connect 19 1 18 0;
-#X connect 19 4 15 0;
-#X connect 20 0 27 1;
-#X connect 21 0 20 0;
-#X connect 22 0 29 1;
-#X connect 23 0 22 0;
-#X connect 25 0 27 0;
-#X connect 25 0 34 0;
-#X connect 26 0 29 0;
-#X connect 26 0 34 0;
-#X connect 27 0 28 0;
-#X connect 28 0 34 1;
-#X connect 29 0 30 0;
-#X connect 30 0 34 1;
-#X connect 31 0 21 0;
-#X connect 32 0 23 0;
-#X connect 34 0 49 0;
-#X connect 36 0 32 0;
-#X connect 36 1 23 1;
-#X connect 37 0 31 0;
-#X connect 37 1 21 1;
-#X connect 38 0 34 0;
-#X connect 38 1 34 1;
-#X connect 44 0 45 0;
-#X connect 45 0 3 0;
-#X connect 45 0 13 0;
-#X connect 46 0 45 0;
-#X connect 47 0 25 0;
-#X connect 48 0 26 0;
-#X connect 49 0 35 0;
-#X connect 52 0 41 0;
-#X connect 53 0 40 0;
-#X connect 57 0 59 0;
-#X connect 57 0 58 0;
-#X connect 59 0 49 0;
-#X restore 193 347 pd midi_ticks_left;
-#X floatatom 193 374 5 0 0 0 - - -;
-#N canvas 0 50 1162 872 ticks_left_in_ms 0;
-#X obj 564 198 inlet;
-#X obj 292 198 midirealtimein;
-#X obj 426 296 sel 248;
-#X obj 416 463 + 1, f 5;
-#X obj 389 463 f;
-#X obj 402 596 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 385 407 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X floatatom 323 703 20 0 0 0 - - -;
-#X obj 260 362 t b b;
-#X msg 407 432 0;
-#X floatatom 371 515 5 0 0 0 - - -;
-#X obj 323 653 realtime;
-#X obj 213 347 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X floatatom 472 704 20 0 0 0 - - -;
-#X obj 472 654 timer;
-#X obj 416 463 + 1, f 5;
-#X obj 389 463 f;
-#X obj 594 414 *;
-#X floatatom 640 704 20 0 0 0 - - -;
-#X floatatom 608 375 5 0 0 0 - - -;
-#X obj 318 294 sel 250;
-#X text 230 293 Midi Start;
-#X floatatom 567 228 5 0 0 0 - - -;
-#X text 428 320 Midi Clock;
-#X text 525 179 ticks left for interpol;
-#X obj 408 199 r clock_sim;
-#X obj 243 325 t b b;
-#X obj 599 311 f;
-#X obj 358 551 sel 0 10;
-#X obj 603 342 / 11.5;
-#X obj 567 247 t f b;
-#X obj 762 785 outlet;
-#X connect 0 0 22 0;
-#X connect 1 0 2 0;
-#X connect 1 0 20 0;
-#X connect 2 0 6 0;
-#X connect 3 0 4 1;
-#X connect 4 0 3 0;
-#X connect 4 0 10 0;
-#X connect 5 0 11 1;
-#X connect 5 0 14 1;
-#X connect 5 0 12 0;
-#X connect 6 0 4 0;
-#X connect 8 0 9 0;
-#X connect 8 1 11 0;
-#X connect 8 1 14 0;
-#X connect 9 0 4 1;
-#X connect 10 0 28 0;
-#X connect 11 0 7 0;
-#X connect 12 0 8 0;
-#X connect 12 0 7 0;
-#X connect 13 0 27 1;
-#X connect 14 0 13 0;
-#X connect 15 0 16 1;
-#X connect 16 0 15 0;
-#X connect 17 0 18 0;
-#X connect 17 0 31 0;
-#X connect 19 0 17 1;
-#X connect 20 0 11 0;
-#X connect 20 0 14 0;
-#X connect 20 0 26 0;
-#X connect 22 0 30 0;
-#X connect 25 0 20 0;
-#X connect 25 0 2 0;
-#X connect 26 0 12 0;
-#X connect 27 0 29 0;
-#X connect 28 1 9 0;
-#X connect 28 1 5 0;
-#X connect 29 0 19 0;
-#X connect 30 0 17 0;
-#X connect 30 1 27 0;
-#X restore 193 407 pd ticks_left_in_ms;
-#X floatatom 194 432 10 0 0 0 - - -;
-#X obj 191 194 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
-0;
-#X obj 224 204 bng 13 250 50 0 empty 1b1 1Bar -25 7 0 10 -261234 -258113
+#X obj 99 144 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 238 204 bng 13 250 50 0 empty 1b2 empty 17 7 0 10 -204786 -4034
--1;
-#X obj 252 204 bng 13 250 50 0 empty 1b3 empty 17 7 0 10 -204786 -4034
--1;
-#X obj 266 204 bng 13 250 50 0 empty 1b4 empty 17 7 0 10 -204786 -4034
--1;
-#X obj 224 221 bng 13 250 50 0 empty 4b1 4Bar -25 7 0 10 -203904 -258113
--1;
-#X obj 238 221 bng 13 250 50 0 empty 4b2 empty 17 7 0 10 -204800 -4034
--1;
-#X obj 252 221 bng 13 250 50 0 empty 4b3 empty 17 7 0 10 -204800 -4034
--1;
-#X obj 266 221 bng 13 250 50 0 empty 4b4 empty 17 7 0 10 -204800 -4034
--1;
-#X obj 192 128 cnv 15 100 60 empty empty empty 20 12 0 14 -262130 -66577
-0;
-#X floatatom 232 167 5 0 0 1 BPM - midi_sim_tempo;
-#X text 205 144 Clock Sim.:;
-#X obj 211 167 tgl 15 0 clock_sim_start_stop empty empty 17 7 0 10
--204786 -1 -1 0 1;
-#X text 30 264 Simulate the Press of a 1_Bar or 4_Bar trigger.;
-#X text 43 436 ms left for transition;
-#X text 24 375 ticks left for transition;
-#X obj 392 31 cnv 15 500 200 empty empty Midi_from_CYLVESTER 20 12
-0 14 -204786 -66577 0;
-#X floatatom 632 156 0 0 0 0 - - -;
-#X obj 543 154 s 4bar_trig;
-#X obj 436 150 s 1bar_trig;
-#X floatatom 719 154 5 0 0 0 - - -;
-#X obj 433 97 ctlin 94 3;
-#X obj 542 97 ctlin 86 3;
-#X obj 719 176 s nextprog;
-#X obj 719 133 ctlin 18 3;
-#X obj 632 134 ctlin 17 3;
-#X obj 632 177 s currentprog;
-#X obj 516 208 s anybar_trig;
-#X obj 435 180 r 1bar_trig;
-#X obj 542 184 r 4bar_trig;
-#X obj 543 128 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 433 126 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 396 68 r 1bar_trig_sim;
-#X obj 528 68 r 4bar_trig_sim;
-#X obj 795 130 ctlin 2 3;
-#X obj 793 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 793 177 s instant_trig;
-#X obj 393 270 cnv 15 500 200 empty empty Reset_Function 20 12 0 14
+#X obj 102 106 r 1bar_trig_sim;
+#X obj 210 107 r 4bar_trig_sim;
+#X obj 59 288 cnv 15 800 200 empty empty Reset_Function 20 12 0 14
 -204800 -66577 0;
-#X obj 556 363 spigot 0;
-#X obj 609 342 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 222 381 spigot 0;
+#X obj 275 360 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 556 388 t b b;
-#X obj 559 424 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 222 406 t b b;
+#X obj 225 442 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 416 373 spigot 0;
-#X obj 469 352 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 82 391 spigot 0;
+#X obj 135 370 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 416 398 t b b;
-#X obj 448 421 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 82 416 t b b;
+#X obj 114 439 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 469 321 r 1bar_trig;
-#X obj 416 300 r 1bar_reset;
-#X obj 489 451 s next_1_trig;
-#X obj 556 296 r 4bar_reset;
-#X obj 636 315 r 4bar_trig;
-#X connect 2 0 3 0;
-#X connect 3 0 18 0;
-#X connect 4 0 5 0;
-#X connect 5 0 6 0;
+#X obj 135 339 r 1bar_trig;
+#X obj 82 318 r 1bar_reset;
+#X obj 155 469 s next_1_trig;
+#X obj 222 314 r 4bar_reset;
+#X obj 302 333 r 4bar_trig;
+#X msg 414 198 send 178 17 \$1;
+#X msg 370 94 send 178 18 \$1;
+#X obj 389 122 r instant_trigger_sim;
+#X obj 368 63 r next_scene_sim;
+#X obj 415 174 r current_scene_sim;
+#X obj 390 264 s CYLsim;
+#X obj 556 65 r Midi_Clock_Sim;
+#X msg 554 91 send 178 \$1;
+#X msg 397 148 send 178 2 0;
+#X msg 287 158 send 178 94 0;
+#X msg 296 184 send 178 86 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 1 0;
+#X connect 6 0 34 0;
+#X connect 7 0 2 0;
+#X connect 7 0 33 0;
+#X connect 8 0 7 0;
+#X connect 9 0 6 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 1;
+#X connect 13 0 12 0;
+#X connect 13 1 14 0;
+#X connect 14 0 21 0;
+#X connect 15 0 17 0;
+#X connect 16 0 15 1;
+#X connect 17 0 16 0;
+#X connect 17 1 18 0;
+#X connect 18 0 21 0;
+#X connect 19 0 16 0;
+#X connect 20 0 15 0;
+#X connect 22 0 11 0;
+#X connect 23 0 12 0;
+#X connect 24 0 29 0;
+#X connect 25 0 29 0;
+#X connect 26 0 32 0;
+#X connect 27 0 25 0;
+#X connect 28 0 24 0;
+#X connect 30 0 31 0;
+#X connect 31 0 29 0;
+#X connect 32 0 29 0;
+#X connect 33 0 29 0;
+#X connect 34 0 29 0;
+#X restore 1363 612 pd message routing;
+#N canvas -2147 699 783 616 select_logic 1;
+#X floatatom 253 23 5 0 0 0 current_scene - -;
+#X floatatom 271 331 5 0 0 0 s_next_selected_scene - next_select;
+#X obj 248 250 + 1;
+#X obj 302 249 - 1;
+#X obj 252 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 290 166 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 180 106 tgl 15 0 empty select_minus_one select_for_next_scene_-1
+17 7 0 10 -262144 -1 -1 0 1;
+#X obj 226 140 sel 0;
+#X obj 267 136 t i i;
+#X msg 178 73 0;
+#X obj 349 114 i;
+#X obj 346 85 bng 15 250 50 0 empty empty trigger_next_scene 17 7 0
+10 -262144 -1 -1;
+#X floatatom 212 -22 5 0 0 0 insta_select insta_select -;
+#X obj 212 -1 t b i;
+#X obj 340 335 i;
+#X obj 405 333 i;
+#X obj 357 252 t b b b;
+#X obj 480 42 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 370 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 370 10 r 1bar_trig_sim;
+#X obj 480 18 r 4bar_trig_sim;
+#X floatatom 304 277 5 0 0 0 - - -;
+#X floatatom 122 47 5 0 0 0 s_current_scene - current_scene;
+#X obj 80 172 s select_minus_one_reset;
+#X obj 314 420 s next_scene_sim;
+#X obj 442 417 s current_scene_sim;
+#X obj 375 367 s instant_trigger_sim;
+#X obj 158 144 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 500 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 161 125 change;
+#X obj 497 231 r next_1_trig;
+#X obj 501 276 t b b;
+#X connect 0 0 8 0;
+#X connect 0 0 15 1;
+#X connect 0 0 22 0;
+#X connect 0 0 9 0;
+#X connect 2 0 21 0;
+#X connect 3 0 21 0;
+#X connect 4 0 2 0;
+#X connect 5 0 3 0;
 #X connect 6 0 7 0;
-#X connect 25 0 34 0;
+#X connect 6 0 29 0;
+#X connect 7 0 4 0;
+#X connect 7 1 5 0;
+#X connect 8 0 2 0;
+#X connect 8 1 3 0;
+#X connect 9 0 23 0;
+#X connect 9 0 6 0;
+#X connect 10 0 0 0;
+#X connect 11 0 10 0;
+#X connect 12 0 13 0;
+#X connect 13 0 16 0;
+#X connect 13 1 0 0;
+#X connect 14 0 24 0;
+#X connect 15 0 25 0;
+#X connect 16 0 15 0;
+#X connect 16 1 26 0;
+#X connect 16 2 14 0;
+#X connect 17 0 11 0;
+#X connect 18 0 11 0;
+#X connect 19 0 18 0;
+#X connect 20 0 17 0;
+#X connect 21 0 10 1;
+#X connect 21 0 14 1;
+#X connect 21 0 1 0;
+#X connect 27 0 14 0;
 #X connect 28 0 31 0;
-#X connect 29 0 39 0;
-#X connect 30 0 38 0;
-#X connect 32 0 28 0;
-#X connect 33 0 25 0;
-#X connect 36 0 35 0;
-#X connect 37 0 35 0;
-#X connect 38 0 26 0;
-#X connect 39 0 27 0;
-#X connect 40 0 39 0;
-#X connect 41 0 38 0;
-#X connect 42 0 43 0;
-#X connect 43 0 44 0;
-#X connect 46 0 48 0;
-#X connect 47 0 46 1;
-#X connect 48 0 47 0;
-#X connect 48 1 49 0;
-#X connect 49 0 56 0;
-#X connect 50 0 52 0;
-#X connect 51 0 50 1;
-#X connect 52 0 51 0;
-#X connect 52 1 53 0;
-#X connect 53 0 56 0;
-#X connect 54 0 51 0;
-#X connect 55 0 50 0;
-#X connect 57 0 46 0;
-#X connect 58 0 47 0;
-#X restore 598 377 pd CYLVESTERmidi;
-#X text 701 378 <--- this is only for reference;
+#X connect 29 0 27 0;
+#X connect 30 0 28 0;
+#X connect 31 0 14 0;
+#X connect 31 1 15 0;
+#X restore 1363 636 pd select_logic;
+#X floatatom 1368 214 5 0 0 0 insta_select - insta_select;
+#X obj 1368 282 tgl 15 0 select_minus_one select_minus_one_reset next_select_-1
+17 7 0 10 -262144 -1 -1 0 1;
+#X obj 1250 501 s Midi_Clock_Sim;
+#X obj 122 313 r CYLsim;
+#X obj 1226 374 cnv 15 200 60 empty empty Selection_Monitor 20 12 0
+10 -233017 -66577 0;
+#X floatatom 1374 415 5 0 0 0 next_selected_state next_select -;
+#X floatatom 1373 393 5 0 0 0 current_state current_scene -;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 2 2 2;
@@ -843,3 +861,9 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 30 0 11 0;
 #X connect 31 0 11 0;
 #X connect 36 0 11 0;
+#X connect 42 0 43 0;
+#X connect 43 0 56 0;
+#X connect 44 0 45 0;
+#X connect 61 0 44 0;
+#X connect 61 0 66 0;
+#X connect 67 0 11 0;
