@@ -16,6 +16,7 @@ namespace cylvester
         }
         
         [SerializeField] private PlayableDirector playableDirector;
+        [SerializeField] private TimelineController timelineController;
         [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] private StateManager stateManager;
         [SerializeField] private float instaTransitionSpeed = 10;
@@ -68,42 +69,44 @@ namespace cylvester
                 }
                 case CylCommand.FourBarLoopButton:
                 {
-                    var restTime = UpdateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
+                    var restTime = CalculateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
                     if (nextSelectedScene_ > currentSelectedScene_)
                     {
-                        UpdateTimelinePlaybackSpeed(1f, restTime);
+                        timelineController.UpdateTransitionTargetRealTime(restTime);
                         stateManager.SelectedState = nextSelectedScene_;
                     }
                     else
                     {
-                        UpdateTimelinePlaybackSpeed(-1f, restTime);
-                        stateManager.SelectedState = nextSelectedScene_ + 2;
+                        timelineController.UpdateTransitionTargetRealTime(-restTime);
+                        stateManager.SelectedState = nextSelectedScene_ + 1;
                     }
 
                     break;
                 }
                 case CylCommand.OneBarLoopButton:
                 {
-                    var restTime = UpdateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
-                    UpdateTimelinePlaybackSpeed(1f, restTime);
-                    stateManager.SelectedState = nextSelectedScene_;
+                    var restTime = CalculateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
+                    if (nextSelectedScene_ > currentSelectedScene_)
+                    {
+                        timelineController.UpdateTransitionTargetRealTime(restTime);
+                        stateManager.SelectedState = nextSelectedScene_;
+                    }
+                    else
+                    {
+                        timelineController.UpdateTransitionTargetRealTime(-restTime);
+                        stateManager.SelectedState = nextSelectedScene_ + 1;
+                    }
                     break;
                 }
                 default:
                     throw new Exception("Unexpected CYL command");
-                    
             }
         }
 
-        private float UpdateRestTime(int restTicks)
+        private float CalculateRestTime(int restTicks)
         {
             return restTicks / 24f / stateManager.CurrentState.Bpm * 60f;
         }
 
-        private void UpdateTimelinePlaybackSpeed(float speed, float restTime)
-        {
-            var timelinePlaybackSpeed = TransitionLength / Mathf.Clamp(restTime, 0.001f, TransitionLength);
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(timelinePlaybackSpeed * speed);
-        }
     }
 }

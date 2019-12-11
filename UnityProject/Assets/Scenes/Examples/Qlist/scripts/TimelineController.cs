@@ -15,7 +15,11 @@ namespace cylvester
         private IList<QlistMarker> qlistMarkers_;
         private Boundary boundary_;
         private float speed_;
-        
+        private float transitionTargetRealtime_;
+        private float previousMarkerTime_;
+        private float nextMarkerTime_;
+        private float restTime_;
+
         public void Start()
         { 
             var timeline = (TimelineAsset)playableDirector.playableAsset;
@@ -26,7 +30,7 @@ namespace cylvester
 
             playableDirector.time = 0;
             boundary_ = new Boundary(null, null);
-            UpdateSpeed();
+            ResetSpeed();
         }
         
         public void OnStateChanged(IStateReader stateManager)
@@ -41,6 +45,8 @@ namespace cylvester
                 playableDirector.time = qlistMarkers_[i].time;
                 var previousMarkerTime = i > 0 ? (double?) qlistMarkers_[i - 1].time : null;
                 var nextMarkerTime = i < numMarkers - 1 ? (double?) qlistMarkers_[i + 1].time : null;
+                previousMarkerTime_ = (float) previousMarkerTime;
+                nextMarkerTime_ = (float) nextMarkerTime;
                 boundary_ = new Boundary(previousMarkerTime, nextMarkerTime);
                 playableDirector.Play();
                 break;
@@ -51,6 +57,15 @@ namespace cylvester
         {
             if (playableDirector.state == PlayState.Paused)
                 return;
+
+            if (!(Time.fixedUnscaledTime >= transitionTargetRealtime_)) // check o current time >= targetTime
+            {
+                speed_ = (CalculateTransitionSpeed(nextMarkerTime_));// berechne tnrsitionSpeed
+
+                Debug.Log("Rest time: " + restTime_);
+                Debug.Log("Speed set to: " + speed_);
+            }
+
 
             var deltaTime = Time.deltaTime;
             var expectedTimeIncrement = speed_ * deltaTime;
@@ -64,13 +79,27 @@ namespace cylvester
             else
             {
                 playableDirector.Pause();
-                UpdateSpeed();
+                ResetSpeed();
+                Debug.Log("Speed Reset to " + speed_);
             }
         }
 
-        private void UpdateSpeed()
+        private void ResetSpeed()
         {
             speed_ = initTransitionFactor;
+        }
+
+
+        public void UpdateTransitionTargetRealTime(float restTime)
+        {
+            transitionTargetRealtime_ = Time.fixedUnscaledTime + restTime;
+            restTime_ = restTime;
+        }
+
+        private float CalculateTransitionSpeed(float targetMarkerTime)
+        {
+            var transitionSpeed = (targetMarkerTime - playableDirector.time) / (transitionTargetRealtime_ - Time.fixedUnscaledTime);
+            return (float) transitionSpeed;
         }
     }
 }
