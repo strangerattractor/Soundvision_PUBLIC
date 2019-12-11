@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\PitchVFXBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
+    <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrogramVFXBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrumVFXBind1.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrumVFXBind2.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectJointBind.cs" />
