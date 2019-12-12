@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:UnityProject/Assets/Scenes/Examples/Azure/AzureDemo.unity.meta
 guid: d2b605d5e6f33cb43a6b49852af3bc24
+=======
+guid: df11262fc1b053a488b5cfbf724e4cda
+folderAsset: yes
+>>>>>>> refs/heads/master:UnityProject/Assets/Scenes/Examples/Azure.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
