@@ -499,6 +499,9 @@
     <Reference Include="Castle.Core">
       <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/Castle.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Azure.Kinect.Sensor">
+      <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+    </Reference>
     <Reference Include="NSubstitute">
       <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/NSubstitute.dll</HintPath>
     </Reference>
@@ -514,8 +517,17 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Azure.Kinect.Sensor">
-      <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Assets/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.runtime.compilerservices.unsafe@4.5.2/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.numerics.vectors@4.4.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.buffers@4.4.0/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.memory@4.5.3/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity_2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
