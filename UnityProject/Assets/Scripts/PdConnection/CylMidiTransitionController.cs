@@ -72,12 +72,12 @@ namespace cylvester
                     var restTime = CalculateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
                     if (nextSelectedScene_ > currentSelectedScene_)
                     {
-                        timelineController.UpdateTransitionTargetRealTime(restTime);
+                        timelineController.UpdateTransitionTargetRealTime(restTime, false);
                         stateManager.SelectedState = nextSelectedScene_;
                     }
                     else
                     {
-                        timelineController.UpdateTransitionTargetRealTime(-restTime);
+                        timelineController.UpdateTransitionTargetRealTime(restTime, true);
                         stateManager.SelectedState = nextSelectedScene_ + 1;
                     }
 
@@ -88,14 +88,14 @@ namespace cylvester
                     var restTime = CalculateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
                     if (nextSelectedScene_ > currentSelectedScene_)
                     {
-                        timelineController.UpdateTransitionTargetRealTime(restTime);
+                        timelineController.UpdateTransitionTargetRealTime(restTime, false);
                         stateManager.SelectedState = nextSelectedScene_;
                     }
                     else
                     {
-                        timelineController.UpdateTransitionTargetRealTime(-restTime);
+                        timelineController.UpdateTransitionTargetRealTime(restTime, true);
                         stateManager.SelectedState = nextSelectedScene_ + 1;
-                    }
+                        }
                     break;
                 }
                 default:

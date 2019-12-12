@@ -18,7 +18,7 @@ namespace cylvester
         private float transitionTargetRealtime_;
         private float previousMarkerTime_;
         private float nextMarkerTime_;
-        private float restTime_;
+        private bool transitionDirectionReverse_;
 
         public void Start()
         { 
@@ -43,8 +43,8 @@ namespace cylvester
                     continue;
                 
                 playableDirector.time = qlistMarkers_[i].time;
-                var previousMarkerTime = i > 0 ? (double?) qlistMarkers_[i - 1].time : null;
-                var nextMarkerTime = i < numMarkers - 1 ? (double?) qlistMarkers_[i + 1].time : null;
+                var previousMarkerTime = i > 0 ? (double?) qlistMarkers_[i - 1].time : 0;
+                var nextMarkerTime = i < numMarkers - 1 ? (double?) qlistMarkers_[i + 1].time : qlistMarkers_[numMarkers - 1].time;
                 previousMarkerTime_ = (float) previousMarkerTime;
                 nextMarkerTime_ = (float) nextMarkerTime;
                 boundary_ = new Boundary(previousMarkerTime, nextMarkerTime);
@@ -58,29 +58,43 @@ namespace cylvester
             if (playableDirector.state == PlayState.Paused)
                 return;
 
-            if (!(Time.fixedUnscaledTime >= transitionTargetRealtime_)) // check o current time >= targetTime
+            if (!(Time.fixedUnscaledTime >= transitionTargetRealtime_)) // check if Transition has not finished yet
             {
-                speed_ = (CalculateTransitionSpeed(nextMarkerTime_));// berechne tnrsitionSpeed
+                if (!transitionDirectionReverse_) // if transition direction forward, speed becomes positive
+                {
+                    speed_ = CalculateTransitionSpeed(nextMarkerTime_);
+                }
 
-                Debug.Log("Rest time: " + restTime_);
-                Debug.Log("Speed set to: " + speed_);
+                else // if transition direction backward, speed becomes negative
+                {
+                    speed_ = CalculateTransitionSpeed(previousMarkerTime_);
+                }
             }
-
 
             var deltaTime = Time.deltaTime;
             var expectedTimeIncrement = speed_ * deltaTime;
             var expectedTimeInTimeline = playableDirector.time + expectedTimeIncrement;
 
-            if (boundary_.IsInside(expectedTimeInTimeline))
+            if (boundary_.IsInside(expectedTimeInTimeline)) // check if we are in between next and previous marker
             {
                 playableDirector.time = expectedTimeInTimeline;
                 playableDirector.Evaluate();
             }
             else
             {
+                //sets playhead precisly to marker position at the end of transition. 
+                if (!transitionDirectionReverse_) 
+                {
+                    playableDirector.time = nextMarkerTime_;
+                }
+
+                else
+                {
+                    playableDirector.time = previousMarkerTime_;
+                }
+
                 playableDirector.Pause();
                 ResetSpeed();
-                Debug.Log("Speed Reset to " + speed_);
             }
         }
 
@@ -90,10 +104,10 @@ namespace cylvester
         }
 
 
-        public void UpdateTransitionTargetRealTime(float restTime)
+        public void UpdateTransitionTargetRealTime(float restTime, bool reverse)
         {
+            transitionDirectionReverse_ = reverse;
             transitionTargetRealtime_ = Time.fixedUnscaledTime + restTime;
-            restTime_ = restTime;
         }
 
         private float CalculateTransitionSpeed(float targetMarkerTime)
@@ -103,3 +117,9 @@ namespace cylvester
         }
     }
 }
+/*
+            if (reverse_ == true)
+            {
+                speed_ = speed_* -1;
+            }
+            */
