@@ -1,7 +1,9 @@
 using UnityEngine;
+using Microsoft.Azure.Kinect.Sensor;
 
 namespace Akvfx
 {
+
     public sealed class DeviceSettings : ScriptableObject
     {
         #region Editable fields
@@ -22,6 +24,7 @@ namespace Akvfx
         [SerializeField] bool _powerIs60Hz = true;
 
         [SerializeField, Range(0, 6.6f)] float _maxDepth = 1;
+        [SerializeField] DepthMode _depthMode = DepthMode.NFOV_Unbinned;
 
         #endregion
 
@@ -85,6 +88,11 @@ namespace Akvfx
         public float maxDepth {
             get { return _maxDepth; }
             set { _maxDepth = value; }
+        }
+
+        public DepthMode depthMode{
+            get { return _depthMode; }
+            set { _depthMode = value; }
         }
 
         #endregion

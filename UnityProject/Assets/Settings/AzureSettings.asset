@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: daa4216d09a83dc479a7ee221b2a5bf9, type: 3}
-  m_Name: DeviceSetting
+  m_Name: AzureSettings
   m_EditorClassIdentifier: 
   _autoExposure: 1
   _exposure: 0.5
@@ -24,3 +24,4 @@ MonoBehaviour:
   _enableBlc: 0
   _powerIs60Hz: 1
   _maxDepth: 1
+  _depthMode: 2

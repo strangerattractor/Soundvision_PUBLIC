@@ -103,6 +103,7 @@ namespace Akvfx
                 device, ColorControlCommand.PowerlineFrequency,
                 settings.PowerFreqDeviceValue, _powerFreq, forceApply
             );
+
         }
 
         #endregion

@@ -23,6 +23,7 @@ namespace Akvfx
         SerializedProperty _powerIs60Hz;
 
         SerializedProperty _maxDepth;
+        SerializedProperty _depthMode;
 
         static readonly (
             GUIContent enableBlc,
@@ -50,6 +51,7 @@ namespace Akvfx
             _powerIs60Hz = serializedObject.FindProperty("_powerIs60Hz");
 
             _maxDepth = serializedObject.FindProperty("_maxDepth");
+            _depthMode = serializedObject.FindProperty("_depthMode");
         }
 
         public override void OnInspectorGUI()
@@ -84,16 +86,17 @@ namespace Akvfx
             EditorGUILayout.PropertyField(_powerIs60Hz, _labels.powerIs60Hz);
 
             EditorGUILayout.PropertyField(_maxDepth);
+            EditorGUILayout.PropertyField(_depthMode);
 
             serializedObject.ApplyModifiedProperties();
         }
 
-        [MenuItem("Assets/Create/Akvfx/Device Settings")]
+        [MenuItem("Assets/Create/SoundVision/Device Settings")]
         public static void CreateDeviceSettings()
         {
             var asset = ScriptableObject.CreateInstance<DeviceSettings>();
 
-            AssetDatabase.CreateAsset(asset, "Assets/Akvfx Settings.asset");
+            AssetDatabase.CreateAsset(asset, "Assets/AzureSettings.asset");
             AssetDatabase.SaveAssets();
 
             EditorUtility.FocusProjectWindow();

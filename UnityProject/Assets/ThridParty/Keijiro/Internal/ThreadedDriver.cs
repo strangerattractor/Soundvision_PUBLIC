@@ -101,12 +101,14 @@ namespace Akvfx
             // Open the default device.
             var device = Device.Open();
 
+            // Depth Mode
+
             // Start capturing with custom settings.
             device.StartCameras(
                 new DeviceConfiguration {
                     ColorFormat = ImageFormat.ColorBGRA32,
                     ColorResolution = ColorResolution.R1536p, // 2048 x 1536 (4:3)
-                    DepthMode = DepthMode.NFOV_Unbinned,      // 640x576
+                    DepthMode = _settings.depthMode,      // defautlt NFOV unbinned 640x576
                     SynchronizedImagesOnly = true
                 }
             );
