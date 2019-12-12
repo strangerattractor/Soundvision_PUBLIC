@@ -139,6 +139,13 @@
     <Compile Include="Assets\Scripts\Visualizer\TexturePanelBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\DeviceSettings.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\DeviceSettingController.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\GraphicsExtensions.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\K4aExtensions.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\ThreadedDriver.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\XYTable.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\PointCloudBaker.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\EventPump.cs" />
@@ -237,6 +244,7 @@
     <Compile Include="Assets\Tiling.cs" />
     <None Include="Assets\Resources\Shader\Difference.compute" />
     <None Include="Assets\ThridParty\Assets\Construction_Site_Column\README_Import_to_2018-HDRP.txt" />
+    <None Include="Assets\ThridParty\Keijiro\Internal\Unproject.shader" />
     <None Include="Assets\ThridParty\Assets\JapaneseHouse\ReadMe.txt" />
     <None Include="Assets\Resources\buildNumber.txt" />
     <None Include="Assets\Third-Party-Notices.txt" />

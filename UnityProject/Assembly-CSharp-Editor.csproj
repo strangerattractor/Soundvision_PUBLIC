@@ -76,6 +76,7 @@
     <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGeneratorEditMode.cs" />
     <Compile Include="Assets\Editor\UnitTest\UnitTest_SpectrumGeneratorPlayMode.cs" />
     <Compile Include="Assets\ThridParty\Editor\KinectCopyPluginDataHelper.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Editor\DeviceSettingsEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/chikashi/Development/Soundvision/UnityProject/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
