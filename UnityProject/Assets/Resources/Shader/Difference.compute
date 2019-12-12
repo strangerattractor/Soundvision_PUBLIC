@@ -8,12 +8,12 @@ float Factor;
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID)
 {
-    int xOffset = id.x * 64;
-    int yOffset = id.y * 53;
+    int xOffset = id.x * 256; // 2048 / 8
+    int yOffset = id.y * 192; // 1536 / 8
     
-    for(int localY = 0; localY < 53; ++localY)
+    for(int localY = 0; localY < 192; ++localY)
     {
-        for(int localX = 0; localX < 64; ++localX)
+        for(int localX = 0; localX < 256; ++localX)
         {
             uint2 coordinate = uint2(xOffset + localX, yOffset + localY);
             float inputValue = (float)Input[coordinate];

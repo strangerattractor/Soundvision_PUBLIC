@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\Kinect\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectPointCloud.cs" />
     <Compile Include="Assets\Scripts\Kinect\MovementBaker.cs" />
+    <Compile Include="Assets\Scripts\Kinect\MovementBakerRenderTexture.cs" />
     <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
     <Compile Include="Assets\Scripts\Math\Smoother.cs" />
     <Compile Include="Assets\Scripts\Math\Threshold.cs" />
