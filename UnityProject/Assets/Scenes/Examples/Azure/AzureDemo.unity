@@ -678,8 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f128963a36eb50343881d16cb76cdc89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 8400000, guid: f235609b825377142ab45895e91b6839, type: 2}
-  result: {fileID: 8400000, guid: 47d2c97bffd32844a8e61b250da6b7e5, type: 2}
+  input: {fileID: 8400000, guid: 046aa26a9af8e164eb0b20672983a11f, type: 2}
   computeShader: {fileID: 7200000, guid: 603dbf231b79f4245b124e6f915e3bd5, type: 3}
   factor: 1
 --- !u!23 &1484861667
