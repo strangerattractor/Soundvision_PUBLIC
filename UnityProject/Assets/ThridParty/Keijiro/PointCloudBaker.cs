@@ -1,16 +1,22 @@
 using UnityEngine;
+using UnityEngine.Events;
 using GraphicsFormat = UnityEngine.Experimental.Rendering.GraphicsFormat;
 
 namespace Akvfx
 {
+    
+
     public sealed class PointCloudBaker : MonoBehaviour
     {
+
         #region Editable attributes
 
         [SerializeField] DeviceSettings _deviceSettings = null;
         [SerializeField] RenderTexture _colorTexture = null;
         [SerializeField] RenderTexture _positionTexture = null;
         [SerializeField] Shader _shader = null;
+        [SerializeField] UnityEvent azureDataUpdated;
+
 
         #endregion
 
@@ -84,6 +90,8 @@ namespace Akvfx
             GraphicsExtensions.SetRenderTarget(_colorTexture, _positionTexture);
             Graphics.Blit(null, _material, 0);
             RenderTexture.active = prevRT;
+
+            azureDataUpdated.Invoke();
         }
 
         #endregion

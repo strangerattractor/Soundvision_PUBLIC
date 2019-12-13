@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 
 namespace cylvester
 {
@@ -29,7 +27,7 @@ namespace cylvester
             renderer_ = GetComponent<Renderer>();
         }
 
-        private void Update()
+        public void OnAzureUpdated()
         {
             computeShader.SetTexture(kernelHandle_, "Input", input);
             computeShader.SetTexture(kernelHandle_, "Previous", previousFrameTexture_);
@@ -38,7 +36,7 @@ namespace cylvester
 
             computeShader.Dispatch(kernelHandle_, 1, 1, 1);
 
-            renderer_.material.SetTexture("_differenceTexture", resultTexture_);
+            renderer_.material.SetTexture("_BaseColorMap", resultTexture_);
 
         }
     }
