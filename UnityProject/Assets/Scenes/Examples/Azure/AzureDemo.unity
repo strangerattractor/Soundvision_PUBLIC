@@ -336,6 +336,20 @@ MonoBehaviour:
   _colorTexture: {fileID: 8400000, guid: 046aa26a9af8e164eb0b20672983a11f, type: 2}
   _positionTexture: {fileID: 8400000, guid: f235609b825377142ab45895e91b6839, type: 2}
   _shader: {fileID: 4800000, guid: c2bfd9668998b6848ac60594704c344c, type: 3}
+  azureDataUpdated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1484861666}
+        m_MethodName: OnAzureUpdated
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &646155286
 Transform:
   m_ObjectHideFlags: 0
@@ -698,7 +712,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 312d9549de079824294680133ce5530a, type: 2}
+  - {fileID: 2100000, guid: ab3674099fd83a046aa0c9a1dc4b91a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
