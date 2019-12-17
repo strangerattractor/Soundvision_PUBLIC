@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/VisualEffectGraph/VFX Graph Plane.unity
-    guid: cdf3404fd0b1f6c4ead9fb8bb270f164
+    path: Assets/Scenes/Examples/Max Silly Demos/Max Azure Kinect 1.unity
+    guid: 7be48e408f5c643468e328b62ba50503
   m_configObjects: {}

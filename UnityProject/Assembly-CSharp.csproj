@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrogramVFXBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrumVFXBind1.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrumVFXBind2.cs" />
+    <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\WaveFormVFXBind.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectJointBind.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectPointCloud.cs" />
