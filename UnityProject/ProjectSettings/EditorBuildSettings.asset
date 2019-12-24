@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/Max Silly Demos/Max Azure Kinect 1.unity
-    guid: 7be48e408f5c643468e328b62ba50503
+    path: Assets/Scenes/Examples/Max Silly Demos/WaveformParticle.unity
+    guid: 1cb75dca833c4b44da39c72a466d6131
   m_configObjects: {}
