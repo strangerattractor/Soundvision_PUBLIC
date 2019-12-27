@@ -3,6 +3,8 @@ All developers have to use the following version of software
 - Unity 2018.4.3f1 (LTS)
 - Microsoft Visual Studio Commmunity 2017. version 15.9.13
 - Pure Data 0.49.1  **64 bit** (Install via installer)
+- Kinect Azure Sensor SDK 1.3.0
+- Kinect Azure Body Tracking SDK 0.9.5
 
 # Recommended IDE
 - rider by jetbrains if available
