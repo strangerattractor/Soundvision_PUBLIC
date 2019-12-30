@@ -32,8 +32,10 @@ To use this Features PdBackend should exist in the scene.
 ## shmem
 The Unity project access the Arrays in Pd patch via shmem (Shmem) object
 
-## wix heat command
-execute following command under bin directory
+## Nuget package
 
-heat dir . -ag -gg -dr Cylvester -directoryid Cylvester -srd -sreg -cg UnityComponentGroup -out source.wxs -var var.UnityBuildDir
+Some advanced feature such as Kinect Azure requires extra nuget package, using Unity NuGet.
 
+https://github.com/xoofx/UnityNuGet
+
+To add a registry, edit SoundVision/UnityProject/Packages/manifest.json
