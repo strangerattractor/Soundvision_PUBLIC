@@ -11,20 +11,20 @@ namespace cylvester
         [SerializeField] private GameObject spectrogramPanel;
 
         
-        private Renderer spectroGramRenderer_;
+        private Renderer spectrogramRenderer_;
 
         private static readonly int baseColorMap_ = Shader.PropertyToID("_BaseColorMap");
         private static readonly int spectrogramIndex_ = Shader.PropertyToID("_Index");
         
         void Start()
         {
-            spectroGramRenderer_ = spectrogramPanel.GetComponent<Renderer>();
+            spectrogramRenderer_ = spectrogramPanel.GetComponent<Renderer>();
         }
 
         void Update()
         {
-            spectroGramRenderer_.material.SetTexture(baseColorMap_, spectrogram.Texture);
-            spectroGramRenderer_.material.SetInt(spectrogramIndex_, spectrogram.Index);
+            spectrogramRenderer_.material.SetTexture(baseColorMap_, spectrogram.Texture);
+            spectrogramRenderer_.material.SetInt(spectrogramIndex_, spectrogram.Index);
         }
     }
 }
