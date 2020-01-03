@@ -11,6 +11,7 @@ public class LookupTextureMapper : MonoBehaviour
 
     private static readonly int lookupTexture_ = Shader.PropertyToID("_BaseColorMap");
     private static readonly int lookupTextureIndex_ = Shader.PropertyToID("_LookupTextureIndex");
+    private static readonly int lookupTextureLength_ = Shader.PropertyToID("_LookupTextureLength");
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class LookupTextureMapper : MonoBehaviour
     {
         lookupTextureRenderer_.material.SetTexture(lookupTexture_, lookupTexture.Texture);
         lookupTextureRenderer_.material.SetInt(lookupTextureIndex_, lookupTexture.Index);
+        lookupTextureRenderer_.material.SetInt(lookupTextureLength_, lookupTexture.Length);
     }
 
 }

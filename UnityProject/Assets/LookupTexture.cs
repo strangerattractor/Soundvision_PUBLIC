@@ -42,4 +42,5 @@ public class LookupTexture : MonoBehaviour
 
     public Texture2D Texture => texture_;
     public int Index => index_;
+    public int Length => length_;
 }
