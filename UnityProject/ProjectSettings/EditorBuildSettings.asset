@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/Max Silly Demos/Feedbacks.unity
-    guid: b806dc39436b86c4eb6512ab6a29e9c0
+    path: Assets/Scenes/Examples/Max Silly Demos/DarkTrails.unity
+    guid: 45ffa1d4ef5ffce4a8a54ce7f3fa0868
   m_configObjects: {}
