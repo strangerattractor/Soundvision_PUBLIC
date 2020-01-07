@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa4216d09a83dc479a7ee221b2a5bf9, type: 3}
   m_Name: AzureSettings
   m_EditorClassIdentifier: 
-  _autoExposure: 1
-  _exposure: 0.5
-  _autoWhiteBalance: 1
-  _whiteBalance: 0.5
-  _brightness: 0.5
+  _autoExposure: 0
+  _exposure: 1
+  _autoWhiteBalance: 0
+  _whiteBalance: 0.045
+  _brightness: 0.367
   _contrast: 0.5
   _saturation: 0.5
   _sharpness: 0.5
-  _gain: 1
-  _enableBlc: 0
-  _powerIs60Hz: 1
-  _maxDepth: 1.98
-  _depthMode: 2
+  _gain: 0.5
+  _enableBlc: 1
+  _powerIs60Hz: 0
+  _maxDepth: 1.6
+  _depthMode: 1
