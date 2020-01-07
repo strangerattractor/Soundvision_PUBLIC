@@ -375,7 +375,16 @@ VisualEffect:
     m_Float:
       m_Array: []
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: -0.5, y: 0.5}
+        m_Name: x-radius
+        m_Overridden: 1
+      - m_Value: {x: -0.5, y: 0.5}
+        m_Name: y-radius
+        m_Overridden: 1
+      - m_Value: {x: -0.5, y: 0.5}
+        m_Name: z-radius
+        m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
@@ -383,7 +392,13 @@ VisualEffect:
     m_Uint:
       m_Array: []
     m_Int:
-      m_Array: []
+      m_Array:
+      - m_Value: 35
+        m_Name: spawnrate
+        m_Overridden: 1
+      - m_Value: 2
+        m_Name: Lifetime
+        m_Overridden: 1
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
@@ -525,14 +540,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345644628}
-  m_LocalRotation: {x: 0.016418152, y: -0.77741504, z: 0.016418152, w: 0.62855935}
+  m_LocalRotation: {x: 0.018217873, y: -0.6988108, z: 0.014393013, w: 0.71492964}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 137045939}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.6460001, y: -88.7, z: -0.28}
 --- !u!1 &1504770634
 GameObject:
   m_ObjectHideFlags: 0
