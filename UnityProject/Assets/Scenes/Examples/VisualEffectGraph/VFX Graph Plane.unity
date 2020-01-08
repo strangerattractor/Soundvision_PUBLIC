@@ -196,7 +196,7 @@ MonoBehaviour:
   timelineController: {fileID: 65620555}
   channel: 3
   stateManager: {fileID: 850208555}
-  instaTransitionSpeed: 1
+  instaTransitionSpeed: 10
 --- !u!114 &65620555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 65620552}
-  stateManager: {fileID: 850208555}
   initTransitionFactor: 8
 --- !u!1 &155821760
 GameObject:

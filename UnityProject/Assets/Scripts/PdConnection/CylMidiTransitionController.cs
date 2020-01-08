@@ -7,14 +7,14 @@ namespace cylvester
     public class CylMidiTransitionController : MonoBehaviour
     {
         private enum CylCommand
-        { 
+        {
             OneBarLoopButton = 94,
             FourBarLoopButton = 86,
-            NextSelectedScene = 18,
-            CurrentSelectedScene = 17,
+            NextSelectedTransition = 18,
+            CurrentSelectedAnimation = 17,
             InstantTrigger = 2,
         }
-        
+
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private TimelineController timelineController;
         [SerializeField, Range(1, 16)] private int channel = 1;
@@ -23,22 +23,26 @@ namespace cylvester
 
         private const int OneBarTrigger = 96;
         private const int FourBarTrigger = OneBarTrigger * 4;
-        private const float TransitionLength = 16; 
-        
+        private const float TransitionLength = 16;
+
         private ScheduledAction scheduledAction_;
         private int currentTick_;
-        private int currentSelectedScene_ ;
-        private int nextSelectedScene_;
+        private int currentSelectedAnimation_;
+        private int nextSelectedMarker_;
 
         private void Start()
         {
             scheduledAction_ = new ScheduledAction(() =>
             {
-                stateManager.SelectedState = currentSelectedScene_;
-                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
+                stateManager.SelectedState = currentSelectedAnimation_;
+                //playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(instaTransitionSpeed);
+                timelineController.instantTrigger(instaTransitionSpeed);
             });
+
+            currentSelectedAnimation_ = 0;
+            nextSelectedMarker_ = 1;
         }
-        
+
         public void OnSyncReceived(MidiSync midiSync, int counter)
         {
             currentTick_ = counter;
@@ -51,54 +55,55 @@ namespace cylvester
             var command = (CylCommand)mes.Data1;
             switch (command)
             {
-                case CylCommand.NextSelectedScene:
-                {
-                    nextSelectedScene_ = mes.Data2;
+                case CylCommand.NextSelectedTransition:
+
+                    nextSelectedMarker_ = mes.Data2; //next marker only used for direction
+                    Debug.Log("command nextSelectedMarker_=" + nextSelectedMarker_);
                     break;
-                }
+
                 case CylCommand.InstantTrigger:
-                {
+
                     scheduledAction_.Ready();
                     break;
-                }
-                case CylCommand.CurrentSelectedScene:
-                {
-                    currentSelectedScene_ = mes.Data2;
+
+                case CylCommand.CurrentSelectedAnimation:
+
+                    currentSelectedAnimation_ = mes.Data2;
+                    Debug.Log("command currentSelectedAnimation_=" + currentSelectedAnimation_);
                     scheduledAction_.Go();
                     break;
-                }
-                case CylCommand.FourBarLoopButton:
-                {
-                    var restTime = CalculateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
-                    if (nextSelectedScene_ > currentSelectedScene_)
-                    {
-                        timelineController.UpdateTransitionTargetRealTime(restTime, false);
-                        stateManager.SelectedState = nextSelectedScene_;
-                    }
-                    else
-                    {
-                        timelineController.UpdateTransitionTargetRealTime(restTime, true);
-                        stateManager.SelectedState = nextSelectedScene_ + 1;
-                    }
 
-                    break;
-                }
+                case CylCommand.FourBarLoopButton:
                 case CylCommand.OneBarLoopButton:
-                {
-                    var restTime = CalculateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
-                    if (nextSelectedScene_ > currentSelectedScene_)
+                    float restTime=0;
+                    switch(command)
                     {
-                        timelineController.UpdateTransitionTargetRealTime(restTime, false);
-                        stateManager.SelectedState = nextSelectedScene_;
+                        case CylCommand.FourBarLoopButton:
+                            restTime = CalculateRestTime(FourBarTrigger - currentTick_ % FourBarTrigger);
+                            break;
+                        case CylCommand.OneBarLoopButton:
+                            restTime = CalculateRestTime(OneBarTrigger - currentTick_ % OneBarTrigger);
+                            break;
                     }
-                    else
+                    Debug.Log("currentSelectedAnimation_=" + currentSelectedAnimation_);
+                    Debug.Log("nextSelectedScene_=" + nextSelectedMarker_);
+                    bool _reverse = nextSelectedMarker_ <= currentSelectedAnimation_; //nextSelectedMarker_ used to calculate direction
+
+                    if (timelineController.animationPaused())
                     {
-                        timelineController.UpdateTransitionTargetRealTime(restTime, true);
-                        stateManager.SelectedState = nextSelectedScene_ + 1;
-                        }
+                        timelineController.UpdateTransitionTargetRealTime(restTime, _reverse);
+
+                        stateManager.SelectedState = currentSelectedAnimation_ + 1; //marker at which transition starts
+                    }
+                    else //trigger pressed while animation running
+                    {
+                        timelineController.abortAnimation();
+                        
+                    }
                     break;
-                }
+
                 default:
+                    Debug.Log("Unexpected Command: " + mes.Data1);
                     throw new Exception("Unexpected CYL command");
             }
         }

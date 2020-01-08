@@ -85,6 +85,14 @@ namespace cylvester
             set
             {
                 sceneSelection = value;
+                if (value > States.Length - 1)
+                { //if index out of bounds
+                    sceneSelection = States.Length - 1; //set to last index
+                }
+                else if (value < 0)
+                {
+                    sceneSelection = 0;
+                }
                 onStateChanged.Invoke(this);
             }
             get
@@ -103,11 +111,13 @@ namespace cylvester
                     break;
                 case Operation.Previous:
                     if (sceneSelection == 0) return;
-                    sceneSelection--;                        
+                    sceneSelection--;
+                    sceneSelection = Math.Max(sceneSelection, 0); //constrain minimum
                     break;
                 case Operation.Next:
                     if (sceneSelection >= States.Length - 1) return;
                     sceneSelection++;
+                    sceneSelection = Math.Min(sceneSelection, States.Length - 1); //constrain maximum
                     break;
                 default:
                     return;
@@ -127,10 +137,12 @@ namespace cylvester
                 case Operation.Previous:
                     if (sceneSelection == 0) return;
                     sceneSelection--;
+                    sceneSelection = Math.Max(sceneSelection, 0); //constrain minimum
                     break;
                 case Operation.Next:
                     if (sceneSelection >= States.Length - 1) return;
                     sceneSelection++;
+                    sceneSelection = Math.Min(sceneSelection, States.Length - 1); //constrain maximum
                     break;
                 default:
                     return;
