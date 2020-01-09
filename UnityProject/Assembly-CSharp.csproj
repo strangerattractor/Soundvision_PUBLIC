@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LookupTexture.cs" />
+    <Compile Include="Assets\LookupTextureMapper.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSceneGraph\AdvancedMesh.cs" />
@@ -76,6 +78,8 @@
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton\scripts\Skeleton.cs" />
     <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
     <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
+    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\RotateGameObject.cs" />
+    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\VFXAudioTrigger.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\MidiSyncCounter.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\Mover.cs" />
@@ -96,12 +100,15 @@
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\FlareBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\PitchVFXBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SmokeBind.cs" />
+    <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrogramVFXBind.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrumVFXBind1.cs" />
     <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\SpectrumVFXBind2.cs" />
+    <Compile Include="Assets\Scenes\Examples\VisualEffectGraph\script\WaveFormVFXBind.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectJointBind.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectPointCloud.cs" />
     <Compile Include="Assets\Scripts\Kinect\MovementBaker.cs" />
+    <Compile Include="Assets\Scripts\Kinect\MovementBakerRenderTexture.cs" />
     <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
     <Compile Include="Assets\Scripts\Math\Smoother.cs" />
     <Compile Include="Assets\Scripts\Math\Threshold.cs" />
@@ -138,6 +145,13 @@
     <Compile Include="Assets\Scripts\Visualizer\TexturePanelBehaviour.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaterfallVisualizer.cs" />
     <Compile Include="Assets\Scripts\Visualizer\WaveformVisualizerBehaviour.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\DeviceSettings.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\DeviceSettingController.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\GraphicsExtensions.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\K4aExtensions.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\ThreadedDriver.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\Internal\XYTable.cs" />
+    <Compile Include="Assets\ThridParty\Keijiro\PointCloudBaker.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CameraIntrinsics.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\CollectionMap.cs" />
     <Compile Include="Assets\ThridParty\KinectScript\EventPump.cs" />
@@ -236,6 +250,7 @@
     <Compile Include="Assets\Tiling.cs" />
     <None Include="Assets\Resources\Shader\Difference.compute" />
     <None Include="Assets\ThridParty\Assets\Construction_Site_Column\README_Import_to_2018-HDRP.txt" />
+    <None Include="Assets\ThridParty\Keijiro\Internal\Unproject.shader" />
     <None Include="Assets\ThridParty\Assets\JapaneseHouse\ReadMe.txt" />
     <None Include="Assets\Resources\buildNumber.txt" />
     <None Include="Assets\Third-Party-Notices.txt" />
@@ -498,6 +513,9 @@
     <Reference Include="Castle.Core">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Assets/Plugins/Castle.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Azure.Kinect.Sensor">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Assets/Plugins/Microsoft.Azure.Kinect.Sensor.dll</HintPath>
+    </Reference>
     <Reference Include="NSubstitute">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Assets/Plugins/NSubstitute.dll</HintPath>
     </Reference>
@@ -512,6 +530,18 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.buffers@4.4.0/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.memory@4.5.3/System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.numerics.vectors@4.4.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/PackageCache/org.nuget.system.runtime.compilerservices.unsafe@4.5.2/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Unity Installs/2019.2.8f1/Editor/2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

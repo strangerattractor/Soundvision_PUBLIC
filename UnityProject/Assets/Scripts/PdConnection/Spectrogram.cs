@@ -14,6 +14,7 @@ namespace cylvester
     {
         [SerializeField] private PdBackend pdBackend;
         [SerializeField, Range(1, 16)] private int channel = 1;
+        [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
         
         private IPdArraySelector spectrumArraySelector_;
         private Texture2D texture_;
@@ -22,7 +23,7 @@ namespace cylvester
         void Start()
         {
             spectrumArraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
-            texture_ = new Texture2D(PdConstant.BlockSize, PdConstant.BlockSize, TextureFormat.R8, false);
+            texture_ = new Texture2D(PdConstant.BlockSize, arrayLength_, TextureFormat.R8, false);
             
             var pixels = texture_.GetPixels();
             for (var i = 0;i < pixels.Length; ++i)
@@ -43,7 +44,7 @@ namespace cylvester
             texture_.Apply();
             
             index_++;
-            index_ %= PdConstant.BlockSize;
+            index_ %= arrayLength_;
         }
 
         public Texture2D Texture => texture_;

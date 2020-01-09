@@ -1,6 +1,14 @@
 {
-  
-"dependencies": {
+  "scopedRegistries": [
+    {
+      "name": "Unity NuGet",
+      "url": "https://unitynuget-registry.azurewebsites.net",
+      "scopes": [
+        "org.nuget"
+      ]
+    }
+  ],
+  "dependencies": {
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "2.0.8",
@@ -14,11 +22,13 @@
     "com.unity.polybrush": "1.0.1",
     "com.unity.purchasing": "2.0.6",
     "com.unity.render-pipelines.high-definition": "6.9.1-preview",
+    "com.unity.shadergraph": "6.9.2",
     "com.unity.test-framework": "1.0.13",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.1.0",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualeffectgraph": "6.9.2-preview",
+    "org.nuget.system.memory": "4.5.3",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

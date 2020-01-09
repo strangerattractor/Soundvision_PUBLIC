@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Examples/VisualEffectGraph/VFX Graph Plane.unity
-    guid: cdf3404fd0b1f6c4ead9fb8bb270f164
+    path: Assets/Scenes/Examples/Max Silly Demos/BasicTree.unity
+    guid: c832dd23acdb2d74fb4b7f4317a5db35
   m_configObjects: {}
