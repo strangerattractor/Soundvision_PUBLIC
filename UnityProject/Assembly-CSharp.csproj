@@ -63,9 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LookupTexture.cs" />
-    <Compile Include="Assets\LookupTextureMapper.cs" />
+    <Compile Include="Assets\LookupTextureSGBinder.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
+    <Compile Include="Assets\Scenes\Examples\First Project\Scripts\VFXValueBinder.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSceneGraph\AdvancedMesh.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton ForceHands with Sound\Scripts\EmissionBind.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton ForceHands with Sound\Scripts\JointMarker.cs" />
@@ -78,6 +79,8 @@
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton\scripts\Skeleton.cs" />
     <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
     <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
+    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\LightMapper.cs" />
+    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\LookupTextureVFXBinder.cs" />
     <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\RotateGameObject.cs" />
     <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\VFXAudioTrigger.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
