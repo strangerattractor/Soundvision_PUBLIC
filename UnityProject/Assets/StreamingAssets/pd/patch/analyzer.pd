@@ -1,4 +1,4 @@
-#N canvas 179 93 1690 536 10;
+#N canvas -3090 415 1690 536 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj 484 442 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 414 483 dac~, f 6;
@@ -290,8 +290,8 @@ Roses_Front.wav \; TimbreID_Test.wav \;;
 #X text 416 223 176... control channel 1;
 #X obj 6 194 midirealtimein;
 #X obj 242 41 netreceive -u 54345;
-#X obj 598 90 cnv 15 500 60 empty current Forces 20 12 0 45 -204786
--66577 0;
+#X obj 598 90 cnv 15 500 60 empty current PositionCloud 20 12 0 45
+-204786 -66577 0;
 #X obj 786 234 bng 50 250 50 0 empty empty next 15 25 0 10 -204786
 -1 -1;
 #X obj 596 227 bng 50 250 50 0 empty empty rewind 7 25 0 10 -261234
@@ -302,10 +302,10 @@ Roses_Front.wav \; TimbreID_Test.wav \;;
 -1 -1;
 #X msg 692 303 send 176 127 1;
 #X msg 791 304 send 176 127 2;
-#X obj 594 46 cnv 12 500 30 empty previous PositionCloud 20 12 0 25
--262130 -66577 0;
-#X obj 596 152 cnv 12 500 30 empty next ShowAll 20 12 0 25 -262130
+#X obj 594 46 cnv 12 500 30 empty previous PontCloud 20 12 0 25 -262130
 -66577 0;
+#X obj 596 152 cnv 12 500 30 empty next Forces 20 12 0 25 -262130 -66577
+0;
 #X obj 879 467 declare -lib timbreID/timbreIDLib;
 #N canvas 28 541 1273 735 timbreID_example 0;
 #X obj 77 657 nbx 3 28 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -420,7 +420,6 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
 #X restore 405 71 pd shmem;
-#X text 701 378 <--- this is only for reference;
 #X obj 1167 19 cnv 15 400 500 empty empty CYL_Transition_Sim 20 12
 0 14 -204800 -66577 0;
 #X obj 1383 196 bng 15 250 50 0 4bar_trig_sim empty 4_Bar_trigger_Sim
@@ -594,13 +593,13 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X floatatom 1472 98 5 0 0 1 BPM - midi_sim_tempo;
 #X text 1374 100 Clock Sim.:;
 #X obj 1451 98 tgl 15 0 clock_sim_start_stop empty empty 17 7 0 10
--204786 -1 -1 0 1;
+-204786 -1 -1 1 1;
 #X text 1198 40 Simulate the Press of a 1_Bar or 4_Bar Transition trigger.
 ;
 #N canvas 0 50 1167 867 Midi_Clock_Sim 0;
 #X obj 21 155 outlet;
 #X obj 155 14 tgl 15 0 empty clock_sim_start_stop mock 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X msg 110 128 248, f 4;
 #X text 29 -56 MIDI Clock Simulator;
 #X text 8 10 start;
@@ -885,10 +884,10 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 30 0 11 0;
 #X connect 31 0 11 0;
 #X connect 36 0 11 0;
-#X connect 42 0 43 0;
-#X connect 43 0 54 0;
-#X connect 44 0 74 0;
-#X connect 58 0 44 0;
-#X connect 58 0 63 0;
-#X connect 64 0 11 0;
+#X connect 41 0 42 0;
+#X connect 42 0 53 0;
+#X connect 43 0 73 0;
+#X connect 57 0 43 0;
+#X connect 57 0 62 0;
+#X connect 63 0 11 0;
 #X coords 0 0 2 2 0 0 0;
