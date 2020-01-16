@@ -161,6 +161,12 @@
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity Installs/2019.2.8f1/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
