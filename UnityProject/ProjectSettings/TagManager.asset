@@ -16,7 +16,7 @@ TagManager:
   - PostProcessing
   - VFX
   - IgnoreReflection
-  - 
+  - NoShadows
   - 
   - 
   - 

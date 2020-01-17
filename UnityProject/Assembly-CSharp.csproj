@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\AnimatorMidiSync.cs" />
+    <Compile Include="Assets\Scenes\Examples\First Project\Scripts\FilmOrbit.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\ShaderGraphBinder.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\VFXValueBinder.cs" />
     <Compile Include="Assets\Scenes\Examples\KinectSceneGraph\AdvancedMesh.cs" />
@@ -253,15 +254,36 @@
     <Compile Include="Assets\ThridParty\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\ThridParty\Windows\Kinect\Vector4.cs" />
     <Compile Include="Assets\Tiling.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Resources\Shader\Difference.compute" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\ThridParty\Assets\Construction_Site_Column\README_Import_to_2018-HDRP.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\ThridParty\Keijiro\Internal\Unproject.shader" />
     <None Include="Assets\ThridParty\Assets\JapaneseHouse\ReadMe.txt" />
     <None Include="Assets\Resources\buildNumber.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Third-Party-Notices.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Scripts\CustomNode\wave.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
@@ -314,6 +336,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualEffectGraph.Editor">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
@@ -337,12 +362,6 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity Installs/2019.2.8f1/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

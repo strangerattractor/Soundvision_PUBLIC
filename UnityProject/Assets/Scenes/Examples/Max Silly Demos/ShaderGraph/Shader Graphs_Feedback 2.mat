@@ -8,15 +8,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs_Feedback 2
-  m_Shader: {fileID: -6465566751694194690, guid: 1dc6252a4e9f7e946a37fe43111df74a,
+  m_Shader: {fileID: -6465566751694194690, guid: eb70021afffa5ae4ea8133e8f926d674,
     type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _BLENDMODE_ALPHA _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
+    RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
   - TransparentBackface
@@ -36,21 +37,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3089B890: 1.003
-    - Vector1_52578292: 1
-    - Vector1_E27B30A: 1
+    - Vector1_3089B890: 1
+    - Vector1_5144045: 1
+    - Vector1_52578292: 32.73
+    - Vector1_A34C33F0: 0.0021
+    - Vector1_E27B30A: 9.5
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 0
-    - _AlphaDstBlend: 0
+    - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _ReceivesSSR: 0
-    - _RenderQueueType: 1
+    - _RenderQueueType: 5
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -63,16 +66,16 @@ Material:
     - _StencilWriteMaskDistortionVec: 64
     - _StencilWriteMaskGBuffer: 3
     - _StencilWriteMaskMV: 176
-    - _SurfaceType: 0
+    - _SurfaceType: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentSortPriority: 0
     - _UseShadowThreshold: 0
-    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Vector3_5DBEA452: {r: 1.003, g: 1.001, b: 1.001, a: 0}
+    - Vector3_5DBEA452: {r: 1.1, g: 1.1, b: 1.1, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
