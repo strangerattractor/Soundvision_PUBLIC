@@ -5,7 +5,7 @@ namespace cylvester
 {
     public class MidiSyncedLoop : MonoBehaviour
     {
-        [SerializeField, Range(1, 100)] private int loopLengthInBeat = 1;
+        [SerializeField, Range(1, 128)] private int loopLengthInBeat = 1;
         [SerializeField] private UnityEvent loopStarted;
 
         public void OnSyncReceived(MidiSync midiSync, int counter)

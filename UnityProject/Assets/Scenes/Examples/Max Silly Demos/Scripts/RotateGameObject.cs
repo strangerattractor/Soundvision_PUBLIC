@@ -24,15 +24,15 @@ public class RotateGameObject : MonoBehaviour
 
     private void Update()
     {
-        float tiltAroundZ;
+        float tiltAroundY;
         float tiltAroundX;
 
         // Smoothly tilts a transform towards a target rotation.
         if (tiltAngleHorizontal)
         {
-            tiltAroundZ = input_;
+            tiltAroundY = input_;
         }
-        else tiltAroundZ = 0;
+        else tiltAroundY = 0;
 
 
         if (tiltAngleVertical)
@@ -42,7 +42,7 @@ public class RotateGameObject : MonoBehaviour
         else tiltAroundX = 0;
 
 
-        Quaternion target = Quaternion.Euler(tiltAroundX , 0, tiltAroundZ);
+        Quaternion target = Quaternion.Euler(tiltAroundX , tiltAroundY, 0);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
     }

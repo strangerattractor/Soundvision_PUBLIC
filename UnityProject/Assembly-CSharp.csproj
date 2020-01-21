@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\AnimatorMidiSync.cs" />
+    <Compile Include="Assets\Scenes\Examples\First Project\Scripts\FaceCamera.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\FilmOrbit.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\ShaderGraphBinder.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\VFXValueBinder.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\VFXAudioTrigger.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\MidiSyncCounter.cs" />
+    <Compile Include="Assets\Scenes\Examples\MIDI\script\MidiSyncCounterTMP.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\Mover.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\OrangeCube.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\PositionBind.cs" />

@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598e2d32e2c7b0c418e030c3236d663a, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   spectralLut:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.078
+    m_Value: 1
     min: 0
     max: 1
   maxSamples:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 8
     min: 3
     max: 24
@@ -50,6 +50,78 @@ MonoBehaviour:
   fogType:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &-1650932778202513251
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
+  m_Name: Exposure
+  m_EditorClassIdentifier: 
+  active: 0
+  m_AdvancedMode: 0
+  mode:
+    m_OverrideState: 0
+    m_Value: 0
+  meteringMode:
+    m_OverrideState: 0
+    m_Value: 2
+  luminanceSource:
+    m_OverrideState: 0
+    m_Value: 1
+  fixedExposure:
+    m_OverrideState: 0
+    m_Value: 0
+  compensation:
+    m_OverrideState: 0
+    m_Value: 0
+  limitMin:
+    m_OverrideState: 0
+    m_Value: -10
+  limitMax:
+    m_OverrideState: 0
+    m_Value: 20
+  curveMap:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -10
+        value: -10
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 20
+        value: 20
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  adaptationMode:
+    m_OverrideState: 0
+    m_Value: 1
+  adaptationSpeedDarkToLight:
+    m_OverrideState: 0
+    m_Value: 3
+    min: 0.001
+  adaptationSpeedLightToDark:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0.001
 --- !u!114 &-686482520402559471
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -62,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
@@ -111,14 +183,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa3b8214f75b354e9ba2caadd022259, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   focusMode:
     m_OverrideState: 1
     m_Value: 1
   focusDistance:
     m_OverrideState: 1
-    m_Value: 200
+    m_Value: 1.56
     min: 0.1
   nearFocusStart:
     m_OverrideState: 1
@@ -172,15 +244,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Scene Settings Profile 1
+  m_Name: DarkTrails
   m_EditorClassIdentifier: 
   components:
+  - {fileID: -8757737879642904285}
   - {fileID: -5741896387675307245}
   - {fileID: 6424510597000968463}
-  - {fileID: -8757737879642904285}
   - {fileID: 8649462823350647888}
   - {fileID: -657688255281123992}
   - {fileID: -686482520402559471}
+  - {fileID: -1650932778202513251}
 --- !u!114 &6424510597000968463
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -193,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df29e7cc05fbec4aa43e06ea875565d, type: 3}
   m_Name: ProceduralSky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   rotation:
     m_OverrideState: 0
@@ -277,7 +350,7 @@ MonoBehaviour:
     min: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.5
     min: 0
   maximumVelocity:
     m_OverrideState: 0

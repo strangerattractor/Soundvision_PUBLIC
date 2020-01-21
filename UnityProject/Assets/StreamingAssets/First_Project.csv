@@ -1,16 +1,15 @@
 Scene Title,BPM,Notes
+Zero,182,
 Intro,182,
 Vorstellung,182,
 Form,182,
 Farbe,182,
 Bewegung,182,
-Mehrere,182,
 Musik,182,
-BlackLines,182,
-Black_Lines_3D,182,Spin Camera around
-next,182,
-Black_Lines_2D,182,"16 Black Lines. VFX Graph, One for each channel"
-,,
-,,
-,,
+BL_Front,182,
+BL_Side,182,
+BL_Dolly,182,
+BL_noGravity,182,
+BL_Solo,182,
+Dark_Trails,182,
 ,,

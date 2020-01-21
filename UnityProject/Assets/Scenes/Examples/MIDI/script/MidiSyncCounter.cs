@@ -6,6 +6,7 @@ public class MidiSyncCounter : MonoBehaviour
 {
 
     [SerializeField] private Text counter;
+    
 
 
     public void OnSyncReceived(MidiSync midiSync, int count)

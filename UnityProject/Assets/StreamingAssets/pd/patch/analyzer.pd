@@ -1,4 +1,4 @@
-#N canvas -3090 415 1690 536 10;
+#N canvas 254 1027 1690 536 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj 484 442 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 414 483 dac~, f 6;
@@ -593,13 +593,13 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X floatatom 1472 98 5 0 0 1 BPM - midi_sim_tempo;
 #X text 1374 100 Clock Sim.:;
 #X obj 1451 98 tgl 15 0 clock_sim_start_stop empty empty 17 7 0 10
--204786 -1 -1 1 1;
+-204786 -1 -1 0 1;
 #X text 1198 40 Simulate the Press of a 1_Bar or 4_Bar Transition trigger.
 ;
 #N canvas 0 50 1167 867 Midi_Clock_Sim 0;
 #X obj 21 155 outlet;
 #X obj 155 14 tgl 15 0 empty clock_sim_start_stop mock 17 7 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X msg 110 128 248, f 4;
 #X text 29 -56 MIDI Clock Simulator;
 #X text 8 10 start;
