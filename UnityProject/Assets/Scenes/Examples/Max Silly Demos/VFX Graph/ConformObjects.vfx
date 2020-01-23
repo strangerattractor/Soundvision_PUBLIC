@@ -15,7 +15,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661616901}
-  m_UIPosition: {x: 849, y: -208}
+  m_UIPosition: {x: 979, y: -203}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -84,9 +84,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: -1581
-    y: -208
-    width: 2996
-    height: 2771
+    y: -203
+    width: 3005
+    height: 2763
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 8.44
     min: -Infinity
     max: Infinity
     descendantCount: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614832}
   - {fileID: 8926484042661614834}
   - {fileID: 8926484042661616898}
-  m_UIPosition: {x: 827, y: 183}
+  m_UIPosition: {x: 1016, y: 191}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -1575,7 +1575,7 @@ VisualEffectResource:
       m_Float:
         m_Array:
         - m_ExpressionIndex: 0
-          m_Value: 1
+          m_Value: 8.44
         - m_ExpressionIndex: 1
           m_Value: 0
         - m_ExpressionIndex: 2
@@ -3440,7 +3440,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -3507,7 +3507,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 8.44
     m_Space: 2147483647
   m_Property:
     name: o
@@ -5858,7 +5858,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: -1386, y: 1222}
-  m_UICollapsed: 0
+  m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_InputSlots:
   - {fileID: 8926484042661615922}
@@ -11500,7 +11500,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661618419}
-  m_UIPosition: {x: 974, y: 2204}
+  m_UIPosition: {x: 1048, y: 2201}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:

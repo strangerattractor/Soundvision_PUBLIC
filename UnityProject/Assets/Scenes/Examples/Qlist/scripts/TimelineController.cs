@@ -76,7 +76,6 @@ namespace cylvester
 
             if (playableDirector.state == PlayState.Paused)
                 return;
-            
 
             if (!(Time.fixedUnscaledTime >= transitionTargetRealtime_)) // check if Transition has not finished yet
             {

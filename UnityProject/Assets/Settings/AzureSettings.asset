@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa4216d09a83dc479a7ee221b2a5bf9, type: 3}
   m_Name: AzureSettings
   m_EditorClassIdentifier: 
-  _autoExposure: 0
+  _autoExposure: 1
   _exposure: 1
-  _autoWhiteBalance: 0
-  _whiteBalance: 0.5
-  _brightness: 0.448
+  _autoWhiteBalance: 1
+  _whiteBalance: 0
+  _brightness: 0
   _contrast: 0.5
   _saturation: 0.5
   _sharpness: 0.5
