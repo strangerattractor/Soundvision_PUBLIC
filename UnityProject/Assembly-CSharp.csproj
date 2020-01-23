@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\LookupTexture.cs" />
     <Compile Include="Assets\LookupTextureSGBinder.cs" />
-    <Compile Include="Assets\ProceduralSphere.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\AnimatorMidiSync.cs" />

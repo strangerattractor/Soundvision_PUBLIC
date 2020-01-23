@@ -25,7 +25,7 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - Vector1_2A776470: 1
-    - Vector1_8D1FA701: 1.1982764
+    - Vector1_8D1FA701: 0.023905654
     - Vector1_BA50053A: 1
     - Vector1_D4499351: 1
     - _AlphaCutoff: 0.5
