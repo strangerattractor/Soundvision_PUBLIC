@@ -10,6 +10,7 @@ public class UnityRotationEvent : UnityEvent<float>
 public class RotateGameObject : MonoBehaviour
 {
     [SerializeField] float smooth = 5.0f;
+    [SerializeField] private float factor = 1;
     [SerializeField] bool tiltAngleHorizontal;
     [SerializeField] bool tiltAngleVertical;
 
@@ -19,7 +20,7 @@ public class RotateGameObject : MonoBehaviour
 
     public void OnValueChanged(float value)
     {
-        input_ = Mathf.Repeat(input_, 360) + value;        
+        input_ = Mathf.Repeat(input_, 1080) + value * (UnityEngine.Random.Range(0, 1) * 2 -1) * factor;        
     }
 
     private void Update()
