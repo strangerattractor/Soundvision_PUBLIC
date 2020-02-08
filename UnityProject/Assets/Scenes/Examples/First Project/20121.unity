@@ -172,16 +172,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 10
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -194,7 +194,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -268,7 +268,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 28915385}
+  - {fileID: 28915384}
   m_VisualEffect: {fileID: 28915383}
 --- !u!114 &28915387
 MonoBehaviour:
@@ -291,7 +293,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28915381}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -415,16 +417,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 4
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 5
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -437,7 +439,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -511,7 +513,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 93921611}
+  - {fileID: 93921610}
   m_VisualEffect: {fileID: 93921609}
 --- !u!114 &93921613
 MonoBehaviour:
@@ -534,7 +538,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93921607}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -681,16 +685,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.075
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 10
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -703,7 +707,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -777,7 +781,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 133385544}
+  - {fileID: 133385543}
   m_VisualEffect: {fileID: 133385542}
 --- !u!114 &133385546
 MonoBehaviour:
@@ -800,7 +806,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133385540}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1364,8 +1370,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244022345}
-  m_LocalRotation: {x: 0.3312486, y: -0.3312486, z: -0.43247256, w: -0.35501558}
-  m_LocalPosition: {x: 126.24, y: -10, z: -54.98}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 1, y: -10, z: 1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1548,7 +1554,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 64
+  field of view: 5
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2034,7 +2040,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426352681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2361,16 +2367,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.175
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 10
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -2383,7 +2389,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -2457,7 +2463,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 510881651}
+  - {fileID: 510881650}
   m_VisualEffect: {fileID: 510881649}
 --- !u!114 &510881653
 MonoBehaviour:
@@ -2480,7 +2488,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510881647}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2622,6 +2630,9 @@ GameObject:
   - component: {fileID: 554659019}
   - component: {fileID: 554659018}
   - component: {fileID: 554659017}
+  - component: {fileID: 554659023}
+  - component: {fileID: 554659022}
+  - component: {fileID: 554659021}
   m_Layer: 0
   m_Name: Max Forces Points
   m_TagString: Untagged
@@ -2655,7 +2666,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554659016}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2706,6 +2717,9 @@ VisualEffect:
       - m_Value: 0.006
         m_Name: Particle size
         m_Overridden: 1
+      - m_Value: 0.01603125
+        m_Name: Lerp Sound-Color RGB Input
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -2740,12 +2754,84 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554659016}
   m_LocalRotation: {x: -0, y: 0.28276, z: -0, w: 0.9591907}
-  m_LocalPosition: {x: -74.82, y: 40.17, z: 60.15}
+  m_LocalPosition: {x: -74.82, y: 15, z: 60.15}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 32.85, z: 0}
+--- !u!114 &554659021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554659016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8876cdf960126b499a8da4661bf867e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetVFX_: {fileID: 554659019}
+  valueName_: KickInput_
+--- !u!114 &554659022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554659016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de1490c361f2bd48b4a81ad0457a4e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSmooth: 1
+  releaseSmooth: 1
+  ignore0: 0
+  onSmoothProcessed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 554659021}
+        m_MethodName: OnEnergyChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &554659023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554659016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a556319a642d143b7dbcdbace71ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pdbackend: {fileID: 1290644052}
+  channel: 1
+  levelChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 554659022}
+        m_MethodName: OnValueChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  logLevel: 0
 --- !u!1 &573527161
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,8 +3402,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755398169}
-  m_LocalRotation: {x: -0.00010649674, y: 0.9939257, z: 0.110049754, w: 0.00096182525}
-  m_LocalPosition: {x: -0.36, y: -41.7, z: 186}
+  m_LocalRotation: {x: 0.00008455385, y: 0.99496734, z: -0.100196026, w: 0.0008396395}
+  m_LocalPosition: {x: -0.36, y: 43.4, z: 213.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 664423041}
@@ -3584,7 +3670,7 @@ Transform:
   m_GameObject: {fileID: 894298276}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -400, y: -50, z: 100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 1324706412}
   - {fileID: 573527162}
@@ -3917,16 +4003,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.72785157
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 10
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -3939,7 +4025,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -4013,7 +4099,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 979959765}
+  - {fileID: 979959764}
   m_VisualEffect: {fileID: 979959763}
 --- !u!114 &979959767
 MonoBehaviour:
@@ -4036,7 +4124,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979959761}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4224,8 +4312,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164819900}
-  m_LocalRotation: {x: 0.11474354, y: -0.020302176, z: 0.0023459531, w: 0.993185}
-  m_LocalPosition: {x: -0.000021457672, y: 3.49, z: -14.924541}
+  m_LocalRotation: {x: 0.11468023, y: -0.020298837, z: 0.0023440232, w: 0.9931923}
+  m_LocalPosition: {x: 0.00022494793, y: 3.49, z: -14.933102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1529384183}
@@ -4394,14 +4482,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236344048}
-  m_LocalRotation: {x: -0, y: -0.9821398, z: -0, w: 0.18815273}
-  m_LocalPosition: {x: 39.829, y: 22.42, z: 124.42}
+  m_LocalRotation: {x: -0, y: -0.9991944, z: 0, w: -0.040131688}
+  m_LocalPosition: {x: 23.9, y: 20.3, z: 203.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 755398170}
   m_Father: {fileID: 1827850171}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -184.6, z: 0}
 --- !u!95 &1236344050
 Animator:
   serializedVersion: 3
@@ -5344,16 +5432,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 3.8619485
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 10
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -5366,7 +5454,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -5440,7 +5528,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1492707740}
+  - {fileID: 1492707739}
   m_VisualEffect: {fileID: 1492707738}
 --- !u!114 &1492707742
 MonoBehaviour:
@@ -5463,7 +5553,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492707736}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5712,7 +5802,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499230785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6109,16 +6199,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 1.7038529
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 10
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
-      - m_Value: 4.269235
+      - m_Value: 1
         m_Name: Value_2_
         m_Overridden: 1
     m_Vector2f:
@@ -6131,7 +6221,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -6205,7 +6295,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1651017210}
+  - {fileID: 1651017209}
   m_VisualEffect: {fileID: 1651017208}
 --- !u!114 &1651017212
 MonoBehaviour:
@@ -6228,7 +6320,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651017206}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7583,13 +7675,13 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 2.7960784
+      - m_Value: 1
         m_Name: Value_1_
         m_Overridden: 1
       - m_Value: 5
         m_Name: Gain
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.19417161
         m_Name: Force
         m_Overridden: 1
       - m_Value: 1
@@ -7605,7 +7697,7 @@ VisualEffect:
       - m_Value: {x: -400, y: -50, z: 100}
         m_Name: Target_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
+      - m_Value: {x: 2.5, y: 2.5, z: 2.5}
         m_Name: Target_scale
         m_Overridden: 1
       - m_Value: {x: -0, y: 0, z: 0}
@@ -7679,7 +7771,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1842311101}
+  - {fileID: 1842311100}
   m_VisualEffect: {fileID: 1842311099}
 --- !u!114 &1842311103
 MonoBehaviour:
@@ -7702,7 +7796,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842311097}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
