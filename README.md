@@ -38,4 +38,9 @@ Some advanced feature such as Kinect Azure requires extra nuget package, using U
 
 https://github.com/xoofx/UnityNuGet
 
+## Running Pd and Unity Editor / Build
+
+open Soundvision/UnityProject/Assets/StreamingAssets/pd/patch/analyzer.pd  ___ it will be activated by the build or the editor if a scene is run. 
+
+
 To add a registry, edit SoundVision/UnityProject/Packages/manifest.json
