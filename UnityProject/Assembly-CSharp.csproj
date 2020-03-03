@@ -64,6 +64,10 @@
   <ItemGroup>
     <Compile Include="Assets\LookupTexture.cs" />
     <Compile Include="Assets\LookupTextureSGBinder.cs" />
+    <Compile Include="Assets\Scenes\Examples\Complex Demos\Scripts\LightMapper.cs" />
+    <Compile Include="Assets\Scenes\Examples\Complex Demos\Scripts\LookupTextureVFXBinder.cs" />
+    <Compile Include="Assets\Scenes\Examples\Complex Demos\Scripts\RotateGameObject.cs" />
+    <Compile Include="Assets\Scenes\Examples\Complex Demos\Scripts\VFXAudioTrigger.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\BallMapping.cs" />
     <Compile Include="Assets\Scenes\Examples\Composition\script\RmsAnalyzer.cs" />
     <Compile Include="Assets\Scenes\Examples\First Project\Scripts\AnimatorMidiSync.cs" />
@@ -83,10 +87,6 @@
     <Compile Include="Assets\Scenes\Examples\KinectSkeleton\scripts\Skeleton.cs" />
     <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\ConstructionColumnBehaviour.cs" />
     <Compile Include="Assets\Scenes\Examples\LevelThreshold\script\Spawner.cs" />
-    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\LightMapper.cs" />
-    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\LookupTextureVFXBinder.cs" />
-    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\RotateGameObject.cs" />
-    <Compile Include="Assets\Scenes\Examples\Max Silly Demos\Scripts\VFXAudioTrigger.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\CubeSync.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\MidiSyncCounter.cs" />
     <Compile Include="Assets\Scenes\Examples\MIDI\script\MidiSyncCounterTMP.cs" />
