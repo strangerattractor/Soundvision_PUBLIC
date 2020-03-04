@@ -2,9 +2,9 @@
 
 namespace cylvester
 {
-    interface IBoomBall
+  interface IBoomBall
     {
-        float Size { set; }
+    float Size { set; }
     }
 
     public class BoomBall : MonoBehaviour, IBoomBall

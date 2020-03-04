@@ -1,4 +1,4 @@
-#N canvas 254 1027 1690 536 10;
+#N canvas 93 360 1690 536 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj 484 442 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 414 483 dac~, f 6;
