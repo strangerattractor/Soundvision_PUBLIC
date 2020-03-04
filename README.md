@@ -1,6 +1,6 @@
 # The development environment
 All developers have to use the following version of software
-- Unity 2019.2.8f1 (LTS) 
+- Unity 2019.3.3f1
 https://unity3d.com/de/get-unity/download/archive
 - Microsoft Visual Studio Commmunity 2017. version 15.9.13 
 https://docs.microsoft.com/en-gb/visualstudio/releasenotes/vs2017-relnotes-history
