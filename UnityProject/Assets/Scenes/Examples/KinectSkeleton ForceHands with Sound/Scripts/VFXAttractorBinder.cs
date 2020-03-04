@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Experimental.VFX;
+﻿using UnityEngine;
+using UnityEngine.VFX;
 
 public class VFXAttractorBinder : MonoBehaviour
 {

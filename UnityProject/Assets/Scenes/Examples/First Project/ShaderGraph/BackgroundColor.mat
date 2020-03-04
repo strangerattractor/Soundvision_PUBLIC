@@ -25,7 +25,7 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - Vector1_2A776470: 1
-    - Vector1_8D1FA701: 0.33330554
+    - Vector1_8D1FA701: 0
     - Vector1_BA50053A: 1
     - Vector1_D4499351: 1
     - _AlphaCutoff: 0.5
@@ -64,3 +64,16 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &467730843659298609
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
