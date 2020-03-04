@@ -10,3 +10,4 @@ UnityProject/Assets/Plugins/Editor/JetBrains.meta
 UnityProject/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj.meta
 UnityProject/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj
 *.blend
+*.obj
