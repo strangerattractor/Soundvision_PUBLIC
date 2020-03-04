@@ -1,13 +1,13 @@
-#N canvas 1959 406 681 467 10;
+#N canvas 562 197 1281 961 10;
 #X obj 38 30 inlet~;
 #X obj 45 134 rfft~;
 #X obj 45 186 *~;
 #X obj 82 186 *~;
-#X obj 45 226 q8_sqrt~;
+#X obj 48 249 q8_sqrt~;
 #X obj 169 96 block~ 1024 1 1;
 #X obj 102 58 tabreceive~ hann;
 #X obj 76 92 *~;
-#X obj 45 266 tabsend~ fft_\$1;
+#X obj 49 381 tabsend~ fft_\$1;
 #X connect 0 0 7 0;
 #X connect 1 0 2 0;
 #X connect 1 0 2 1;
