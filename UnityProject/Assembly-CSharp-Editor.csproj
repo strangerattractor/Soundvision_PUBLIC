@@ -102,6 +102,9 @@
     <Reference Include="Unity.Polybrush.Editor">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.Polybrush.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Kino.Postprocessing.Editor">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Kino.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
@@ -158,6 +161,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Kino.Postprocessing">
+      <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Kino.Postprocessing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/SoundVision_Repo/Soundvision/UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
