@@ -96,8 +96,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1581
     y: -203
-    width: 3005
-    height: 2807
+    width: 3021
+    height: 2812
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,7 +266,7 @@ MonoBehaviour:
     descendantCount: 3
   - name: position
     path: FloorCollider_position
-    tooltip: The transform position.
+    tooltip: Sets the transform position.
     sheetType: m_Vector3f
     realType: Vector3
     defaultValue:
@@ -279,7 +279,7 @@ MonoBehaviour:
     descendantCount: 0
   - name: angles
     path: FloorCollider_angles
-    tooltip: The euler angles of the transform.
+    tooltip: Sets the euler angles of the transform.
     sheetType: m_Vector3f
     realType: Vector3
     defaultValue:
@@ -292,7 +292,7 @@ MonoBehaviour:
     descendantCount: 0
   - name: scale
     path: FloorCollider_scale
-    tooltip: The scale of the transform along each axis.
+    tooltip: Sets the scale of the transform along each axis.
     sheetType: m_Vector3f
     realType: Vector3
     defaultValue:
