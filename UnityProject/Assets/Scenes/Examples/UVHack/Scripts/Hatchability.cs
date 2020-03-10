@@ -40,7 +40,7 @@ public class Hatchability : MonoBehaviour
     public void OnTriggerReceived()
     {
         int index = (int)Mathf.Floor(Random.Range(0, gameObjects.Count));
-        gameObjects[index].GetComponent<cylvester.OrangeCube>().Invoke("OnTriggerReceived", 0);
+        gameObjects[index].GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", 0);
     }
 
     public void OnStateChanged(IStateReader currentState)

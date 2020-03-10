@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9066308325601123146}
   - component: {fileID: 9066308325601123150}
   - component: {fileID: -3922153068441843633}
-  - component: {fileID: 2620200170647664042}
+  - component: {fileID: -2994411670093202961}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -121,7 +121,7 @@ Animator:
   m_GameObject: {fileID: 9066308325601123147}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4871279100a855d4796223c832275fba, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5a339f99087686c428482403be77f0fd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -130,7 +130,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2620200170647664042
+--- !u!114 &-2994411670093202961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9066308325601123147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c7a7999eb739ac4f8c70171bc778922, type: 3}
+  m_Script: {fileID: 11500000, guid: f4bdcde60045d9649a768634be08bc59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: -3922153068441843633}
