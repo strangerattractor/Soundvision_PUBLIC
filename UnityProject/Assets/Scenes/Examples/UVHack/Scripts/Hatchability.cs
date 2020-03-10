@@ -8,18 +8,22 @@ public class Hatchability : MonoBehaviour
     public Camera cam;
     public GameObject seed;
     List<GameObject> gameObjects = new List<GameObject>();
+    private float speed_ = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        int N = 2;
-        for (int i = -N; i <= N; i++)
+        int Nx = 5;
+        int Ny = 1;
+        float sc = 2;
+        for (int i = -Ny; i <= Ny; i++)
         {
-            for (int j = -N; j <= N; j++)
+            for (int j = -Nx; j <= Nx; j++)
             {
                 var gp = new GameObject("node");
                 gp.transform.parent = transform;
-                gp.transform.position = new Vector3(j, i, 0);
+                gp.transform.position = new Vector3(j * sc, i * sc, 0);
+                gp.transform.localScale = new Vector3(sc, sc, sc);
                 var g = Instantiate(seed, gp.transform);
                 g.GetComponent<UVMapToScreen>().cam = cam;
                 g.GetComponent<UVMapToScreen>().amount = 0.02f;
@@ -40,10 +44,24 @@ public class Hatchability : MonoBehaviour
     public void OnTriggerReceived()
     {
         int index = (int)Mathf.Floor(Random.Range(0, gameObjects.Count));
-        gameObjects[index].GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", 0);
+        int next = (int)Mathf.Floor(Random.Range(0, 4));
+        //gameObjects[index].GetComponent<cylvester.CubeAnimation>().nextMove = next;
+        //gameObjects[index].GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", 0);
+        float count = 0;
+        foreach (var g in gameObjects)
+        {
+            g.GetComponent<cylvester.CubeAnimation>().nextMove = next;
+            g.GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", count);
+            count += 0.02f;
+        }
     }
 
     public void OnStateChanged(IStateReader currentState)
     {
+        speed_ = currentState.CurrentState.Speed;
+        foreach (var g in gameObjects)
+        {
+            g.GetComponent<cylvester.CubeAnimation>().speed_ = speed_;
+        }
     }
 }

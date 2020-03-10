@@ -48,6 +48,6 @@ public class UVMapToScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CorrectUVMap(amount);
+        CorrectUVMap(amount * 0.1f);
     }
 }

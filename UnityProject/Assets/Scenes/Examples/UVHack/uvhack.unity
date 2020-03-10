@@ -292,7 +292,7 @@ MonoBehaviour:
   onStateChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1843145352}
+      - m_Target: {fileID: 95768251}
         m_MethodName: OnStateChanged
         m_Mode: 0
         m_Arguments:
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f9defef7af2514590dadc0a6cddbac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loopLengthInBeat: 1
+  loopLengthInBeat: 4
   loopStarted:
     m_PersistentCalls:
       m_Calls:
