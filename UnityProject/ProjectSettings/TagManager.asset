@@ -18,8 +18,8 @@ TagManager:
   - IgnoreReflection
   - NoShadows
   - IgnoreDOF
-  - 
-  - 
+  - MainView
+  - RenderCam
   - 
   - 
   - 
