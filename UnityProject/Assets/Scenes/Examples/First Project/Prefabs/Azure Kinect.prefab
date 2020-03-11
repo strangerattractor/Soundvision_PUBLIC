@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8890035995671402359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8890035995671402361}
+  - component: {fileID: 8890035995671402360}
+  m_Layer: 0
+  m_Name: Azure Kinect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8890035995671402361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890035995671402359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8890035995671402360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890035995671402359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e1b0f548fe9b74c90eb10da5cffd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deviceSettings: {fileID: 11400000, guid: c681badc1a8be8243af1e0c53d337b50, type: 2}
+  _colorTexture: {fileID: 8400000, guid: 046aa26a9af8e164eb0b20672983a11f, type: 2}
+  _positionTexture: {fileID: 8400000, guid: f235609b825377142ab45895e91b6839, type: 2}
+  _shader: {fileID: 4800000, guid: c2bfd9668998b6848ac60594704c344c, type: 3}
+  azureDataUpdated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8890035995671402359}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

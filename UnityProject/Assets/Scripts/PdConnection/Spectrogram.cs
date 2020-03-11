@@ -23,7 +23,7 @@ namespace cylvester
         void Start()
         {
             spectrumArraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
-            texture_ = new Texture2D(PdConstant.BlockSize, arrayLength_, TextureFormat.R8, false);
+            texture_ = new Texture2D(PdConstant.BlockSize, arrayLength_, TextureFormat.RFloat, false);
             
             var pixels = texture_.GetPixels();
             for (var i = 0;i < pixels.Length; ++i)

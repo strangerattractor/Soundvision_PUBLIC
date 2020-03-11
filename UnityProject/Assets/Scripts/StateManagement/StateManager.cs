@@ -16,8 +16,6 @@ namespace cylvester
     {
         int SelectedState { set; }
         State[] States { get; }
-
-        
     }
 
     public struct State
@@ -35,6 +33,7 @@ namespace cylvester
     
     public class StateManager : MonoBehaviour, IStateManager
     {
+        string[] titles_;
         public enum Operation
         {
             Rewind = 0,
@@ -49,6 +48,8 @@ namespace cylvester
         void Start()
         { 
             var content = System.IO.File.ReadAllText(Application.streamingAssetsPath + "/" + csvFileName + ".csv");
+            Debug.Log(Application.streamingAssetsPath + "/" + csvFileName + ".csv");
+            Debug.Log(content);
             var lines  = content.Split('\n');
             
             var numberOfEntries = lines.Length - 1;
@@ -148,6 +149,19 @@ namespace cylvester
                     return;
             }
             onStateChanged.Invoke(this);
+        }
+
+        public string[] GetTitles()
+        {
+            if (titles_ != null && titles_.Length > 0 )
+                return titles_;
+
+            titles_ = new string[States.Length];
+
+            for (var i = 0; i < States.Length; ++i)
+                titles_[i] = States[i].Title;
+
+            return titles_;
         }
     }
 

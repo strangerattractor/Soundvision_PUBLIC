@@ -44,10 +44,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   m_AdvancedMode: 0
-  sampleCount:
+  quality:
     m_OverrideState: 0
-    m_Value: 8
-    min: 2
+    m_Value: 1
   intensity:
     m_OverrideState: 1
     m_Value: 0.15
@@ -72,6 +71,10 @@ MonoBehaviour:
     m_Value: 1
     min: 0
     max: 20
+  m_SampleCount:
+    m_OverrideState: 0
+    m_Value: 8
+    min: 2
 --- !u!114 &-301191497924047478
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -86,6 +89,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   m_AdvancedMode: 0
+  quality:
+    m_OverrideState: 0
+    m_Value: 1
   spectralLut:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -94,7 +100,7 @@ MonoBehaviour:
     m_Value: 0.932
     min: 0
     max: 1
-  maxSamples:
+  m_MaxSamples:
     m_OverrideState: 0
     m_Value: 8
     min: 3
@@ -114,3 +120,42 @@ MonoBehaviour:
   components:
   - {fileID: -301191497924047478}
   - {fileID: -4720962040454360947}
+--- !u!114 &6167617880481366688
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e3e4eec7ad5a47b778575e0ede947, type: 3}
+  m_Name: Glitch
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  block:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  drift:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  jitter:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  jump:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  shake:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1

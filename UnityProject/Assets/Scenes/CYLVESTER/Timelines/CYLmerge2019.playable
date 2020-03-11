@@ -1,0 +1,1284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9073285363876387554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 59.99999999999999
+  stateName: 7_G5_Outro
+--- !u!114 &-8741216928743743601
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 350.2166666666667
+  stateName: 45_Sun_Climax
+--- !u!114 &-8084603543389391517
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 330.2166666666667
+  stateName: 43_Sun_Full
+--- !u!114 &-7569849075304306783
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 540.2166666666665
+  stateName: 94_Frank_Climax2
+--- !u!114 &-7432552730387965568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 300.2166666666668
+  stateName: 39_Lioness_Fade
+--- !u!114 &-7204491558041352410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 450.2166666666667
+  stateName: 
+--- !u!114 &-7182085122452874751
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 40
+  stateName: 5_G5_Climax_A
+--- !u!114 &-7095819492680987941
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 380.2166666666667
+  stateName: 50_Melo_Climax
+--- !u!114 &-6910903669827617149
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 29.99999999999999
+  stateName: 4_G5_Looooong
+--- !u!114 &-6905274770459195043
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 180.21666666666667
+  stateName: 25_Shnaa_B_BIG_2
+--- !u!114 &-6604023158002286378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 480.2166666666667
+  stateName: 88_Hanabi_Outro
+--- !u!114 &-5674611927081383710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 170.21666666666667
+  stateName: 24_Shnaa_Break
+--- !u!114 &-5571541266288009346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 360.2166666666667
+  stateName: 
+--- !u!114 &-5422480643598854909
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 129.99999999999997
+  stateName: 16
+--- !u!114 &-5272075414110494718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 310.2166666666668
+  stateName: 
+--- !u!114 &-4353310187069692760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 370.2166666666667
+  stateName: 49_Melo_Intro
+--- !u!114 &-4159356307892370248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 340.2166666666667
+  stateName: 44_Sun_Bridge
+--- !u!74 &-3700691658116403808
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Recorded
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 29.716667
+        value: {x: 17.194, y: 294.175, z: 26.295002}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: 
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 10.033334
+        value: {x: 0.053955078, y: -0.011463165, z: -0.023609161}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 20.083334
+        value: {x: 0.053955078, y: 24.510485, z: -11.930826}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 29.716667
+        value: {x: 0.05395794, y: 9.937651, z: -4.8546314}
+        inSlope: {x: 0.00000057030354, y: -0.56787866, z: 0}
+        outSlope: {x: 0.00000057030354, y: -0.56787866, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 40.15
+        value: {x: 13.461813, y: 7.088793, z: -10.721618}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: 
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 0
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 40.15
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 10.033334
+        value: 0.053955078
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 20.083334
+        value: 0.053955078
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 29.716667
+        value: 0.05395794
+        inSlope: 0.00000057030354
+        outSlope: 0.00000057030354
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 40.15
+        value: 13.461813
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 10.033334
+        value: -0.011463165
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 20.083334
+        value: 24.510485
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 29.716667
+        value: 9.937651
+        inSlope: -0.56787866
+        outSlope: -0.56787866
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 40.15
+        value: 7.088793
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 10.033334
+        value: -0.023609161
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 20.083334
+        value: -11.930826
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 29.716667
+        value: -4.8546314
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 40.15
+        value: -10.721618
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 29.716667
+        value: 17.194
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 29.716667
+        value: 294.175
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 29.716667
+        value: 26.295002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  m_HasGenericRootTransform: 1
+  m_HasMotionFloatCurves: 0
+  m_Events: []
+--- !u!114 &-2627546694175930605
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 470.2166666666667
+  stateName: 87_Hanabi_Breakdown
+--- !u!114 &-2497333364882647776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 80
+  stateName: 11_WWW_Intro
+--- !u!114 &-2174831038704913281
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 109.99999999999999
+  stateName: 14_WWW_Bass_Solo
+--- !u!114 &-1936913421313604642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 250.21666666666673
+  stateName: 32_Mono_Outro
+--- !u!114 &-1708197293449807464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 520.2166666666665
+  stateName: 92_Frank_Climax1
+--- !u!114 &-1376164966280872131
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+  m_Name: Markers
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects:
+    - {fileID: -409558874083387957}
+    - {fileID: 996274803395895716}
+    - {fileID: -6910903669827617149}
+    - {fileID: -7182085122452874751}
+    - {fileID: 7040951205750233465}
+    - {fileID: -9073285363876387554}
+    - {fileID: 3308393629613097907}
+    - {fileID: 6296505454378423194}
+    - {fileID: -2497333364882647776}
+    - {fileID: -1094890014351417641}
+    - {fileID: 8521062521580625748}
+    - {fileID: -2174831038704913281}
+    - {fileID: 6902183532733254335}
+    - {fileID: -5422480643598854909}
+    - {fileID: -7432552730387965568}
+    - {fileID: -5272075414110494718}
+    - {fileID: 8662938716087407260}
+    - {fileID: -5674611927081383710}
+    - {fileID: -6905274770459195043}
+    - {fileID: 1547975178041379245}
+    - {fileID: 3870460686283903516}
+    - {fileID: 326865997906187234}
+    - {fileID: 6370238488654213879}
+    - {fileID: 257072519405435513}
+    - {fileID: -1936913421313604642}
+    - {fileID: 2381385507574431367}
+    - {fileID: 6174825845970283441}
+    - {fileID: 3447709380176422198}
+    - {fileID: 1023682766406106458}
+    - {fileID: 2211341621720645059}
+    - {fileID: -8084603543389391517}
+    - {fileID: -4159356307892370248}
+    - {fileID: -8741216928743743601}
+    - {fileID: -5571541266288009346}
+    - {fileID: -4353310187069692760}
+    - {fileID: -7095819492680987941}
+    - {fileID: 3028643555878702741}
+    - {fileID: 3960041490310689199}
+    - {fileID: -1023620044410797746}
+    - {fileID: 7611304621384301263}
+    - {fileID: 5460874118441941447}
+    - {fileID: 4082763396540622022}
+    - {fileID: -7204491558041352410}
+    - {fileID: 4112367548791297672}
+    - {fileID: -2627546694175930605}
+    - {fileID: -6604023158002286378}
+    - {fileID: 4559276401757138044}
+    - {fileID: 8617038440923561917}
+    - {fileID: -390736489773559563}
+    - {fileID: -1708197293449807464}
+    - {fileID: 8228229398844059753}
+    - {fileID: -7569849075304306783}
+    - {fileID: 6094828377127162329}
+    - {fileID: 5292498275238350251}
+    - {fileID: 7673722821807567701}
+--- !u!114 &-1094890014351417641
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 90
+  stateName: 12_WWW_Breakdown
+--- !u!114 &-1023620044410797746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 410.2166666666667
+  stateName: 53_Melo_Climax_2
+--- !u!114 &-409558874083387957
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 10
+  stateName: 2_G5_Intro
+--- !u!114 &-390736489773559563
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 510.21666666666636
+  stateName: 91_Frank_Pickup
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+  m_Name: CYLmerge2019
+  m_EditorClassIdentifier: 
+  m_Version: 0
+  m_Tracks:
+  - {fileID: 419959955071258133}
+  - {fileID: 6984262848885420867}
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+  m_DurationMode: 0
+  m_MarkerTrack: {fileID: -1376164966280872131}
+--- !u!114 &257072519405435513
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 240.21666666666667
+  stateName: 31_Mono_Verse
+--- !u!114 &326865997906187234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 220.21666666666667
+  stateName: 29_Mono_Intro
+--- !u!114 &419959955071258133
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05acc715f855ced458d76ee6f8ac6c61, type: 3}
+  m_Name: Cinemachine Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+--- !u!114 &996274803395895716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 20
+  stateName: 3_G5_B
+--- !u!114 &1023682766406106458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 290.2166666666667
+  stateName: 38_Lioness_Climax+Vox_Solo
+--- !u!114 &1547975178041379245
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 190.21666666666667
+  stateName: 26_Shnaa_Outro
+--- !u!114 &2211341621720645059
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 320.2166666666667
+  stateName: 42_Sun_Intro
+--- !u!114 &2381385507574431367
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 260.2166666666667
+  stateName: 
+--- !u!114 &3028643555878702741
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 390.2166666666667
+  stateName: 51_Melo_Acid-Rise
+--- !u!114 &3308393629613097907
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 70
+  stateName: 8
+--- !u!114 &3447709380176422198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 280.2166666666667
+  stateName: 37_Lioness_Drop
+--- !u!114 &3870460686283903516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 200.21666666666667
+  stateName: 
+--- !u!114 &3960041490310689199
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 400.2166666666667
+  stateName: 52_Melo_Piano
+--- !u!114 &4082763396540622022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 440.2166666666667
+  stateName: 85_Hanabi_Beat
+--- !u!114 &4112367548791297672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 460.2166666666667
+  stateName: 86_Hanabi_Climax
+--- !u!114 &4559276401757138044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 490.21666666666624
+  stateName: 
+--- !u!114 &5292498275238350251
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 560.2166666666665
+  stateName: 
+--- !u!114 &5460874118441941447
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 430.2166666666667
+  stateName: 84_Hanabi_Intro
+--- !u!114 &6094828377127162329
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 550.2166666666665
+  stateName: 95_Frank_Outro
+--- !u!114 &6174825845970283441
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 270.2166666666667
+  stateName: 36_Lioness_Intro
+--- !u!114 &6296505454378423194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 140.00000000000003
+  stateName: 21_Shnaa_Intro
+--- !u!114 &6370238488654213879
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 230.21666666666667
+  stateName: 30_Mono_Break
+--- !u!114 &6902183532733254335
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 120
+  stateName: 15_WWW_Outro
+--- !u!114 &6984262848885420867
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
+  m_Name: Animation Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+  m_InfiniteClipPreExtrapolation: 1
+  m_InfiniteClipPostExtrapolation: 1
+  m_InfiniteClipOffsetPosition: {x: -18.97, y: 21.64, z: 19.74}
+  m_InfiniteClipOffsetEulerAngles: {x: 25.899998, y: 334.06, z: 0.00000047455188}
+  m_InfiniteClipTimeOffset: 0
+  m_InfiniteClipRemoveOffset: 0
+  m_InfiniteClipApplyFootIK: 1
+  mInfiniteClipLoop: 0
+  m_MatchTargetFields: 63
+  m_Position: {x: 0, y: 0, z: 0}
+  m_EulerAngles: {x: 0, y: 0, z: 0}
+  m_AvatarMask: {fileID: 0}
+  m_ApplyAvatarMask: 1
+  m_TrackOffset: 0
+  m_InfiniteClip: {fileID: -3700691658116403808}
+  m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+  m_ApplyOffsets: 0
+--- !u!114 &7040951205750233465
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 49.99999999999999
+  stateName: 6_G5_Climax_B
+--- !u!114 &7611304621384301263
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 420.2166666666667
+  stateName: 83_Hanabi_Intro_Stopped
+--- !u!114 &7673722821807567701
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 150
+  stateName: 22
+--- !u!114 &8228229398844059753
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 530.2166666666665
+  stateName: 93_Frank_Piano-Solo
+--- !u!114 &8521062521580625748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 100
+  stateName: 13_WWW_Climax+Bass
+--- !u!114 &8617038440923561917
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 500.2166666666667
+  stateName: 90_Frank_Frank_Stopped
+--- !u!114 &8662938716087407260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699a85771c17e864fafab4a53a5fc5bd, type: 3}
+  m_Name: Qlist Marker
+  m_EditorClassIdentifier: 
+  m_Time: 160.21666666666667
+  stateName: 23_Shnaa_B_BIG
