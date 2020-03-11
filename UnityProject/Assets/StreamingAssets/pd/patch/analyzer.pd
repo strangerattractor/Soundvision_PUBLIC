@@ -1,7 +1,7 @@
-#N canvas 93 360 1690 536 10;
+#N canvas 1461 236 2266 1489 10;
 #X declare -lib timbreID/timbreIDLib;
-#X obj 484 442 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
-#X obj 414 483 dac~, f 6;
+#X obj 486 429 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
+#X obj 403 552 dac~, f 6;
 #N canvas 215 619 730 390 analyzers_______________________________
 0;
 #X obj 95 44 inlet~;
@@ -23,7 +23,7 @@
 #X obj 96 183 core 0;
 #X obj 120 204 core 1;
 #X obj 149 226 core 2;
-#X obj 173 249 core 3;
+#X obj 175 247 core 3;
 #X obj 199 182 core 4;
 #X obj 225 205 core 5;
 #X obj 252 227 core 6;
@@ -36,6 +36,22 @@
 #X obj 428 207 core 13;
 #X obj 457 229 core 14;
 #X obj 481 252 core 15;
+#X obj 96 291 s vu0;
+#X obj 120 311 s vu1;
+#X obj 149 332 s vu2;
+#X obj 175 350 s vu3;
+#X obj 199 290 s vu4;
+#X obj 225 313 s vu5;
+#X obj 252 334 s vu6;
+#X obj 277 355 s vu7;
+#X obj 314 292 s vu8;
+#X obj 338 312 s vu9;
+#X obj 367 333 s vu10;
+#X obj 393 351 s vu11;
+#X obj 417 291 s vu12;
+#X obj 443 314 s vu13;
+#X obj 472 335 s vu14;
+#X obj 495 356 s vu15;
 #X connect 0 0 16 0;
 #X connect 1 0 17 0;
 #X connect 2 0 18 0;
@@ -52,7 +68,23 @@
 #X connect 13 0 29 0;
 #X connect 14 0 30 0;
 #X connect 15 0 31 0;
-#X restore 485 482 pd analyzers_______________________________;
+#X connect 16 0 32 0;
+#X connect 17 0 33 0;
+#X connect 18 0 34 0;
+#X connect 19 0 35 0;
+#X connect 20 0 36 0;
+#X connect 21 0 37 0;
+#X connect 22 0 38 0;
+#X connect 23 0 39 0;
+#X connect 24 0 40 0;
+#X connect 25 0 41 0;
+#X connect 26 0 42 0;
+#X connect 27 0 43 0;
+#X connect 28 0 44 0;
+#X connect 29 0 45 0;
+#X connect 30 0 46 0;
+#X connect 31 0 47 0;
+#X restore 484 553 pd analyzers_______________________________;
 #X obj 57 45 bang~;
 #X obj 57 68 count 16;
 #X obj 57 95 sel 0;
@@ -272,7 +304,7 @@
 #X connect 9 0 7 0;
 #X connect 10 0 0 0;
 #X connect 11 0 0 0;
-#X restore 417 407 pd sample_playback;
+#X restore 374 398 pd sample_playback;
 #X obj 56 159 text define -k samplefiles;
 #A set Back_Back.wav \; Brutal_Synth.wav \; Dialog.wav \; Drums.wav
 \; Fox_Melo.wav \; Kick.wav \; Pads+Strings.wav \; Rose_Sax.wav \;
@@ -406,7 +438,7 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 23 0 3 0;
 #X restore 879 442 pd timbreID_example;
 #X obj 321 320 r netsend;
-#N canvas 695 332 450 300 shmem 0;
+#N canvas 695 332 450 271 shmem 0;
 #X obj 90 182 table level 16;
 #X obj 89 152 shmem level 16;
 #X obj 89 127 r shmemupdate;
@@ -844,22 +876,43 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X floatatom 1328 452 5 0 0 0 ticks_left_for_transition - -;
 #X obj 1228 346 tgl 20 0 empty Transition_in_Progress _Transition_in_Progress
 20 10 0 10 -258113 -1 -1 0 1;
-#X connect 0 0 2 0;
-#X connect 0 1 2 1;
-#X connect 0 2 2 2;
-#X connect 0 3 2 3;
-#X connect 0 4 2 4;
-#X connect 0 5 2 5;
-#X connect 0 6 2 6;
-#X connect 0 7 2 7;
-#X connect 0 8 2 8;
-#X connect 0 9 2 9;
-#X connect 0 10 2 10;
-#X connect 0 11 2 11;
-#X connect 0 12 2 12;
-#X connect 0 13 2 13;
-#X connect 0 14 2 14;
-#X connect 0 15 2 15;
+#X obj 487 460 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+20;
+#X text 442 429 Normal;
+#X text 460 461 CYL;
+#X obj 484 591 vsl 15 30 0 127 0 0 empty vu0 0 0 -9 0 10 -262144 -1
+-1 52 1;
+#X obj 503 591 vsl 15 30 0 127 0 0 empty vu1 1 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 522 591 vsl 15 30 0 127 0 0 empty vu2 2 0 -9 0 10 -262144 -1
+-1 196 1;
+#X obj 540 591 vsl 15 30 0 127 0 0 empty vu3 3 0 -9 0 10 -262144 -1
+-1 190 1;
+#X obj 559 591 vsl 15 30 0 127 0 0 empty vu4 4 0 -9 0 10 -262144 -1
+-1 321 1;
+#X obj 578 591 vsl 15 30 0 127 0 0 empty vu6 6 0 -9 0 10 -262144 -1
+-1 141 1;
+#X obj 597 591 vsl 15 30 0 127 0 0 empty vu7 7 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 615 591 vsl 15 30 0 127 0 0 empty vu8 8 0 -9 0 10 -262144 -1
+-1 433 1;
+#X obj 633 591 vsl 15 30 0 127 0 0 empty vu9 9 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 652 591 vsl 15 30 0 127 0 0 empty vu10 10 0 -9 0 10 -262144
+-1 -1 1208 1;
+#X obj 671 591 vsl 15 30 0 127 0 0 empty vu11 11 0 -9 0 10 -262144
+-1 -1 303 1;
+#X obj 689 591 vsl 15 30 0 127 0 0 empty vu12 12 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 707 591 vsl 15 30 0 127 0 0 empty vu13 13 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 726 591 vsl 15 30 0 127 0 0 empty vu14 14 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 745 591 vsl 15 30 0 127 0 0 empty vu15 15 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 763 591 vsl 15 30 0 127 0 0 empty vu16 16 0 -9 0 10 -262144
+-1 -1 51 1;
+#X text 399 601 Active Cores;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
@@ -890,4 +943,24 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X connect 57 0 43 0;
 #X connect 57 0 62 0;
 #X connect 63 0 11 0;
+#X connect 75 0 2 0;
+#X connect 75 1 2 1;
+#X connect 75 2 2 2;
+#X connect 75 3 2 3;
+#X connect 75 4 2 4;
+#X connect 75 5 2 4;
+#X connect 75 6 2 5;
+#X connect 75 7 2 5;
+#X connect 75 8 2 6;
+#X connect 75 9 2 6;
+#X connect 75 10 2 7;
+#X connect 75 11 2 7;
+#X connect 75 12 2 8;
+#X connect 75 13 2 8;
+#X connect 75 14 2 9;
+#X connect 75 15 2 9;
+#X connect 75 16 2 10;
+#X connect 75 17 2 10;
+#X connect 75 18 2 11;
+#X connect 75 19 2 12;
 #X coords 0 0 2 2 0 0 0;
