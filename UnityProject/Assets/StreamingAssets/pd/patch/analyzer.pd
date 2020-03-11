@@ -1,4 +1,4 @@
-#N canvas 1461 236 2266 1489 10;
+#N canvas 1461 236 1591 656 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj 486 429 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 403 552 dac~, f 6;
@@ -881,27 +881,27 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X text 442 429 Normal;
 #X text 460 461 CYL;
 #X obj 484 591 vsl 15 30 0 127 0 0 empty vu0 0 0 -9 0 10 -262144 -1
--1 52 1;
+-1 0 1;
 #X obj 503 591 vsl 15 30 0 127 0 0 empty vu1 1 0 -9 0 10 -262144 -1
 -1 0 1;
 #X obj 522 591 vsl 15 30 0 127 0 0 empty vu2 2 0 -9 0 10 -262144 -1
--1 196 1;
+-1 0 1;
 #X obj 540 591 vsl 15 30 0 127 0 0 empty vu3 3 0 -9 0 10 -262144 -1
--1 190 1;
+-1 0 1;
 #X obj 559 591 vsl 15 30 0 127 0 0 empty vu4 4 0 -9 0 10 -262144 -1
--1 321 1;
+-1 0 1;
 #X obj 578 591 vsl 15 30 0 127 0 0 empty vu6 6 0 -9 0 10 -262144 -1
--1 141 1;
+-1 0 1;
 #X obj 597 591 vsl 15 30 0 127 0 0 empty vu7 7 0 -9 0 10 -262144 -1
 -1 0 1;
 #X obj 615 591 vsl 15 30 0 127 0 0 empty vu8 8 0 -9 0 10 -262144 -1
--1 433 1;
+-1 0 1;
 #X obj 633 591 vsl 15 30 0 127 0 0 empty vu9 9 0 -9 0 10 -262144 -1
 -1 0 1;
 #X obj 652 591 vsl 15 30 0 127 0 0 empty vu10 10 0 -9 0 10 -262144
--1 -1 1208 1;
+-1 -1 0 1;
 #X obj 671 591 vsl 15 30 0 127 0 0 empty vu11 11 0 -9 0 10 -262144
--1 -1 303 1;
+-1 -1 0 1;
 #X obj 689 591 vsl 15 30 0 127 0 0 empty vu12 12 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 707 591 vsl 15 30 0 127 0 0 empty vu13 13 0 -9 0 10 -262144
@@ -911,7 +911,7 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 #X obj 745 591 vsl 15 30 0 127 0 0 empty vu15 15 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 763 591 vsl 15 30 0 127 0 0 empty vu16 16 0 -9 0 10 -262144
--1 -1 51 1;
+-1 -1 0 1;
 #X text 399 601 Active Cores;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
