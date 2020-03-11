@@ -7,6 +7,7 @@ public class UVMapToScreen : MonoBehaviour
     public Camera cam;
     public float amount = 0;
     public bool correctSquare = true;
+    public float textureStretch = 1.0f;
 
     void CorrectUVMap(float lerpRate)
     {
@@ -23,8 +24,8 @@ public class UVMapToScreen : MonoBehaviour
             {
                 u.x -= cam.scaledPixelWidth * 0.5f;
                 u.y -= cam.scaledPixelHeight * 0.5f;
-                u.x /= longSide;
-                u.y /= longSide;
+                u.x /= cam.scaledPixelHeight * textureStretch;
+                u.y /= cam.scaledPixelHeight * textureStretch;
                 u.x += 0.5f;
                 u.y += 0.5f;
             }
