@@ -112,7 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   amount: 0
-  correctSquare: 1
+  correctSquare: 0
+  textureStretch: 1.02
 --- !u!95 &-3922153068441843633
 Animator:
   serializedVersion: 3

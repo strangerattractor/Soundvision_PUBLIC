@@ -31,8 +31,12 @@ public class UVMapToScreen : MonoBehaviour
             }
             else
             {
-                u.x /= cam.scaledPixelWidth;
-                u.y /= cam.scaledPixelHeight;
+                u.x -= cam.scaledPixelWidth * 0.5f;
+                u.y -= cam.scaledPixelHeight * 0.5f;
+                u.x /= cam.scaledPixelWidth * textureStretch;
+                u.y /= cam.scaledPixelHeight * textureStretch;
+                u.x += 0.5f;
+                u.y += 0.5f;
             }
             uv[i] = new Vector2(Mathf.Lerp(uv[i].x, u.x, lerpRate), Mathf.Lerp(uv[i].y, u.y, lerpRate));
         }

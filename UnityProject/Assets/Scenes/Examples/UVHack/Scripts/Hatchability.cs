@@ -26,7 +26,7 @@ public class Hatchability : MonoBehaviour
                 gp.transform.localScale = new Vector3(sc, sc, sc);
                 var g = Instantiate(seed, gp.transform);
                 g.GetComponent<UVMapToScreen>().cam = cam;
-                g.GetComponent<UVMapToScreen>().amount = 0.02f;
+                g.GetComponent<UVMapToScreen>().amount = 0.01f;
                 gameObjects.Add(g);
             }
         }
