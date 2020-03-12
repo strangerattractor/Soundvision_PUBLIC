@@ -113,7 +113,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   amount: 0
   correctSquare: 0
-  textureSpread: 1.1
+  textureSpread: 1.02
 --- !u!95 &-3922153068441843633
 Animator:
   serializedVersion: 3

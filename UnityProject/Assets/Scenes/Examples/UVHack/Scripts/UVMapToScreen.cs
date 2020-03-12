@@ -11,6 +11,7 @@ public class UVMapToScreen : MonoBehaviour
 
     void CorrectUVMap(float lerpRate)
     {
+        if (lerpRate <= 0) return;
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         Vector3[] vertices = mesh.vertices;
         Vector2[] uv = mesh.uv;

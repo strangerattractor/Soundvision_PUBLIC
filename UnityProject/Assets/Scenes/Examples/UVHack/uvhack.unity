@@ -1144,6 +1144,11 @@ PrefabInstance:
       propertyPath: amount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9066308325601123150, guid: 62d02d1ba4f042546a8d7966b4e0c9e5,
+        type: 3}
+      propertyPath: textureSpread
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 9066308325601123151, guid: 62d02d1ba4f042546a8d7966b4e0c9e5,
         type: 3}
       propertyPath: m_LocalPosition.x
