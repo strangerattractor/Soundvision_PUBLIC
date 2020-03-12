@@ -12,6 +12,7 @@ namespace cylvester
     public class Waveform : MonoBehaviour, IWaveform
     {
         [SerializeField] private PdBackend pdBackend;
+        [SerializeField] private RenderTexture renderTexture;
         [SerializeField, Range(1, 16)] private int channel = 1;
         
         private IPdArraySelector waveformArraySelector_;
@@ -44,6 +45,10 @@ namespace cylvester
             }
 
             texture_.Apply();
+            if(renderTexture != null)
+            {
+                Graphics.Blit(texture_, renderTexture);
+            }
         }
 
         public Texture2D Texture => texture_;
