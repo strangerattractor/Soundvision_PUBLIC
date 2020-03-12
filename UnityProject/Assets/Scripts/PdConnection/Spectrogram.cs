@@ -13,6 +13,7 @@ namespace cylvester
     public class Spectrogram : MonoBehaviour, ISpectrogram
     {
         [SerializeField] private PdBackend pdBackend;
+        [SerializeField] private RenderTexture renderTexture;
         [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
         
@@ -42,7 +43,11 @@ namespace cylvester
             }
 
             texture_.Apply();
-            
+            if (renderTexture != null)
+            {
+                Graphics.Blit(texture_, renderTexture);
+            }
+
             index_++;
             index_ %= arrayLength_;
         }
