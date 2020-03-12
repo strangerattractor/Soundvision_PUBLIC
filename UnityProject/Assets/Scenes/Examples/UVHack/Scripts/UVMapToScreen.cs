@@ -7,6 +7,7 @@ public class UVMapToScreen : MonoBehaviour
     public Camera cam;
     public float amount = 0;
     public bool correctSquare = true;
+    public float textureSpread = 1;
 
     void CorrectUVMap(float lerpRate)
     {
@@ -30,8 +31,12 @@ public class UVMapToScreen : MonoBehaviour
             }
             else
             {
-                u.x /= cam.scaledPixelWidth;
-                u.y /= cam.scaledPixelHeight;
+                u.x -= cam.scaledPixelWidth * 0.5f;
+                u.y -= cam.scaledPixelHeight * 0.5f;
+                u.x /= cam.scaledPixelWidth * textureSpread;
+                u.y /= cam.scaledPixelHeight * textureSpread;
+                u.x += 0.5f;
+                u.y += 0.5f;
             }
             uv[i] = new Vector2(Mathf.Lerp(uv[i].x, u.x, lerpRate), Mathf.Lerp(uv[i].y, u.y, lerpRate));
         }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3699213236819670991}
   - component: {fileID: 2300795827014297048}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: ShaderCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b21a268ef3fe8474f957fd61a54ae678, type: 2}
+  - {fileID: 2100000, guid: 2f728bbd70aab404a8bb415f3e2c4955, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,6 +113,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   amount: 0
   correctSquare: 0
+  textureSpread: 1.1
 --- !u!95 &-3922153068441843633
 Animator:
   serializedVersion: 3

@@ -9,7 +9,7 @@ namespace cylvester
         private static readonly int RotX = Animator.StringToHash("BoxAnimationRotX");
         private static readonly int RotY = Animator.StringToHash("BoxAnimationRotY");
         private static readonly int RotZ = Animator.StringToHash("BoxAnimationRotZ");
-        private static readonly int TransX = Animator.StringToHash("BoxAnimationTransX");
+        //private static readonly int TransX = Animator.StringToHash("BoxAnimationTransX");
         private static readonly int ScaleX = Animator.StringToHash("BoxAnimationScaleX");
         private static readonly int Origin = Animator.StringToHash("BoxAnimationOrigin");
         private bool trigger_;
@@ -33,10 +33,6 @@ namespace cylvester
                 anim.Play(RotZ, -1, 0f);
             }
             else if (r < 4)
-            {
-                anim.Play(TransX, -1, 0f);
-            }
-            else if (r < 5)
             {
                 anim.Play(ScaleX, -1, 0f);
             }

@@ -44,7 +44,7 @@ public class Hatchability : MonoBehaviour
     public void OnTriggerReceived()
     {
         int index = (int)Mathf.Floor(Random.Range(0, gameObjects.Count));
-        int next = (int)Mathf.Floor(Random.Range(0, 6));
+        int next = (int)Mathf.Floor(Random.Range(0, 5));
         //gameObjects[index].GetComponent<cylvester.CubeAnimation>().nextMove = next;
         //gameObjects[index].GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", 0);
         float count = 0;
