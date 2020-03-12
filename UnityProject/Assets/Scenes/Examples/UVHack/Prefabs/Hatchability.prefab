@@ -45,3 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   seed: {fileID: 9066308325601123147, guid: 62d02d1ba4f042546a8d7966b4e0c9e5, type: 3}
+  backdropSeed: {fileID: 5291531324847674445, guid: b6f5553c598e7844a899d825d0b8ced3,
+    type: 3}
+  Nx: 5
+  Ny: 1
+  boxScale: 2
+  textureSpread: 1.01
+  dampening: 0.1
