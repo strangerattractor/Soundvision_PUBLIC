@@ -152,6 +152,7 @@
     <Compile Include="Assets\Scripts\PdConnection\Spectrogram.cs" />
     <Compile Include="Assets\Scripts\PdConnection\SpectrumGeneratorPlayMode.cs" />
     <Compile Include="Assets\Scripts\PdConnection\Waveform.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\WaveformIntensity.cs" />
     <Compile Include="Assets\Scripts\SecondScreen.cs" />
     <Compile Include="Assets\Scripts\StateManagement\StateManager.cs" />
     <Compile Include="Assets\Scripts\StateManagerDropDown.cs" />

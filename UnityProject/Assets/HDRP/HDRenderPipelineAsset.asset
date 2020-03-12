@@ -167,8 +167,8 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
-      data1: 64942051980061
-      data2: 4539628424389459968
+      data1: 65491807957789
+      data2: 4539628424657829888
     lodBias: 1
     lodBiasMode: 0
     lodBiasQualityLevel: 0
