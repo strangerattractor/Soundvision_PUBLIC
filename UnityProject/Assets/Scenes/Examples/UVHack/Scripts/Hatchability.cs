@@ -13,10 +13,15 @@ public class Hatchability : MonoBehaviour
     [SerializeField] private int Ny = 0;
     [SerializeField] private float boxScale = 1;
     [SerializeField] private float textureSpread = 1;
+    [SerializeField] private float dampening = 0.1f;
 
     // Start is called before the first frame update
     void Start()
     {
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
         for (int i = -Ny; i <= Ny; i++)
         {
             for (int j = -Nx; j <= Nx; j++)
@@ -46,6 +51,7 @@ public class Hatchability : MonoBehaviour
         foreach (var g in gameObjects)
         {
             g.GetComponent<UVMapToScreen>().textureSpread = textureSpread;
+            g.GetComponent<UVMapToScreen>().dampening = dampening;
             if (Random.Range(0.0f, 1.0f) < 0.5f) continue;
             g.GetComponent<cylvester.CubeAnimation>().nextMove = next;
             g.GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", count);

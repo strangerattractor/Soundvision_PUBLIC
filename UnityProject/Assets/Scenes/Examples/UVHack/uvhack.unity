@@ -1224,6 +1224,21 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1461024799}
+    - target: {fileID: 2764311441063129338, guid: ec10908edfef02f43b6918e1af9123e1,
+        type: 3}
+      propertyPath: Nx
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2764311441063129338, guid: ec10908edfef02f43b6918e1af9123e1,
+        type: 3}
+      propertyPath: Ny
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2764311441063129338, guid: ec10908edfef02f43b6918e1af9123e1,
+        type: 3}
+      propertyPath: boxScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2764311441063129339, guid: ec10908edfef02f43b6918e1af9123e1,
         type: 3}
       propertyPath: m_Name

@@ -8,6 +8,7 @@ public class UVMapToScreen : MonoBehaviour
     public float amount = 0;
     public bool correctSquare = true;
     public float textureSpread = 1;
+    public float dampening = 0.1f;
 
     void CorrectUVMap(float lerpRate)
     {
@@ -54,6 +55,6 @@ public class UVMapToScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CorrectUVMap(amount * 0.1f);
+        CorrectUVMap(amount * dampening);
     }
 }
