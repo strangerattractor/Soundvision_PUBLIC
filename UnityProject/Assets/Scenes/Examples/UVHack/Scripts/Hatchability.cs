@@ -7,7 +7,9 @@ public class Hatchability : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private GameObject seed;
+    [SerializeField] private GameObject backdropSeed;
     List<GameObject> gameObjects = new List<GameObject>();
+    GameObject backdrop;
     private float speed_ = 1.0f;
     [SerializeField] private int Nx = 0;
     [SerializeField] private int Ny = 0;
@@ -22,6 +24,13 @@ public class Hatchability : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
         }
+        if (backdropSeed != null)
+        {
+            backdrop = Instantiate(backdropSeed, transform);
+            backdrop.GetComponent<UVMapToScreen>().cam = cam;
+            backdrop.GetComponent<UVMapToScreen>().amount = 0.02f;
+        }
+
         for (int i = -Ny; i <= Ny; i++)
         {
             for (int j = -Nx; j <= Nx; j++)
@@ -45,6 +54,12 @@ public class Hatchability : MonoBehaviour
 
     public void OnTriggerReceived()
     {
+        if (backdrop != null)
+        {
+            backdrop.GetComponent<UVMapToScreen>().textureSpread = textureSpread;
+            backdrop.GetComponent<UVMapToScreen>().dampening = dampening;
+        }
+
         int index = (int)Mathf.Floor(Random.Range(0, gameObjects.Count));
         int next = (int)Mathf.Floor(Random.Range(0, 5));
         float count = 0;
