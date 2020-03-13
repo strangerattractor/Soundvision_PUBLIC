@@ -595,6 +595,7 @@ GameObject:
   - component: {fileID: 1930902207}
   - component: {fileID: 1930902204}
   - component: {fileID: 1930902203}
+  - component: {fileID: 1930902208}
   m_Layer: 0
   m_Name: WorkspacepcacheVFX
   m_TagString: Untagged
@@ -615,7 +616,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length_: 100
-  renderTexture: {fileID: 8400000, guid: 4fbd83fc21f5ef24aa68c347830d3a08, type: 2}
+  renderTexture: {fileID: 8400000, guid: de8fe6e8298bae04b9e3d33bddefff37, type: 2}
+  texture_: {fileID: 0}
 --- !u!73398921 &1930902204
 VFXRenderer:
   m_ObjectHideFlags: 2
@@ -734,6 +736,20 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   logLevel: 0
+--- !u!114 &1930902208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930902202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af265ade68d493409d7ac736217bf82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookupTexture: {fileID: 1930902203}
+  visualEffect: {fileID: 1930902205}
 --- !u!1 &1954719186
 GameObject:
   m_ObjectHideFlags: 0

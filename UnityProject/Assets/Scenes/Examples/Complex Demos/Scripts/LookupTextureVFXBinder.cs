@@ -3,8 +3,8 @@ using UnityEngine.VFX;
 
 public class LookupTextureVFXBinder : MonoBehaviour
 {
-        [SerializeField] private LookupTexture lookupTexture;
-        [SerializeField] private VisualEffect visualEffect;
+        [SerializeField]  LookupTexture lookupTexture;
+        [SerializeField]  VisualEffect visualEffect;
 
         public void Update()
         {

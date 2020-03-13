@@ -6,7 +6,7 @@ public class LookupTexture : MonoBehaviour
 {
     [SerializeField] private int length_ = 100;
     [SerializeField] private RenderTexture renderTexture;
-    private Texture2D texture_;
+    public Texture2D texture_;
 
     private float input_;
     private int index_;
