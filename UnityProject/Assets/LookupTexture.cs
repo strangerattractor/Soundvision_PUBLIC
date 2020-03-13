@@ -5,14 +5,15 @@ using UnityEngine;
 public class LookupTexture : MonoBehaviour
 {
     [SerializeField] private int length_ = 100;
-    public Texture2D texture_;
+    [SerializeField] private RenderTexture renderTexture;
+    private Texture2D texture_;
 
     private float input_;
     private int index_;
 
     private void Start()
     {
-        texture_ = new Texture2D(1, length_, TextureFormat.R8, false);
+        texture_ = new Texture2D(1, length_, TextureFormat.RFloat, false);
 
         var pixels = texture_.GetPixels();
         for (var i = 0; i < pixels.Length; i++)
@@ -35,6 +36,10 @@ public class LookupTexture : MonoBehaviour
         }
 
         texture_.Apply();
+        if (renderTexture != null)
+        {
+            Graphics.Blit(texture_, renderTexture);
+        }
 
         index_++;
         index_ %= length_;

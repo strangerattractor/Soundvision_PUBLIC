@@ -108,6 +108,7 @@
     <Compile Include="Assets\Scenes\Examples\SpectrogramWorld\Scripts\SpectrogramMapper.cs" />
     <Compile Include="Assets\Scenes\Examples\Texture\TextureMapper.cs" />
     <Compile Include="Assets\Scenes\Examples\TimbreID\script\idtotext.cs" />
+    <Compile Include="Assets\Scenes\Examples\UVHack\Scripts\CorrectAspectRenderTexture.cs" />
     <Compile Include="Assets\Scenes\Examples\UVHack\Scripts\CubeAnimation.cs" />
     <Compile Include="Assets\Scenes\Examples\UVHack\Scripts\Hatchability.cs" />
     <Compile Include="Assets\Scenes\Examples\UVHack\Scripts\MoveToOrigin.cs" />
