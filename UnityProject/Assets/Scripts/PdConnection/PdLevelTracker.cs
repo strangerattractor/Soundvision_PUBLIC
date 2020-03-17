@@ -133,7 +133,6 @@ public sealed class PdLevelTracker : MonoBehaviour
     void Update()
     {
         var input = inputLevel;
-        Debug.Log(input);
         var dt = Time.deltaTime;
 
         // Auto gain control
