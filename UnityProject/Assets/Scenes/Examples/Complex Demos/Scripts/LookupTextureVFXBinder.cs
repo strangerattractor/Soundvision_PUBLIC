@@ -10,6 +10,6 @@ public class LookupTextureVFXBinder : MonoBehaviour
         {
             visualEffect.SetTexture("_LookupTexture", lookupTexture.Texture);
             visualEffect.SetInt("_LookupTextureIndex", lookupTexture.Index);
-            visualEffect.SetInt("_LookupTextureLength", lookupTexture.Index);
+            visualEffect.SetInt("_LookupTextureLength", lookupTexture.Length);
         }
 }

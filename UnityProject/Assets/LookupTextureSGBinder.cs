@@ -9,7 +9,7 @@ public class LookupTextureSGBinder : MonoBehaviour
 
     private Renderer lookupTextureRenderer_;
 
-    private static readonly int lookupTexture_ = Shader.PropertyToID("_BaseColorMap");
+    private static readonly int lookupTexture_ = Shader.PropertyToID("_LookupTexture");
     private static readonly int lookupTextureIndex_ = Shader.PropertyToID("_LookupTextureIndex");
     private static readonly int lookupTextureLength_ = Shader.PropertyToID("_LookupTextureLength");
 
@@ -21,9 +21,13 @@ public class LookupTextureSGBinder : MonoBehaviour
 
     private void Update()
     {
-        lookupTextureRenderer_.material.SetTexture(lookupTexture_, lookupTexture.Texture);
-        lookupTextureRenderer_.material.SetInt(lookupTextureIndex_, lookupTexture.Index);
-        lookupTextureRenderer_.material.SetInt(lookupTextureLength_, lookupTexture.Length);
+        var materials = lookupTextureRenderer_.materials;
+        foreach(var material in materials)
+        {
+            material.SetTexture(lookupTexture_, lookupTexture.Texture);
+            material.SetInt(lookupTextureIndex_, lookupTexture.Index);
+            material.SetInt(lookupTextureLength_, lookupTexture.Length);
+        }
     }
 
 }
