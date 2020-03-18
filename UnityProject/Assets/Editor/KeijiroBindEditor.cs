@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using UnityEditor;
+using Lasp.Editor;
 
 [CanEditMultipleObjects]
 [CustomEditor(typeof(KeijiroBind))]

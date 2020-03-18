@@ -408,7 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1032228129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b753610926f3d41bde22bd145d0a83, type: 3}
+  m_Script: {fileID: 11500000, guid: 675eefdd486c7404787b16a979e9ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _inputMin: 0
@@ -418,11 +418,11 @@ MonoBehaviour:
   references:
     version: 1
     00000000:
-      type: {class: Vector3PropertyBinder, ns: , asm: Assembly-CSharp}
+      type: {class: Vector3PropertyBinder, ns: Lasp, asm: Lasp.Runtime}
       data:
         Enabled: 1
         Target: {fileID: 1032228135}
-        PropertyName: position
+        PropertyName: localPosition
         _propertyType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         Value0: {x: -1, y: 0, z: 0}
@@ -524,64 +524,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032228129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3731561, y: 2.6470273, z: 11.409348}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1045801622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1045801624}
-  - component: {fileID: 1045801623}
-  m_Layer: 0
-  m_Name: PdLevelTracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1045801623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045801622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2efbd42e71220d840a147de06b0d3e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pdbackend: {fileID: 1191391929}
-  _channel: 0
-  _autoGain: 1
-  _gain: 6
-  _dynamicRange: 12
-  _holdAndFallDown: 1
-  _fallDownSpeed: 0.3
-  _propertyBinders: []
-  references:
-    version: 1
---- !u!4 &1045801624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045801622}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3731561, y: 2.6470273, z: 11.409348}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1141708226
 GameObject:
@@ -1060,5 +1007,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
