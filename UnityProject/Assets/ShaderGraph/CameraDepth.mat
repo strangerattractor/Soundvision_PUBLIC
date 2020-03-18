@@ -36,8 +36,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _LookupTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2DLOD_58E4CBBD_Texture_1:
         m_Texture: {fileID: 2800000, guid: 51866e0f77a17e5449fb444215f5c04b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_B9D8B596_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b5fddf87fb2825e4395d6a3e02d8606d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_D69AC03F_Texture_1:
@@ -47,23 +55,32 @@ Material:
     m_Floats:
     - Vector1_2DC340D2: 0.02
     - Vector1_420F1924: 1
+    - Vector1_48D11B0D: 8.32
     - Vector1_503535A: 1
-    - Vector1_50F1094A: -1.91
+    - Vector1_50F1094A: 0.62
+    - Vector1_88D15308: 1
     - Vector1_96CF8D42: 0.71
-    - Vector1_BFA94A31: 4.4
+    - Vector1_98F9DE85: 0
+    - Vector1_BFA94A31: 10
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
     - _CullMode: 2
     - _CullModeForward: 2
+    - _DisplacementFactor: 0
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
+    - _EmissionMultiplier: 1
+    - _LookupTextureIndex: 0
+    - _LookupTextureLength: 0
     - _ReceivesSSR: 1
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
+    - _StartDistanceFromCamera: 2
+    - _StartDistancefromCamera: 2
     - _StencilRef: 2
     - _StencilRefDepth: 0
     - _StencilRefDistortionVec: 64
@@ -79,10 +96,14 @@ Material:
     - _TransparentCullMode: 2
     - _TransparentSortPriority: 0
     - _UseShadowThreshold: 0
+    - _YTiling: -0.05
+    - _Y_Tiling: -0.05
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Vector2_1007532B: {r: -100, g: 100, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ScanColor: {r: 0.09743295, g: 1, b: 0, a: 0}
