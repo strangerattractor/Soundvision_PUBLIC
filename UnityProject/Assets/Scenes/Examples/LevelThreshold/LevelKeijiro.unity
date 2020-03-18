@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a556319a642d143b7dbcdbace71ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdbackend: {fileID: 1191391929}
+  pdbackend: {fileID: 0}
   channel: 1
   levelChanged:
     m_PersistentCalls:
@@ -915,7 +915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ab37d032df403e881d6a7a78141815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdBackend: {fileID: 0}
+  pdbackend: {fileID: 0}
+  channel: 0
   selection:
     serializedVersion: 2
     x: 57.6
@@ -925,7 +926,6 @@ MonoBehaviour:
   energyChanged:
     m_PersistentCalls:
       m_Calls: []
-  channel: 0
 --- !u!114 &1943696188
 MonoBehaviour:
   m_ObjectHideFlags: 0
