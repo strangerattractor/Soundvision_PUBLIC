@@ -71,12 +71,15 @@ Material:
     - Vector1_96CF8D42: 0.71
     - Vector1_98F9DE85: 0
     - Vector1_BFA94A31: 10
+    - Vector1_CE2FBB5: 1
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
+    - _Blend_Scan_Texture: 0.5
     - _CullMode: 2
     - _CullModeForward: 2
+    - _DampingFactor: 1
     - _DisplacementFactor: 0
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
@@ -87,6 +90,7 @@ Material:
     - _ReceivesSSR: 1
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _ScanGridSize: 0.8
     - _SrcBlend: 1
     - _StartDistanceFromCamera: 2
     - _StartDistancefromCamera: 2
@@ -116,3 +120,4 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScanColor: {r: 0.09743295, g: 1, b: 0, a: 0}
+    - _ScanGridTiling: {r: 8, g: 8, b: 0, a: 0}
