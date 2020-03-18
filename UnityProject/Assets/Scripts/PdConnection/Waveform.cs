@@ -9,11 +9,9 @@ namespace cylvester
         Texture2D Texture { get; }
     }
     
-    public class Waveform : MonoBehaviour, IWaveform
+    public class Waveform : PdBaseBind, IWaveform
     {
-        [SerializeField] private PdBackend pdBackend;
         [SerializeField] private RenderTexture renderTexture;
-        [SerializeField, Range(1, 16)] private int channel = 1;
         
         private IPdArraySelector waveformArraySelector_;
         private Texture2D texture_;
@@ -21,8 +19,9 @@ namespace cylvester
         
         void Start()
         {
+            base.Start();
             cache_ = new int[PdConstant.BlockSize];
-            waveformArraySelector_ = new PdArraySelector(pdBackend.WaveformArrayContainer);
+            waveformArraySelector_ = new PdArraySelector(pdbackend.WaveformArrayContainer);
             texture_ = new Texture2D(PdConstant.BlockSize, PdConstant.BlockSize, TextureFormat.R8, false);
             
             var pixels = texture_.GetPixels();

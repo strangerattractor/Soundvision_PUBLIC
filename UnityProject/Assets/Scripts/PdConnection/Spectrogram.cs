@@ -10,11 +10,9 @@ namespace cylvester
         int Index { get;  }
     }
     
-    public class Spectrogram : MonoBehaviour, ISpectrogram
+    public class Spectrogram : PdBaseBind, ISpectrogram
     {
-        [SerializeField] private PdBackend pdBackend;
         [SerializeField] private RenderTexture renderTexture;
-        [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
         
         private IPdArraySelector spectrumArraySelector_;
@@ -23,7 +21,8 @@ namespace cylvester
         
         void Start()
         {
-            spectrumArraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
+            base.Start();
+            spectrumArraySelector_ = new PdArraySelector(pdbackend.SpectrumArrayContainer);
             texture_ = new Texture2D(PdConstant.BlockSize, arrayLength_, TextureFormat.RFloat, false);
             
             var pixels = texture_.GetPixels();

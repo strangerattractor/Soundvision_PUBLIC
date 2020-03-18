@@ -1,11 +1,5 @@
-﻿UnityProject/Library
-UnityProject/Temp
-UnityProject/obj
-UnityProject/.idea
 bin
 setup/setup/obj
-UnityProject/.vs
-UnityProject/.idea/.idea.UnityProject/.idea
 UnityProject/Assets/Plugins/Editor/JetBrains.meta
 UnityProject/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj.meta
 UnityProject/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj

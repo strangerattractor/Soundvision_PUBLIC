@@ -10,10 +10,8 @@ namespace cylvester
     {
     }
     
-    public class PdLevelBind : MonoBehaviour
+    public class PdLevelBind : PdBaseBind
     {
-        [SerializeField] private PdBackend pdbackend;
-        [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] private LevelEvent levelChanged;
         [SerializeField] bool logLevel;
         private float level_;
