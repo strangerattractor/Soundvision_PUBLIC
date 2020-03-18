@@ -8,10 +8,8 @@ namespace cylvester
     {
     }
     
-    public class PdNoiseBind : MonoBehaviour
+    public class PdNoiseBind : PdBaseBind
     {
-        [SerializeField] private PdBackend pdbackend;
-        [SerializeField, Range(1, 16)] private int channel = 1;
         [SerializeField] private NoiseEvent noiseLevelChanged;
         private float noise_;
         
