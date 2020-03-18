@@ -36,6 +36,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - BaseMap:
+        m_Texture: {fileID: 2800000, guid: 310576c6c5bc74d48b3822ea80f62671, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_461D2F57:
+        m_Texture: {fileID: 2800000, guid: 310576c6c5bc74d48b3822ea80f62671, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _LookupTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -58,6 +66,7 @@ Material:
     - Vector1_48D11B0D: 8.32
     - Vector1_503535A: 1
     - Vector1_50F1094A: 0.62
+    - Vector1_86F65AA4: 0.5
     - Vector1_88D15308: 1
     - Vector1_96CF8D42: 0.71
     - Vector1_98F9DE85: 0
@@ -72,7 +81,7 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
-    - _EmissionMultiplier: 1
+    - _EmissionMultiplier: 0
     - _LookupTextureIndex: 0
     - _LookupTextureLength: 0
     - _ReceivesSSR: 1

@@ -126,6 +126,7 @@
     <Compile Include="Assets\Scripts\Kinect\KinectPointCloud.cs" />
     <Compile Include="Assets\Scripts\Kinect\MovementBaker.cs" />
     <Compile Include="Assets\Scripts\Kinect\MovementBakerRenderTexture.cs" />
+    <Compile Include="Assets\Scripts\Lasp\PropertyBinder.cs" />
     <Compile Include="Assets\Scripts\Math\BodyHolder.cs" />
     <Compile Include="Assets\Scripts\Math\Smoother.cs" />
     <Compile Include="Assets\Scripts\Math\Threshold.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Assets\Scripts\PdConnection\CylMidiTransitionController.cs" />
     <Compile Include="Assets\Scripts\PdConnection\DspController.cs" />
     <Compile Include="Assets\Scripts\PdConnection\ISpectrumGenerator.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\KeijiroBind.cs" />
     <Compile Include="Assets\Scripts\PdConnection\MidiLogger.cs" />
     <Compile Include="Assets\Scripts\PdConnection\MidiParser.cs" />
     <Compile Include="Assets\Scripts\PdConnection\MidiSequencer.cs" />
@@ -143,6 +145,7 @@
     <Compile Include="Assets\Scripts\PdConnection\PdBackend.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdConstant.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdLevelBind.cs" />
+    <Compile Include="Assets\Scripts\PdConnection\PdLevelTracker.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdNoiseBind.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdPitchBind.cs" />
     <Compile Include="Assets\Scripts\PdConnection\PdProcess.cs" />

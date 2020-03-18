@@ -64,8 +64,16 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\AppBuilder.cs" />
     <Compile Include="Assets\Editor\CreatePlane.cs.cs" />
+    <Compile Include="Assets\Editor\KeijiroBindEditor.cs" />
+    <Compile Include="Assets\Editor\Lasp\ComponentSelector.cs" />
+    <Compile Include="Assets\Editor\Lasp\CoreEditorUtils.cs" />
+    <Compile Include="Assets\Editor\Lasp\LevelMeterDrawerEditor.cs" />
+    <Compile Include="Assets\Editor\Lasp\PropertyBinderEditor.cs" />
+    <Compile Include="Assets\Editor\Lasp\PropertySelectorEditor.cs" />
+    <Compile Include="Assets\Editor\Lasp\Utility.cs" />
     <Compile Include="Assets\Editor\LevelMeter.cs" />
     <Compile Include="Assets\Editor\PdBackendEditor.cs" />
+    <Compile Include="Assets\Editor\PdLevelTrackerEditor.cs" />
     <Compile Include="Assets\Editor\PdSpectrumBindEditor.cs" />
     <Compile Include="Assets\Editor\RectangularSelection.cs" />
     <Compile Include="Assets\Editor\SequencerEditor.cs" />

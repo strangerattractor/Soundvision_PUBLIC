@@ -1,4 +1,4 @@
-#N canvas 211 196 1591 656 10;
+#N canvas 211 196 1103 506 10;
 #X declare -lib timbreID/timbreIDLib;
 #X obj 486 429 adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
 #X obj 403 552 dac~, f 6;
@@ -294,7 +294,7 @@
 #X msg 170 290 open \$1 \, 1;
 #X obj 128 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 104 109 tgl 15 0 empty _Loop empty 17 7 0 10 -262144 -1 -1 1
+#X obj 104 109 tgl 15 0 empty _Loop empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 90 137 spigot;
 #X connect 0 0 2 0;
@@ -889,41 +889,41 @@ samples/kick.wav kick \, read -resize samples/closed.wav closed;
 20;
 #X text 442 429 Normal;
 #X text 460 461 CYL;
-#X obj 484 591 vsl 15 30 0 127 0 0 empty vu0 0 0 -9 0 10 -262144 -1
+#X obj 485 385 vsl 15 30 0 127 0 0 empty vu0 0 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 503 591 vsl 15 30 0 127 0 0 empty vu1 1 0 -9 0 10 -262144 -1
+#X obj 504 385 vsl 15 30 0 127 0 0 empty vu1 1 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 522 591 vsl 15 30 0 127 0 0 empty vu2 2 0 -9 0 10 -262144 -1
--1 141 1;
-#X obj 540 591 vsl 15 30 0 127 0 0 empty vu3 3 0 -9 0 10 -262144 -1
--1 144 1;
-#X obj 559 591 vsl 15 30 0 127 0 0 empty vu4 4 0 -9 0 10 -262144 -1
+#X obj 523 385 vsl 15 30 0 127 0 0 empty vu2 2 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 578 591 vsl 15 30 0 127 0 0 empty vu6 6 0 -9 0 10 -262144 -1
--1 180 1;
-#X obj 597 591 vsl 15 30 0 127 0 0 empty vu7 7 0 -9 0 10 -262144 -1
+#X obj 541 385 vsl 15 30 0 127 0 0 empty vu3 3 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 615 591 vsl 15 30 0 127 0 0 empty vu8 8 0 -9 0 10 -262144 -1
+#X obj 560 385 vsl 15 30 0 127 0 0 empty vu4 4 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 633 591 vsl 15 30 0 127 0 0 empty vu9 9 0 -9 0 10 -262144 -1
+#X obj 579 385 vsl 15 30 0 127 0 0 empty vu6 6 0 -9 0 10 -262144 -1
 -1 0 1;
-#X obj 652 591 vsl 15 30 0 127 0 0 empty vu10 10 0 -9 0 10 -262144
--1 -1 206 1;
-#X obj 671 591 vsl 15 30 0 127 0 0 empty vu11 11 0 -9 0 10 -262144
--1 -1 276 1;
-#X obj 689 591 vsl 15 30 0 127 0 0 empty vu12 12 0 -9 0 10 -262144
+#X obj 598 385 vsl 15 30 0 127 0 0 empty vu7 7 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 616 385 vsl 15 30 0 127 0 0 empty vu8 8 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 634 385 vsl 15 30 0 127 0 0 empty vu9 9 0 -9 0 10 -262144 -1
+-1 0 1;
+#X obj 653 385 vsl 15 30 0 127 0 0 empty vu10 10 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 707 591 vsl 15 30 0 127 0 0 empty vu13 13 0 -9 0 10 -262144
+#X obj 672 385 vsl 15 30 0 127 0 0 empty vu11 11 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 726 591 vsl 15 30 0 127 0 0 empty vu14 14 0 -9 0 10 -262144
+#X obj 690 385 vsl 15 30 0 127 0 0 empty vu12 12 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 745 591 vsl 15 30 0 127 0 0 empty vu15 15 0 -9 0 10 -262144
+#X obj 708 385 vsl 15 30 0 127 0 0 empty vu13 13 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 763 591 vsl 15 30 0 127 0 0 empty vu16 16 0 -9 0 10 -262144
+#X obj 727 385 vsl 15 30 0 127 0 0 empty vu14 14 0 -9 0 10 -262144
 -1 -1 0 1;
-#X text 399 601 Active Cores;
+#X obj 746 385 vsl 15 30 0 127 0 0 empty vu15 15 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 764 385 vsl 15 30 0 127 0 0 empty vu16 16 0 -9 0 10 -262144
+-1 -1 0 1;
+#X text 400 395 Active Cores;
 #X obj 236 396 tgl 15 0 _Loop empty Loop_Demo_Sample 17 7 0 10 -4034
--1 -1 1 1;
+-1 -1 0 1;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
