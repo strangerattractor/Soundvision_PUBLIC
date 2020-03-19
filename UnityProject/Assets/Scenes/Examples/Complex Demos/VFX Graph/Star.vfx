@@ -94,10 +94,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 50
+    x: 3
     y: -190
-    width: 1448
-    height: 2186
+    width: 1511
+    height: 2187
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +125,20 @@ MonoBehaviour:
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_UIInfos: {fileID: 114340500867371532}
-  m_ParameterInfo: []
+  m_ParameterInfo:
+  - name: Angles
+    path: Angles
+    tooltip: 
+    sheetType: m_Float
+    realType: Single
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    min: -Infinity
+    max: Infinity
+    descendantCount: 0
   m_GraphVersion: 4
   m_saved: 1
   m_SubgraphDependencies: []
@@ -678,8 +691,8 @@ VisualEffectResource:
       uint indirectIndex = indirectBuffer.IncrementCounter();\r\n\t\tindirectBuffer[indirectIndex]
       = index;\r\n#endif\r\n#endif\r\n\t}\r\n}\r\n"
   - compute: 0
-    name: '[System 1]Output Particle Cube'
-    source: "Shader \"Hidden/VFX/Star/System 1/Output Particle Cube\"\n{\r\n\tSubShader\r\n\t{\t\r\n\t\tCull
+    name: '[System 1]A Output Particle Cube'
+    source: "Shader \"Hidden/VFX/Star/System 1/(A) Output Particle Cube\"\n{\r\n\tSubShader\r\n\t{\t\r\n\t\tCull
       Back\r\n\t\t\r\n\t\tTags { \"Queue\"=\"Geometry+0\" \"IgnoreProjector\"=\"False\"
       \"RenderType\"=\"Opaque\" }\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tZTest
       LEqual\n\t\tZWrite On\n\t\tCull Back\n\t\t\n\t\n\t\t\t\n\t\tHLSLINCLUDE\n\t\t\n\t\t#define
@@ -1242,8 +1255,8 @@ VisualEffectResource:
       = o.color.a < i.VFX_VARYING_ALPHATHRESHOLD ? 0.0f : 1.0f; //Independant clipping
       for motion vector pass\n\t\t#endif\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\tENDHLSL\n\t\t}\n\t\t\n\r\n\t\t\r\n\t}\r\n}\r\n"
   - compute: 0
-    name: '[System 1]Output Particle Distortion Mesh'
-    source: "Shader \"Hidden/VFX/Star/System 1/Output Particle Distortion Mesh\"\n{\r\n\tSubShader\r\n\t{\t\r\n\t\tCull
+    name: '[System 1]B Output Particle Distortion Mesh'
+    source: "Shader \"Hidden/VFX/Star/System 1/(B) Output Particle Distortion Mesh\"\n{\r\n\tSubShader\r\n\t{\t\r\n\t\tCull
       Off\r\n\t\t\r\n\t\tTags { \"Queue\"=\"Transparent\" \"IgnoreProjector\"=\"True\"
       \"RenderType\"=\"Transparent\" }\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tBlend
       One One\n\t\tZTest LEqual\n\t\tZWrite Off\n\t\tCull Back\n\t\t\n\t\n\t\t\t\n\t\tHLSLINCLUDE\n\t\t\n\t\t#define
@@ -3726,7 +3739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 457, y: 1167}
+  m_UIPosition: {x: 450, y: 1119}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -3914,7 +3927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 155, y: 1119}
+  m_UIPosition: {x: 3, y: 1114}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -3985,7 +3998,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614850}
   - {fileID: 8926484042661614851}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661614849}
   m_MasterData:
