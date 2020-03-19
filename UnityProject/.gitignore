@@ -69,3 +69,18 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+
+/Assets/Plugins/Editor/JetBrains.meta
+/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj.meta
+/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj
+*.blend
+*.blend.meta
+*.obj
+*.obj.meta
+/Assets/Scenes/Examples/Complex Demos/3DModels/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured.obj.meta
+/Assets/Scenes/Examples/Complex Demos/3DModels/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured_8192.jpg
+/Assets/Scenes/Examples/Complex Demos/3DModels/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured_8192.jpg.meta
+/Assets/Scenes/Examples/Complex Demos/3DModels/Materials.meta
+/Assets/Scenes/Examples/Complex Demos/3DModels/Materials/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured_8192.mat
+/Assets/Scenes/Examples/Complex Demos/3DModels/Materials/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured_8192.mat.meta
+
