@@ -4,6 +4,7 @@ UnityProject/Assets/Plugins/Editor/JetBrains.meta
 UnityProject/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj.meta
 UnityProject/Assets/Scenes/Examples/KinectSkeleton ForceHands with Sound/Materials/Horse_Head.obj
 *.blend
+*.blend.meta
 *.obj
 *.obj.meta
 UnityProject/Assets/Scenes/Examples/Complex Demos/3DModels/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured.obj.meta
