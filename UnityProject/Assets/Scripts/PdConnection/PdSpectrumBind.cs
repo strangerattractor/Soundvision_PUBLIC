@@ -6,8 +6,10 @@ namespace cylvester
     [System.Serializable]
     class EnergyChangeEvent : UnityEvent<float> { }
     
-    public class PdSpectrumBind : PdBaseBind
+    public class PdSpectrumBind : MonoBehaviour
     {
+        [SerializeField] protected PdBackend pdbackend;
+        [SerializeField, Range(1, 16)] protected int channel = 1;
         [SerializeField] private Rect selection = Rect.zero;
         [SerializeField] private EnergyChangeEvent energyChanged = null;
 
@@ -21,7 +23,7 @@ namespace cylvester
 
         private void Start()
         {
-            base.Start();
+            //base.Start();
             arraySelector_ = new PdArraySelector(pdbackend.SpectrumArrayContainer);
             spectrumGenerator_ = new SpectrumGeneratorPlayMode(TextureWidth, TextureHeight, arraySelector_);
         }

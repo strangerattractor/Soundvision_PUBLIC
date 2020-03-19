@@ -13,6 +13,9 @@ public class Smoother : MonoBehaviour
     [SerializeField, Range(1f, 10f)] private float attackSmooth = 1f;
     [SerializeField, Range(1f, 10f)] private float releaseSmooth = 1f;
     [SerializeField] private bool ignore0;
+    [SerializeField] private float scale = 1;
+    [SerializeField] private float offset = 0;
+    [SerializeField] private bool Log;
 
     [SerializeField] private UnitySmoothEvent onSmoothProcessed;
 
@@ -23,8 +26,14 @@ public class Smoother : MonoBehaviour
     {
         if (!(ignore0 && value == 0.0f))
         { 
-         input_ = value; //Set new input Value
+         input_ = value * scale + offset; //Set new input Value
         }
+
+        if(Log)
+        {
+         Debug.Log("Smoothed Vaule: " + input_);
+        }
+
     }
 
     private void Update()
