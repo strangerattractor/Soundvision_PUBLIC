@@ -16,8 +16,14 @@ namespace cylvester
         [SerializeField] private int Nx = 0;
         [SerializeField] private int Ny = 0;
         [SerializeField] private float boxScale = 1;
-        [SerializeField] private float textureSpread = 1;
+        [SerializeField] private float _textureSpread = 1;
         [SerializeField] private float dampening = 0.1f;
+
+        public float textureSpread
+        {
+            get => _textureSpread;
+            set => _textureSpread = value;
+        }
 
         // Start is called before the first frame update
         void Start()
@@ -52,13 +58,9 @@ namespace cylvester
         // Update is called once per frame
         void Update()
         {
-        }
-
-        public void OnTriggerReceived()
-        {
             if (backdrop != null)
             {
-                backdrop.GetComponent<UVMapToScreen>().textureSpread = textureSpread;
+                backdrop.GetComponent<UVMapToScreen>().textureSpread = _textureSpread;
                 backdrop.GetComponent<UVMapToScreen>().dampening = dampening;
             }
 
@@ -67,7 +69,7 @@ namespace cylvester
             float count = 0;
             foreach (var g in gameObjects)
             {
-                g.GetComponent<UVMapToScreen>().textureSpread = textureSpread;
+                g.GetComponent<UVMapToScreen>().textureSpread = _textureSpread;
                 g.GetComponent<UVMapToScreen>().dampening = dampening;
                 if (Random.Range(0.0f, 1.0f) < 0.5f) continue;
                 g.GetComponent<cylvester.CubeAnimation>().nextMove = next;
