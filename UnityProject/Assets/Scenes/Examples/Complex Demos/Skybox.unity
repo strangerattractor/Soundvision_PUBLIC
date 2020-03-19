@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 627145321}
   - component: {fileID: 627145320}
   - component: {fileID: 627145319}
+  - component: {fileID: 627145322}
+  - component: {fileID: 627145323}
   - component: {fileID: 627145317}
   - component: {fileID: 627145318}
   m_Layer: 0
@@ -155,6 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material_: {fileID: 2100000, guid: 27e0b496e2c692a44a6a1b855602b0cb, type: 2}
   valueName_: Vector1_8879D913
+  factor_: 1
+  logLevel: 0
 --- !u!114 &627145318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,20 +168,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 627145316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ab37d032df403e881d6a7a78141815, type: 3}
+  m_Script: {fileID: 11500000, guid: 675eefdd486c7404787b16a979e9ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdbackend: {fileID: 0}
-  channel: 1
-  selection:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  energyChanged:
-    m_PersistentCalls:
-      m_Calls: []
+  _inputMin: 0
+  _inputMax: 100
+  _propertyBinders: []
+  references:
+    version: 1
 --- !u!23 &627145319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -239,6 +237,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &627145322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627145316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a556319a642d143b7dbcdbace71ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pdbackend: {fileID: 0}
+  channel: 1
+  levelChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 627145323}
+        m_MethodName: OnValueChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  logLevel: 0
+--- !u!114 &627145323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627145316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de1490c361f2bd48b4a81ad0457a4e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSmooth: 1
+  releaseSmooth: 1
+  ignore0: 0
+  scale: 1
+  offset: 0
+  Log: 0
+  onSmoothProcessed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 627145317}
+        m_MethodName: OnEnergyChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 627145318}
+        m_MethodName: OnValueReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &941927494
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +520,7 @@ GameObject:
   - component: {fileID: 1166062881}
   - component: {fileID: 1166062880}
   - component: {fileID: 1166062883}
+  - component: {fileID: 1166062884}
   - component: {fileID: 1166062879}
   m_Layer: 0
   m_Name: Sphere (1)
@@ -564,6 +635,39 @@ MonoBehaviour:
   levelChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1166062884}
+        m_MethodName: OnValueChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  logLevel: 0
+--- !u!114 &1166062884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166062878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de1490c361f2bd48b4a81ad0457a4e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSmooth: 1
+  releaseSmooth: 1
+  ignore0: 0
+  scale: 1
+  offset: 0
+  Log: 0
+  onSmoothProcessed:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 1166062879}
         m_MethodName: OnValueReceived
         m_Mode: 0
@@ -575,7 +679,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  logLevel: 0
 --- !u!1 &1364837922
 GameObject:
   m_ObjectHideFlags: 0
