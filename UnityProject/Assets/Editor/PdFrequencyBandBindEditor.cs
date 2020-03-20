@@ -31,7 +31,7 @@ namespace cylvester
 
             pdBackendProperty_ = serializedObject.FindProperty("pdBackend");
             selectionProperty_ = serializedObject.FindProperty("selection");
-            energyChangedProperty_ = serializedObject.FindProperty("energyChanged");
+            energyChangedProperty_ = serializedObject.FindProperty("frequencyBandChanged");
             channelProperty_ = serializedObject.FindProperty("channel");
             renderSpectrumProperty_ = serializedObject.FindProperty("renderSpectrum");
             numBinsProperty_ = serializedObject.FindProperty("numBins");
