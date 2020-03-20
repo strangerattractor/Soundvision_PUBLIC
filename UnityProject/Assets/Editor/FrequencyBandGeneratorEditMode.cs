@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace cylvester
 {
-    public class FrequencyBandGeneratorEditMode : SpectrumGenerator, ISpectrumGenerator
+    public class FrequencyBandGeneratorEditMode : FrequencyBandGenerator, IFrequencyBandGenerator
     {
 
         private Color32[] resetColorArray;
@@ -18,34 +18,25 @@ namespace cylvester
                 resetColorArray[i] = resetColor;
             }
         }
-  
-        public int Update(Rect selectionRect)
-        {
-            /*
-            OnAllPixels((x, y) =>
-            {
-                var color = Color.black;
-                if (IsInSelection(x, y, ref selectionRect))
-                    color.a = 1f;
-                else
-                    color.a = 0.2f;
-                Spectrum.SetPixel(x, y, color);
-            });
-            Spectrum.Apply();
 
-            */
+        public void SetBins(float[] b)
+        {
+        }
+
+        public int Update(int rectx, int recty, int rectw, int recth)
+        {
             Spectrum.SetPixels32(resetColorArray); // Reset all pixels color
             var rectcolor = Color.red;
             //Draw selection Rectangle border
-            for (int i = (int)selectionRect.x; i < (selectionRect.x + (selectionRect.width - 1)); i++) //horizontal lines
+            for (int i = rectx; i < (rectx + (rectw - 1)); i++) //horizontal lines
             {
-                Spectrum.SetPixel(i, (int)(Spectrum.height - selectionRect.y - (selectionRect.height - 1)), rectcolor); //end line
-                Spectrum.SetPixel(i, (int)(Spectrum.height - selectionRect.y), rectcolor); //start line
+                Spectrum.SetPixel(i, (int)(Spectrum.height - recty - (recth - 1)), rectcolor); //end line
+                Spectrum.SetPixel(i, (int)(Spectrum.height - recty), rectcolor); //start line
             }
-            for (int i = (int)(Spectrum.height - selectionRect.y - (selectionRect.height - 1)); i < (int)(Spectrum.height - selectionRect.y); i++) //vertical lines
+            for (int i = (Spectrum.height - recty - (recth - 1)); i < (Spectrum.height - recty); i++) //vertical lines
             {
-                Spectrum.SetPixel((int)selectionRect.x, i, rectcolor); // line left
-                Spectrum.SetPixel((int)(selectionRect.x + (selectionRect.width - 1)), i, rectcolor); // line right
+                Spectrum.SetPixel(rectx, i, rectcolor); // line left
+                Spectrum.SetPixel((rectx + (rectw - 1)), i, rectcolor); // line right
             }
 
             Spectrum.Apply();

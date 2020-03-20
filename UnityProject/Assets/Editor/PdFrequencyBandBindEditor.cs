@@ -17,6 +17,11 @@ namespace cylvester
         private SerializedProperty pdBackendProperty_;
         private SerializedProperty energyChangedProperty_;
         private SerializedProperty channelProperty_;
+        private SerializedProperty renderSpectrumProperty_;
+        private SerializedProperty numBinsProperty_;
+        private SerializedProperty targetBinProperty_;
+        private SerializedProperty inputMinProperty_;
+        private SerializedProperty inputMaxProperty_;
         private Rect paintSpace_;
         private ISpectrumGenerator spectrumGeneratorEditMode_;
 
@@ -28,6 +33,11 @@ namespace cylvester
             selectionProperty_ = serializedObject.FindProperty("selection");
             energyChangedProperty_ = serializedObject.FindProperty("energyChanged");
             channelProperty_ = serializedObject.FindProperty("channel");
+            renderSpectrumProperty_ = serializedObject.FindProperty("renderSpectrum");
+            numBinsProperty_ = serializedObject.FindProperty("numBins");
+            targetBinProperty_ = serializedObject.FindProperty("targetBin");
+            inputMinProperty_ = serializedObject.FindProperty("inputMin");
+            inputMaxProperty_ = serializedObject.FindProperty("inputMax");
             rectangularSelection_ = new RectangularSelection(behaviour.TextureWidth, behaviour.TextureHeight);
             spectrumGeneratorEditMode_ = new SpectrumGeneratorEditMode(behaviour.TextureWidth, behaviour.TextureHeight);
         }
@@ -45,6 +55,11 @@ namespace cylvester
 
             GUILayout.Space(5);
             GUILayout.Label("Spectrum Extractor", EditorStyles.boldLabel);
+            EditorGUILayout.PropertyField(numBinsProperty_);
+            EditorGUILayout.PropertyField(targetBinProperty_);
+            EditorGUILayout.PropertyField(inputMaxProperty_);
+            EditorGUILayout.PropertyField(inputMinProperty_);
+            EditorGUILayout.PropertyField(renderSpectrumProperty_);
             paintSpace_ = GUILayoutUtility.GetRect(behaviour.TextureWidth, behaviour.TextureWidth,
                 behaviour.TextureHeight, behaviour.TextureHeight);
             
@@ -59,7 +74,6 @@ namespace cylvester
                 }
                 else
                 {
-                    spectrumGeneratorEditMode_.Update(selectionProperty_.rectValue);
                     GUI.DrawTexture(paintSpace_, spectrumGeneratorEditMode_.Spectrum);
                 }
             }
@@ -74,25 +88,9 @@ namespace cylvester
 
         private void UpdateSelection()
         {
-            if (!Event.current.isMouse || Event.current.button != 0) return;
-            switch (Event.current.type)
-            {
-                case EventType.MouseDown:
-                {
-                    rectangularSelection_.Start(Event.current.mousePosition);
-                    break;
-                }
-
-                case EventType.MouseDrag:
-                {
-                    selectionProperty_.rectValue =
-                        rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
-                    break;
-                }
-            }
         }
 
-        private void RenderExtractedEnergy(int energy)
+        private void RenderExtractedEnergy(float energy)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Label("Extracted Energy", EditorStyles.boldLabel);

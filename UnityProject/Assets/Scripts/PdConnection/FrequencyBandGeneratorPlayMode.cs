@@ -27,23 +27,22 @@ namespace cylvester
         {
             bins = b;
         }
-        public int Update(Rect selectionRect)
+        public int Update(int rectx, int recty, int rectw, int recth)
         {
-            //New Implementation
             var numPixels = 0;
             var data = arraySelector_.SelectedArray;
             Spectrum.SetPixels32(resetColorArray); // Reset all pixels color
             var rectcolor = Color.red;
             //Draw selection Rectangle border
-            for (int i=(int)selectionRect.x;i< (selectionRect.x + (selectionRect.width - 1)); i++) //horizontal lines
+            for (int i=(int)rectx;i< (rectx + (rectw- 1)); i++) //horizontal lines
             {
-                Spectrum.SetPixel(i, (int) (Spectrum.height - selectionRect.y - (selectionRect.height - 1)), rectcolor); //end line
-                Spectrum.SetPixel(i, (int)(Spectrum.height - selectionRect.y), rectcolor); //start line
+                Spectrum.SetPixel(i, (int) (Spectrum.height - recty - (recth - 1)), rectcolor); //end line
+                Spectrum.SetPixel(i, (int)(Spectrum.height - recty), rectcolor); //start line
             }
-            for (int i = (int)(Spectrum.height - selectionRect.y - (selectionRect.height - 1)); i < (int)(Spectrum.height - selectionRect.y); i++) //vertical lines
+            for (int i = (int)(Spectrum.height - recty - (recth - 1)); i < (int)(Spectrum.height - recty); i++) //vertical lines
             {
-                Spectrum.SetPixel((int)selectionRect.x, i, rectcolor); // line left
-                Spectrum.SetPixel((int)(selectionRect.x + (selectionRect.width - 1)), i, rectcolor); // line right
+                Spectrum.SetPixel((int)rectx, i, rectcolor); // line left
+                Spectrum.SetPixel((int)(rectx + (rectw - 1)), i, rectcolor); // line right
             }
 
             //Draw Spectrum and calculate numPixels
@@ -55,16 +54,11 @@ namespace cylvester
                 for (int y=0; y<magnitude; y++) //all pixels below spectrum value at x position
                 {
                     Spectrum.SetPixel(x, y, spectrumcolor);
-
-                    if (IsInSelection(x, y, ref selectionRect)) //current spectrum pixel is inside rect
-                    {
-                        numPixels++;
-                    }
                 }
             }
 
             Spectrum.Apply();
-            return numPixels;
+            return 0;
         }
     }
 }
