@@ -342,8 +342,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd2540cafc1a7c419009a4f92d87c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdbackend: {fileID: 0}
-  channel: 2
+  pdBackend: {fileID: 0}
+  selection:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  energyChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  channel: 1
   frequencyBandChanged:
     m_PersistentCalls:
       m_Calls:
@@ -960,8 +969,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd2540cafc1a7c419009a4f92d87c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdbackend: {fileID: 0}
-  channel: 2
+  pdBackend: {fileID: 0}
+  selection:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  energyChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  channel: 1
   frequencyBandChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1976,6 +1994,7 @@ GameObject:
   - component: {fileID: 1859600265}
   - component: {fileID: 1859600264}
   - component: {fileID: 1859600269}
+  - component: {fileID: 1859600270}
   m_Layer: 0
   m_Name: Visual Effect
   m_TagString: Untagged
@@ -2183,6 +2202,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetVFX_: {fileID: 1859600267}
   valueName_: _Rate
+--- !u!114 &1859600270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859600263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ab37d032df403e881d6a7a78141815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pdBackend: {fileID: 0}
+  selection:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  energyChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  channel: 0
 --- !u!1 &2072436651 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4836124560475695594, guid: e33edd53495518a448be4d6ecbf49878,
@@ -2285,8 +2327,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd2540cafc1a7c419009a4f92d87c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdbackend: {fileID: 0}
-  channel: 2
+  pdBackend: {fileID: 0}
+  selection:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  energyChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  channel: 1
   frequencyBandChanged:
     m_PersistentCalls:
       m_Calls:
