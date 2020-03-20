@@ -342,7 +342,8 @@ MonoBehaviour:
   pdBackend: {fileID: 2059902904}
   spectrumPrefab: {fileID: 6092934612178385049, guid: 805ab35afd02d9b469c52969e599418f,
     type: 3}
-  channel: 1
+  channel: 2
+  numBins: 8
 --- !u!114 &1327620978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +637,7 @@ MonoBehaviour:
   spectrumPrefab: {fileID: 6092934612178385049, guid: 805ab35afd02d9b469c52969e599418f,
     type: 3}
   channel: 1
+  numBins: 8
 --- !u!1 &2059902903
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ namespace cylvester
         [SerializeField] private PdBackend pdBackend = null;
         [SerializeField] private GameObject spectrumPrefab = null;
         [SerializeField, Range(1, 16)] private int channel = 1;
+        [SerializeField] private int numBins = 8;
 
         private IPdArray spectrumArray_;
         private ISpectrumVisualizer[] visualizers_;
@@ -31,21 +32,21 @@ namespace cylvester
         public void Update()
         {
             spectrumArray_ = pdBackend.SpectrumArrayContainer[channel-1];
-            float[] a = new float[spectrumArray_.Data.Length];
-            float[] b = new float[8];
-            for (int i = 0; i < b.Length; i++)
+            float[] averaged = new float[spectrumArray_.Data.Length];
+            float[] bins = new float[numBins];
+            for (int i = 0; i < bins.Length; i++)
             {
-                b[i] = 0;
+                bins[i] = 0;
             }
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < averaged.Length; i++)
             {
-                b[i * b.Length / a.Length] += spectrumArray_.Data[i] / a.Length;
+                bins[i * bins.Length / averaged.Length] += spectrumArray_.Data[i] / averaged.Length;
             }
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < averaged.Length; i++)
             {
-                a[i] = b[i * b.Length / a.Length];
+                averaged[i] = bins[i * bins.Length / averaged.Length];
             }
-            visualizers_[head_].Spectrum = a;
+            visualizers_[head_].Spectrum = averaged;
             head_++;
             head_ %= historySize;
             
