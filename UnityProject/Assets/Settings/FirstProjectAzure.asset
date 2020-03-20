@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FirstProjectAzure
   m_EditorClassIdentifier: 
   _autoExposure: 0
-  _exposure: 1
+  _exposure: 0.562
   _autoWhiteBalance: 0
-  _whiteBalance: 0.045
+  _whiteBalance: 0.535
   _brightness: 0.559
   _contrast: 0.5
   _saturation: 0.5
@@ -23,5 +23,5 @@ MonoBehaviour:
   _gain: 0.5
   _enableBlc: 1
   _powerIs60Hz: 0
-  _maxDepth: 4.54
+  _maxDepth: 3.45
   _depthMode: 1
