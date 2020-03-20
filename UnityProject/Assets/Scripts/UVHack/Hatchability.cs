@@ -72,8 +72,11 @@ namespace cylvester
                 g.GetComponent<UVMapToScreen>().textureSpread = _textureSpread;
                 g.GetComponent<UVMapToScreen>().dampening = dampening;
                 if (Random.Range(0.0f, 1.0f) < 0.5f) continue;
-                g.GetComponent<cylvester.CubeAnimation>().nextMove = next;
-                g.GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", count);
+                if (g.GetComponent<cylvester.CubeAnimation>() != null)
+                {
+                    g.GetComponent<cylvester.CubeAnimation>().nextMove = next;
+                    g.GetComponent<cylvester.CubeAnimation>().Invoke("OnTriggerReceived", count);
+                }
                 //count += 0.02f;
             }
         }
