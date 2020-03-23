@@ -19,7 +19,7 @@ namespace cylvester
         private void PopulateDropdown()
         {
             Dropdown dropdown = GetComponent<Dropdown>();
-            titleList = stateManager.GetTitles().ToList();
+            titleList = stateManager.GetStateInfos().ToList();
             dropdown.AddOptions(titleList);
         }
 

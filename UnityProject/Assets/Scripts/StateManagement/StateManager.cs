@@ -151,7 +151,8 @@ namespace cylvester
             onStateChanged.Invoke(this);
         }
 
-        public string[] GetTitles()
+        public string[] GetStateInfos()
+            //Gets all infos from the selected row (Title, Note, BPM)
         {
             if (titles_ != null && titles_.Length > 0 )
                 return titles_;
@@ -159,7 +160,10 @@ namespace cylvester
             titles_ = new string[States.Length];
 
             for (var i = 0; i < States.Length; ++i)
-                titles_[i] = States[i].Title;
+                if (States[i].Title != "")
+                    titles_[i] = States[i].Title + " || " + States[i].Note + " || BPM: " + States[i].Bpm;
+                else
+                    titles_[i] = "";
 
             return titles_;
         }
