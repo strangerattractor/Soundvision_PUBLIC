@@ -10,7 +10,7 @@ namespace cylvester
 
         public void OnEnergyChanged(float value)
         {
-            targetVFX_.SetFloat(valueName_, value * .1f);
+            targetVFX_.SetFloat(valueName_, value);
         }
     }
 }

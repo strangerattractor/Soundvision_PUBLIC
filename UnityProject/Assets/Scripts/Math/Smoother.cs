@@ -26,7 +26,7 @@ public class Smoother : MonoBehaviour
     {
         if (!(ignore0 && value == 0.0f))
         { 
-         input_ = value * scale + offset; //Set new input Value
+         input_ = offset + value * scale; //Set new input Value
         }
 
         if(Log)
