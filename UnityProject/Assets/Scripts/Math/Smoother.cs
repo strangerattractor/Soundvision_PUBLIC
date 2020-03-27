@@ -1,7 +1,9 @@
 ﻿using System;
-using System.Timers;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
+using System.Linq;
+using System.Collections;
 
 [Serializable]
 public class UnitySmoothEvent : UnityEvent<float>
@@ -10,8 +12,8 @@ public class UnitySmoothEvent : UnityEvent<float>
 
 public class Smoother : MonoBehaviour
 {
-    [SerializeField, Range(1f, 10f)] private float attackSmooth = 1f;
-    [SerializeField, Range(1f, 10f)] private float releaseSmooth = 1f;
+    [SerializeField, Range(1f, 50f)] private float attackSmooth = 1f;
+    [SerializeField, Range(1f, 50f)] private float releaseSmooth = 1f;
     [SerializeField] private bool ignore0;
     [SerializeField] private float scale = 1;
     [SerializeField] private float offset = 0;
@@ -24,10 +26,13 @@ public class Smoother : MonoBehaviour
 
     public void OnValueChanged(float value)
     {
+        
         if (!(ignore0 && value == 0.0f))
-        { 
-         input_ = offset + value * scale; //Set new input Value
+        {
+            input_ = offset + value * scale; //Set new input Value
         }
+
+
 
         if(Log)
         {

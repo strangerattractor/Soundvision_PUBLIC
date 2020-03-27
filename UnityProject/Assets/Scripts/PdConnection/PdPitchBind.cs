@@ -14,8 +14,11 @@ namespace cylvester
     {
         [SerializeField] private LevelEvent pitchChanged;
         [SerializeField] bool logPitch;
+        [SerializeField] private LevelEvent levelChanged;
+        [SerializeField] bool logLevel;
         private float pitch_;
-        
+        private float level_;
+
         void Update()
         {
             var pitch = pdbackend.PitchArray.Data[channel - 1];
@@ -27,6 +30,19 @@ namespace cylvester
                 if (logPitch)
                 {
                     Debug.Log("Pitch: " + pitch);
+                }
+            }
+
+            var level = pdbackend.LevelArray.Data[channel - 1];
+
+            if (level_ != level)
+            {
+                level_ = level;
+                levelChanged.Invoke(level_);
+
+                if (logLevel)
+                {
+                    Debug.Log("Level:" + level_);
                 }
             }
         }
