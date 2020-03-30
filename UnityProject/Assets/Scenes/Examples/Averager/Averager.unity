@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b62a732e6efa584e9cf5de8419defc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bufferSize: 1
+  bufferSize: 120
   Log: 0
   onAverageProcessed:
     m_PersistentCalls:
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a556319a642d143b7dbcdbace71ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pdbackend: {fileID: 0}
+  pdbackend: {fileID: 163381858}
   channel: 1
   levelChanged:
     m_PersistentCalls:

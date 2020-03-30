@@ -37,7 +37,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Eyes_: 323.77637
+    - Eyes_: 0
     - Vector1_C0D3E318: 137
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
