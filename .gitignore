@@ -1,3 +1,5 @@
 bin
 setup/setup/obj
 *.fbx
+*.hdr
+UnityProject/Assets/Scenes/Examples/Complex Demos/KitMeshScenes/Hdri/kiara_1_dawn_4k.hdr.meta
