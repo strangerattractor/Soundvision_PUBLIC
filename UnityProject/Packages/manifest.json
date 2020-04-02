@@ -7,14 +7,15 @@
         "org.nuget"
       ]
     },
-	{
-  	"name": "Keijiro",
-  	"url": "https://registry.npmjs.com",
-  	"scopes": [ "jp.keijiro" ]
-	}
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "jp.keijiro"
+      ]
+    }
   ],
   "dependencies": {
-    "jp.keijiro.kino.post-processing": "2.1.11",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "2.0.8",
@@ -34,6 +35,8 @@
     "com.unity.timeline": "1.2.12",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualeffectgraph": "7.1.8",
+    "jp.keijiro.kino.post-processing": "2.1.12",
+    "jp.keijiro.kino.post-processing.eight": "1.0.0",
     "org.nuget.system.memory": "4.5.3",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

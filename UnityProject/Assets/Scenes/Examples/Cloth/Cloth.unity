@@ -650,7 +650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &341056173
 Light:
   m_ObjectHideFlags: 0
@@ -14087,7 +14087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: 00b8a59316c6a6e4c8419d7ffae33b15, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1284768977}
+  m_SkySettings: {fileID: 890420486}
   m_SkySettingsFromProfile: {fileID: -2965507176177991479, guid: 00b8a59316c6a6e4c8419d7ffae33b15,
     type: 2}
 --- !u!4 &883145025
@@ -14104,7 +14104,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1284768977
+--- !u!114 &890420486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
