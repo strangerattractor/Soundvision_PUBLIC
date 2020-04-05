@@ -538,7 +538,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -572,8 +572,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685127217}
-  m_LocalRotation: {x: -0.049551185, y: -0.32870105, z: 0.017274056, w: -0.94297504}
-  m_LocalPosition: {x: -9.029218, y: 13.469614, z: 8.751007}
+  m_LocalRotation: {x: -0.03790272, y: -0.35143152, z: 0.014238478, w: -0.9353377}
+  m_LocalPosition: {x: -5.042103, y: 12.786417, z: 11.492666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -167,7 +167,7 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
-      data1: 65629246911261
+      data1: 65629247435551
       data2: 4539628424657829888
     lodBias: 1
     lodBiasMode: 0
@@ -360,3 +360,7 @@ MonoBehaviour:
     PublicKeyToken=null
   - Kino.PostProcessing.Utility, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
+  - Kino.PostProcessing.Eight.EightColor, Kino.PostProcessing.Eight, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Kino.PostProcessing.Eight.TiledPalette, Kino.PostProcessing.Eight, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
