@@ -8,7 +8,7 @@ namespace cylvester
     {
     }
     
-    public class PdNoiseBind : PdBaseBind
+    public class PdNoiseBind : PdBaseBindMono
     {
         [SerializeField] private NoiseEvent noiseLevelChanged;
         private float noise_;

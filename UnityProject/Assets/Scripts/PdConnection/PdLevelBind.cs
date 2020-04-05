@@ -10,7 +10,7 @@ namespace cylvester
     {
     }
     
-    public class PdLevelBind : PdBaseBind
+    public class PdLevelBind : PdBaseBindMono
     {
         [SerializeField] private LevelEvent levelChanged;
         [SerializeField] bool logLevel;

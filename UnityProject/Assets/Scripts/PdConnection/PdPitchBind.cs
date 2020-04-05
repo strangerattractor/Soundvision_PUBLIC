@@ -10,7 +10,7 @@ namespace cylvester
     {
     }
     
-    public class PdPitchBind : PdBaseBind
+    public class PdPitchBind : PdBaseBindMono
     {
         [SerializeField] private LevelEvent pitchChanged;
         [SerializeField] bool logPitch;

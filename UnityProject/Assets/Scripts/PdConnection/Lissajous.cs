@@ -10,19 +10,23 @@ namespace cylvester
     }
 
 
-    public class Lissajous : PdBaseBind, ILissajous
+    public class Lissajous : PdBaseBindStereo, ILissajous
     {
         [SerializeField] private RenderTexture renderTexture;
-        
+        [SerializeField, Range(1, 10)]  private int gain_ = 1;
+
+
         private IPdArraySelector waveformArraySelectorLeft_;
         private IPdArraySelector waveformArraySelectorRight_;
         private Texture2D texture_;
-        private int[] cache_;
-        
+        private Vector2Int[] cache_;
+
+
+
         void Start()
         {
             base.Start();
-            cache_ = new int[PdConstant.BlockSize];
+            cache_ = new Vector2Int[PdConstant.BlockSize];
             waveformArraySelectorLeft_ = new PdArraySelector(pdbackend.WaveformArrayContainer);
             waveformArraySelectorRight_ = new PdArraySelector(pdbackend.WaveformArrayContainer);
 
@@ -37,19 +41,18 @@ namespace cylvester
 
         void Update()
         {
-            waveformArraySelectorLeft_.Selection = channel - 1;
-            waveformArraySelectorRight_.Selection = channel - 1;
-
+            waveformArraySelectorLeft_.Selection = channelLeft - 1;
+            waveformArraySelectorRight_.Selection = channelRight - 1;
             var arrayLeft = waveformArraySelectorLeft_.SelectedArray;
             var arrayRight = waveformArraySelectorRight_.SelectedArray;
 
             for (var i = 0; i < PdConstant.BlockSize; i++)
             {
-                var x = (int)(256f * Mathf.Clamp(arrayLeft[i], -1f, 1f)) + 256;
-                var y = (int)(256f * Mathf.Clamp(arrayRight[i], -1f, 1f)) + 256;
-                texture_.SetPixel(i , cache_[i], Color.black);
+                var x = (int)(256f * Mathf.Clamp(arrayLeft[i] * gain_, -1f, 1f)) + 256;
+                var y = (int)(256f * Mathf.Clamp(arrayRight[i] * gain_, -1f, 1f)) + 256;
+                texture_.SetPixel(cache_[i].x, cache_[i].y, Color.black);
                 texture_.SetPixel(x , y, Color.white);
-                cache_[i] = y;
+                cache_[i] = new Vector2Int(x, y);
             }
 
             texture_.Apply();

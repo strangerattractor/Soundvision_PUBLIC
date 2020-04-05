@@ -10,7 +10,7 @@ namespace cylvester
         int Index { get;  }
     }
     
-    public class Spectrogram : PdBaseBind, ISpectrogram
+    public class Spectrogram : PdBaseBindMono, ISpectrogram
     {
         [SerializeField] private RenderTexture renderTexture;
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 

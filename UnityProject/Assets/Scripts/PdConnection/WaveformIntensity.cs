@@ -9,7 +9,7 @@ namespace cylvester
         Texture2D Texture { get; }
     }
 
-    public class WaveformIntensity : PdBaseBind, IWaveformIntensity
+    public class WaveformIntensity : PdBaseBindMono, IWaveformIntensity
     {
         [SerializeField] private RenderTexture renderTexture;
 

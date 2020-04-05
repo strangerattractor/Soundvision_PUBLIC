@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace cylvester
 {
-    public abstract class PdBaseBind : MonoBehaviour
+    public abstract class PdBaseBindMono : MonoBehaviour
     {
         [SerializeField] protected PdBackend pdbackend;
         [SerializeField, Range(1, 16)] protected int channel = 1;
