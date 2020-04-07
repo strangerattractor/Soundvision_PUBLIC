@@ -39,7 +39,8 @@ namespace cylvester
             { 
                 //construct UI elements
             var copy = Instantiate(itemTemplate);
-            copy.transform.parent = content.transform;
+                copy.transform.SetParent(content.transform);
+            //copy.transform.parent = content.transform;
 
             copy.GetComponentInChildren<TextMeshProUGUI>().text = option.text;
 

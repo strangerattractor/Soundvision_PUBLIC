@@ -9,7 +9,6 @@ namespace cylvester
         Texture2D Texture { get; }
     }
 
-
     public class Lissajous : PdBaseBindStereo, ILissajous
     {
         [SerializeField] private RenderTexture renderTexture;
@@ -20,8 +19,6 @@ namespace cylvester
         private IPdArraySelector waveformArraySelectorRight_;
         private Texture2D texture_;
         private Vector2Int[] cache_;
-
-
 
         void Start()
         {
