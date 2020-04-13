@@ -5,11 +5,13 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject column;
-    
+
+
     public void OnThresholdExceeded()
     {
-        var columnObject = Instantiate(column);
-        columnObject.transform.parent = this.transform;
+        var spawnposition = this.gameObject.GetComponent<Transform>();
+        var columnObject = Instantiate(column, spawnposition);
+        //columnObject.transform.parent = spawnposition;
     }
     
 }

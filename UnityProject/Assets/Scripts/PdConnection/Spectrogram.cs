@@ -38,7 +38,7 @@ namespace cylvester
             var array = spectrumArraySelector_.SelectedArray;
             for (var i = 0; i < PdConstant.BlockSize; i++)
             {
-                texture_.SetPixel(i+1, index_, new Color(array[i], 0f, 0f));
+                texture_.SetPixel(i+1, index_, new Color(array[i], array[i], array[i]));
                 //ToDo: Understand WHY i has to be +1
             }
 
