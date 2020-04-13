@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DepthMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 8afd7f4f259a58647a33dd0dcb511b80,
+  m_Name: Noises
+  m_Shader: {fileID: -6465566751694194690, guid: 0b755a657d780204ab8bf1ba29de7610,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -23,8 +23,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_48C55F42: 0.053
-    - Vector1_9F4ABB47: 0.55
-    - Vector1_ECBCF247: 0.1
+    - Level_: 0.04446212
+    - Noise_: 1.0017205
+    - Vector1_34F5282C: 19.6
+    - Vector1_4BBC666: 0.01
+    - Vector1_D2D9B031: 0
     m_Colors:
-    - Color_56344A69: {r: 0, g: 11.043138, b: 127.49804, a: 0}
+    - Color_50CEF47D: {r: 0, g: 1, b: 0.8941176, a: 0}
