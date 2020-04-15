@@ -10,19 +10,37 @@ namespace cylvester
         int Index { get;  }
     }
     
-    public class Spectrogram : PdBaseBindMono, ISpectrogram
+    public class Spectrogram : MonoBehaviour, ISpectrogram
     {
+        [SerializeField] protected PdBackend pdBackend;
+        [SerializeField, Range(1, 16)] protected int channel = 1;
+
         [SerializeField] private RenderTexture renderTexture;
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
+        [SerializeField] private Rect selection = Rect.zero;
         
+        private ISpectrumGenerator spectrumGenerator_;
         private IPdArraySelector spectrumArraySelector_;
         private Texture2D texture_;
         private int index_;
         
+        public int TextureWidth { get; } = 512;
+        public int TextureHeight { get; } = 256;
+        public Texture2D Spectrum => spectrumGenerator_.Spectrum;
+
         void Start()
         {
-            base.Start();
-            spectrumArraySelector_ = new PdArraySelector(pdbackend.SpectrumArrayContainer);
+            if (pdBackend == null)
+            {
+                var pdBackendObjects = FindObjectsOfType<PdBackend>();
+                if (pdBackendObjects.Length > 0)
+                {
+                    var g = pdBackendObjects[0].gameObject;
+                    pdBackend = g.GetComponent<PdBackend>();
+                }
+            }
+            spectrumArraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
+            spectrumGenerator_ = new SpectrumGeneratorPlayMode(TextureWidth, TextureHeight, spectrumArraySelector_);
             texture_ = new Texture2D(PdConstant.BlockSize, arrayLength_, TextureFormat.RFloat, false);
             
             var pixels = texture_.GetPixels();
@@ -35,6 +53,7 @@ namespace cylvester
         void Update()
         {
             spectrumArraySelector_.Selection = channel - 1;
+            var energy = spectrumGenerator_.Update(selection);
             var array = spectrumArraySelector_.SelectedArray;
             for (var i = 0; i < PdConstant.BlockSize; i++)
             {
