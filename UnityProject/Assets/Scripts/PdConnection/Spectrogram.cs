@@ -25,7 +25,7 @@ namespace cylvester
         private int index_;
         
         public int TextureWidth { get; } = 512;
-        public int TextureHeight { get; } = 16;
+        public int TextureHeight { get; } = 8;
         public Texture2D Spectrum => spectrumGenerator_.Spectrum;
 
         void Start()

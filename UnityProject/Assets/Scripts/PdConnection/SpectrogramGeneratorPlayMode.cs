@@ -14,7 +14,7 @@ namespace cylvester
             arraySelector_ = arraySelector;
 
             //generate empty texture
-            Color32 resetColor = new Color32(0, 0, 0, 64); //black with alpha
+            Color32 resetColor = new Color32(0, 0, 0, 255); //black
             resetColorArray = Spectrum.GetPixels32();
             for (int i = 0; i < resetColorArray.Length; i++)
             {
@@ -34,7 +34,7 @@ namespace cylvester
                 
                 for (int y=0; y<Spectrum.height; y++) //all pixels below spectrum value at x position
                 {
-                    Spectrum.SetPixel(x, y, new Color(0, 255, 0, data[x]));
+                    Spectrum.SetPixel(x, y, new Color(data[x], 0, 0));
                 }
             }
 
