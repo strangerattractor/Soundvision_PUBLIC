@@ -19,13 +19,13 @@ namespace cylvester
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
         [SerializeField] private Rect selection = Rect.zero;
         
-        private ISpectrumGenerator spectrumGenerator_;
+        private ISpectrogramGenerator spectrumGenerator_;
         private IPdArraySelector spectrumArraySelector_;
         private Texture2D texture_;
         private int index_;
         
         public int TextureWidth { get; } = 512;
-        public int TextureHeight { get; } = 256;
+        public int TextureHeight { get; } = 16;
         public Texture2D Spectrum => spectrumGenerator_.Spectrum;
 
         void Start()
@@ -40,7 +40,7 @@ namespace cylvester
                 }
             }
             spectrumArraySelector_ = new PdArraySelector(pdBackend.SpectrumArrayContainer);
-            spectrumGenerator_ = new SpectrumGeneratorPlayMode(TextureWidth, TextureHeight, spectrumArraySelector_);
+            spectrumGenerator_ = new SpectrogramGeneratorPlayMode(TextureWidth, TextureHeight, spectrumArraySelector_);
             texture_ = new Texture2D(PdConstant.BlockSize, arrayLength_, TextureFormat.RFloat, false);
             
             var pixels = texture_.GetPixels();
