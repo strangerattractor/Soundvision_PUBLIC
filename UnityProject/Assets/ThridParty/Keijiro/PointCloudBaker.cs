@@ -15,7 +15,7 @@ namespace Akvfx
         [SerializeField] DeviceSettings _deviceSettings = null;
         [SerializeField] RenderTexture _colorTexture = null;
         [SerializeField] RenderTexture _positionTexture = null;
-        [SerializeField] Shader _shader = null;
+        [SerializeField, HideInInspector] Shader _shader = null;
         [SerializeField] UnityEvent azureDataUpdated;
 
 
