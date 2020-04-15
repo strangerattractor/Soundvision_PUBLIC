@@ -25,6 +25,7 @@
 
 # Visual Studio cache directory
 .vs/
+.vscode/
 
 # Gradle cache directory
 .gradle/
@@ -83,4 +84,3 @@ crashlytics-build.properties
 /Assets/Scenes/Examples/Complex Demos/3DModels/Materials.meta
 /Assets/Scenes/Examples/Complex Demos/3DModels/Materials/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured_8192.mat
 /Assets/Scenes/Examples/Complex Demos/3DModels/Materials/map_f7d20b7f-aab5-436b-b29d-366c27231617_densified_mesh_textured_8192.mat.meta
-
