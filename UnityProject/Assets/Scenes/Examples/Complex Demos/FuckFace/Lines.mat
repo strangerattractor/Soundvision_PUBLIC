@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WallLandscape
-  m_Shader: {fileID: -6465566751694194690, guid: 75914015327ba634ea9c9b4c29c75e26,
+  m_Name: Lines
+  m_Shader: {fileID: -6465566751694194690, guid: 45e9e719ab5aaf1489fc623fa9e47058,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -23,9 +23,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Height: 0.1
-    - Height_: 1
-    - Vector1_74C71A5B: 0
-    - Vector1_9A9C4545: 0
-    - Vector1_CDFAA1E0: 0.43
+    - LineAngle_: 3e-45
+    - Vector1_264B8D80: 0
+    - Vector1_CFAA4029: 0
+    - VertexOffset_: -8.322146
     m_Colors: []
