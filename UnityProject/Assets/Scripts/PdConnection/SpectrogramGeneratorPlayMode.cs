@@ -22,7 +22,7 @@ namespace cylvester
             }
         }
 
-        public int Update(Rect selectionRect)
+        public int Update()
         {
             
             var data = arraySelector_.SelectedArray;
@@ -30,8 +30,6 @@ namespace cylvester
             //Draw Spectrum
             for (int x = 0; x < Spectrum.width; x++) //iterate over sprectrum length
             {
-                var magnitude = data[x] * 20f; //TODO: implement logarithmic scale for y values
-                
                 for (int y=0; y<Spectrum.height; y++) //all pixels below spectrum value at x position
                 {
                     Spectrum.SetPixel(x, y, new Color(data[x], 0, 0));

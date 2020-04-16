@@ -14,6 +14,9 @@ namespace cylvester
         [SerializeField] protected PdBackend pdBackend;
         [SerializeField, Range(1, 16)] protected int channel = 1;
 
+        [SerializeField] bool showDebugView = false; 
+        [SerializeField, Range(1, 10)] float debugViewGain = 1;
+
         [SerializeField] private RenderTexture renderTexture;
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
 
@@ -50,8 +53,8 @@ namespace cylvester
 
         void Update()
         {
-            waveformArraySelector_.Selection = channel - 1;
-            waveformGenerator_.Update();
+            waveformArraySelector_.Selection = channel;
+            waveformGenerator_.Update(debugViewGain);
             var array = waveformArraySelector_.SelectedArray;
             for (var i = 0; i < PdConstant.BlockSize; i++)
             {

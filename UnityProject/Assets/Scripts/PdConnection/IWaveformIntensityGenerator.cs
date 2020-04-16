@@ -7,7 +7,7 @@ namespace cylvester
     public interface IWaveformIntensityGenerator
     {
         Texture2D Waveform { get; }
-        int Update();
+        int Update(float gain);
     }
     
     public abstract class WaveformIntensityGenerator

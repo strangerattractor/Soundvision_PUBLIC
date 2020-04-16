@@ -19,7 +19,7 @@ namespace cylvester
             // }
         }
   
-        public int Update()
+        public int Update(float gain)
         {
             return 0;
         }

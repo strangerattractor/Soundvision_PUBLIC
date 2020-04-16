@@ -15,6 +15,7 @@ namespace cylvester
         [SerializeField] protected PdBackend pdBackend;
         [SerializeField, Range(1, 16)] protected int channel = 1;
 
+        [SerializeField] bool showDebugView = false; 
         [SerializeField] private RenderTexture renderTexture;
         [SerializeField] int arrayLength_ = PdConstant.BlockSize; 
         [SerializeField] private Rect selection = Rect.zero;
@@ -52,8 +53,8 @@ namespace cylvester
 
         void Update()
         {
-            spectrumArraySelector_.Selection = channel - 1;
-            var energy = spectrumGenerator_.Update(selection);
+            spectrumArraySelector_.Selection = channel;
+            var energy = spectrumGenerator_.Update();
             var array = spectrumArraySelector_.SelectedArray;
             for (var i = 0; i < PdConstant.BlockSize; i++)
             {

@@ -22,7 +22,7 @@ namespace cylvester
             }
         }
 
-        public int Update()
+        public int Update(float gain)
         {
             
             var data = arraySelector_.SelectedArray;
@@ -32,7 +32,7 @@ namespace cylvester
             {
                 for (int y=0; y<Waveform.height; y++)
                 {
-                    Waveform.SetPixel(x, y, new Color(data[x] * 2f, 0, 0));
+                    Waveform.SetPixel(x, y, new Color(data[x] * gain, 0, 0));
                 }
             }
 

@@ -19,7 +19,7 @@ namespace cylvester
             // }
         }
   
-        public int Update(Rect selectionRect)
+        public int Update()
         {
             return 0;
         }

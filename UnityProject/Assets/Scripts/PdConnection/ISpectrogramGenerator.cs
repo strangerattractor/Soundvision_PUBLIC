@@ -7,7 +7,7 @@ namespace cylvester
     public interface ISpectrogramGenerator
     {
         Texture2D Spectrum { get; }
-        int Update(Rect selectionRect);
+        int Update();
     }
     
     public abstract class SpectrogramGenerator
