@@ -1,9 +1,9 @@
 # The development environment
-# The development environment
+All developers have to use the following version of software
+
 - Pure Data 0.49.1  **64 bit** (Install via installer) 
   - Install the TimbreID Library! 
 
-All developers have to use the following version of software
 - Unity 2019.3.3f1
 https://unity3d.com/de/get-unity/download/archive
 - Microsoft Visual Studio Commmunity 2017. version 15.9.13 
