@@ -2,6 +2,7 @@
 All developers have to use the following version of software
 
 - Pure Data 0.49.1  **64 bit** (Install via installer) 
+https://puredata.info/downloads/pure-data/releases/0.49-1
   - Install the TimbreID Library! 
 
 - Unity 2019.3.3f1
@@ -9,7 +10,6 @@ https://unity3d.com/de/get-unity/download/archive
 - Microsoft Visual Studio Commmunity 2017. version 15.9.13 
 https://docs.microsoft.com/en-gb/visualstudio/releasenotes/vs2017-relnotes-history
 
-https://puredata.info/downloads/pure-data/releases/0.49-1
 - Kinect Azure Sensor SDK 1.4.0 
 https://docs.microsoft.com/en-us/azure/kinect-dk/sensor-sdk-download
 - Kinect Azure Body Tracking SDK 0.9.5
