@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CYLVESTER/CYLmerge2019.unity
+    path: Assets/Scenes/Examples/Max Demos/CYLVESTER/CYLmerge2019.unity
     guid: fab1fb436c848f947a7203ad8f35283a
   m_configObjects: {}
