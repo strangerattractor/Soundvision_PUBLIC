@@ -48,7 +48,10 @@ namespace cylvester
             paintSpace_ = GUILayoutUtility.GetRect(behaviour.TextureWidth, behaviour.TextureWidth,
                 behaviour.TextureHeight, behaviour.TextureHeight);
             
-            UpdateSelection();
+            var (selectionRect, updated) = rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
+            if (updated) {
+                selectionProperty_.rectValue = selectionRect;
+            }
 
             if (Event.current.type == EventType.Repaint)
             {
@@ -69,27 +72,6 @@ namespace cylvester
             RenderExtractedEnergy(behaviour.Energy);
 
             serializedObject.ApplyModifiedProperties();
-        }
-
-
-        private void UpdateSelection()
-        {
-            if (!Event.current.isMouse || Event.current.button != 0) return;
-            switch (Event.current.type)
-            {
-                case EventType.MouseDown:
-                {
-                    rectangularSelection_.Start(Event.current.mousePosition);
-                    break;
-                }
-
-                case EventType.MouseDrag:
-                {
-                    selectionProperty_.rectValue =
-                        rectangularSelection_.Update(Event.current.mousePosition, ref paintSpace_);
-                    break;
-                }
-            }
         }
 
         private void RenderExtractedEnergy(int energy)

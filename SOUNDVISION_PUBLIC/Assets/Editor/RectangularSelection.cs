@@ -4,8 +4,11 @@ namespace cylvester
 {
     interface IRectangularSelection
     {
-        void Start(Vector2 mousePosition);
-        Rect Update(Vector2 mousePosition, ref Rect paintSpace);
+        (Rect, bool) Update(Vector2 mousePosition, ref Rect paintSpace);
+
+        // void Pressed(Vector2 mousePosition, ref Rect paintSpace);
+        // void Dragged(Vector2 mousePosition, ref Rect paintSpace);
+        // void Released(Vector2 mousePosition, ref Rect paintSpace);
     }
     
     public class RectangularSelection : IRectangularSelection
@@ -13,8 +16,10 @@ namespace cylvester
         private readonly Rect paintSpace_;
 
         private Rect selectedArea_;
+        private Rect lastSelectionRect = new Rect(0, 0, 0, 0);
         private readonly int textureWidth_;
         private readonly int textureHeight_;
+        private bool dragging = false;
         
         public RectangularSelection(int textureWidth, int textureHeight)
         {
@@ -22,30 +27,112 @@ namespace cylvester
             textureHeight_ = textureHeight;
         }
 
-        public void Start(Vector2 mousePosition)
+        public (Rect, bool) Update(Vector2 mousePosition, ref Rect paintSpace)
         {
-            selectedArea_.x = mousePosition.x;
-            selectedArea_.y = mousePosition.y;
+            if (!Event.current.isMouse || Event.current.button != 0) return (lastSelectionRect, false);
+
+            bool updated = false;
+            switch (Event.current.type)
+            {
+                case EventType.MouseDown:
+                {
+                    Pressed(Event.current.mousePosition, ref paintSpace);
+                    break;
+                }
+
+                case EventType.MouseDrag:
+                {
+                    Dragged(Event.current.mousePosition, ref paintSpace);
+                    updated = true;
+                    break;
+                }
+
+                case EventType.MouseUp:
+                {
+                    Released(Event.current.mousePosition, ref paintSpace);
+                    break;
+                }
+            }
+            return (lastSelectionRect, updated);
         }
 
-        public Rect Update(Vector2 mousePosition, ref Rect paintSpace)
+        public void Pressed(Vector2 mousePosition, ref Rect paintSpace)
         {
-            selectedArea_.width = mousePosition.x - selectedArea_.x;
-            selectedArea_.height = mousePosition.y - selectedArea_.y;
-            var xPos = (selectedArea_.x - paintSpace.x) / paintSpace.width;
-            var yPos = (selectedArea_.y - paintSpace.y) / paintSpace.height;
-            var width = selectedArea_.width / paintSpace.width;
-            var height = selectedArea_.height / paintSpace.height;
+            float x = mousePosition.x - paintSpace.x;
+            float y = mousePosition.y - paintSpace.y;
+            
+            float edgeThreshold = 30;
+            if (x < -edgeThreshold) {
+                return;
+            }
+            if (y < -edgeThreshold) {
+                return;
+            }
+            if (x >= paintSpace.width + edgeThreshold) {
+                return;
+            }
+            if (y >= paintSpace.height + edgeThreshold) {
+                return;
+            }
 
-            var selectionRect = new Rect
+            if (x < 0) x = 0;
+            if (y < 0) y = 0;
+            selectedArea_.x = x;
+            selectedArea_.y = y;
+
+            dragging = true;
+        }
+
+        public void Dragged(Vector2 mousePosition, ref Rect paintSpace)
+        {
+            if (dragging == false) {
+                return;
+            }
+
+            float x = mousePosition.x - paintSpace.x;
+            float y = mousePosition.y - paintSpace.y;
+            selectedArea_.width = x - selectedArea_.x;
+            selectedArea_.height = y - selectedArea_.y;
+            var xNormalized = selectedArea_.x / paintSpace.width;
+            var yNormalized = selectedArea_.y / paintSpace.height;
+            var wNormalized = selectedArea_.width / paintSpace.width;
+            var hNormalized = selectedArea_.height / paintSpace.height;
+
+            if (wNormalized < 0) {
+                wNormalized = -wNormalized;
+                xNormalized = xNormalized - wNormalized;
+                if (xNormalized < 0) {
+                    wNormalized += xNormalized;
+                    xNormalized = 0;
+                }
+            }
+            if (hNormalized < 0) {
+                hNormalized = -hNormalized;
+                yNormalized = yNormalized - hNormalized;
+                if (yNormalized < 0) {
+                    hNormalized += yNormalized;
+                    yNormalized = 0;
+                }
+            }
+            if (xNormalized + wNormalized > 1) {
+                wNormalized = 1 - xNormalized;
+            }
+            if (yNormalized + hNormalized > 1) {
+                hNormalized = 1 - yNormalized;
+            }
+
+            lastSelectionRect = new Rect
             {
-                x = xPos * textureWidth_,
-                y = yPos * textureHeight_,
-                width = width * textureWidth_,
-                height = height * textureHeight_
+                x = xNormalized * textureWidth_,
+                y = yNormalized * textureHeight_,
+                width = wNormalized * textureWidth_,
+                height = hNormalized * textureHeight_
             };
+        }
 
-            return selectionRect;
+        public void Released(Vector2 mousePosition, ref Rect paintSpace)
+        {
+            dragging = false;
         }
     }
 }

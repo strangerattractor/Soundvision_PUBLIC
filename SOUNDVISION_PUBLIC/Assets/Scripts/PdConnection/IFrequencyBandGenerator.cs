@@ -7,8 +7,7 @@ namespace cylvester
     public interface IFrequencyBandGenerator
     {
         Texture2D Spectrum { get; }
-        int Update(int rectx, int recty, int rectw, int recth);
-        void SetBins(float[] f);
+        int Update(Rect selectionRect, bool drawFullSpectrum, float gain, bool logScale);
     }
     
     public abstract class FrequencyBandGenerator
